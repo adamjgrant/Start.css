@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    startcss (0.0.1)
+    startcss (0.0.2)
       rails (~> 4.0.2)
 
 GEM
