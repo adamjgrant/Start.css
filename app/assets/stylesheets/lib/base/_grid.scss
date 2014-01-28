@@ -14,7 +14,7 @@
 
 @mixin cols($x, $minWidth: 0) {
   @if $minWidth > 0 {
-    @media screen and (min-width: $minWidth) {
+    @media screen and (min-width: #{$minWidth}px) {
       width: ( 100% * $x/12 );
     }
   }
@@ -25,7 +25,7 @@
 
 @mixin bump($x, $minWidth: 0) {
   @if $minWidth > 0 {
-    @media screen and (min-width: $minWidth) {
+    @media screen and (min-width: #{$minWidth}px) {
       margin-left: ( 100% * $x/12 );
     }
   }

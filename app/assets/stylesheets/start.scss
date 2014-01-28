@@ -13,26 +13,18 @@
 .s-row { @include row(); }
 .s-col { @include col(); }
 
-@mixin generate-grid($cols, $prefix: '') {
-	@for $i from 1 to $cols + 1 {
-	  .s#{$prefix}-#{$i} { @include cols($i); }
-	}
-}
+@mixin generate-grid($prefix: '') { @for $i from 1 to 13 { .s#{$prefix}-#{$i} { @include cols($i); } } }
 
-@include generate-grid(12);
-@media screen and (min-width: 320px)  { @include generate-grid(12, '-sm'); }
-@media screen and (min-width: 768px)  { @include generate-grid(12, '-md'); }
-@media screen and (min-width: 1024px) { @include generate-grid(12, '-lg'); }
-@media screen and (min-width: 1200px) { @include generate-grid(12, '-xl'); }
+@include generate-grid();
+@media screen and (min-width: 320px)  { @include generate-grid('-sm'); }
+@media screen and (min-width: 768px)  { @include generate-grid('-md'); }
+@media screen and (min-width: 1024px) { @include generate-grid('-lg'); }
+@media screen and (min-width: 1200px) { @include generate-grid('-xl'); }
 
-@mixin generate-bumps($cols, $prefix: '') {
-	@for $i from 1 to $cols + 1 {
-	  .s-bump#{$prefix}-#{$i} { @include bump($i); }
-	}
-}
+@mixin generate-bumps($prefix: '') { @for $i from 1 to 13 { .s-bump#{$prefix}-#{$i} { @include bump($i); } } }
 
-@include generate-bumps(12);
-@media screen and (min-width: 320px)  { @include generate-bumps(12, '-sm'); }
-@media screen and (min-width: 768px)  { @include generate-bumps(12, '-md'); }
-@media screen and (min-width: 1024px) { @include generate-bumps(12, '-lg'); }
-@media screen and (min-width: 1200px) { @include generate-bumps(12, '-xl'); }
+@include generate-bumps();
+@media screen and (min-width: 320px)  { @include generate-bumps('-sm'); }
+@media screen and (min-width: 768px)  { @include generate-bumps('-md'); }
+@media screen and (min-width: 1024px) { @include generate-bumps('-lg'); }
+@media screen and (min-width: 1200px) { @include generate-bumps('-xl'); }

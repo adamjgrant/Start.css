@@ -1,0 +1,15 @@
+@import "lib/index";
+
+.page { @include row(); }
+
+.sidebar {
+	@include col();
+	@include cols(6);
+	@include cols(4, 768);
+}
+
+.main {
+	@include col();
+	@include cols(6);
+	@include cols(8, 768);
+}
