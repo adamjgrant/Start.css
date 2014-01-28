@@ -13,10 +13,11 @@ Gem::Specification.new do |s|
   s.summary     = "A semantic, small, and modern CSS Framework from the creator of Kickstrap"
   s.description = "Start is a CSS framework that can be used semantically through Rails or statically as a class-based bootstrap framework."
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.2"
+  s.add_dependency "railties", "~> 3.1"
 
   s.add_development_dependency "sqlite3"
 end
