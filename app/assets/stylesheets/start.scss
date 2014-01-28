@@ -1,0 +1,6 @@
+@import "lib/index";
+
+// GRID
+
+.s-col { @include col(); }
+.s-3 { @include s(3); }
