@@ -8,6 +8,7 @@
 }
 
 @mixin cols($x, $minWidth: 0) {
+  @include col();
   @if $minWidth > 0 {
     @media screen and (min-width: $minWidth) {
       width: ( 100% / $x );

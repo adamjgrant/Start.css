@@ -10,8 +10,6 @@
 
 // GRID
 
-.s-col { @include col(); }
-
 @mixin generate-grid($cols, $minWidth, $prefix: '') {
 	@for $i from 1 to $cols + 1 {
 	  .s#{$prefix}-#{$i} { @include cols($i, $minWidth); }

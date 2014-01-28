@@ -13,6 +13,15 @@
       "outputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application-ck.js",
       "fileType" : 64
     },
+    "\/test\/dummy\/public\/500.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test\/dummy\/public\/500.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -25,15 +34,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/test\/dummy\/public\/500.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/public\/500.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/test\/dummy\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -42,6 +42,15 @@
       "inputAbbreviatedPath" : "\/test\/dummy\/public\/404.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/test\/dummy\/app\/assets\/stylesheets\/application.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/stylesheets\/application.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/test\/dummy\/public\/422.html" : {
       "ignoreWasSetByUser" : 0,
@@ -63,15 +72,6 @@
       "outputAbbreviatedPath" : "\/css\/start.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/test\/dummy\/app\/assets\/stylesheets\/application.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/stylesheets\/application.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/css\/start.css" : {
       "ignoreWasSetByUser" : 0,

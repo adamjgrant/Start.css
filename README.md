@@ -1,7 +1,7 @@
 Start.css
 =========
 
-The versatile CSS framework
+The versatile CSS framework.
 
 ## Grid
 
@@ -23,7 +23,7 @@ Include the ``col()`` mixin and the ``cols()`` functions you need.
     </div>
 
     .sidebar {
-      @include col()
+      @include col();
       @include cols(4, 1024);
-      @include cols(6)
+      @include cols(6);
     }
