@@ -106,17 +106,25 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/app\/assets\/stylesheets\/lib\/base\/variables.scss" : {
+    "\/html\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/html\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/jade\/index.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/base\/variables.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/variables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/jade\/index.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/index.html",
+      "fileType" : 512
     },
     "\/test\/dummy\/public\/500.html" : {
       "ignoreWasSetByUser" : 0,
@@ -137,7 +145,7 @@
     "lessOutputStyle" : 0,
     "hamlAutoOutputPathReplace2" : "",
     "draggedImportConcatenationStyle" : 1,
-    "jadeAutoOutputPathStyle" : 0,
+    "jadeAutoOutputPathStyle" : 1,
     "hamlEscapeHTMLCharacters" : 0,
     "javascriptAutoOutputPathStyle" : 0,
     "hamlOutputFormat" : 2,
@@ -183,7 +191,7 @@
     "slimCompileOnly" : 0,
     "slimLogicless" : 0,
     "uglifyIndent" : 4,
-    "jadeAutoOutputPathRelativePath" : "",
+    "jadeAutoOutputPathRelativePath" : "html",
     "hamlUseUnixNewlines" : 0,
     "hamlAutoOutputPathReplace1" : "",
     "javascriptAutoOutputPathReplace1" : "",
