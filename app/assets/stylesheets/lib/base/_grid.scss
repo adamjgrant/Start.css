@@ -1,0 +1,19 @@
+@mixin col() {
+  padding: 0 12.5px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@mixin cols($x, $minWidth: 0) {
+  @if $minWidth > 0 {
+    @media screen and (min-width: $minWidth) {
+      width: ( 100% / $x );
+    }
+  }
+  @else {
+    width: ( 100% / $x );
+  }
+}
