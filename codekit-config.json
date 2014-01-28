@@ -4,7 +4,7 @@
   "files" : {
     "\/app\/assets\/stylesheets\/lib\/variables.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/variables.scss",

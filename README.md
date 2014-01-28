@@ -26,6 +26,12 @@ Use ``.s-col`` with ``.s-x-y`` where x (optional) is a size prefix (sm/md/lg/xl)
       ...
     </div>
 
+To create empty column space before the element, use ``.s-bump-x-y`` (x and y meaning the same as above.)
+
+    <div class="s-col s-6 s-lg-4 s-bump-6 s-bump-lg-8">
+      ...
+    </div>
+
 ### Semantic
 
 Include the ``col()`` mixin and the ``cols()`` functions you need. 
@@ -37,6 +43,23 @@ Include the ``col()`` mixin and the ``cols()`` functions you need.
 
     .sidebar {
       @include col();
+      
       @include cols(4, 1024);
       @include cols(6);
+    }
+
+To create empty column space before the element, use ``bump()``, taking the same parameters as ``cols()``
+
+    <div class="sidebar">
+      ...
+    </div>
+
+    .sidebar {
+      @include col();
+
+      @include cols(4, 1024);
+      @include bump(8, 1024);
+
+      @include cols(6); 
+      @include bump(6);
     }
