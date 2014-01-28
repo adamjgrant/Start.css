@@ -397,6 +397,41 @@ th {
   padding: 0;
 }
 
+.s-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 1200px;
+}
+
+.s-wrapper-sm {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 320px;
+}
+
+.s-wrapper-md {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 768px;
+}
+
+.s-wrapper-lg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 1024px;
+}
+
+.s-wrapper-xl {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 1200px;
+}
+
 .s-row {
   margin-left: -12.5px;
   margin-right: -12.5px;
@@ -898,4 +933,24 @@ th {
   .s-bump-xl-12 {
     margin-left: 100%;
   }
+}
+.s-btn {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: #d3d3d3;
+  color: inherit;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.s-btn:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px transparent inset;
+  box-shadow: 0px 0px 0px 0px transparent inset;
+}
+.s-btn:active {
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }

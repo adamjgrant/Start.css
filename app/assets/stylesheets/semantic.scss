@@ -1,5 +1,6 @@
 @import "lib/index";
 
+body { @include wrapper(); }
 .page { @include row(); }
 
 .sidebar {
@@ -12,4 +13,8 @@
 	@include col();
 	@include cols(6);
 	@include cols(8, 768);
+}
+
+button {
+	@include btn();
 }

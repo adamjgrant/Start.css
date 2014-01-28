@@ -1,0 +1,20 @@
+@mixin btn() {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: #d3d3d3;
+  color: inherit;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.2) inset;
+  box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.2) inset;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px transparent inset;
+    box-shadow: 0px 0px 0px 0px transparent inset;
+  }
+  &:active {
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) inset;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) inset;
+  }
+}

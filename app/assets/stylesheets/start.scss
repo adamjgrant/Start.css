@@ -10,6 +10,12 @@
 
 // GRID
 
+.s-wrapper    { @include wrapper(); }
+.s-wrapper-sm { @include wrapper(320); }
+.s-wrapper-md { @include wrapper(768); }
+.s-wrapper-lg { @include wrapper(1024); }
+.s-wrapper-xl { @include wrapper(1200); }
+
 .s-row { @include row(); }
 .s-col { @include col(); }
 
@@ -28,3 +34,7 @@
 @media screen and (min-width: 768px)  { @include generate-bumps('-md'); }
 @media screen and (min-width: 1024px) { @include generate-bumps('-lg'); }
 @media screen and (min-width: 1200px) { @include generate-bumps('-xl'); }
+
+// BUTTONS
+
+.s-btn { @include btn(); }
