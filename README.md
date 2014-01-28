@@ -1,7 +1,20 @@
 Start.css
 =========
 
-The versatile CSS framework.
+The versatile CSS framework. Start can be used *statically* or *semantically*. 
+
+Static uses requires putting classes into your markup. 
+
+    <div class="s-col s-6"></div>
+
+Semantically requires no special classes are used but sass mixins need to be included in your application's scss.
+
+    <div class="sidebar"></div>
+    
+    .sidebar {
+      @include col();
+      @include cols(6);
+    }
 
 ## Grid
 

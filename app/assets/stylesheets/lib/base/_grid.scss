@@ -8,7 +8,6 @@
 }
 
 @mixin cols($x, $minWidth: 0) {
-  @include col();
   @if $minWidth > 0 {
     @media screen and (min-width: $minWidth) {
       width: ( 100% / $x );
@@ -16,5 +15,16 @@
   }
   @else {
     width: ( 100% / $x );
+  }
+}
+
+@mixin offset($x, $minWidth: 0) {
+  @if $minWidth > 0 {
+    @media screen and (min-width: $minWidth) {
+      margin-left: ( 100% / $x );
+    }
+  }
+  @else {
+    margin-left: ( 100% / $x );
   }
 }

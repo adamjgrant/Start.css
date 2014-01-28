@@ -10,6 +10,10 @@
 
 // GRID
 
+.s-col {
+	@include col();
+}
+
 @mixin generate-grid($cols, $minWidth, $prefix: '') {
 	@for $i from 1 to $cols + 1 {
 	  .s#{$prefix}-#{$i} { @include cols($i, $minWidth); }
@@ -17,7 +21,19 @@
 }
 
 @include generate-grid(12, 0);
-@include generate-grid(12, 320, '-sm');
-@include generate-grid(12, 768, '-md');
-@include generate-grid(12, 1024, '-lg');
-@include generate-grid(12, 1200, '-xl');
+@media screen and (min-width: 320px)  { @include generate-grid(12, 0, '-sm'); }
+@media screen and (min-width: 768px)  { @include generate-grid(12, 0, '-md'); }
+@media screen and (min-width: 1024px) { @include generate-grid(12, 0, '-lg'); }
+@media screen and (min-width: 1200px) { @include generate-grid(12, 0, '-xl'); }
+
+@mixin generate-offsets($cols, $minWidth, $prefix: '') {
+	@for $i from 1 to $cols + 1 {
+	  .s-offset#{$prefix}-#{$i} { @include offset($i); }
+	}
+}
+
+@include generate-offsets(12, 0);
+@media screen and (min-width: 320px)  { @include generate-offsets(12, 320, '-sm'); }
+@media screen and (min-width: 768px)  { @include generate-offsets(12, 768, '-md'); }
+@media screen and (min-width: 1024px) { @include generate-offsets(12, 1024, '-lg'); }
+@media screen and (min-width: 1200px) { @include generate-offsets(12, 1200, '-xl'); }
