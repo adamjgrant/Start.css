@@ -397,10 +397,104 @@ th {
   padding: 0;
 }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 21px;
+  color: #333333;
+  line-height: normal;
+  margin: 10px 0;
+  font-weight: 200;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+  margin-top: 0;
+}
+
+p,
+em,
+strong,
+i,
+b,
+ul,
+ol,
+li,
+table,
+blockquote,
+pre,
+table,
+code {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 21px;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 21px;
+}
+
+h1 {
+  font-size: 41px;
+  margin: 25px 0;
+}
+
+h2 {
+  font-size: 37px;
+  margin: 17.5px 0;
+}
+
+h3 {
+  font-size: 31px;
+  margin: 16.25px 0;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 12.5px 0;
+}
+
+blockquote {
+  font-family: "Baskerville", "Palatino", "Times New Roma", serif;
+  margin: 25px;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 40px;
+}
+blockquote:before {
+  content: open-quote;
+  font-size: 70px;
+  margin-left: -30px;
+}
+
+a.s-btn {
+  text-decoration: none;
+}
+
+code, pre {
+  color: #1651bc;
+  background-color: white;
+  border-radius: 3px;
+  padding: 8.33333px 16.66667px;
+  font-family: monospace;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 0px !important;
+}
+
 .s-wrapper {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 0px 12.5px;
   max-width: 1200px;
 }
 
@@ -408,6 +502,7 @@ th {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 0px 12.5px;
   max-width: 320px;
 }
 
@@ -415,6 +510,7 @@ th {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 0px 12.5px;
   max-width: 768px;
 }
 
@@ -422,6 +518,7 @@ th {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 0px 12.5px;
   max-width: 1024px;
 }
 
@@ -429,12 +526,20 @@ th {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding: 0px 12.5px;
   max-width: 1200px;
 }
 
 .s-row {
   margin-left: -12.5px;
   margin-right: -12.5px;
+}
+.s-row:before, .s-row:after {
+  display: table;
+  content: " ";
+}
+.s-row:after {
+  clear: both;
 }
 
 .s-col {

@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet" href="../css/start-semantic.css")
+    link(rel="stylesheet" href="../css/docs.css")
+  body(style="padding-top: 40px")
+    header
+      block header
+    main
+      block content
+    footer
+  script(src="http://code.jquery.com/jquery-2.0.3.min.js")
+  script(src="js/start.js")
+  script(src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js")
+  script.
+    $('p, span').s_endconcat()
+    $('#launch-modal').click(function() {
+      $('#modal').fadeIn('fast')
+    }) 
+  link(href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+  block docready

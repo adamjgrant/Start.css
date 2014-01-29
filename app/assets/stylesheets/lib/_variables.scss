@@ -1,1 +1,40 @@
-$space: 25px;
+// MEASUREMENTS
+// ------------
+
+$space:                   25px;
+
+$buttonSpacingV:          ($space/3);
+$buttonSpacingH:          (($space/3) * 2);
+$buttonSpacing:           $buttonSpacingV $buttonSpacingH;
+$buttonBorderRadius:      3px;
+
+// COLORS
+// ------
+
+$black:                    #333333;
+$darkGrey:                 #555555;
+$grey:                     #AAAAAA;
+$lightGrey:                #EEEEEE;
+
+$red:                      #CA3518;
+$orange:                   darkorange;
+$yellow:                   gold;
+$green:                    #58AA00;
+$blue:                     cornflowerblue;
+$violet:                   darkmagenta;
+
+$lightBorder:              rgba(0, 0, 0, 0.15);
+$borderWidth:              1px;
+
+// TYPOGRAPHY
+// ----------
+
+$font-baseSize:            16px; // Readable size
+$font-baseLineHeight:      21px; // Readable leading
+$font-headings-baseSize:   ($font-baseSize + 5px);
+
+$font-sans:                'Helvetica Neue', 'Helvetica', sans-serif;
+$font-serif:               'Baskerville', 'Palatino', 'Times New Roma', serif;
+
+$font-default:             $font-sans;
+$font-headings:            $font-sans;
