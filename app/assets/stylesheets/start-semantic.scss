@@ -5,14 +5,14 @@ body { @include wrapper(); }
 
 .sidebar {
 	@include col();
-	@include cols(4);
-	@include cols(3, 768);
+	@include cols(4, 768);
+	@include cols(3, 1024);
 }
 
 .main {
 	@include col();
-	@include cols(8);
-	@include cols(9, 768);
+	@include cols(8, 768);
+	@include cols(9, 1024);
 }
 
 // GRID
