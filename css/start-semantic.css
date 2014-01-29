@@ -470,19 +470,20 @@ blockquote:before {
   margin-left: -30px;
 }
 
-a.s-btn {
-  text-decoration: none;
-}
-
 code, pre {
   color: #1651bc;
-  background-color: white;
+  background-color: #edf3fd;
   border-radius: 3px;
   padding: 8.33333px 16.66667px;
   font-family: monospace;
   word-break: break-all;
   word-wrap: break-word;
   border: 0px !important;
+}
+
+code {
+  margin-bottom: 0px;
+  padding: 0 5.55556px;
 }
 
 body {
@@ -512,11 +513,11 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  width: 50%;
+  width: 33.33333%;
 }
 @media screen and (min-width: 768px) {
   .sidebar {
-    width: 33.33333%;
+    width: 25%;
   }
 }
 
@@ -527,11 +528,11 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  width: 50%;
+  width: 66.66667%;
 }
 @media screen and (min-width: 768px) {
   .main {
-    width: 66.66667%;
+    width: 75%;
   }
 }
 
@@ -554,4 +555,9 @@ button:hover {
 button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.lead {
+  font-size: 26px;
+  line-height: 32px;
 }

@@ -475,19 +475,20 @@ blockquote:before {
   margin-left: -30px;
 }
 
-a.s-btn {
-  text-decoration: none;
-}
-
 code, pre {
   color: #1651bc;
-  background-color: white;
+  background-color: #edf3fd;
   border-radius: 3px;
   padding: 8.33333px 16.66667px;
   font-family: monospace;
   word-break: break-all;
   word-wrap: break-word;
   border: 0px !important;
+}
+
+code {
+  margin-bottom: 0px;
+  padding: 0 5.55556px;
 }
 
 .s-wrapper {
@@ -1058,4 +1059,9 @@ code, pre {
 .s-btn:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.s-lead {
+  font-size: 26px;
+  line-height: 32px;
 }

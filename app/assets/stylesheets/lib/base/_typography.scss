@@ -71,15 +71,23 @@ blockquote {
   }
 }
 
-a.s-btn { text-decoration: none; }
-
 code, pre {
   color: darken($blue, 25%);
-  background-color: lighten($blue, 80%);
+  background-color: lighten($blue, 30%);
   border-radius: $buttonBorderRadius;
   padding: $buttonSpacing;
   font-family: monospace;
   word-break: break-all;
   word-wrap: break-word;
   border: 0px !important;
+}
+
+code {
+  margin-bottom: 0px;
+  padding: 0 ($buttonSpacingH/3);
+}
+
+@mixin lead() {
+  font-size: ($font-baseSize + 10);
+  line-height: ($font-baseLineHeight + 11);
 }

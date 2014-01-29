@@ -38,3 +38,7 @@
 // BUTTONS
 
 .s-btn { @include btn(); }
+
+// TYPOGRAPHY
+
+.s-lead { @include lead(); }

@@ -22,15 +22,15 @@
       "outputAbbreviatedPath" : "\/html\/layout-static.html",
       "fileType" : 512
     },
-    "\/app\/assets\/stylesheets\/start.scss" : {
+    "\/app\/assets\/stylesheets\/start-semantic.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/start.css",
+      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -123,15 +123,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/html\/semantic.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/semantic.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/assets\/stylesheets\/lib\/base\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -143,6 +134,15 @@
       "outputAbbreviatedPath" : "\/css\/_grid.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/html\/semantic.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/html\/semantic.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/assets\/stylesheets\/lib\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -156,18 +156,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/_index.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_index.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/app\/assets\/stylesheets\/lib\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -177,6 +165,18 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/_index.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_index.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -201,17 +201,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/jade\/semantic.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/semantic.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/semantic.html",
-      "fileType" : 512
-    },
     "\/jade\/index.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -221,6 +210,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/html\/index.html",
+      "fileType" : 512
+    },
+    "\/jade\/semantic.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jade\/semantic.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/semantic.html",
       "fileType" : 512
     },
     "\/test\/dummy\/public\/500.html" : {
@@ -243,15 +243,15 @@
       "outputAbbreviatedPath" : "\/html\/layout-semantic.html",
       "fileType" : 512
     },
-    "\/app\/assets\/stylesheets\/start-semantic.scss" : {
+    "\/app\/assets\/stylesheets\/start.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
+      "outputAbbreviatedPath" : "\/css\/start.css",
       "fileType" : 4,
       "debugStyle" : 0
     }
