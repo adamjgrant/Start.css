@@ -232,10 +232,18 @@ main { @include row(); }
           <h4>Use as many responsive style imports as you want.</h4>
           <section class="example-main">
             <div class="example-md-4_2">
-              <div class="grid-example"><code>col() + cols(4, 768) + cols(6, 1024)</code>Sidebar.</div>
+              <div class="grid-example">
+                <pre>col() 
++ cols(4, 768) 
++ cols(6, 1024)</pre>Sidebar.
+              </div>
             </div>
             <div class="example-md-8_2">
-              <div class="grid-example"><code>col() + cols(8, 768) + cols(6, 1024)</code>Content. </div>
+              <div class="grid-example">
+                <pre>col() 
++ cols(8, 768)
++ cols(6, 1024)</pre>Content. 
+              </div>
             </div>
           </section>
           <pre>&lt;main&gt;
@@ -263,23 +271,35 @@ $lg: 1024; // Large screens
   @include cols(8, $md);
   @include cols(6, $lg);
 }</pre>
-          <h3>Offsets</h3>
+          <h3>Bumping columns</h3>
+          <p>Bump columns over without creating empty columns using <code>bump()</code></p>
           <section class="example-main">
-            <div class="s-col s-md-4 s-md-8-offset">
-              <div class="s-box grid-example">.s-col.s-md-4.s-md-8-offset</div>
+            <div class="example-4-b8">
+              <pre>col() 
++ cols(4) 
++ bump(8)</pre>
             </div>
           </section>
           <section class="example-main">
-            <div class="s-col s-md-4">
-              <div class="s-box grid-example">.s-col.s-md-4</div>
+            <div class="example-4">
+              <pre>col() 
++ cols(4)</pre>
             </div>
-            <div class="s-col s-md-3 s-md-5-offset">
-              <div class="s-box grid-example">.s-col.s-md-3.s-md-5-offset</div>
+            <div class="example-3-b5">
+              <pre>col() 
++ cols(3)
++ bump(5)</pre>
             </div>
-          </section>
+          </section><br>
+          <h5>Mixing bumps, columns, and responsive classes</h5>
+          <p>This column is full on mobile, bumped half on medium screens, and bumped 1/3 on large screens.</p>
           <section class="example-main">
-            <div class="s-col s-md-11 s-md-1-offset">
-              <div class="s-box grid-example">.s-col.s-md-11.s-md-1-offset</div>
+            <div class="example-bumptodeath">
+              <pre>col() 
++ cols(6, 768)
++ bump(6, 768)
++ cols(8, 1024)
++ bump(4, 1024)</pre>
             </div>
           </section>
           <h3>Container</h3>

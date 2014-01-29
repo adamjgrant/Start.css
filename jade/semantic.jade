@@ -302,11 +302,15 @@ block content
       section.example-main
         .example-md-4_2
           .grid-example
-            code col() + cols(4, 768) + cols(6, 1024)
+            pre col() 
+              | + cols(4, 768) 
+              | + cols(6, 1024)
             | Sidebar.
         .example-md-8_2
           .grid-example
-            code col() + cols(8, 768) + cols(6, 1024)
+            pre col() 
+              | + cols(8, 768)
+              | + cols(6, 1024)
             | Content. 
       pre &lt;main&gt;
         |   &lt;div class=&quot;sidebar&quot;&gt;Sidebar.&lt;/div&gt;
@@ -336,19 +340,35 @@ block content
         |   @include cols(6, $lg);
         | }
 
-      h3 Offsets
+      h3 Bumping columns
+      p Bump columns over without creating empty columns using 
+        code bump()
 
       section.example-main
-        .s-col.s-md-4.s-md-8-offset
-          .s-box.grid-example .s-col.s-md-4.s-md-8-offset
+        .example-4-b8
+          pre col() 
+            | + cols(4) 
+            | + bump(8)
       section.example-main
-        .s-col.s-md-4
-          .s-box.grid-example .s-col.s-md-4
-        .s-col.s-md-3.s-md-5-offset
-          .s-box.grid-example .s-col.s-md-3.s-md-5-offset
+        .example-4
+          pre col() 
+            | + cols(4)
+        .example-3-b5
+          pre col() 
+            | + cols(3)
+            | + bump(5)
+      br
+
+      h5 Mixing bumps, columns, and responsive classes
+      p This column is full on mobile, bumped half on medium screens, and bumped 1/3 on large screens.
+
       section.example-main
-        .s-col.s-md-11.s-md-1-offset
-          .s-box.grid-example .s-col.s-md-11.s-md-1-offset
+        .example-bumptodeath
+          pre col() 
+            | + cols(6, 768)
+            | + bump(6, 768)
+            | + cols(8, 1024)
+            | + bump(4, 1024)
 
       h3 Container
 
