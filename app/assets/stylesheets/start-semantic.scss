@@ -15,6 +15,33 @@ body { @include wrapper(); }
 	@include cols(9, 768);
 }
 
+// GRID
+
+.example-main {
+	@include row();
+}
+.example-sidebar { 
+  @include col();
+  @include cols(4);
+}
+.example-content {
+  @include col();
+  @include cols(8);
+}
+.example-col { @include col(); }
+.example-4 {
+	@include col();
+	@include cols(4);
+}
+.example-6 {
+	@include col();
+	@include cols(6);
+}
+.example-3 {
+	@include col();
+	@include cols(3);
+}
+
 // BUTTONS
 
 button { @include btn(); }

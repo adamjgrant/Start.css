@@ -148,93 +148,106 @@ sit amet</pre>
           <pre>$(element).s_endconcat()</pre>
           <p>Where <code>element</code> is the element to have enconcatenation applied</p>
           <h2 id="grid">Grid</h2>
-          <p>Start uses a 12 column grid. To create a gridded row, start with an <code>.s-row</code> container.</p>
-          <pre>&lt;section class=&quot;s-row&quot;&gt;&lt;/section&gt;</pre>
-          <p>Columns are defined with the <code>.s-col</code> class and with <code>.s-x</code> measuring classes where "x" is a number between 1-12.</p>
-          <p>Using <code>.s-col</code> without a measuring class will default to <code>.s-12</code></p>
-          <section class="s-row">
-            <div class="s-col s-4">
-              <div class="grid-example s-box">s-col s-4</div>
+          <p>Start uses a 12 column grid. To create a gridded row, start with a container inheriting the <code>row()</code> styling.</p>
+          <pre>&lt;main&gt;&lt;/main&gt;
+ 
+main { @include row(); }</pre>
+          <p>Columns are defined with the <code>col()</code> mixin and <code>cols(x)</code> measuring styles where "x" is a number between 1-12.</p>
+          <p>Using <code>cols(x)</code> without a measuring class will default to <code>cols(12)</code></p>
+          <main class="example-main">
+            <div class="example-sidebar">
+              <div class="grid-example">.sidebar</div>
             </div>
-            <div class="s-col s-8">
-              <div class="grid-example s-box">s-col s-8</div>
+            <div class="example-content">
+              <div class="grid-example">.content</div>
             </div>
-          </section><br>
-          <pre>&lt;section class=&quot;s-row&quot;&gt;
-  &lt;div class=&quot;s-col s-4&quot;&gt;s-col s-4&lt;/div&gt;
-  &lt;div class=&quot;s-col s-8&quot;&gt;s-col s-8&lt;/div&gt;
-&lt;/section&gt;</pre>
+          </main><br>
+          <pre>&lt;main&gt;
+  &lt;div class=&quot;sidebar&quot;&gt;.sidebar&lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;.content&lt;/div&gt;
+&lt;/main&gt;
+ 
+main { @include row(); }
+.sidebar { 
+  @include col();
+  @include cols(4);
+}
+.content {
+  @include col();
+  @include cols(8);
+}</pre>
           <h3>Other examples</h3>
-          <section class="s-row">
-            <div class="s-col">
-              <div class="grid-example s-box">s-col</div>
+          <section class="example-main">
+            <div class="example-col">
+              <div class="grid-example"><code>col()</code></div>
             </div>
           </section><br>
-          <section class="s-row">
-            <div class="s-col s-4">
-              <div class="grid-example s-box">s-col s-4</div>
+          <section class="example-main">
+            <div class="example-4">
+              <div class="grid-example"><code>col() + cols(4) </code></div>
             </div>
-            <div class="s-col s-4">
-              <div class="grid-example s-box">s-col s-4</div>
+            <div class="example-4">
+              <div class="grid-example"><code>col() + cols(4) </code></div>
             </div>
-            <div class="s-col s-4">
-              <div class="grid-example s-box">s-col s-4</div>
-            </div>
-          </section><br>
-          <section class="s-row">
-            <div class="s-col s-3">
-              <div class="grid-example s-box">s-col s-3</div>
-            </div>
-            <div class="s-col s-6">
-              <div class="grid-example s-box">s-col s-6</div>
-            </div>
-            <div class="s-col s-3">
-              <div class="grid-example s-box">s-col s-3</div>
+            <div class="example-4">
+              <div class="grid-example"><code>col() + cols(4) </code></div>
             </div>
           </section><br>
+          <section class="example-main">
+            <div class="example-3">
+              <div class="grid-example"><code>col() + cols(3)</code></div>
+            </div>
+            <div class="example-6">
+              <div class="grid-example"><code>col() + cols(6)</code></div>
+            </div>
+            <div class="example-3">
+              <div class="grid-example"><code>col() + cols(3)</code></div>
+            </div>
+          </section><br>
+          <p> <code>cols(x)</code> does not inherit anything from <code>col()</code>. This allows you to use <code>cols(x)</code> purely as a sizing tool.</p>
           <h3>Responsive Grid</h3>
           <p>The grid is designed to operate <em>mobile-first</em>, so there is no class to target devices with widths less than 320px.</p>
           <p>To specify a column size for a larger screen, use the additional size prefixes <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>.</p>
-          <section class="s-row">
+          <section class="example-main">
             <div class="s-col s-md-4">
-              <div class="grid-example s-box">(s-col s-md-4) 4 columns in medium width</div>
+              <div class="grid-example">(s-col s-md-4) 4 columns in medium width</div>
             </div>
             <div class="s-col s-md-8">
-              <div class="grid-example s-box">(s-col s-md-8) 8 columns in medium width</div>
+              <div class="grid-example">(s-col s-md-8) 8 columns in medium width</div>
             </div>
           </section><br>
-          <section class="s-row">
+          <section class="example-main">
             <div class="s-col">
-              <div class="grid-example s-box">(s-col) Mobile devices tend to use one-column layouts more often.</div>
+              <div class="grid-example">(s-col) Mobile devices tend to use one-column layouts more often.</div>
             </div>
             <div class="s-col">
-              <div class="grid-example s-box">(s-col) So why bother specifying every time?</div>
+              <div class="grid-example">(s-col) So why bother specifying every time?</div>
             </div>
             <div class="s-col s-lg-6">
-              <div class="grid-example s-box">(s-col s-lg-6) Write only the classes needed for larger screens.</div>
+              <div class="grid-example">(s-col s-lg-6) Write only the classes needed for larger screens.</div>
             </div>
             <div class="s-col s-lg-6">
-              <div class="grid-example s-box">(s-col s-lg-6) Keep your HTML tidy.</div>
+              <div class="grid-example">(s-col s-lg-6) Keep your HTML tidy.</div>
             </div>
           </section>
-          <section class="s-row">
+          <section class="example-main">
             <div class="s-col s-lg-4">
-              <div class="grid-example s-box">(s-col s-lg-4) Responsive design</div>
+              <div class="grid-example">(s-col s-lg-4) Responsive design</div>
             </div>
             <div class="s-col s-lg-4">
-              <div class="grid-example s-box">(s-col s-lg-4) is</div>
+              <div class="grid-example">(s-col s-lg-4) is</div>
             </div>
             <div class="s-col s-lg-4">
-              <div class="grid-example s-box">(s-col s-lg-4) easy.</div>
+              <div class="grid-example">(s-col s-lg-4) easy.</div>
             </div>
           </section><br>
           <h3>Offsets</h3>
-          <section class="s-row">
+          <section class="example-main">
             <div class="s-col s-md-4 s-md-8-offset">
               <div class="s-box grid-example">.s-col.s-md-4.s-md-8-offset</div>
             </div>
           </section>
-          <section class="s-row">
+          <section class="example-main">
             <div class="s-col s-md-4">
               <div class="s-box grid-example">.s-col.s-md-4</div>
             </div>
@@ -242,7 +255,7 @@ sit amet</pre>
               <div class="s-box grid-example">.s-col.s-md-3.s-md-5-offset</div>
             </div>
           </section>
-          <section class="s-row">
+          <section class="example-main">
             <div class="s-col s-md-11 s-md-1-offset">
               <div class="s-box grid-example">.s-col.s-md-11.s-md-1-offset</div>
             </div>
@@ -381,7 +394,7 @@ sit amet</pre>
           <p>To enforce base typography on other elements, include <code>base-typography()</code>.</p>
           <pre>&lt;div class=&quot;announcement&quot;&gt;Hello world&lt;/div&gt;
  
-.announcement { @include base-typography; }</pre>
+.announcement { @include base-typography(); }</pre>
           <h3>Supplementary styling</h3>
           <p>Use <code>lead()</code> for leading paragraph text.</p>
           <p class="lead">Once upon a time,</p>

@@ -187,58 +187,85 @@ block content
         |  is the element to have enconcatenation applied
 
       h2#grid Grid
-      p Start uses a 12 column grid. To create a gridded row, start with an 
-        code .s-row
-        |  container.
+      p Start uses a 12 column grid. To create a gridded row, start with a container inheriting the 
+        code row()
+        |  styling.
 
-      pre &lt;section class=&quot;s-row&quot;&gt;&lt;/section&gt;
+      pre &lt;main&gt;&lt;/main&gt;
+        | 
+        | main { @include row(); }
 
       p Columns are defined with the 
-        code .s-col
-        |  class and with 
-        code .s-x
-        |  measuring classes where "x" is a number between 1-12.
+        code col()
+        |  mixin and 
+        code cols(x)
+        |  measuring styles where "x" is a number between 1-12.
       p Using 
-        code .s-col
+        code cols(x)
         |  without a measuring class will default to 
-        code .s-12
+        code cols(12)
 
-      section.s-row
-        .s-col.s-4
-          .grid-example.s-box s-col s-4
-        .s-col.s-8
-          .grid-example.s-box s-col s-8
+      main.example-main
+        .example-sidebar
+          .grid-example .sidebar
+        .example-content
+          .grid-example .content
       br
 
-      pre &lt;section class=&quot;s-row&quot;&gt;
-        |   &lt;div class=&quot;s-col s-4&quot;&gt;s-col s-4&lt;/div&gt;
-        |   &lt;div class=&quot;s-col s-8&quot;&gt;s-col s-8&lt;/div&gt;
-        | &lt;/section&gt;
+      pre &lt;main&gt;
+        |   &lt;div class=&quot;sidebar&quot;&gt;.sidebar&lt;/div&gt;
+        |   &lt;div class=&quot;content&quot;&gt;.content&lt;/div&gt;
+        | &lt;/main&gt;
+        | 
+        | main { @include row(); }
+        | .sidebar { 
+        |   @include col();
+        |   @include cols(4);
+        | }
+        | .content {
+        |   @include col();
+        |   @include cols(8);
+        | }
 
       h3 Other examples
 
-      section.s-row
-        .s-col
-          .grid-example.s-box s-col
+      section.example-main
+        .example-col
+          .grid-example
+            code col()
       br
 
-      section.s-row
-        .s-col.s-4
-          .grid-example.s-box s-col s-4
-        .s-col.s-4
-          .grid-example.s-box s-col s-4
-        .s-col.s-4
-          .grid-example.s-box s-col s-4
+      section.example-main
+        .example-4
+          .grid-example
+            code col() + cols(4) 
+        .example-4
+          .grid-example
+            code col() + cols(4) 
+        .example-4
+          .grid-example
+            code col() + cols(4) 
       br
 
-      section.s-row
-        .s-col.s-3
-          .grid-example.s-box s-col s-3
-        .s-col.s-6
-          .grid-example.s-box s-col s-6
-        .s-col.s-3
-          .grid-example.s-box s-col s-3
+      section.example-main
+        .example-3
+          .grid-example
+            code col() + cols(3)
+        .example-6
+          .grid-example
+            code col() + cols(6)
+        .example-3
+          .grid-example
+            code col() + cols(3)
       br
+
+      p 
+        code cols(x)
+        |  does not inherit anything from 
+        code col()
+        | . This allows you to use 
+        code cols(x)
+        |  purely as a sizing tool.
 
       h3 Responsive Grid
       p The grid is designed to operate 
@@ -254,42 +281,42 @@ block content
         code xl
         | .
 
-      section.s-row
+      section.example-main
         .s-col.s-md-4
-          .grid-example.s-box (s-col s-md-4) 4 columns in medium width
+          .grid-example (s-col s-md-4) 4 columns in medium width
         .s-col.s-md-8
-          .grid-example.s-box (s-col s-md-8) 8 columns in medium width
+          .grid-example (s-col s-md-8) 8 columns in medium width
       br
 
-      section.s-row
+      section.example-main
         .s-col
-          .grid-example.s-box (s-col) Mobile devices tend to use one-column layouts more often.
+          .grid-example (s-col) Mobile devices tend to use one-column layouts more often.
         .s-col
-          .grid-example.s-box (s-col) So why bother specifying every time?
+          .grid-example (s-col) So why bother specifying every time?
         .s-col.s-lg-6
-          .grid-example.s-box (s-col s-lg-6) Write only the classes needed for larger screens.
+          .grid-example (s-col s-lg-6) Write only the classes needed for larger screens.
         .s-col.s-lg-6
-          .grid-example.s-box (s-col s-lg-6) Keep your HTML tidy.
-      section.s-row
+          .grid-example (s-col s-lg-6) Keep your HTML tidy.
+      section.example-main
         .s-col.s-lg-4
-          .grid-example.s-box (s-col s-lg-4) Responsive design
+          .grid-example (s-col s-lg-4) Responsive design
         .s-col.s-lg-4
-          .grid-example.s-box (s-col s-lg-4) is
+          .grid-example (s-col s-lg-4) is
         .s-col.s-lg-4
-          .grid-example.s-box (s-col s-lg-4) easy.
+          .grid-example (s-col s-lg-4) easy.
       br
 
       h3 Offsets
 
-      section.s-row
+      section.example-main
         .s-col.s-md-4.s-md-8-offset
           .s-box.grid-example .s-col.s-md-4.s-md-8-offset
-      section.s-row
+      section.example-main
         .s-col.s-md-4
           .s-box.grid-example .s-col.s-md-4
         .s-col.s-md-3.s-md-5-offset
           .s-box.grid-example .s-col.s-md-3.s-md-5-offset
-      section.s-row
+      section.example-main
         .s-col.s-md-11.s-md-1-offset
           .s-box.grid-example .s-col.s-md-11.s-md-1-offset
 
@@ -459,7 +486,7 @@ block content
 
       pre &lt;div class=&quot;announcement&quot;&gt;Hello world&lt;/div&gt;
         | 
-        | .announcement { @include base-typography; }
+        | .announcement { @include base-typography(); }
 
       h3 Supplementary styling
       p Use 
