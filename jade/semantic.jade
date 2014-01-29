@@ -268,43 +268,73 @@ block content
         |  purely as a sizing tool.
 
       h3 Responsive Grid
-      p The grid is designed to operate 
-        em mobile-first
-        | , so there is no class to target devices with widths less than 320px.
-      p To specify a column size for a larger screen, use the additional size prefixes 
-        code sm
-        | , 
-        code md
-        | , 
-        code lg
-        | , and 
-        code xl
-        | .
+      p Columns will target all screen sizes by default. To target one screen size, add the min-width of that screen as a second parameter of 
+        code cols(x, y)
+        |, where y is the width in pixels (without the "px").
 
       section.example-main
-        .s-col.s-md-4
-          .grid-example (s-col s-md-4) 4 columns in medium width
-        .s-col.s-md-8
-          .grid-example (s-col s-md-8) 8 columns in medium width
+        .example-md-4
+          .grid-example
+            code col() + cols(4, 768)
+            | Full width on mobile, 1/3 on screens >768px.
+        .example-md-8
+          .grid-example
+            code col() + cols(8, 768)
+            | Full width on mobile, 2/3 on screens >768px.
+      pre &lt;main&gt;
+        |   &lt;div class=&quot;sidebar&quot;&gt;Full width on mobile, 1/3 on screens &gt;768px.&lt;/div&gt;
+        |   &lt;div class=&quot;content&quot;&gt;Full width on mobile, 2/3 on screens &gt;768px.&lt;/div&gt;
+        | &lt;/main&gt;
+        | 
+        | main { @include row(); }
+        | .sidebar { 
+        |   @include col();
+        |   @include cols(4, 768);
+        | }
+        | .content { 
+        |   @include col();
+        |   @include cols(8, 768);
+        | }
       br
 
+      h4 Use as many responsive style imports as you want.
+
       section.example-main
-        .s-col
-          .grid-example (s-col) Mobile devices tend to use one-column layouts more often.
-        .s-col
-          .grid-example (s-col) So why bother specifying every time?
-        .s-col.s-lg-6
-          .grid-example (s-col s-lg-6) Write only the classes needed for larger screens.
-        .s-col.s-lg-6
-          .grid-example (s-col s-lg-6) Keep your HTML tidy.
-      section.example-main
-        .s-col.s-lg-4
-          .grid-example (s-col s-lg-4) Responsive design
-        .s-col.s-lg-4
-          .grid-example (s-col s-lg-4) is
-        .s-col.s-lg-4
-          .grid-example (s-col s-lg-4) easy.
+        .example-md-4_2
+          .grid-example
+            code col() + cols(4, 768) + cols(6, 1024)
+            | Sidebar.
+        .example-md-8_2
+          .grid-example
+            code col() + cols(8, 768) + cols(6, 1024)
+            | Content. 
+      pre &lt;main&gt;
+        |   &lt;div class=&quot;sidebar&quot;&gt;Sidebar.&lt;/div&gt;
+        |   &lt;div class=&quot;content&quot;&gt;Content.&lt;/div&gt;
+        | &lt;/main&gt;
+        | 
+        | main { @include row(); }
+        | .sidebar { 
+        |   @include col();
+        |   @include cols(4, 768);
+        |   @include cols(6, 1024);
+        | }
+        | .content { 
+        |   @include col();
+        |   @include cols(8, 768);
+        |   @include cols(6, 1024);
+        | }
       br
+
+      h4 Use variables to consistently use screen sizes
+      pre $md: 768;  // Medium screens
+        | $lg: 1024; // Large screens
+        | 
+        | .content { 
+        |   @include col();
+        |   @include cols(8, $md);
+        |   @include cols(6, $lg);
+        | }
 
       h3 Offsets
 

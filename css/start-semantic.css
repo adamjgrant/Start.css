@@ -622,6 +622,72 @@ body {
   width: 25%;
 }
 
+.example-md-4 {
+  padding: 0 12.5px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .example-md-4 {
+    width: 33.33333%;
+  }
+}
+
+.example-md-8 {
+  padding: 0 12.5px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .example-md-8 {
+    width: 66.66667%;
+  }
+}
+
+.example-md-4_2 {
+  padding: 0 12.5px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .example-md-4_2 {
+    width: 33.33333%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .example-md-4_2 {
+    width: 50%;
+  }
+}
+
+.example-md-8_2 {
+  padding: 0 12.5px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .example-md-8_2 {
+    width: 66.66667%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .example-md-8_2 {
+    width: 50%;
+  }
+}
+
 button {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #d3d3d3;

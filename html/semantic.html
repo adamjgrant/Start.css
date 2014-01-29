@@ -206,41 +206,63 @@ main { @include row(); }
           </section><br>
           <p> <code>cols(x)</code> does not inherit anything from <code>col()</code>. This allows you to use <code>cols(x)</code> purely as a sizing tool.</p>
           <h3>Responsive Grid</h3>
-          <p>The grid is designed to operate <em>mobile-first</em>, so there is no class to target devices with widths less than 320px.</p>
-          <p>To specify a column size for a larger screen, use the additional size prefixes <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>.</p>
+          <p>Columns will target all screen sizes by default. To target one screen size, add the min-width of that screen as a second parameter of <code>cols(x, y)</code>, where y is the width in pixels (without the "px").</p>
           <section class="example-main">
-            <div class="s-col s-md-4">
-              <div class="grid-example">(s-col s-md-4) 4 columns in medium width</div>
+            <div class="example-md-4">
+              <div class="grid-example"><code>col() + cols(4, 768)</code>Full width on mobile, 1/3 on screens >768px.</div>
             </div>
-            <div class="s-col s-md-8">
-              <div class="grid-example">(s-col s-md-8) 8 columns in medium width</div>
-            </div>
-          </section><br>
-          <section class="example-main">
-            <div class="s-col">
-              <div class="grid-example">(s-col) Mobile devices tend to use one-column layouts more often.</div>
-            </div>
-            <div class="s-col">
-              <div class="grid-example">(s-col) So why bother specifying every time?</div>
-            </div>
-            <div class="s-col s-lg-6">
-              <div class="grid-example">(s-col s-lg-6) Write only the classes needed for larger screens.</div>
-            </div>
-            <div class="s-col s-lg-6">
-              <div class="grid-example">(s-col s-lg-6) Keep your HTML tidy.</div>
+            <div class="example-md-8">
+              <div class="grid-example"><code>col() + cols(8, 768)</code>Full width on mobile, 2/3 on screens >768px.</div>
             </div>
           </section>
+          <pre>&lt;main&gt;
+  &lt;div class=&quot;sidebar&quot;&gt;Full width on mobile, 1/3 on screens &gt;768px.&lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;Full width on mobile, 2/3 on screens &gt;768px.&lt;/div&gt;
+&lt;/main&gt;
+ 
+main { @include row(); }
+.sidebar { 
+  @include col();
+  @include cols(4, 768);
+}
+.content { 
+  @include col();
+  @include cols(8, 768);
+}</pre><br>
+          <h4>Use as many responsive style imports as you want.</h4>
           <section class="example-main">
-            <div class="s-col s-lg-4">
-              <div class="grid-example">(s-col s-lg-4) Responsive design</div>
+            <div class="example-md-4_2">
+              <div class="grid-example"><code>col() + cols(4, 768) + cols(6, 1024)</code>Sidebar.</div>
             </div>
-            <div class="s-col s-lg-4">
-              <div class="grid-example">(s-col s-lg-4) is</div>
+            <div class="example-md-8_2">
+              <div class="grid-example"><code>col() + cols(8, 768) + cols(6, 1024)</code>Content. </div>
             </div>
-            <div class="s-col s-lg-4">
-              <div class="grid-example">(s-col s-lg-4) easy.</div>
-            </div>
-          </section><br>
+          </section>
+          <pre>&lt;main&gt;
+  &lt;div class=&quot;sidebar&quot;&gt;Sidebar.&lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;Content.&lt;/div&gt;
+&lt;/main&gt;
+ 
+main { @include row(); }
+.sidebar { 
+  @include col();
+  @include cols(4, 768);
+  @include cols(6, 1024);
+}
+.content { 
+  @include col();
+  @include cols(8, 768);
+  @include cols(6, 1024);
+}</pre><br>
+          <h4>Use variables to consistently use screen sizes</h4>
+          <pre>$md: 768;  // Medium screens
+$lg: 1024; // Large screens
+ 
+.content { 
+  @include col();
+  @include cols(8, $md);
+  @include cols(6, $lg);
+}</pre>
           <h3>Offsets</h3>
           <section class="example-main">
             <div class="s-col s-md-4 s-md-8-offset">
