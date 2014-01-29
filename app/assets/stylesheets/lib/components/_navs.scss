@@ -8,6 +8,10 @@
 	@else {
 	  float: left;
 	}
+	> *:empty {
+	  padding: $buttonSpacingV $buttonSpacingH;
+	  display: block;
+	}
 	li { 
 	  list-style: none; 
 	  display: inline-block;

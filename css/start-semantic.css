@@ -816,6 +816,10 @@ nav ul {
   display: inline-block;
   float: left;
 }
+nav ul > *:empty {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
 nav ul li {
   list-style: none;
   display: inline-block;
@@ -831,6 +835,10 @@ nav ul.right {
   padding: 0;
   display: inline-block;
   float: right;
+}
+nav ul.right > *:empty {
+  padding: 8.33333px 16.66667px;
+  display: block;
 }
 nav ul.right li {
   list-style: none;
