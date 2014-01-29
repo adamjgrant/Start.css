@@ -808,6 +808,19 @@ nav {
   color: #333333;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+nav ul li > * {
+  padding: 8.33333px 16.66667px;
+}
+
 .lead {
   font-size: 26px;
   line-height: 32px;

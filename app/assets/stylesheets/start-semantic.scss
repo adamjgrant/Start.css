@@ -88,6 +88,7 @@ table { @include table(); }
 // BOX
 
 nav { @include box($lightGrey); }
+nav ul { @include nav(); }
 
 // TYPOGRAPHY
 
