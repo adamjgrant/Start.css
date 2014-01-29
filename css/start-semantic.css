@@ -761,8 +761,8 @@ button, .button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 button:hover, .button:hover {
-  -webkit-box-shadow: 0px 0px 0px 0px transparent inset;
-  box-shadow: 0px 0px 0px 0px transparent inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 button:active, .button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
@@ -806,11 +806,15 @@ nav {
   border-radius: 3px;
   background-color: #eeeeee;
   color: #333333;
+  padding: 5px;
+  overflow: hidden;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
+  display: inline-block;
+  float: left;
 }
 nav ul li {
   list-style: none;
@@ -819,6 +823,23 @@ nav ul li {
 }
 nav ul li > * {
   padding: 8.33333px 16.66667px;
+  display: block;
+}
+
+nav ul.right {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+nav ul.right li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+nav ul.right li > * {
+  padding: 8.33333px 16.66667px;
+  display: block;
 }
 
 .lead {

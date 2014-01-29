@@ -11,8 +11,8 @@
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.2) inset;
   box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.2) inset;
   &:hover {
-    -webkit-box-shadow: 0px 0px 0px 0px transparent inset;
-    box-shadow: 0px 0px 0px 0px transparent inset;
+    -webkit-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.1) inset;
+    box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.1) inset;
   }
   &:active {
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) inset;

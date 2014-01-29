@@ -27,11 +27,11 @@
           <h2 id="boxes">Boxes</h2>
           <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
           <h3>Navigation Boxes</h3>
-          <p>Boxes for horizontal navigation should be filled with unordered lists (``ul``)</p>
+          <p>Combine <code>box()</code> with <code>nav()</code> to create a navigation structure.</p>
           <nav>
             <ul>
               <li><a href="#">Item</a></li>
-              <li><a href="#" class="s-btn">Item</a></li>
+              <li><a href="#" class="button">Item</a></li>
             </ul>
           </nav>
           <pre>&lt;nav&gt;
@@ -40,16 +40,17 @@
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
           <pre>nav      { @include box(#EEEEEE); }
-nav > ul { @include nav(); }</pre>
+nav > ul { @include nav(); }
+.button  { @include btn(); }</pre>
           <h4>Right-aligned</h4>
-          <p>Use <code>.s-right</code> on the child ul to align right. <code>li.s-box-heading</code> will give you a formatted title.</p>
+          <p>Pass in <code>right</code> as a parameter of  <code>nav()</code> to push the nav to the right.</p>
           <nav class="s-box s-grey">
-            <ul>
+            <ul class="right">
               <li><a href="#">Item</a></li>
               <li><a href="#" class="s-btn">Item</a></li>
             </ul>
@@ -57,21 +58,19 @@ nav > ul { @include nav(); }</pre>
               <li><a href="#" class="s-btn">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav class=&quot;s-box s-grey&quot;&gt;
-  &lt;ul&gt;
+          <pre>&lt;nav&gt;
+  &lt;ul class=&quotright&quot;&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;ul class=&quot;s-right&quot;&gt;
-    &lt;li&gt;
-      &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
+          <pre>nav            { @include box(#EEEEEE); }
+nav > ul.right { @include nav(right); }
+.button        { @include btn(); }</pre>
           <h4>Vertical</h4>
           <p>Add <code>.s-box_vertical</code> to align contents vertically.</p>
           <nav class="s-box s-box_vertical s-grey">

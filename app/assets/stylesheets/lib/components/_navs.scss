@@ -1,12 +1,20 @@
-@mixin nav() {
+@mixin nav($position: '') {
 	margin: 0;
 	padding: 0;
+	display: inline-block;
+	@if $position == 'right' {
+	  float: right;
+	}
+	@else {
+	  float: left;
+	}
 	li { 
 	  list-style: none; 
 	  display: inline-block;
 	  margin: 0;
 	  > * {
-	    padding: $buttonSpacingV $buttonSpacingH
+	    padding: $buttonSpacingV $buttonSpacingH;
+	    display: block;
 	  }
 	}
 }

@@ -85,10 +85,11 @@ button, .button { @include btn(); }
 
 table { @include table(); }
 
-// BOX
+// BOX/NAV
 
-nav { @include box($lightGrey); }
-nav ul { @include nav(); }
+nav      { @include box($lightGrey); }
+nav ul   { @include nav(); }
+nav ul.right { @include nav(right); }
 
 // TYPOGRAPHY
 

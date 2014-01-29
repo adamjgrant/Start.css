@@ -26,14 +26,18 @@ block content
       p Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.
 
       h3 Navigation Boxes
-      p Boxes for horizontal navigation should be filled with unordered lists (``ul``)
+      p Combine 
+        code box()
+        |  with 
+        code nav()
+        |  to create a navigation structure.
 
       nav
         ul
           li
             a(href="#") Item
           li
-            a.s-btn(href="#") Item
+            a.button(href="#") Item
 
       pre &lt;nav&gt;
         |   &lt;ul&gt;
@@ -41,23 +45,24 @@ block content
         |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
-        |       &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
         | nav      { @include box(#EEEEEE); }
         | nav > ul { @include nav(); }
+        | .button  { @include btn(); }
 
       h4 Right-aligned
-      p Use 
-        code .s-right
-        |  on the child ul to align right. 
-        code li.s-box-heading
-        |  will give you a formatted title.
+      p Pass in 
+        code right
+        |  as a parameter of  
+        code nav()
+        |  to push the nav to the right.
 
       nav.s-box.s-grey
-        ul
+        ul.right
           li
             a(href="#") Item
           li
@@ -66,21 +71,20 @@ block content
           li
             a.s-btn(href="#") Item
 
-      pre &lt;nav class=&quot;s-box s-grey&quot;&gt;
-        |   &lt;ul&gt;
+      pre &lt;nav&gt;
+        |   &lt;ul class=&quotright&quot;&gt;
         |     &lt;li&gt;
         |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
-        |       &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
-        |     &lt;/li&gt;
-        |   &lt;/ul&gt;
-        |   &lt;ul class=&quot;s-right&quot;&gt;
-        |     &lt;li&gt;
-        |       &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
+      pre
+        | nav            { @include box(#EEEEEE); }
+        | nav > ul.right { @include nav(right); }
+        | .button        { @include btn(); }
 
       h4 Vertical
 

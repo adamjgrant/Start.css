@@ -1069,8 +1069,8 @@ code {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 .s-btn:hover {
-  -webkit-box-shadow: 0px 0px 0px 0px transparent inset;
-  box-shadow: 0px 0px 0px 0px transparent inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
 .s-btn:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
@@ -1114,18 +1114,24 @@ code {
   border-radius: 3px;
   background-color: transparent;
   color: #333333;
+  padding: 5px;
+  overflow: hidden;
 }
 .s-box.s-grey {
   margin-bottom: 25px;
   border-radius: 3px;
   background-color: #eeeeee;
   color: #333333;
+  padding: 5px;
+  overflow: hidden;
 }
 .s-box.s-black {
   margin-bottom: 25px;
   border-radius: 3px;
   background-color: #555555;
   color: #333333;
+  padding: 5px;
+  overflow: hidden;
 }
 
 .s-lead {

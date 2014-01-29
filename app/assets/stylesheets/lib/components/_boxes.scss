@@ -3,4 +3,6 @@
 	border-radius: $buttonBorderRadius;
 	background-color: $color;
 	color: $black;
+	padding: ($space/5);
+	overflow: hidden;
 }
