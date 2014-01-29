@@ -6,18 +6,16 @@
   </head>
   <body style="padding-top: 40px">
     <header>
-      <nav class="s-box s-fixed s-grey">
-        <div class="s-wrapper">
-          <ul>
-            <li><a href="#" class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
-            <li class="s-dropdown"><a href="#">Menu</a>
-              <ul>
-                <li><a href="index.html">Static</a></li>
-                <li><a href="semantic.html">Semantic</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
+          <li class="s-dropdown"><a href="#">Menu</a>
+            <ul>
+              <li><a href="index.html">Static</a></li>
+              <li><a href="semantic.html">Semantic</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -30,13 +28,13 @@
           <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
           <h3>Navigation Boxes</h3>
           <p>Boxes for horizontal navigation should be filled with unordered lists (``ul``)</p>
-          <nav class="s-box s-grey">
+          <nav>
             <ul>
               <li><a href="#">Item</a></li>
               <li><a href="#" class="s-btn">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav class=&quot;s-box s-grey&quot;&gt;
+          <pre>&lt;nav&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -46,6 +44,8 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
+          <pre>nav      { @include box(#EEEEEE); }
+nav > ul { @include nav(); }</pre>
           <h4>Right-aligned</h4>
           <p>Use <code>.s-right</code> on the child ul to align right. <code>li.s-box-heading</code> will give you a formatted title.</p>
           <nav class="s-box s-grey">
@@ -96,46 +96,15 @@
           <p>For older browser support, download an earlier version of Start.css.</p>
           <h2 id="buttons">Buttons</h2>
           <p>Buttons should be either links, submit inputs, or html buttons.</p>
-          <p><a href="#" class="s-btn">Button</a>
-            <button class="s-btn">Button</button>
-            <input type="submit" value="Button" class="s-btn">
+          <p><a href="#" class="button">Button</a>
+            <button class="button">Button</button>
+            <input type="submit" value="Button" class="button">
           </p>
-          <pre>&lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
-&lt;button class=&quot;s-btn&quot;&gt;Button&lt;/button&gt;
-&lt;input class=&quot;s-btn&quot; type=&quot;submit&quot; value="button"/&gt;</pre>
-          <h2 id="colors">Colors</h2>
-          <p>Specially-applied colors are defined as .s-x where x is red, orange, yellow, green, blue, violet.</p>
-          <button class="s-btn">Submit</button>
-          <button class="s-btn s-red">Submit</button>
-          <button class="s-btn s-orange">Submit</button>
-          <button class="s-btn s-yellow">Submit</button>
-          <button class="s-btn s-green">Submit</button>
-          <button class="s-btn s-blue">Submit</button>
-          <button class="s-btn s-violet">Submit</button>
-          <p>Submit</p>
-          <p class="s-red">Submit</p>
-          <p class="s-orange">Submit</p>
-          <p class="s-yellow">Submit</p>
-          <p class="s-green">Submit</p>
-          <p class="s-blue">Submit</p>
-          <p class="s-violet">Submit</p>
-          <pre>&lt;button class=&quot;s-btn&quot;&gt;Submit&lt;/button&gt;
-&lt;button class=&quot;s-btn s-red&quot;&gt;Submit&lt;/button&gt;
-&lt;button class=&quot;s-btn s-orange&quot;&gt;Submit&lt;/button&gt;
-&lt;button class=&quot;s-btn s-yellow&quot;&gt;Submit&lt;/button&gt;
-&lt;button class=&quot;s-btn s-green&quot;&gt;Submit&lt;/button&gt;
-&lt;button class=&quot;s-btn s-blue&quot;&gt;Submit&lt;/button&gt;
-&lt;button class=&quot;s-btn s-violet&quot;&gt;Submit&lt;/button&gt;
+          <pre>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+&lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;button&quot; type=&quot;submit&quot; value="Button"/&gt;
  
-&lt;p&gt;Submit&lt;/p&gt;
-&lt;p class=&quot;s-red&quot;&gt;Submit&lt;/p&gt;
-&lt;p class=&quot;s-orange&quot;&gt;Submit&lt;/p&gt;
-&lt;p class=&quot;s-yellow&quot;&gt;Submit&lt;/p&gt;
-&lt;p class=&quot;s-green&quot;&gt;Submit&lt;/p&gt;
-&lt;p class=&quot;s-blue&quot;&gt;Submit&lt;/p&gt;
-&lt;p class=&quot;s-violet&quot;&gt;Submit&lt;/p&gt;</pre>
-          <p>By itself, this class will do nothing, but other elements will recognize these and apply their own respective theming.  </p>
-          <p>For example, .s-green on a button will make a green background with white text, but .s-green on a p or span will make the color green, but not the background.</p>
+.button { @include btn(); }</pre>
           <h2 id="endconcat">End Concatenation</h2>
           <p>This is a small trick to prevent the last line of a paragraph from containing only one word.</p>
           <p>So instead of:</p>
@@ -339,7 +308,7 @@ section {
           </p>
           <p>Because it's never necessary to manually create the growl markup, growls are automatically created with the class <code>.s-growl</code>.</p>
           <h3>Parameters</h3>
-          <table class="s-table">
+          <table>
             <thead>
               <tr>
                 <th>Parameter</th>

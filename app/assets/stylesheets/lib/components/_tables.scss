@@ -1,0 +1,31 @@
+@mixin table() {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid $lightGrey;
+  width: 100%;
+  thead {
+    background: $lightGrey;
+    color: $black;
+    text-align: left;
+    vertical-align: bottom;
+    th {
+      font-weight: bold;
+    }
+  }
+  th, td {
+    background-color: transparent;
+    border-left: 1px solid $lightGrey;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: ($space/5) ($space/2);
+    &:first-child {
+      border-left-width: 0;
+    }
+  }
+  tbody tr:nth-child(2n) {
+    background-color: lighten($lightGrey, 50%);
+  }
+}

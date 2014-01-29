@@ -1,20 +1,19 @@
 extends layout-semantic
 
 block header
-  nav.s-box.s-fixed.s-grey
-    .s-wrapper
-      ul
-        li
-          a.s-box-heading(href="#") 
-            span.fa.fa-book
-            |  Start.css
-        li.s-dropdown
-          a(href="#") Menu
-          ul
-            li
-              a(href="index.html") Static
-            li
-              a(href="semantic.html") Semantic
+  nav
+    ul
+      li
+        a.s-box-heading(href="#") 
+          span.fa.fa-book
+          |  Start.css
+      li.s-dropdown
+        a(href="#") Menu
+        ul
+          li
+            a(href="index.html") Static
+          li
+            a(href="semantic.html") Semantic
 block content
   .page
     .main
@@ -29,14 +28,14 @@ block content
       h3 Navigation Boxes
       p Boxes for horizontal navigation should be filled with unordered lists (``ul``)
 
-      nav.s-box.s-grey
+      nav
         ul
           li
             a(href="#") Item
           li
             a.s-btn(href="#") Item
 
-      pre &lt;nav class=&quot;s-box s-grey&quot;&gt;
+      pre &lt;nav&gt;
         |   &lt;ul&gt;
         |     &lt;li&gt;
         |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -46,6 +45,9 @@ block content
         |     &lt;/li&gt;
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
+      pre
+        | nav      { @include box(#EEEEEE); }
+        | nav > ul { @include nav(); }
 
       h4 Right-aligned
       p Use 
@@ -115,52 +117,15 @@ block content
       p Buttons should be either links, submit inputs, or html buttons.
 
       p
-        a.s-btn(href="#") Button
-        button.s-btn Button
-        input(type="submit" value="Button" class="s-btn")
+        a.button(href="#") Button
+        button.button Button
+        input(type="submit" value="Button" class="button")
 
-      pre &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
-        | &lt;button class=&quot;s-btn&quot;&gt;Button&lt;/button&gt;
-        | &lt;input class=&quot;s-btn&quot; type=&quot;submit&quot; value="button"/&gt;
-
-      h2#colors Colors
-
-      p Specially-applied colors are defined as .s-x where x is red, orange, yellow, green, blue, violet.
-
-      button.s-btn Submit
-      button.s-btn.s-red Submit
-      button.s-btn.s-orange Submit
-      button.s-btn.s-yellow Submit
-      button.s-btn.s-green Submit
-      button.s-btn.s-blue Submit
-      button.s-btn.s-violet Submit
-
-      p Submit
-      p.s-red Submit
-      p.s-orange Submit
-      p.s-yellow Submit
-      p.s-green Submit
-      p.s-blue Submit
-      p.s-violet Submit
-
-      pre &lt;button class=&quot;s-btn&quot;&gt;Submit&lt;/button&gt;
-        | &lt;button class=&quot;s-btn s-red&quot;&gt;Submit&lt;/button&gt;
-        | &lt;button class=&quot;s-btn s-orange&quot;&gt;Submit&lt;/button&gt;
-        | &lt;button class=&quot;s-btn s-yellow&quot;&gt;Submit&lt;/button&gt;
-        | &lt;button class=&quot;s-btn s-green&quot;&gt;Submit&lt;/button&gt;
-        | &lt;button class=&quot;s-btn s-blue&quot;&gt;Submit&lt;/button&gt;
-        | &lt;button class=&quot;s-btn s-violet&quot;&gt;Submit&lt;/button&gt;
+      pre &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+        | &lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+        | &lt;input class=&quot;button&quot; type=&quot;submit&quot; value="Button"/&gt;
         | 
-        | &lt;p&gt;Submit&lt;/p&gt;
-        | &lt;p class=&quot;s-red&quot;&gt;Submit&lt;/p&gt;
-        | &lt;p class=&quot;s-orange&quot;&gt;Submit&lt;/p&gt;
-        | &lt;p class=&quot;s-yellow&quot;&gt;Submit&lt;/p&gt;
-        | &lt;p class=&quot;s-green&quot;&gt;Submit&lt;/p&gt;
-        | &lt;p class=&quot;s-blue&quot;&gt;Submit&lt;/p&gt;
-        | &lt;p class=&quot;s-violet&quot;&gt;Submit&lt;/p&gt;
-
-      p By itself, this class will do nothing, but other elements will recognize these and apply their own respective theming.  
-      p For example, .s-green on a button will make a green background with white text, but .s-green on a p or span will make the color green, but not the background.
+        | .button { @include btn(); }
 
       h2#endconcat End Concatenation
 
@@ -414,7 +379,7 @@ block content
         | .
 
       h3 Parameters
-      table.s-table
+      table
         thead
           tr
             th Parameter

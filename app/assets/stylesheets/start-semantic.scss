@@ -79,7 +79,15 @@ body { @include wrapper(); }
 
 // BUTTONS
 
-button { @include btn(); }
+button, .button { @include btn(); }
+
+// TABLES
+
+table { @include table(); }
+
+// BOX
+
+nav { @include box($lightGrey); }
 
 // TYPOGRAPHY
 

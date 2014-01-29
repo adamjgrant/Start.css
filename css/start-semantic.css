@@ -747,7 +747,7 @@ body {
   }
 }
 
-button {
+button, .button {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #d3d3d3;
   color: inherit;
@@ -760,13 +760,52 @@ button {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-button:hover {
+button:hover, .button:hover {
   -webkit-box-shadow: 0px 0px 0px 0px transparent inset;
   box-shadow: 0px 0px 0px 0px transparent inset;
 }
-button:active {
+button:active, .button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #eeeeee;
+  width: 100%;
+}
+table thead {
+  background: #eeeeee;
+  color: #333333;
+  text-align: left;
+  vertical-align: bottom;
+}
+table thead th {
+  font-weight: bold;
+}
+table th, table td {
+  background-color: transparent;
+  border-left: 1px solid #eeeeee;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 5px 12.5px;
+}
+table th:first-child, table td:first-child {
+  border-left-width: 0;
+}
+table tbody tr:nth-child(2n) {
+  background-color: white;
+}
+
+nav {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  color: #333333;
 }
 
 .lead {

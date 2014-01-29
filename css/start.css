@@ -1077,6 +1077,57 @@ code {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
+.s-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #eeeeee;
+  width: 100%;
+}
+.s-table thead {
+  background: #eeeeee;
+  color: #333333;
+  text-align: left;
+  vertical-align: bottom;
+}
+.s-table thead th {
+  font-weight: bold;
+}
+.s-table th, .s-table td {
+  background-color: transparent;
+  border-left: 1px solid #eeeeee;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 5px 12.5px;
+}
+.s-table th:first-child, .s-table td:first-child {
+  border-left-width: 0;
+}
+.s-table tbody tr:nth-child(2n) {
+  background-color: white;
+}
+
+.s-box {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #333333;
+}
+.s-box.s-grey {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  color: #333333;
+}
+.s-box.s-black {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  background-color: #555555;
+  color: #333333;
+}
+
 .s-lead {
   font-size: 26px;
   line-height: 32px;

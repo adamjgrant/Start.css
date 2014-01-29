@@ -39,6 +39,18 @@
 
 .s-btn { @include btn(); }
 
+// TABLES
+
+.s-table { @include table(); }
+
+// BOX
+
+.s-box { 
+  @include box(); 
+  &.s-grey  { @include box($lightGrey); }
+  &.s-black { @include box($darkGrey); }
+}
+
 // TYPOGRAPHY
 
 .s-lead { @include lead(); }

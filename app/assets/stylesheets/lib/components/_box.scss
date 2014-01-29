@@ -1,0 +1,6 @@
+@mixin box($color: transparent) {
+	margin-bottom: $space;
+	border-radius: $buttonBorderRadius;
+	background-color: $color;
+	color: $black;
+}
