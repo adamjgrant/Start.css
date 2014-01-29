@@ -486,6 +486,21 @@ code {
   padding: 0 5.55556px;
 }
 
+.s-growls-growl {
+  width: 250px;
+  padding: 8.33333px 16.66667px;
+  background-color: #58aa00;
+  border-radius: 3px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.s-growls-growl * {
+  color: white;
+}
+.s-growls-growl p:last-child {
+  margin-bottom: 8.33333px;
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
@@ -545,6 +560,7 @@ button {
   cursor: pointer;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  text-decoration: none;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }

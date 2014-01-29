@@ -17,12 +17,8 @@ body { @include wrapper(); }
 
 // BUTTONS
 
-button {
-	@include btn();
-}
+button { @include btn(); }
 
 // TYPOGRAPHY
 
-.lead {
-	@include lead();
-}
+.lead { @include lead(); }
