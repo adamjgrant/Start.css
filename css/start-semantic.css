@@ -779,12 +779,12 @@ body {
   -moz-box-sizing: border-box;
   width: 100%;
 }
-@media screen and (min-width: 1024pxpx) {
+@media screen and (min-width: 1024px) {
   .sidebar {
     width: 33.33333%;
   }
 }
-@media screen and (min-width: 1200pxpx) {
+@media screen and (min-width: 1200px) {
   .sidebar {
     width: 25%;
   }
@@ -798,12 +798,12 @@ body {
   -moz-box-sizing: border-box;
   width: 100%;
 }
-@media screen and (min-width: 1024pxpx) {
+@media screen and (min-width: 1024px) {
   .main {
     width: 66.66667%;
   }
 }
-@media screen and (min-width: 1200pxpx) {
+@media screen and (min-width: 1200px) {
   .main {
     width: 75%;
   }

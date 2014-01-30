@@ -8,8 +8,8 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#" class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
-          <li class="s-dropdown"><a href="#">Menu</a>
+          <li><a class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
+          <li class="s-dropdown"><a>Menu</a>
             <ul>
               <li><a href="index.html">Static</a></li>
               <li><a href="semantic.html">Semantic</a></li>
@@ -30,8 +30,8 @@
           <p>Combine <code>box()</code> with <code>nav()</code> to create a navigation structure.</p>
           <nav>
             <ul>
-              <li><a href="#">Item</a></li>
-              <li><a href="#" class="button">Item</a></li>
+              <li><a>Item</a></li>
+              <li><a class="button">Item</a></li>
             </ul>
           </nav>
           <pre>&lt;nav&gt;
@@ -51,8 +51,8 @@ nav > ul { @include nav(); }
           <p>Pass in <code>right</code> as a parameter of  <code>nav()</code> to push the nav to the right.</p>
           <nav>
             <ul class="right">
-              <li><a href="#">Item</a></li>
-              <li><a href="#" class="button">Item</a></li>
+              <li><a>Item</a></li>
+              <li><a class="button">Item</a></li>
             </ul>
           </nav>
           <pre>&lt;nav&gt;
@@ -72,8 +72,8 @@ nav > ul.right { @include nav(right); }
           <p>Use <code>nav(vertical)</code> to align contents vertically.</p>
           <nav>
             <ul class="vertical">
-              <li><a href="#">Item</a></li>
-              <li><a href="#">Item</a></li>
+              <li><a>Item</a></li>
+              <li><a>Item</a></li>
             </ul>
           </nav>
           <pre>&lt;nav&gt;
@@ -94,7 +94,7 @@ nav > ul.vertical { @include nav(vertical); }</pre>
           <p>For older browser support, download an earlier version of Start.css.</p>
           <h2 id="buttons">Buttons</h2>
           <p>Buttons should be either links, submit inputs, or html buttons.</p>
-          <p><a href="#" class="button">Button</a>
+          <p><a class="button">Button</a>
             <button class="button">Button</button>
             <input type="submit" value="Button" class="button">
           </p>
@@ -104,7 +104,7 @@ nav > ul.vertical { @include nav(vertical); }</pre>
  
 .button { @include btn(); }</pre>
           <h3>Colors</h3>
-          <p>Pass in a variable or custom color into <code>btn()</code></p><a href="#" class="button">Default</a><a href="#" class="btn-red">Red </a><a href="#" class="btn-orange">Orange</a><a href="#" class="btn-yellow">Yellow</a><a href="#" class="btn-green">Green</a><a href="#" class="btn-blue">Blue</a><a href="#" class="btn-violet">Violet</a><a href="#" class="btn-clear">Clear</a><a href="#" class="btn-dark">Dark</a>
+          <p>Pass in a variable or custom color into <code>btn()</code></p><a class="button">Default</a><a class="btn-red">Red </a><a class="btn-orange">Orange</a><a class="btn-yellow">Yellow</a><a class="btn-green">Green</a><a class="btn-blue">Blue</a><a class="btn-violet">Violet</a><a class="btn-clear">Clear</a><a class="btn-dark">Dark</a>
           <pre>&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn-red&quot;&gt;Red&lt;/a&gt;
 &hellip;
@@ -515,7 +515,7 @@ section {
           <h3>Heading3</h3>
           <h4>Heading4</h4>
           <h5>Heading5</h5>
-          <p> <strong>Strong </strong>and <em>emphatic </em>paragraph with <a href="#">Link</a>.</p>
+          <p> <strong>Strong </strong>and <em>emphatic </em>paragraph with <a>Link</a>.</p>
           <p>To enforce base typography on other elements, include <code>base-typography()</code>.</p>
           <pre>&lt;div class=&quot;announcement&quot;&gt;Hello world&lt;/div&gt;
  
