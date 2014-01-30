@@ -503,6 +503,10 @@ li {
   margin-bottom: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
@@ -563,21 +567,195 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-left: 5px;
 }
 
-.s-growls-growl {
-  width: 250px;
-  padding: 8.33333px 16.66667px;
-  background-color: #58aa00;
-  border-radius: 3px;
+.s-tile {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #555555;
 }
-.s-growls-growl * {
-  color: white;
+.s-tile > h1, .s-tile > h2, .s-tile > h3, .s-tile > h4, .s-tile > h5 {
+  color: #555555;
 }
-.s-growls-growl p:last-child {
-  margin-bottom: 8.33333px;
+.s-tile .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-red {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #ca3518;
+}
+.s-tile.s-red > h1, .s-tile.s-red > h2, .s-tile.s-red > h3, .s-tile.s-red > h4, .s-tile.s-red > h5 {
+  color: #ca3518;
+}
+.s-tile.s-red .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-orange {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkorange;
+}
+.s-tile.s-orange > h1, .s-tile.s-orange > h2, .s-tile.s-orange > h3, .s-tile.s-orange > h4, .s-tile.s-orange > h5 {
+  color: darkorange;
+}
+.s-tile.s-orange .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-yellow {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid gold;
+}
+.s-tile.s-yellow > h1, .s-tile.s-yellow > h2, .s-tile.s-yellow > h3, .s-tile.s-yellow > h4, .s-tile.s-yellow > h5 {
+  color: gold;
+}
+.s-tile.s-yellow .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-green {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #58aa00;
+}
+.s-tile.s-green > h1, .s-tile.s-green > h2, .s-tile.s-green > h3, .s-tile.s-green > h4, .s-tile.s-green > h5 {
+  color: #58aa00;
+}
+.s-tile.s-green .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-blue {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid cornflowerblue;
+}
+.s-tile.s-blue > h1, .s-tile.s-blue > h2, .s-tile.s-blue > h3, .s-tile.s-blue > h4, .s-tile.s-blue > h5 {
+  color: cornflowerblue;
+}
+.s-tile.s-blue .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-violet {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkmagenta;
+}
+.s-tile.s-violet > h1, .s-tile.s-violet > h2, .s-tile.s-violet > h3, .s-tile.s-violet > h4, .s-tile.s-violet > h5 {
+  color: darkmagenta;
+}
+.s-tile.s-violet .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-clear {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  box-shadow: 0px 0px 0px transparent;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid transparent;
+}
+.s-tile.s-clear > h1, .s-tile.s-clear > h2, .s-tile.s-clear > h3, .s-tile.s-clear > h4, .s-tile.s-clear > h5 {
+  color: transparent;
+  color: #333333;
+}
+.s-tile.s-clear .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-dark {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #555555;
+}
+.s-tile.s-dark > h1, .s-tile.s-dark > h2, .s-tile.s-dark > h3, .s-tile.s-dark > h4, .s-tile.s-dark > h5 {
+  color: #555555;
+}
+.s-tile.s-dark .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+#s-growls .s-tile {
+  margin: 0 5px;
+  margin-bottom: 25px;
 }
 
+#s-growls {
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  right: 0px;
+  overflow: auto;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  #s-growls {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #s-growls {
+    width: 350px;
+  }
+}
 .s-wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -591,7 +769,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
-  max-width: 320px;
+  max-width: 768pxpx;
 }
 
 .s-wrapper-md {
@@ -599,7 +777,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
-  max-width: 768px;
+  max-width: 1024pxpx;
 }
 
 .s-wrapper-lg {
@@ -607,7 +785,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
-  max-width: 1024px;
+  max-width: 1200pxpx;
 }
 
 .s-wrapper-xl {
@@ -615,7 +793,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
-  max-width: 1200px;
+  max-width: 1700pxpx;
 }
 
 .s-row {
@@ -687,7 +865,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   width: 100%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
   .s-sm-1 {
     width: 8.33333%;
   }
@@ -736,7 +914,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .s-md-1 {
     width: 8.33333%;
   }
@@ -785,7 +963,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
     width: 100%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .s-lg-1 {
     width: 8.33333%;
   }
@@ -834,7 +1012,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1700px) {
   .s-xl-1 {
     width: 8.33333%;
   }
@@ -1564,97 +1742,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 }
 .s-nav.s-vertical li a:active {
   color: #555555;
-}
-
-.s-tile {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid #555555;
-}
-.s-tile > h1, .s-tile > h2, .s-tile > h3, .s-tile > h4, .s-tile > h5 {
-  color: #555555;
-}
-.s-tile.s-red {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid #ca3518;
-}
-.s-tile.s-red > h1, .s-tile.s-red > h2, .s-tile.s-red > h3, .s-tile.s-red > h4, .s-tile.s-red > h5 {
-  color: #ca3518;
-}
-.s-tile.s-orange {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid darkorange;
-}
-.s-tile.s-orange > h1, .s-tile.s-orange > h2, .s-tile.s-orange > h3, .s-tile.s-orange > h4, .s-tile.s-orange > h5 {
-  color: darkorange;
-}
-.s-tile.s-yellow {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid gold;
-}
-.s-tile.s-yellow > h1, .s-tile.s-yellow > h2, .s-tile.s-yellow > h3, .s-tile.s-yellow > h4, .s-tile.s-yellow > h5 {
-  color: gold;
-}
-.s-tile.s-green {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid #58aa00;
-}
-.s-tile.s-green > h1, .s-tile.s-green > h2, .s-tile.s-green > h3, .s-tile.s-green > h4, .s-tile.s-green > h5 {
-  color: #58aa00;
-}
-.s-tile.s-blue {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid cornflowerblue;
-}
-.s-tile.s-blue > h1, .s-tile.s-blue > h2, .s-tile.s-blue > h3, .s-tile.s-blue > h4, .s-tile.s-blue > h5 {
-  color: cornflowerblue;
-}
-.s-tile.s-violet {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid darkmagenta;
-}
-.s-tile.s-violet > h1, .s-tile.s-violet > h2, .s-tile.s-violet > h3, .s-tile.s-violet > h4, .s-tile.s-violet > h5 {
-  color: darkmagenta;
-}
-.s-tile.s-clear {
-  box-shadow: 0px 0px 3px #aaaaaa;
-  box-shadow: 0px 0px 0px transparent;
-  padding: 12.5px;
-  padding-bottom: 0;
-  overflow: hidden;
-  margin-bottom: 25px;
-  border-top: 3px solid transparent;
-}
-.s-tile.s-clear > h1, .s-tile.s-clear > h2, .s-tile.s-clear > h3, .s-tile.s-clear > h4, .s-tile.s-clear > h5 {
-  color: transparent;
-  color: #333333;
 }
 
 .s-lead {

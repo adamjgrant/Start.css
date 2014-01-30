@@ -13,13 +13,13 @@
 .s-wrapper
   @include wrapper()
 .s-wrapper-sm
-  @include wrapper(320)
+  @include wrapper($screen-sm)
 .s-wrapper-md
-  @include wrapper(768)
+  @include wrapper($screen-md)
 .s-wrapper-lg
-  @include wrapper(1024)
+  @include wrapper($screen-lg)
 .s-wrapper-xl
-  @include wrapper(1200)
+  @include wrapper($screen-xl)
 
 .s-row
   @include row()
@@ -32,13 +32,13 @@
       @include cols($i)
 
 @include generate-grid()
-@media screen and (min-width: 320px)
+@media screen and (min-width: $screen-sm)
   @include generate-grid('-sm')
-@media screen and (min-width: 768px)
+@media screen and (min-width: $screen-md)
   @include generate-grid('-md')
-@media screen and (min-width: 1024px)
+@media screen and (min-width: $screen-lg)
   @include generate-grid('-lg')
-@media screen and (min-width: 1200px)
+@media screen and (min-width: $screen-xl)
   @include generate-grid('-xl')
 
 @mixin generate-bumps($prefix: '')
@@ -105,22 +105,7 @@
 
 // TILES
 
-.s-tile
-  @include tile()
-  &.s-red
-    @include tile($red)
-  &.s-orange
-    @include tile($orange)
-  &.s-yellow
-    @include tile($yellow)
-  &.s-green
-    @include tile($green)
-  &.s-blue
-    @include tile($blue)
-  &.s-violet
-    @include tile($violet)
-  &.s-clear
-    @include tile(transparent)
+// Set by default for growl usage.
 
 // TYPOGRAPHY
 

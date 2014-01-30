@@ -295,7 +295,8 @@ block content
           |    text: 'Your document has been saved'  
           |  })
         p
-          button.s-btn.s-blue(onclick="$.sGrowl({icon: 'save',title: 'Saved',text: 'Your document has been saved'})") Try it
+          button.s-btn.s-blue(onclick="$.sGrowl({icon: 'save',title: 'Saved',text: 'Your document has been saved', delay: 1000})") Try it
+          button.s-btn.s-clear(onclick="$.sGrowl({icon: 'save',title: 'Error',text: 'Not really an error message, just demonstrating a growl.', color: 'red'})") No delay
 
         h3 Parameters
         table.s-table
@@ -464,14 +465,17 @@ block content
             .s-tile
               h5 Learn More
               p Learn about the great features we have to offer.
+              a.s-btn Read more
           .s-col.s-4
             .s-tile.s-red
               h5 Learn More
               p Learn about the great features we have to offer.
+              a.s-red.s-btn Read more
           .s-col.s-4
             .s-tile.s-orange
               h5 Learn More
               p Learn about the great features we have to offer.
+              a.s-orange.s-btn Read more
           .s-col.s-4
             .s-tile.s-yellow
               h5 Learn More

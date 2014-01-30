@@ -23,7 +23,7 @@ $('.s-endconcat').s_endconcat()
 
 growls = "[class^=\"s-growls-growl\"]"
 (($) ->
-  $("body").append "<div id=\"s-growls\" style=\"z-index:2000;position:fixed;width:250px;top:20px;right:20px;overflow:auto;pointer-events:none;\"></div>"
+  $("body").append "<div id=\"s-growls\"></div>"
   $.extend sGrowl: (options) ->
     defaults =
       delay: 0
@@ -37,7 +37,7 @@ growls = "[class^=\"s-growls-growl\"]"
     
     # FORMATTING
     _.fIcon = ((if _.icon then "<span class='fa fa-" + _.icon + "'></span> " else ""))
-    _.fTitle = ((if _.title then "<strong>" + _.fIcon + _.title + "</strong>" else ""))
+    _.fTitle = ((if _.title then "<h5>" + _.fIcon + _.title + "</h5>" else ""))
     _.fText = ((if _.text then "<p>" + _.text + "</p>" else ""))
     
     # UNIQUE IDENTIFICATION
@@ -45,22 +45,22 @@ growls = "[class^=\"s-growls-growl\"]"
     
     # CREATE FULL DOM OBJECT
     @html = document.createElement("div")
-    @html.className = "s-growls-growl s-growls-growl" + @id + " s-" + _.color + " " + _.class
-    xHtml = "<a style=\"pointer-events: auto;\" class=\"s-close\" href=\"#\">&times;</a>"
+    @html.className = "s-tile s-tile-" + @id + " s-" + _.color + " " + _.class
+    xHtml = "<a style=\"pointer-events: auto;\" class=\"s-close\">&times;</a>"
     $(@html).html xHtml + _.fTitle + " " + _.fText
     
     # APPEND ALERT TO CONTAINER
     $(_.container).prepend @html
 
     # CLOSE GROWL
-    $('.s-growls-growl .s-close').click -> 
-      $(@).closest('.s-growls-growl').fadeOut('fast')
+    $('.s-tile .s-close').click -> 
+      $(@).closest('.s-tile').fadeOut('fast')
     
     # SET DELAYS
     if _.delay > 0
       fn = ((delay, id) ->
         setTimeout (->
-          $(".s-growls-growl#" + id).fadeOut()
+          $(".s-tile-" + id).fadeOut()
         ), delay
       )(_.delay, @id)
 

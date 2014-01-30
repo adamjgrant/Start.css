@@ -498,6 +498,10 @@ li {
   margin-bottom: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
@@ -558,21 +562,195 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-left: 5px;
 }
 
-.s-growls-growl {
-  width: 250px;
-  padding: 8.33333px 16.66667px;
-  background-color: #58aa00;
-  border-radius: 3px;
+.s-tile {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #555555;
 }
-.s-growls-growl * {
-  color: white;
+.s-tile > h1, .s-tile > h2, .s-tile > h3, .s-tile > h4, .s-tile > h5 {
+  color: #555555;
 }
-.s-growls-growl p:last-child {
-  margin-bottom: 8.33333px;
+.s-tile .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-red {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #ca3518;
+}
+.s-tile.s-red > h1, .s-tile.s-red > h2, .s-tile.s-red > h3, .s-tile.s-red > h4, .s-tile.s-red > h5 {
+  color: #ca3518;
+}
+.s-tile.s-red .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-orange {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkorange;
+}
+.s-tile.s-orange > h1, .s-tile.s-orange > h2, .s-tile.s-orange > h3, .s-tile.s-orange > h4, .s-tile.s-orange > h5 {
+  color: darkorange;
+}
+.s-tile.s-orange .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-yellow {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid gold;
+}
+.s-tile.s-yellow > h1, .s-tile.s-yellow > h2, .s-tile.s-yellow > h3, .s-tile.s-yellow > h4, .s-tile.s-yellow > h5 {
+  color: gold;
+}
+.s-tile.s-yellow .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-green {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #58aa00;
+}
+.s-tile.s-green > h1, .s-tile.s-green > h2, .s-tile.s-green > h3, .s-tile.s-green > h4, .s-tile.s-green > h5 {
+  color: #58aa00;
+}
+.s-tile.s-green .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-blue {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid cornflowerblue;
+}
+.s-tile.s-blue > h1, .s-tile.s-blue > h2, .s-tile.s-blue > h3, .s-tile.s-blue > h4, .s-tile.s-blue > h5 {
+  color: cornflowerblue;
+}
+.s-tile.s-blue .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-violet {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkmagenta;
+}
+.s-tile.s-violet > h1, .s-tile.s-violet > h2, .s-tile.s-violet > h3, .s-tile.s-violet > h4, .s-tile.s-violet > h5 {
+  color: darkmagenta;
+}
+.s-tile.s-violet .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-clear {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  box-shadow: 0px 0px 0px transparent;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid transparent;
+}
+.s-tile.s-clear > h1, .s-tile.s-clear > h2, .s-tile.s-clear > h3, .s-tile.s-clear > h4, .s-tile.s-clear > h5 {
+  color: transparent;
+  color: #333333;
+}
+.s-tile.s-clear .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+.s-tile.s-dark {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #555555;
+}
+.s-tile.s-dark > h1, .s-tile.s-dark > h2, .s-tile.s-dark > h3, .s-tile.s-dark > h4, .s-tile.s-dark > h5 {
+  color: #555555;
+}
+.s-tile.s-dark .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
+#s-growls .s-tile {
+  margin: 0 5px;
+  margin-bottom: 25px;
 }
 
+#s-growls {
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  right: 0px;
+  overflow: auto;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  #s-growls {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #s-growls {
+    width: 350px;
+  }
+}
 body {
   margin-left: auto;
   margin-right: auto;
@@ -601,12 +779,12 @@ body {
   -moz-box-sizing: border-box;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024pxpx) {
   .sidebar {
     width: 33.33333%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200pxpx) {
   .sidebar {
     width: 25%;
   }
@@ -620,12 +798,12 @@ body {
   -moz-box-sizing: border-box;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024pxpx) {
   .main {
     width: 66.66667%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200pxpx) {
   .main {
     width: 75%;
   }
@@ -1221,6 +1399,7 @@ nav ul.vertical li a:active {
 
 .tile {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1230,9 +1409,16 @@ nav ul.vertical li a:active {
 .tile > h1, .tile > h2, .tile > h3, .tile > h4, .tile > h5 {
   color: #555555;
 }
+.tile .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-red {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1242,9 +1428,16 @@ nav ul.vertical li a:active {
 .tile-red > h1, .tile-red > h2, .tile-red > h3, .tile-red > h4, .tile-red > h5 {
   color: #ca3518;
 }
+.tile-red .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-orange {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1254,9 +1447,16 @@ nav ul.vertical li a:active {
 .tile-orange > h1, .tile-orange > h2, .tile-orange > h3, .tile-orange > h4, .tile-orange > h5 {
   color: darkorange;
 }
+.tile-orange .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-yellow {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1266,9 +1466,16 @@ nav ul.vertical li a:active {
 .tile-yellow > h1, .tile-yellow > h2, .tile-yellow > h3, .tile-yellow > h4, .tile-yellow > h5 {
   color: gold;
 }
+.tile-yellow .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-green {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1278,9 +1485,16 @@ nav ul.vertical li a:active {
 .tile-green > h1, .tile-green > h2, .tile-green > h3, .tile-green > h4, .tile-green > h5 {
   color: #58aa00;
 }
+.tile-green .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-blue {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1290,9 +1504,16 @@ nav ul.vertical li a:active {
 .tile-blue > h1, .tile-blue > h2, .tile-blue > h3, .tile-blue > h4, .tile-blue > h5 {
   color: cornflowerblue;
 }
+.tile-blue .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-violet {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   padding: 12.5px;
   padding-bottom: 0;
   overflow: hidden;
@@ -1302,9 +1523,16 @@ nav ul.vertical li a:active {
 .tile-violet > h1, .tile-violet > h2, .tile-violet > h3, .tile-violet > h4, .tile-violet > h5 {
   color: darkmagenta;
 }
+.tile-violet .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
+}
 
 .tile-clear {
   box-shadow: 0px 0px 3px #aaaaaa;
+  background-color: white;
   box-shadow: 0px 0px 0px transparent;
   padding: 12.5px;
   padding-bottom: 0;
@@ -1315,6 +1543,12 @@ nav ul.vertical li a:active {
 .tile-clear > h1, .tile-clear > h2, .tile-clear > h3, .tile-clear > h4, .tile-clear > h5 {
   color: transparent;
   color: #333333;
+}
+.tile-clear .s-close {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  float: right;
 }
 
 .lead {
