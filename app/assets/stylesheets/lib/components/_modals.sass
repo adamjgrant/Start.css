@@ -1,0 +1,24 @@
+@mixin modal()
+  display: none
+  width: 100%
+  top: 50px
+  min-height: 100px
+  background-color: #fff
+  box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.4)
+  z-index: 11
+  padding: $space
+  padding-bottom: 0
+  position: fixed
+  outline: 9999px solid rgba(0,0,0,0.25)
+  @include border-radius($buttonBorderRadius)
+  @include animation-duration(0.25s)
+  @include animation-delay(0.2s)
+  @include animation-timing-function(ease)
+  @include animation-fill-mode(both)
+  &[style="display: block;"]
+    @include animation-name(fadeInDown)
+
+  @media screen and (min-width: 768px)
+    left: 50%
+    width: 700px
+    margin-left: -350px

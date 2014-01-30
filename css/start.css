@@ -403,6 +403,70 @@ th {
   box-sizing: border-box;
 }
 
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-ms-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 21px;
@@ -565,9 +629,9 @@ code {
 .s-col {
   padding: 0 12.5px;
   float: left;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -1130,6 +1194,47 @@ code {
   overflow: hidden;
   background-color: #555555;
   color: #eeeeee;
+}
+
+.s-modal {
+  display: none;
+  width: 100%;
+  top: 50px;
+  min-height: 100px;
+  background-color: white;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.4);
+  z-index: 11;
+  padding: 25px;
+  padding-bottom: 0;
+  position: fixed;
+  outline: 9999px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.25s;
+  -moz-animation-duration: 0.25s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+}
+.s-modal[style="display: block;"] {
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+}
+@media screen and (min-width: 768px) {
+  .s-modal {
+    left: 50%;
+    width: 700px;
+    margin-left: -350px;
+  }
 }
 
 .s-nav {

@@ -376,9 +376,38 @@ block content
         h2#modals Modals
         p Modals require just one element.
 
-        .s-modal
+        pre &lt;div class=&quot;s-modal&quot;&gt;&lt;/div&gt;
+
+        p Fill with regular HTML
+
+        pre &lt;div class=&quot;s-modal&quot;&gt;
+          |   &lt;h4&gt;Modal Title&lt;/h1&gt;
+          |   &lt;p&gt;Hello world&lt;/p&gt;
+          | &lt;/div&gt;
+
+        .s-modal#modal-modal1
           h4 Modal Title
           p Hello world
+
+        a.s-btn#modal1 Try it
+
+        p Modals will recognize HTML5's 
+          code header
+          | , 
+          code main
+          | , and 
+          code footer
+          | .
+
+        .s-modal#modal-modal2
+          header
+            h4 Modal Title
+          main
+            p Hello world
+          footer
+            a.s-btn Save
+
+        a.s-btn#modal2 Try it
 
         h2#progress Progress
         p Use the default HTML5 
@@ -523,3 +552,7 @@ block content
               a(href="#tiles") Tiles
             li
               a(href="#typography") Typography
+block docready
+  script
+    $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })
+    $('#modal2').click(function() { $('#modal-modal2').fadeIn('fast'); })

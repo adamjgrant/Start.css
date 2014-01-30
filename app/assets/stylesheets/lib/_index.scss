@@ -1,6 +1,7 @@
 @import "normalize";
 @import "variables";
 @import "mixins";
+@import "animations";
 
 @import "base/grid";
 @import "base/typography";
@@ -9,5 +10,6 @@
 @import "components/navs";
 @import "components/tables";
 @import "components/buttons";
+@import "components/modals";
 @import "components/growls";
 @import "components/tiles";

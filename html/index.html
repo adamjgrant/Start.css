@@ -324,10 +324,26 @@ sit amet</pre>
 &lt;/div&gt;</pre>
             <h2 id="modals">Modals</h2>
             <p>Modals require just one element.</p>
-            <div class="s-modal">
+            <pre>&lt;div class=&quot;s-modal&quot;&gt;&lt;/div&gt;</pre>
+            <p>Fill with regular HTML</p>
+            <pre>&lt;div class=&quot;s-modal&quot;&gt;
+  &lt;h4&gt;Modal Title&lt;/h1&gt;
+  &lt;p&gt;Hello world&lt;/p&gt;
+&lt;/div&gt;</pre>
+            <div id="modal-modal1" class="s-modal">
               <h4>Modal Title</h4>
               <p>Hello world</p>
-            </div>
+            </div><a id="modal1" class="s-btn">Try it</a>
+            <p>Modals will recognize HTML5's <code>header</code>, <code>main</code>, and <code>footer</code>.</p>
+            <div id="modal-modal2" class="s-modal">
+              <header>
+                <h4>Modal Title</h4>
+              </header>
+              <main>
+                <p>Hello world</p>
+              </main>
+              <footer><a class="s-btn">Save</a></footer>
+            </div><a id="modal2" class="s-btn">Try it</a>
             <h2 id="progress">Progress</h2>
             <p>Use the default HTML5 <code>progress</code> element with the <code>.s-box</code> class.</p>
             <progress value="30" max="100" class="s-box s-3"></progress>
@@ -469,4 +485,8 @@ sit amet</pre>
     }) 
   </script>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script>
+    $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })
+    $('#modal2').click(function() { $('#modal-modal2').fadeIn('fast'); })
+  </script>
 </html>
