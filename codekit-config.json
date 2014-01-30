@@ -2,18 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/app\/assets\/stylesheets\/lib\/components\/_tables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_tables.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_tables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/test\/dummy\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -23,16 +11,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/jade\/semantic.jade" : {
+    "\/test\/dummy\/public\/500.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/semantic.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/semantic.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/test\/dummy\/public\/500.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/assets\/stylesheets\/lib\/components\/_growls.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -45,6 +31,17 @@
       "outputAbbreviatedPath" : "\/css\/_growls.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/jade\/index.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jade\/index.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/index.html",
+      "fileType" : 512
     },
     "\/test\/dummy\/app\/assets\/javascripts\/application.js" : {
       "ignoreWasSetByUser" : 0,
@@ -78,15 +75,15 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/stylesheets\/start-semantic.scss" : {
+    "\/app\/assets\/stylesheets\/lib\/components\/_tables.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_tables.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
+      "outputAbbreviatedPath" : "\/css\/_tables.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -285,15 +282,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/jade\/index.jade" : {
+    "\/jade\/semantic.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/index.jade",
+      "inputAbbreviatedPath" : "\/jade\/semantic.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/index.html",
+      "outputAbbreviatedPath" : "\/html\/semantic.html",
       "fileType" : 512
     },
     "\/js\/start.js" : {
@@ -307,14 +304,17 @@
       "outputAbbreviatedPath" : "\/js\/start-ck.js",
       "fileType" : 64
     },
-    "\/test\/dummy\/public\/500.html" : {
+    "\/app\/assets\/stylesheets\/start-semantic.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/public\/500.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.sass",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
+      "fileType" : 2,
+      "debugStyle" : 0
     },
     "\/jade\/layout-semantic.jade" : {
       "ignoreWasSetByUser" : 0,
