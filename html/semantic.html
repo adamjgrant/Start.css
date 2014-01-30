@@ -103,6 +103,19 @@ nav > ul.vertical { @include nav(vertical); }</pre>
 &lt;input class=&quot;button&quot; type=&quot;submit&quot; value="Button"/&gt;
  
 .button { @include btn(); }</pre>
+          <h3>Colors</h3>
+          <p>Pass in a variable or custom color into <code>btn()</code></p><a href="#" class="button">Default</a><a href="#" class="btn-red">Red </a><a href="#" class="btn-orange">Orange</a><a href="#" class="btn-yellow">Yellow</a><a href="#" class="btn-green">Green</a><a href="#" class="btn-blue">Blue</a><a href="#" class="btn-violet">Violet</a><a href="#" class="btn-clear">Clear</a><a href="#" class="btn-dark">Dark</a>
+          <pre>&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn-red&quot;&gt;Red&lt;/a&gt;
+&hellip;
+&lt;a href=&quot;#&quot; class=&quot;btn-clear&quot;&gt;Clear&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn-dark&quot;&gt;Dark&lt;/a&gt;
+ 
+.button    { @include btn(); }
+.btn-red   { @include btn($red); }
+&hellip;
+.btn-clear { @include btn($clear); }
+.btn-dark  { @include btn($dark); }</pre>
           <h2 id="endconcat">End Concatenation</h2>
           <p>This is a small trick to prevent the last line of a paragraph from containing only one word.</p>
           <p>So instead of:</p>
@@ -417,19 +430,19 @@ section {
             <div class="example-sidebar">
               <div class="tile">
                 <h5>Learn More</h5>
-                <p>Learn about the great features we have to offer.</p>
+                <p>Learn about the great features we have to offer.</p><a class="button">Read More</a>
               </div>
             </div>
             <div class="example-sidebar">
               <div class="tile-red">
                 <h5>Learn More</h5>
-                <p>Learn about the great features we have to offer.</p>
+                <p>Learn about the great features we have to offer.</p><a class="button btn-red">Read More</a>
               </div>
             </div>
             <div class="example-sidebar">
               <div class="tile-orange">
                 <h5>Learn More</h5>
-                <p>Learn about the great features we have to offer.</p>
+                <p>Learn about the great features we have to offer.</p><a class="button btn-orange">Read More</a>
               </div>
             </div>
             <div class="example-sidebar">

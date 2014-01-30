@@ -126,6 +126,28 @@ block content
           | &lt;button class=&quot;s-btn&quot;&gt;Button&lt;/button&gt;
           | &lt;input class=&quot;s-btn&quot; type=&quot;submit&quot; value="button"/&gt;
 
+        h3 Colors
+
+        p Add 
+          code s-[color]
+          |  to any 
+          code s-btn
+          |  where color is red, orange, yellow, green, blue, violet, clear, or dark.
+
+        a.s-btn(href="#") Default
+        a.s-btn.s-red(href="#") Red 
+        a.s-btn.s-orange(href="#") Orange
+        a.s-btn.s-yellow(href="#") Yellow
+        a.s-btn.s-green(href="#") Green
+        a.s-btn.s-blue(href="#") Blue
+        a.s-btn.s-violet(href="#") Violet
+        a.s-btn.s-clear(href="#") Clear
+        a.s-btn.s-dark(href="#") Dark
+
+        pre &lt;a href=&quot;#&quot; class=&quot;s-btn&quot;&gt;Default&lt;/a&gt;
+          | &lt;a href=&quot;#&quot; class=&quot;s-btn s-red&quot;&gt;Red&lt;/a&gt;
+          | ...
+
         h2#endconcat End Concatenation
 
         p This is a small trick to prevent the last line of a paragraph from containing only one word.

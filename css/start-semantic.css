@@ -554,6 +554,10 @@ code {
   padding: 0 5.55556px;
 }
 
+a + a, input[type="submit"] + input[type="submit"], button + button {
+  margin-left: 5px;
+}
+
 .s-growls-growl {
   width: 250px;
   padding: 8.33333px 16.66667px;
@@ -817,26 +821,260 @@ body {
 
 button, .button {
   padding: 8.333333333333334px 16.666666666666668px;
-  background-color: #d3d3d3;
-  color: inherit;
+  background-color: #d4d4d4;
+  color: white;
+  text-decoration: none;
   border: 0px;
   outline: none;
   cursor: pointer;
   display: inline-block;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  text-decoration: none;
-  margin-bottom: 5px;
-  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  color: #333333;
 }
 button:hover, .button:hover {
-  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #d4d4d4;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #d4d4d4;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #d4d4d4;
 }
 button:active, .button:active {
-  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-red {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: #ca3518;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-red:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #ca3518;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #ca3518;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #ca3518;
+}
+.btn-red:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-orange {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: darkorange;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-orange:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkorange;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkorange;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkorange;
+}
+.btn-orange:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-yellow {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: gold;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  color: #333333;
+}
+.btn-yellow:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px gold;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px gold;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px gold;
+}
+.btn-yellow:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-green {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: #58aa00;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-green:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #58aa00;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #58aa00;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #58aa00;
+}
+.btn-green:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-blue {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: cornflowerblue;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-blue:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
+}
+.btn-blue:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-violet {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: darkmagenta;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-violet:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkmagenta;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkmagenta;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkmagenta;
+}
+.btn-violet:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn-clear {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+.btn-clear:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px transparent;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px transparent;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px transparent;
+}
+.btn-clear:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+.btn-clear, .btn-clear:hover, .btn-clear:active {
+  box-shadow: 0px 0px 0px transparent;
+  -webkit-box-shadow: 0px 0px 0px transparent;
+  -moz-box-shadow: 0px 0px 0px transparent;
+}
+.btn-clear:hover {
+  color: #3676e8;
+}
+.btn-clear:active {
+  color: #185bd3;
+}
+
+.btn-dark {
+  padding: 8.333333333333334px 16.666666666666668px;
+  background-color: #555555;
+  color: white;
+  text-decoration: none;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 12.5px;
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-dark:hover {
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #555555;
+  -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #555555;
+  -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #555555;
+}
+.btn-dark:active {
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
 table {
@@ -904,7 +1142,7 @@ nav ul li > * {
 nav ul li a {
   color: #555555;
   text-decoration: none;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 nav ul li a:hover {
   color: #333333;
@@ -936,7 +1174,7 @@ nav ul.right li > * {
 nav ul.right li a {
   color: #555555;
   text-decoration: none;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 nav ul.right li a:hover {
   color: #333333;
@@ -972,7 +1210,7 @@ nav ul.vertical li > * {
 nav ul.vertical li a {
   color: #555555;
   text-decoration: none;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 nav ul.vertical li a:hover {
   color: #333333;

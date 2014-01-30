@@ -28,6 +28,14 @@
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
 
+@mixin box-shadow($prop1, $prop2: '')
+  @if $prop2 != ''
+    $prop2: ',' + $prop2
+  $propTotal: unquote($prop1 + $prop2)
+  box-shadow: $propTotal
+  -webkit-box-shadow: $propTotal
+  -moz-box-shadow: $propTotal
+
 @mixin box-sizing($prop: border-box)
   box-sizing: $prop
   -webkit-box-sizing: $prop

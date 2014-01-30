@@ -1,23 +1,42 @@
-@mixin btn() {
+@mixin btn($color: darken($lightGrey, 10%)) {
   padding: 8.333333333333334px 16.666666666666668px;
-  background-color: #d3d3d3;
-  color: inherit;
+  background-color: $color;
+  color: white;
+  text-decoration: none;
   border: 0px;
   outline: none;
   cursor: pointer;
   display: inline-block;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  text-decoration: none;
-  margin-bottom: ($space/5);
-  -webkit-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.2) inset;
-  box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.2) inset;
+  margin-bottom: ($space/2);
+  @include box-shadow(0px -3px 0px 0px rgba(0,0,0,0.1) inset);
   &:hover {
-    -webkit-box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.1) inset;
-    box-shadow: 0px -3px 0px 0px rgba(0,0,0,0.1) inset;
+    @include box-shadow(0px -3px 0px 0px rgba(0,0,0,0.2) inset, 0px 0px 3px $color);
   }
   &:active {
-    -webkit-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) inset;
-    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.2) inset;
+    @include box-shadow(0px 3px 0px 0px rgba(0,0,0,0.2) inset);
+  }
+  @if ($color == darken($lightGrey, 10%) or $color == $yellow) {
+    color: $black;
+  }
+  @if $color == $clear {
+    color: $blue;
+    text-decoration: underline;
+    &, &:hover, &:active {
+      @include box-shadow(0px 0px 0px transparent);
+    }
+    &:hover {
+      color: darken($blue, 10%);
+    }
+    &:active {
+      color: darken($blue, 20%);
+    }
+  }
+}
+
+a, input[type="submit"], button {
+  & + & {
+    margin-left: ($space/5);
   }
 }

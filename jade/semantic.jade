@@ -131,6 +131,33 @@ block content
         | 
         | .button { @include btn(); }
 
+      h3 Colors
+
+      p Pass in a variable or custom color into 
+        code btn()
+
+      a.button(href="#") Default
+      a.btn-red(href="#") Red 
+      a.btn-orange(href="#") Orange
+      a.btn-yellow(href="#") Yellow
+      a.btn-green(href="#") Green
+      a.btn-blue(href="#") Blue
+      a.btn-violet(href="#") Violet
+      a.btn-clear(href="#") Clear
+      a.btn-dark(href="#") Dark
+
+      pre &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;
+        | &lt;a href=&quot;#&quot; class=&quot;btn-red&quot;&gt;Red&lt;/a&gt;
+        | &hellip;
+        | &lt;a href=&quot;#&quot; class=&quot;btn-clear&quot;&gt;Clear&lt;/a&gt;
+        | &lt;a href=&quot;#&quot; class=&quot;btn-dark&quot;&gt;Dark&lt;/a&gt;
+        | 
+        | .button    { @include btn(); }
+        | .btn-red   { @include btn($red); }
+        | &hellip;
+        | .btn-clear { @include btn($clear); }
+        | .btn-dark  { @include btn($dark); }
+
       h2#endconcat End Concatenation
 
       p This is a small trick to prevent the last line of a paragraph from containing only one word.
@@ -509,14 +536,17 @@ block content
           .tile
             h5 Learn More
             p Learn about the great features we have to offer.
+            a.button Read More
         .example-sidebar
           .tile-red
             h5 Learn More
             p Learn about the great features we have to offer.
+            a.button.btn-red Read More
         .example-sidebar
           .tile-orange
             h5 Learn More
             p Learn about the great features we have to offer.
+            a.button.btn-orange Read More
         .example-sidebar
           .tile-yellow
             h5 Learn More

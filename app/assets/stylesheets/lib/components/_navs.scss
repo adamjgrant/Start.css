@@ -24,7 +24,7 @@
 	  a {
 	    color: $darkGrey;
 	    text-decoration: none;
-	    margin-bottom: 0;
+	    margin-bottom: 0 !important;
 	    &:hover { color: $black; }
 	    &:active { color: $darkGrey; }
 	  }

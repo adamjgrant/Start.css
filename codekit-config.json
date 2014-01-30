@@ -81,17 +81,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/jade\/layout-static.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/layout-static.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/layout-static.html",
-      "fileType" : 512
-    },
     "\/app\/assets\/stylesheets\/lib\/components\/_growls.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -103,6 +92,17 @@
       "outputAbbreviatedPath" : "\/css\/_growls.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/jade\/layout-static.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jade\/layout-static.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/layout-static.html",
+      "fileType" : 512
     },
     "\/jade\/index.jade" : {
       "ignoreWasSetByUser" : 0,
