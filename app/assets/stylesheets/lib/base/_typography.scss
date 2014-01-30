@@ -33,6 +33,7 @@ table,
 code {
   @include base-typography();
 }
+li { margin-bottom: 0; }
 
 body {
   font-family: $font-default;

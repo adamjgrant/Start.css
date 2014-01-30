@@ -6,9 +6,9 @@
   </head>
   <body style="padding-top: 40px">
     <header>
-      <nav class="s-box s-fixed s-grey">
+      <nav class="s-box s-fixed">
         <div class="s-wrapper">
-          <ul>
+          <ul class="s-nav">
             <li><a href="#" class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
             <li class="s-dropdown"><a href="#">Menu</a>
               <ul>
@@ -31,14 +31,14 @@
             <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
             <h3>Navigation Boxes</h3>
             <p>Boxes for horizontal navigation should be filled with unordered lists (``ul``)</p>
-            <nav class="s-box s-grey">
-              <ul>
+            <nav class="s-box">
+              <ul class="s-nav">
                 <li><a href="#">Item</a></li>
                 <li><a href="#" class="s-btn">Item</a></li>
               </ul>
             </nav>
-            <pre>&lt;nav class=&quot;s-box s-grey&quot;&gt;
-  &lt;ul&gt;
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav&quot;&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
@@ -49,17 +49,17 @@
 &lt;/nav&gt;</pre>
             <h4>Right-aligned</h4>
             <p>Use <code>.s-right</code> on the child ul to align right. <code>li.s-box-heading</code> will give you a formatted title.</p>
-            <nav class="s-box s-grey">
-              <ul>
+            <nav class="s-box">
+              <ul class="s-nav">
                 <li><a href="#">Item</a></li>
                 <li><a href="#" class="s-btn">Item</a></li>
               </ul>
-              <ul class="s-right">
+              <ul class="s-nav s-right">
                 <li><a href="#" class="s-btn">Item</a></li>
               </ul>
             </nav>
-            <pre>&lt;nav class=&quot;s-box s-grey&quot;&gt;
-  &lt;ul&gt;
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav&quot;&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
@@ -67,22 +67,22 @@
       &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
-  &lt;ul class=&quot;s-right&quot;&gt;
+  &lt;ul class=&quot;s-nav s-right&quot;&gt;
     &lt;li&gt;
       &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
             <h4>Vertical</h4>
-            <p>Add <code>.s-box_vertical</code> to align contents vertically.</p>
-            <nav class="s-box s-box_vertical s-grey">
-              <ul>
+            <p>Add <code>.s-vertical</code> to <code>.s-nav</code> to align contents vertically.</p>
+            <nav class="s-box">
+              <ul class="s-nav s-vertical">
                 <li><a href="#">Item</a></li>
                 <li><a href="#">Item</a></li>
               </ul>
             </nav>
-            <pre>&lt;nav class=&quot;s-box s-box_vertical s-grey&quot;&gt;
-  &lt;ul&gt;
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav s-vertical&quot;&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
@@ -114,7 +114,7 @@ amet</pre>
 sit amet</pre>
             <p>To use, simply add the class <code>.s-endconcat</code> or use the jQuery plugin</p>
             <pre>$(element).s_endconcat()</pre>
-            <p>Where <code>element</code> is the element to have enconcatenation applied</p>
+            <p>Where <code>element</code> is the element to have enconcatenation applied.</p>
             <h2 id="grid">Grid</h2>
             <p>Start uses a 12 column grid. To create a gridded row, start with an <code>.s-row</code> container.</p>
             <pre>&lt;section class=&quot;s-row&quot;&gt;&lt;/section&gt;</pre>
@@ -218,7 +218,7 @@ sit amet</pre>
             <h3>Container</h3>
             <p>To contain the page in a nice, centered wrapper, use <code>.s-wrapper</code></p>
             <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
-            <p>For different sizes, add an additiona class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
+            <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
             <pre>&lt;div class=&quot;s-wrapper s-lg&quot;&gt;&lt;/div&gt;</pre>
             <h2 id="growls">Growls</h2>
             <p>Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:</p>
@@ -336,6 +336,81 @@ sit amet</pre>
             <progress value="30" max="100" class="s-box s-violet"></progress>
             <progress value="30" max="100" class="s-box s-white"></progress>
             <progress value="30" max="100" class="s-box s-blue s-clear s-bordered"></progress>
+            <h2 id="tiles">Tiles</h2>
+            <p>Tiles are attractive boxes for featuring content.</p>
+            <div class="s-row">
+              <div class="s-col s-4">
+                <div class="s-tile">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-red">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-orange">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-yellow">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-green">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-blue">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-violet">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-clear">
+                  <h5>Learn More</h5>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+            </div>
+            <pre>&lt;main class=&quot;s-row&quot;&gt;
+  &lt;section class=&quot;s-col s-4&quot;&gt;
+    &lt;article class=&quot;s-tile&quot;&gt;
+      &lt;h1&gt;Learn more&lt;/h1&gt;
+      &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;s-tile s-red&quot;&gt;
+      &lt;h1&gt;Learn more&lt;/h1&gt;
+      &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</pre>
+            <p>The full list of color options is:</p>
+            <ul>
+              <li>(none) Defaults to dark grey.</li>
+              <li>Red</li>
+              <li>Orange</li>
+              <li>Yellow</li>
+              <li>Green</li>
+              <li>Blue</li>
+              <li>Violet</li>
+              <li>Clear</li>
+            </ul>
             <h2 id="typography">Typography</h2>
             <p>Typography relies mostly on standard HTML5 elements.</p>
             <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>
@@ -367,6 +442,7 @@ sit amet</pre>
                 <li><a href="#growls">Growls</a></li>
                 <li><a href="#images">Images</a></li>
                 <li><a href="#progress">Progress</a></li>
+                <li><a href="#tiles">Tiles</a></li>
                 <li><a href="#typography">Typography</a></li>
               </ul>
             </div>

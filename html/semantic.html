@@ -111,9 +111,9 @@ amet</pre>
           <p>End concatenation produces:</p>
           <pre>lorem ipsum dolor
 sit amet</pre>
-          <p>To use, simply add the class <code>.s-endconcat</code> or use the jQuery plugin</p>
+          <p>Using the jQuery plugin is simple:</p>
           <pre>$(element).s_endconcat()</pre>
-          <p>Where <code>element</code> is the element to have enconcatenation applied</p>
+          <p>Where <code>element</code> is the element to have enconcatenation applied.</p>
           <h2 id="grid">Grid</h2>
           <p>Start uses a 12 column grid. To create a gridded row, start with a container inheriting the <code>row()</code> styling.</p>
           <pre>&lt;main&gt;&lt;/main&gt;
@@ -272,7 +272,7 @@ $lg: 1024; // Large screens
           <h3>Container</h3>
           <p>To contain the page in a nice, centered wrapper, use <code>wrapper()</code></p>
           <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
-          <p>For different sizes, add an additiona class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
+          <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
           <pre>&lt;body&gt;
   &lt;main&gt;
     &lt;aside&gt;
@@ -456,6 +456,12 @@ section {
                 <p>Learn about the great features we have to offer.</p>
               </div>
             </div>
+            <div class="example-sidebar">
+              <div class="tile-clear">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
           </div>
           <pre>&lt;main class=&quot;row&quot;&gt;
   &lt;section class=&quot;column&quot;&gt;
@@ -476,6 +482,18 @@ section {
 }
 .tile { @include tile(); }
 .tile-red { @include tile($red); }</pre>
+          <p>The full list of color options is:</p>
+          <ul>
+            <li>(none) Defaults to dark grey.</li>
+            <li>Red</li>
+            <li>Orange</li>
+            <li>Yellow</li>
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Violet</li>
+            <li>Clear</li>
+          </ul>
+          <p>Or pass in a custom hex, rgb, hsl, etc.</p>
           <h2 id="typography">Typography</h2>
           <p>Typography relies mostly on standard HTML5 elements.</p>
           <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>

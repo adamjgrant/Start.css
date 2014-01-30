@@ -23,15 +23,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/test\/dummy\/public\/500.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/public\/500.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/assets\/stylesheets\/lib\/components\/_growls.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -44,6 +35,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/jade\/layout-static.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jade\/layout-static.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/layout-static.html",
+      "fileType" : 512
+    },
     "\/test\/dummy\/app\/assets\/javascripts\/application.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -55,18 +57,6 @@
       "outputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application-ck.js",
       "fileType" : 64
     },
-    "\/app\/assets\/stylesheets\/start-semantic.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/test\/dummy\/public\/422.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -76,15 +66,27 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/jade\/layout-static.jade" : {
+    "\/app\/assets\/javascripts\/start.coffee" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/layout-static.jade",
+      "inputAbbreviatedPath" : "\/app\/assets\/javascripts\/start.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/js\/start.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/jade\/index.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jade\/index.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/layout-static.html",
+      "outputAbbreviatedPath" : "\/html\/index.html",
       "fileType" : 512
     },
     "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
@@ -114,17 +116,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/app\/assets\/javascripts\/start.coffee" : {
+    "\/app\/assets\/stylesheets\/start.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/javascripts\/start.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/js\/start.js",
-      "outputStyle" : 0,
-      "fileType" : 32
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/start.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/html\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -135,18 +137,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/app\/assets\/stylesheets\/lib\/base\/_typography.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/base\/_typography.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_typography.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/app\/assets\/stylesheets\/lib\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -156,6 +146,18 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_variables.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/app\/assets\/stylesheets\/lib\/base\/_typography.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/base\/_typography.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_typography.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -192,6 +194,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/html\/semantic.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/html\/semantic.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/app\/assets\/stylesheets\/lib\/base\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -203,15 +214,6 @@
       "outputAbbreviatedPath" : "\/css\/_grid.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/html\/semantic.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/semantic.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/app\/assets\/stylesheets\/lib\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -304,16 +306,14 @@
       "outputAbbreviatedPath" : "\/js\/start-ck.js",
       "fileType" : 64
     },
-    "\/jade\/index.jade" : {
+    "\/test\/dummy\/public\/500.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/index.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/index.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/test\/dummy\/public\/500.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/jade\/layout-semantic.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -326,15 +326,15 @@
       "outputAbbreviatedPath" : "\/html\/layout-semantic.html",
       "fileType" : 512
     },
-    "\/app\/assets\/stylesheets\/start.scss" : {
+    "\/app\/assets\/stylesheets\/start-semantic.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/start.css",
+      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
       "fileType" : 4,
       "debugStyle" : 0
     }

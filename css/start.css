@@ -435,6 +435,10 @@ code {
   line-height: 21px;
 }
 
+li {
+  margin-bottom: 0;
+}
+
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
@@ -1119,7 +1123,7 @@ code {
   background-color: #eeeeee;
   color: #333333;
 }
-.s-box.s-grey {
+.s-box.s-dark {
   margin-bottom: 25px;
   border-radius: 3px;
   padding: 5px;
@@ -1127,13 +1131,190 @@ code {
   background-color: #555555;
   color: #eeeeee;
 }
-.s-box.s-black {
-  margin-bottom: 25px;
-  border-radius: 3px;
-  padding: 5px;
+
+.s-nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+.s-nav > *:empty {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+.s-nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+.s-nav li > * {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+.s-nav li a {
+  color: #555555;
+  text-decoration: none;
+}
+.s-nav li a:hover {
+  color: #333333;
+}
+.s-nav li a:active {
+  color: #555555;
+}
+.s-nav.s-right {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  float: right;
+}
+.s-nav.s-right > *:empty {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+.s-nav.s-right li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+.s-nav.s-right li > * {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+.s-nav.s-right li a {
+  color: #555555;
+  text-decoration: none;
+}
+.s-nav.s-right li a:hover {
+  color: #333333;
+}
+.s-nav.s-right li a:active {
+  color: #555555;
+}
+.s-nav.s-vertical {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+.s-nav.s-vertical > *:empty {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+.s-nav.s-vertical li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  display: block;
+  margin-bottom: 5px;
+}
+.s-nav.s-vertical li:last-child {
+  margin-bottom: 0;
+}
+.s-nav.s-vertical li > * {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+.s-nav.s-vertical li a {
+  color: #555555;
+  text-decoration: none;
+}
+.s-nav.s-vertical li a:hover {
+  color: #333333;
+}
+.s-nav.s-vertical li a:active {
+  color: #555555;
+}
+
+.s-tile {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
   overflow: hidden;
-  background-color: #555555;
-  color: #eeeeee;
+  margin-bottom: 25px;
+  border-top: 3px solid #555555;
+}
+.s-tile > h1, .s-tile > h2, .s-tile > h3, .s-tile > h4, .s-tile > h5 {
+  color: #555555;
+}
+.s-tile.s-red {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #ca3518;
+}
+.s-tile.s-red > h1, .s-tile.s-red > h2, .s-tile.s-red > h3, .s-tile.s-red > h4, .s-tile.s-red > h5 {
+  color: #ca3518;
+}
+.s-tile.s-orange {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkorange;
+}
+.s-tile.s-orange > h1, .s-tile.s-orange > h2, .s-tile.s-orange > h3, .s-tile.s-orange > h4, .s-tile.s-orange > h5 {
+  color: darkorange;
+}
+.s-tile.s-yellow {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid gold;
+}
+.s-tile.s-yellow > h1, .s-tile.s-yellow > h2, .s-tile.s-yellow > h3, .s-tile.s-yellow > h4, .s-tile.s-yellow > h5 {
+  color: gold;
+}
+.s-tile.s-green {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #58aa00;
+}
+.s-tile.s-green > h1, .s-tile.s-green > h2, .s-tile.s-green > h3, .s-tile.s-green > h4, .s-tile.s-green > h5 {
+  color: #58aa00;
+}
+.s-tile.s-blue {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid cornflowerblue;
+}
+.s-tile.s-blue > h1, .s-tile.s-blue > h2, .s-tile.s-blue > h3, .s-tile.s-blue > h4, .s-tile.s-blue > h5 {
+  color: cornflowerblue;
+}
+.s-tile.s-violet {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkmagenta;
+}
+.s-tile.s-violet > h1, .s-tile.s-violet > h2, .s-tile.s-violet > h3, .s-tile.s-violet > h4, .s-tile.s-violet > h5 {
+  color: darkmagenta;
+}
+.s-tile.s-clear {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  box-shadow: 0px 0px 0px transparent;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid transparent;
+}
+.s-tile.s-clear > h1, .s-tile.s-clear > h2, .s-tile.s-clear > h3, .s-tile.s-clear > h4, .s-tile.s-clear > h5 {
+  color: transparent;
+  color: #333333;
 }
 
 .s-lead {

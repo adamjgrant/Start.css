@@ -101,6 +101,7 @@ nav ul.vertical { @include nav(vertical); }
 .tile-green   { @include tile($green); }
 .tile-blue    { @include tile($blue); }
 .tile-violet  { @include tile($violet); }
+.tile-clear   { @include tile(transparent); }
 
 // TYPOGRAPHY
 

@@ -145,15 +145,13 @@ block content
       pre lorem ipsum dolor
         | sit amet
 
-      p To use, simply add the class 
-        code .s-endconcat
-        |  or use the jQuery plugin
+      p Using the jQuery plugin is simple:
 
       pre $(element).s_endconcat()
 
       p Where 
         code element
-        |  is the element to have enconcatenation applied
+        |  is the element to have enconcatenation applied.
 
       h2#grid Grid
       p Start uses a 12 column grid. To create a gridded row, start with a container inheriting the 
@@ -344,7 +342,7 @@ block content
       p To contain the page in a nice, centered wrapper, use 
         code wrapper()
       p By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.
-      p For different sizes, add an additiona class with the form s-[size] where [size] is xs, sm, md, or lg.
+      p For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.
       pre &lt;body&gt;
         |   &lt;main&gt;
         |     &lt;aside&gt;
@@ -535,6 +533,10 @@ block content
           .tile-violet
             h5 Learn More
             p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-clear
+            h5 Learn More
+            p Learn about the great features we have to offer.
 
       pre &lt;main class=&quot;row&quot;&gt;
         |   &lt;section class=&quot;column&quot;&gt;
@@ -555,6 +557,18 @@ block content
         | }
         | .tile { @include tile(); }
         | .tile-red { @include tile($red); }
+
+      p The full list of color options is:
+      ul
+        li (none) Defaults to dark grey.
+        li Red
+        li Orange
+        li Yellow
+        li Green
+        li Blue
+        li Violet
+        li Clear
+      p Or pass in a custom hex, rgb, hsl, etc.
 
 
       h2#typography Typography

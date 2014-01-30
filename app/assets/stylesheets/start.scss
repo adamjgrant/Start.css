@@ -47,8 +47,28 @@
 
 .s-box { 
   @include box(); 
-  &.s-grey  { @include box($lightGrey); }
-  &.s-black { @include box($darkGrey); }
+  &.s-dark { @include box($darkGrey); }
+}
+
+// NAVS
+
+.s-nav { 
+  @include nav(); 
+  &.s-right    { @include nav(right); }
+  &.s-vertical { @include nav(vertical); }
+}
+
+// TILES
+
+.s-tile {
+	@include tile();
+	&.s-red    { @include tile($red); }
+	&.s-orange { @include tile($orange); }
+	&.s-yellow { @include tile($yellow); }
+	&.s-green  { @include tile($green); }
+	&.s-blue   { @include tile($blue); }
+	&.s-violet { @include tile($violet); }
+	&.s-clear  { @include tile(transparent); }
 }
 
 // TYPOGRAPHY
