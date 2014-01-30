@@ -564,15 +564,82 @@ section {
 &lt;p&gt;there lived a fairy.&lt;/p&gt;
  
 .lead { @include lead(); }</pre>
+          <h1>Heading</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2>Heading</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4>Heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h5>Heading</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h1>Effects</h1>
+          <h2 id="fixed-pane">Fixed Pane</h2>
+          <p>The fixed pane is a full window wrapper to affix elements to the screen while still obeying the grid.</p>
+          <p>Effectively, this creates a full fixed pane over the entire screen in which elements can be arranged as they are anywhere else on your page.</p>
+          <p><strong>For example,</strong> see the sidebar on this page.</p>
+          <p>Say you had this layout, where a sidebar appears on 1/3 of the screen:</p>
+          <pre>&lt;body&gt;
+  &lt;main&gt;
+    &lt;aside&gt;Sidebar&lt;/aside&gt;
+    &lt;/section&gt;Main&lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+ 
+body { @include wrapper(); }
+main { @include row(); }
+aside {
+  @include col();
+  @include cols(4);
+}
+section {
+  @include col();
+  @include cols(8);
+}</pre>
+          <p>When you scroll down on the page, the sidebar will scroll with it. Here's how we can pop it out:</p>
+          <pre>&lt;body&gt;
+  &lt;div class=&quot;fixed&quot;&gt;
+    &lt;div class=&quot;body&quot;&gt;
+      &lt;main&gt;
+        &lt;aside&gt;Sidebar&lt;/aside&gt;
+      &lt;/main&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;main&gt;
+    &lt;/section&gt;Main&lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+ 
+body, .body { @include wrapper(); }
+main        { @include row(); }
+aside {
+  @include col();
+  @include cols(4);
+}
+section {
+  @include col();
+  @include cols(8);
+  @include bump(4);
+}
+.fixed { @include fixed-pane(); }</pre>
+          <h3>Playing nicely with mouse events</h3>
+          <p>The full screen nature of the fixed pane can cause annoyances, such as causing every element selection from Chrome's web inspector to select the whole page instead of the element being targeted.</p>
+          <p>To fix this, use the jQuery plugin <code>$.sFixedPane()</code>.</p>
+          <pre>$('.fixed').sFixedPane()</pre>
+          <p>This will allow elements in the pane to scroll when overflowing the viewport but also to "hide" click interactions when interacting outside the fixed pane's elements.</p>
         </div>
       </div>
       <div class="fixed-pane">
         <div class="wrapper">
           <div class="sidebar">
-            <div class="s-box s-box_vertical">
-              <ul>
-                <li class="s-box-heading">
-                  <p>Directory</p>
+            <nav>
+              <ul class="vertical">
+                <li>
+                  <h4>Directory</h4>
+                </li>
+                <li>
+                  <h5>Components</h5>
                 </li>
                 <li><a href="#boxes">Boxes</a></li>
                 <li><a href="#browsers">Browser Support</a></li>
@@ -585,8 +652,12 @@ section {
                 <li><a href="#progress">Progress</a></li>
                 <li><a href="#tiles">Tiles</a></li>
                 <li><a href="#typography">Typography</a></li>
+                <li>
+                  <h5>Effects</h5>
+                </li>
+                <li><a href="#fixed-pane">Fixed Pane</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -607,5 +678,6 @@ section {
     $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })
     $('#modal2').click(function() { $('#modal-modal2').fadeIn('fast'); })
     $.sModal({element: '.modal'})
+    $('.fixed-pane').sFixedPane()
   </script>
 </html>

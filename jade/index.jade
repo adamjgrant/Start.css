@@ -18,7 +18,7 @@ block header
 block content
   .s-wrapper
     .s-row
-      .s-sm-8.s-lg-9.s-col
+      .s-sm-8.s-bump-sm-4.s-lg-9.s-bump-lg-3.s-col
         h1 Start.css
         p These are the temporary docs for Start.css. Eventually there will be something much better-looking here.
 
@@ -562,34 +562,35 @@ block content
           | &lt;p&gt;there lived a fairy.&lt;/p&gt;
 
 
-
-      .s-sm-4.s-lg-3.s-col.s-fixedPane
-        .s-box.s-box_vertical
-          ul
-            li.s-box-heading
-              p Directory
-            li
-              a(href="#boxes") Boxes
-            li
-              a(href="#browsers") Browser Support
-            li
-              a(href="#buttons") Buttons
-            li
-              a(href="#endconcat") End Concatenation
-            li
-              a(href="#grid") Grid
-            li
-              a(href="#growls") Growls
-            li
-              a(href="#images") Images
-            li
-              a(href="#modals") Modals
-            li
-              a(href="#progress") Progress
-            li
-              a(href="#tiles") Tiles
-            li
-              a(href="#typography") Typography
+      .s-fixedPane
+        .s-wrapper(style="margin-top: 60px")
+          .s-sm-4.s-lg-3.s-col
+            .s-box
+              ul.s-nav.s-vertical
+                li
+                  h5 Directory
+                li
+                  a(href="#boxes") Boxes
+                li
+                  a(href="#browsers") Browser Support
+                li
+                  a(href="#buttons") Buttons
+                li
+                  a(href="#endconcat") End Concatenation
+                li
+                  a(href="#grid") Grid
+                li
+                  a(href="#growls") Growls
+                li
+                  a(href="#images") Images
+                li
+                  a(href="#modals") Modals
+                li
+                  a(href="#progress") Progress
+                li
+                  a(href="#tiles") Tiles
+                li
+                  a(href="#typography") Typography
 block docready
   script
     $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })

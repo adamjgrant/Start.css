@@ -39,7 +39,7 @@ $borderWidth:              1px;
 
 $font-baseSize:            16px; // Readable size
 $font-baseLineHeight:      21px; // Readable leading
-$font-headings-baseSize:   ($font-baseSize + 5px);
+$font-headings-baseSize:   $font-baseSize;
 
 $font-sans:                'Helvetica Neue', 'Helvetica', sans-serif;
 $font-serif:               'Baskerville', 'Palatino', 'Times New Roma', serif;

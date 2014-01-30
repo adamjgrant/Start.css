@@ -50,13 +50,13 @@
       @include bump($i)
 
 @include generate-bumps()
-@media screen and (min-width: 320px)
+@media screen and (min-width: $screen-sm)
   @include generate-bumps('-sm')
-@media screen and (min-width: 768px)
+@media screen and (min-width: $screen-md)
   @include generate-bumps('-md')
-@media screen and (min-width: 1024px)
+@media screen and (min-width: $screen-lg)
   @include generate-bumps('-lg')
-@media screen and (min-width: 1200px)
+@media screen and (min-width: $screen-xl)
   @include generate-bumps('-xl')
 
 // BUTTONS

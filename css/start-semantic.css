@@ -464,7 +464,7 @@ th {
 
 h1, h2, h3, h4, h5 {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 21px;
+  font-size: 16px;
   color: #333333;
   line-height: normal;
   margin: 10px 0;
@@ -510,23 +510,27 @@ body {
 }
 
 h1 {
-  font-size: 41px;
+  font-size: 36px;
   margin: 25px 0;
 }
 
 h2 {
-  font-size: 37px;
+  font-size: 32px;
   margin: 17.5px 0;
 }
 
 h3 {
-  font-size: 31px;
+  font-size: 26px;
   margin: 16.25px 0;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 19px;
   margin: 12.5px 0;
+}
+
+h5 {
+  font-weight: 500;
 }
 
 blockquote {
@@ -777,9 +781,22 @@ body, .wrapper {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  right: 0;
   z-index: 10;
+  overflow: visible;
+  height: 0px;
+  pointer-events: none;
+}
+.fixed-pane * {
+  pointer-events: auto;
+}
+.fixed-pane.scrollable {
+  height: auto;
+  bottom: 0;
   overflow: auto;
+}
+.fixed-pane > .wrapper {
+  margin-top: 60px;
 }
 
 .sidebar {
@@ -792,12 +809,12 @@ body, .wrapper {
 }
 @media screen and (min-width: 1024px) {
   .sidebar {
-    width: 25%;
+    width: 33.33333%;
   }
 }
 @media screen and (min-width: 1200px) {
   .sidebar {
-    width: 16.66667%;
+    width: 25%;
   }
 }
 
@@ -811,22 +828,22 @@ body, .wrapper {
 }
 @media screen and (min-width: 1024px) {
   .main {
-    margin-left: 25%;
+    margin-left: 33.33333%;
   }
 }
 @media screen and (min-width: 1024px) {
   .main {
+    width: 66.66667%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
     width: 75%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main {
-    margin-left: 16.66667%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main {
-    width: 83.33333%;
   }
 }
 

@@ -130,3 +130,16 @@ window.clickMenu = (id, $) ->
       ) if $('iframe').length > 0  
 
   _.menu.init()
+
+# MISC
+
+# This makes the click surface of the fixed pane "hide" while the user tries to inspect element.
+
+(($) ->
+  $.fn.sFixedPane = ->
+    $(@).mouseover ->
+      $(@).addClass('scrollable')
+    $(@).mouseout ->
+      $(@).removeClass('scrollable')
+) jQuery
+$('.s-fixedPane').sFixedPane()

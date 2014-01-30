@@ -2,6 +2,14 @@
   position: fixed
   top: 0
   left: 0
-  bottom: 0
+  right: 0
   z-index: 10
-  overflow: auto
+  overflow: visible
+  height: 0px
+  pointer-events: none
+  * 
+    pointer-events: auto
+  &.scrollable
+    height: auto
+    bottom: 0
+    overflow: auto
