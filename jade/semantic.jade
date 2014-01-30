@@ -503,6 +503,59 @@ block content
       progress.s-box.s-white(value="30" max="100")
       progress.s-box.s-blue.s-clear.s-bordered(value="30" max="100")
 
+      h2#tiles Tiles
+      p Tiles are attractive boxes for featuring content.
+
+      .example-main
+        .example-sidebar
+          .tile
+            h5 Learn More
+            p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-red
+            h5 Learn More
+            p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-orange
+            h5 Learn More
+            p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-yellow
+            h5 Learn More
+            p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-green
+            h5 Learn More
+            p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-blue
+            h5 Learn More
+            p Learn about the great features we have to offer.
+        .example-sidebar
+          .tile-violet
+            h5 Learn More
+            p Learn about the great features we have to offer.
+
+      pre &lt;main class=&quot;row&quot;&gt;
+        |   &lt;section class=&quot;column&quot;&gt;
+        |     &lt;article class=&quot;tile&quot;&gt;
+        |       &lt;h1&gt;Learn more&lt;/h1&gt;
+        |       &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+        |     &lt;/article&gt;
+        |     &lt;article class=&quot;tile-red&quot;&gt;
+        |       &lt;h1&gt;Learn more&lt;/h1&gt;
+        |       &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+        |     &lt;/article&gt;
+        |   &lt;/section&gt;
+        | &lt;/main&gt;
+      pre .row { @include row(); }
+        | .column { 
+        |   @include col();
+        |   @include cols(4);
+        | }
+        | .tile { @include tile(); }
+        | .tile-red { @include tile($red); }
+
 
       h2#typography Typography
       p Typography relies mostly on standard HTML5 elements.
@@ -564,5 +617,7 @@ block content
             a(href="#images") Images
           li
             a(href="#progress") Progress
+          li
+            a(href="#tiles") Tiles
           li
             a(href="#typography") Typography

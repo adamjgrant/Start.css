@@ -411,6 +411,71 @@ section {
           <progress value="30" max="100" class="s-box s-violet"></progress>
           <progress value="30" max="100" class="s-box s-white"></progress>
           <progress value="30" max="100" class="s-box s-blue s-clear s-bordered"></progress>
+          <h2 id="tiles">Tiles</h2>
+          <p>Tiles are attractive boxes for featuring content.</p>
+          <div class="example-main">
+            <div class="example-sidebar">
+              <div class="tile">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+            <div class="example-sidebar">
+              <div class="tile-red">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+            <div class="example-sidebar">
+              <div class="tile-orange">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+            <div class="example-sidebar">
+              <div class="tile-yellow">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+            <div class="example-sidebar">
+              <div class="tile-green">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+            <div class="example-sidebar">
+              <div class="tile-blue">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+            <div class="example-sidebar">
+              <div class="tile-violet">
+                <h5>Learn More</h5>
+                <p>Learn about the great features we have to offer.</p>
+              </div>
+            </div>
+          </div>
+          <pre>&lt;main class=&quot;row&quot;&gt;
+  &lt;section class=&quot;column&quot;&gt;
+    &lt;article class=&quot;tile&quot;&gt;
+      &lt;h1&gt;Learn more&lt;/h1&gt;
+      &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;tile-red&quot;&gt;
+      &lt;h1&gt;Learn more&lt;/h1&gt;
+      &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</pre>
+          <pre>.row { @include row(); }
+.column { 
+  @include col();
+  @include cols(4);
+}
+.tile { @include tile(); }
+.tile-red { @include tile($red); }</pre>
           <h2 id="typography">Typography</h2>
           <p>Typography relies mostly on standard HTML5 elements.</p>
           <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>
@@ -448,6 +513,7 @@ section {
               <li><a href="#growls">Growls</a></li>
               <li><a href="#images">Images</a></li>
               <li><a href="#progress">Progress</a></li>
+              <li><a href="#tiles">Tiles</a></li>
               <li><a href="#typography">Typography</a></li>
             </ul>
           </div>

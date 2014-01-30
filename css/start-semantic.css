@@ -904,6 +904,90 @@ nav ul.vertical li a:active {
   color: #555555;
 }
 
+.tile {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #555555;
+}
+.tile > h1, .tile > h2, .tile > h3, .tile > h4, .tile > h5 {
+  color: #555555;
+}
+
+.tile-red {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #ca3518;
+}
+.tile-red > h1, .tile-red > h2, .tile-red > h3, .tile-red > h4, .tile-red > h5 {
+  color: #ca3518;
+}
+
+.tile-orange {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkorange;
+}
+.tile-orange > h1, .tile-orange > h2, .tile-orange > h3, .tile-orange > h4, .tile-orange > h5 {
+  color: darkorange;
+}
+
+.tile-yellow {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid gold;
+}
+.tile-yellow > h1, .tile-yellow > h2, .tile-yellow > h3, .tile-yellow > h4, .tile-yellow > h5 {
+  color: gold;
+}
+
+.tile-green {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid #58aa00;
+}
+.tile-green > h1, .tile-green > h2, .tile-green > h3, .tile-green > h4, .tile-green > h5 {
+  color: #58aa00;
+}
+
+.tile-blue {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid cornflowerblue;
+}
+.tile-blue > h1, .tile-blue > h2, .tile-blue > h3, .tile-blue > h4, .tile-blue > h5 {
+  color: cornflowerblue;
+}
+
+.tile-violet {
+  box-shadow: 0px 0px 3px #aaaaaa;
+  padding: 12.5px;
+  padding-bottom: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border-top: 3px solid darkmagenta;
+}
+.tile-violet > h1, .tile-violet > h2, .tile-violet > h3, .tile-violet > h4, .tile-violet > h5 {
+  color: darkmagenta;
+}
+
 .lead {
   font-size: 26px;
   line-height: 32px;

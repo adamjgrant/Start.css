@@ -92,6 +92,16 @@ nav ul   { @include nav(); }
 nav ul.right { @include nav(right); }
 nav ul.vertical { @include nav(vertical); }
 
+// TILES
+
+.tile         { @include tile(); }
+.tile-red     { @include tile($red); }
+.tile-orange  { @include tile($orange); }
+.tile-yellow  { @include tile($yellow); }
+.tile-green   { @include tile($green); }
+.tile-blue    { @include tile($blue); }
+.tile-violet  { @include tile($violet); }
+
 // TYPOGRAPHY
 
 .lead { @include lead(); }
