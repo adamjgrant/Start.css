@@ -1713,9 +1713,10 @@ nav ul.vertical li:active a {
   float: right;
 }
 
-h2 {
-  margin-top: -70px;
-  padding-top: 70px;
+.sectionHeader {
+  padding-top: 75px;
+  margin-top: -37.5px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .modal {

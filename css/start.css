@@ -1895,7 +1895,8 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   color: #555555;
 }
 
-.s-anchorAdjust {
-  margin-top: -70px;
-  padding-top: 70px;
+.s-sectionHeader {
+  padding-top: 75px;
+  margin-top: -37.5px;
+  border-bottom: 1px solid #eeeeee;
 }

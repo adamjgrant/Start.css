@@ -22,9 +22,9 @@ block content
         h1 Start.css
         p These are the temporary docs for Start.css. Eventually there will be something much better-looking here.
 
-        hr
 
-        h2.s-anchorAdjust#boxes Boxes and Bars
+        header#boxes.s-sectionHeader
+          h2 Boxes and Bars
         p Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.
 
         h3 Navigation Boxes
@@ -107,13 +107,15 @@ block content
           |   &lt;/ul&gt;
           | &lt;/nav&gt;
 
-        h2.s-anchorAdjust#browsers Browser Support 
+        header#browsers.s-sectionHeader
+          h2 Browser Support 
 
         p Which browsers does start.css support? Latest.
         p IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. 
         p For older browser support, download an earlier version of Start.css.
 
-        h2.s-anchorAdjust#buttons Buttons
+        header#buttons.s-sectionHeader
+          h2 Buttons
 
         p Buttons should be either links, submit inputs, or html buttons.
 
@@ -148,7 +150,8 @@ block content
           | &lt;a href=&quot;#&quot; class=&quot;s-btn s-red&quot;&gt;Red&lt;/a&gt;
           | ...
 
-        h2.s-anchorAdjust#endconcat End Concatenation
+        header#endconcat.s-sectionHeader
+          h2 End Concatenation
 
         p This is a small trick to prevent the last line of a paragraph from containing only one word.
 
@@ -172,7 +175,8 @@ block content
           code element
           |  is the element to have enconcatenation applied.
 
-        h2.s-anchorAdjust#grid Grid
+        header#grid.s-sectionHeader
+          h2 Grid
         p Start uses a 12 column grid. To create a gridded row, start with an 
           code .s-row
           |  container.
@@ -287,7 +291,8 @@ block content
         p For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.
         pre &lt;div class=&quot;s-wrapper s-lg&quot;&gt;&lt;/div&gt;
 
-        h2.s-anchorAdjust#growls Growls
+        header#growls.s-sectionHeader
+          h2 Growls
         p Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:
         pre $.sGrowl({
           |    icon: 'save',
@@ -361,7 +366,8 @@ block content
         p
           button.s-btn.s-blue(onclick="$.sGrowl({color: 'red', icon: 'book',title: 'Test',text: 'Testing...1, 2, 3', delay: 3000, container: '#example-container'})") Try it
 
-        h2.s-anchorAdjust#images Images
+        header#images.s-sectionHeader
+          h2 Images
 
         h3 Using images as thumbnails
         p Using a new class element of the 
@@ -396,7 +402,8 @@ block content
           |   &lt;/div&gt;
           | &lt;/div&gt;
 
-        h2.s-anchorAdjust#modals Modals
+        header#modals.s-sectionHeader
+          h2 Modals
         p Modals require just one element.
 
         pre &lt;div class=&quot;s-modal&quot;&gt;&lt;/div&gt;
@@ -446,7 +453,8 @@ block content
 
         a.s-btn#modal2 Try it
 
-        h2.s-anchorAdjust#progress Progress
+        header#progress.s-sectionHeader
+          h2 Progress
         p Use the default HTML5 
           code progress
           |  element with the 
@@ -469,7 +477,8 @@ block content
         progress.s-box.s-white(value="30" max="100")
         progress.s-box.s-blue.s-clear.s-bordered(value="30" max="100")
 
-        h2.s-anchorAdjust#tiles Tiles
+        header#tiles.s-sectionHeader
+          h2 Tiles
         p Tiles are attractive boxes for featuring content.
 
         .s-row
@@ -534,7 +543,8 @@ block content
           li Clear
 
 
-        h2.s-anchorAdjust#typography Typography
+        header#typography.s-sectionHeader
+          h2 Typography
         p Typography relies mostly on standard HTML5 elements.
         p Use hx (where x = 1-5) for headings and p, etc for basic text formatting.
         h1 Heading1
@@ -560,33 +570,36 @@ block content
 
       .s-fixedPane
         .s-wrapper(style="margin-top: 60px")
-          .s-sm-4.s-lg-3.s-col
-            .s-box
-              ul.s-nav.s-vertical
-                li
-                  h5 Directory
-                li
-                  a(href="#boxes") Boxes and Bars
-                li
-                  a(href="#browsers") Browser Support
-                li
-                  a(href="#buttons") Buttons
-                li
-                  a(href="#endconcat") End Concatenation
-                li
-                  a(href="#grid") Grid
-                li
-                  a(href="#growls") Growls
-                li
-                  a(href="#images") Images
-                li
-                  a(href="#modals") Modals
-                li
-                  a(href="#progress") Progress
-                li
-                  a(href="#tiles") Tiles
-                li
-                  a(href="#typography") Typography
+          .s-row
+            .s-sm-4.s-lg-3.s-col
+              .s-box
+                ul.s-nav.s-vertical
+                  li
+                    h4 Directory
+                  li
+                    h5 Components
+                  li
+                    a(href="#boxes") Boxes and Bars
+                  li
+                    a(href="#browsers") Browser Support
+                  li
+                    a(href="#buttons") Buttons
+                  li
+                    a(href="#endconcat") End Concatenation
+                  li
+                    a(href="#grid") Grid
+                  li
+                    a(href="#growls") Growls
+                  li
+                    a(href="#images") Images
+                  li
+                    a(href="#modals") Modals
+                  li
+                    a(href="#progress") Progress
+                  li
+                    a(href="#tiles") Tiles
+                  li
+                    a(href="#typography") Typography
 block docready
   script
     $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })

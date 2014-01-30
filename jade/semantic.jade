@@ -12,15 +12,17 @@ block header
           a(href="index.html") Static
         li
           a(href="semantic.html") Semantic
+      ul.right
+        li
+          a.button.btn-blue(href="#") Download
 block content
   .page
     .main
       h1 Start.css
       p These are the temporary docs for Start.css. Eventually there will be something much better-looking here.
 
-      hr
-
-      h2#boxes Boxes and Bars
+      header#boxes.sectionHeader
+        h2 Boxes and Bars
       p Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.
 
       h3 Navigation Bars
@@ -132,13 +134,15 @@ block content
         | nav               { @include box(#EEEEEE); }
         | nav > ul.vertical { @include nav(vertical); }
 
-      h2#browsers Browser Support 
+      header#browsers.sectionHeader
+        h2 Browser Support 
 
       p Which browsers does start.css support? Latest.
       p IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. 
       p For older browser support, download an earlier version of Start.css.
 
-      h2#buttons Buttons
+      header#buttons.sectionHeader
+        h2 Buttons
 
       p Buttons should be either links, submit inputs, or html buttons.
 
@@ -180,7 +184,8 @@ block content
         | .btn-clear { @include btn($clear); }
         | .btn-dark  { @include btn($dark); }
 
-      h2#endconcat End Concatenation
+      header#endconcat.sectionHeader
+        h2 End Concatenation
 
       p This is a small trick to prevent the last line of a paragraph from containing only one word.
 
@@ -202,7 +207,8 @@ block content
         code element
         |  is the element to have enconcatenation applied.
 
-      h2#grid Grid
+      header.sectionHeader#grid
+        h2 Grid
       p Start uses a 12 column grid. To create a gridded row, start with a container inheriting the 
         code row()
         |  styling.
@@ -414,7 +420,8 @@ block content
       p Try out this page as an example.
 
 
-      h2#growls Growls
+      header#growls.sectionHeader
+        h2 Growls
       p Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:
       pre $.sGrowl({
         |    icon: 'save',
@@ -492,7 +499,8 @@ block content
       p
         button.s-btn.s-blue(onclick="$.sGrowl({color: 'red', icon: 'book',title: 'Test',text: 'Testing...1, 2, 3', delay: 3000, container: '#example-container'})") Try it
 
-      h2#images Images
+      header#images.sectionHeader
+        h2 Images
 
       h3 Using images as thumbnails
       p Using a new class element of the 
@@ -527,7 +535,8 @@ block content
         |   &lt;/div&gt;
         | &lt;/div&gt;
 
-      h2#modals Modals
+      header#modals.sectionHeader
+        h2 Modals
       p Modals require just one element.
 
       pre &lt;div class=&quot;modal&quot;&gt;&lt;/div&gt;
@@ -579,7 +588,8 @@ block content
 
       a.button#modal2 Try it
 
-      h2#progress Progress
+      header#progress.sectionHeader
+        h2 Progress
       p Use the default HTML5 
         code progress
         |  element with the 
@@ -602,7 +612,8 @@ block content
       progress.s-box.s-white(value="30" max="100")
       progress.s-box.s-blue.s-clear.s-bordered(value="30" max="100")
 
-      h2#tiles Tiles
+      header.sectionHeader#tiles
+        h2 Tiles
       p Tiles are attractive boxes for featuring content.
 
       .example-main
@@ -675,7 +686,8 @@ block content
       p Or pass in a custom hex, rgb, hsl, etc.
 
 
-      h2#typography Typography
+      header#typography.sectionHeader
+        h2 Typography
       p Typography relies mostly on standard HTML5 elements.
       p Use hx (where x = 1-5) for headings and p, etc for basic text formatting.
       h1 Heading1
@@ -716,7 +728,8 @@ block content
 
       h1 Effects
 
-      h2#fixed-pane Fixed Pane
+      header#fixed-pane.sectionHeader
+        h2 Fixed Pane
       p The fixed pane is a full window wrapper to affix elements to the screen while still obeying the grid.
       p Effectively, this creates a full fixed pane over the entire screen in which elements can be arranged as they are anywhere else on your page.
       p

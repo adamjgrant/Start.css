@@ -25,8 +25,9 @@
           <div class="s-sm-8 s-bump-sm-4 s-lg-9 s-bump-lg-3 s-col">
             <h1>Start.css</h1>
             <p>These are the temporary docs for Start.css. Eventually there will be something much better-looking here.</p>
-            <hr>
-            <h2 id="boxes" class="s-anchorAdjust">Boxes and Bars</h2>
+            <header id="boxes" class="s-sectionHeader">
+              <h2>Boxes and Bars</h2>
+            </header>
             <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
             <h3>Navigation Boxes</h3>
             <p>Boxes for horizontal navigation should be filled with unordered lists (``ul``)</p>
@@ -90,11 +91,15 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-            <h2 id="browsers" class="s-anchorAdjust">Browser Support </h2>
+            <header id="browsers" class="s-sectionHeader">
+              <h2>Browser Support </h2>
+            </header>
             <p>Which browsers does start.css support? Latest.</p>
             <p>IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. </p>
             <p>For older browser support, download an earlier version of Start.css.</p>
-            <h2 id="buttons" class="s-anchorAdjust">Buttons</h2>
+            <header id="buttons" class="s-sectionHeader">
+              <h2>Buttons</h2>
+            </header>
             <p>Buttons should be either links, submit inputs, or html buttons.</p>
             <p><a class="s-btn">Button</a>
               <button class="s-btn">Button</button>
@@ -108,7 +113,9 @@
             <pre>&lt;a href=&quot;#&quot; class=&quot;s-btn&quot;&gt;Default&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;s-btn s-red&quot;&gt;Red&lt;/a&gt;
 ...</pre>
-            <h2 id="endconcat" class="s-anchorAdjust">End Concatenation</h2>
+            <header id="endconcat" class="s-sectionHeader">
+              <h2>End Concatenation</h2>
+            </header>
             <p>This is a small trick to prevent the last line of a paragraph from containing only one word.</p>
             <p>So instead of:</p>
             <pre>lorem ipsum dolor sit
@@ -119,7 +126,9 @@ sit amet</pre>
             <p>To use, simply add the class <code>.s-endconcat</code> or use the jQuery plugin</p>
             <pre>$(element).s_endconcat()</pre>
             <p>Where <code>element</code> is the element to have enconcatenation applied.</p>
-            <h2 id="grid" class="s-anchorAdjust">Grid</h2>
+            <header id="grid" class="s-sectionHeader">
+              <h2>Grid</h2>
+            </header>
             <p>Start uses a 12 column grid. To create a gridded row, start with an <code>.s-row</code> container.</p>
             <pre>&lt;section class=&quot;s-row&quot;&gt;&lt;/section&gt;</pre>
             <p>Columns are defined with the <code>.s-col</code> class and with <code>.s-x</code> measuring classes where "x" is a number between 1-12.</p>
@@ -224,7 +233,9 @@ sit amet</pre>
             <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
             <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
             <pre>&lt;div class=&quot;s-wrapper s-lg&quot;&gt;&lt;/div&gt;</pre>
-            <h2 id="growls" class="s-anchorAdjust">Growls</h2>
+            <header id="growls" class="s-sectionHeader">
+              <h2>Growls</h2>
+            </header>
             <p>Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:</p>
             <pre>$.sGrowl({
    icon: 'save',
@@ -298,7 +309,9 @@ sit amet</pre>
             <p>
               <button onclick="$.sGrowl({color: 'red', icon: 'book',title: 'Test',text: 'Testing...1, 2, 3', delay: 3000, container: '#example-container'})" class="s-btn s-blue">Try it</button>
             </p>
-            <h2 id="images" class="s-anchorAdjust">Images</h2>
+            <header id="images" class="s-sectionHeader">
+              <h2>Images</h2>
+            </header>
             <h3>Using images as thumbnails</h3>
             <p>Using a new class element of the <code>.s-box</code> block, we can easily create nicely-spaced left- or right-aligned thumbnail images.</p>
             <div class="s-box"><img src="img/flower.jpg" style="width: 64px" class="s-box-caption_left">
@@ -327,7 +340,9 @@ sit amet</pre>
     &lt;p&gt;Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-            <h2 id="modals" class="s-anchorAdjust">Modals</h2>
+            <header id="modals" class="s-sectionHeader">
+              <h2>Modals</h2>
+            </header>
             <p>Modals require just one element.</p>
             <pre>&lt;div class=&quot;s-modal&quot;&gt;&lt;/div&gt;</pre>
             <p>Fill with regular HTML</p>
@@ -361,7 +376,9 @@ sit amet</pre>
     &lt;a class=&quot;s-btn&quot;&gt;Save&lt;/a&gt;
   &lt;/footer&gt;
 &lt;/div&gt;</pre><a id="modal2" class="s-btn">Try it</a>
-            <h2 id="progress" class="s-anchorAdjust">Progress</h2>
+            <header id="progress" class="s-sectionHeader">
+              <h2>Progress</h2>
+            </header>
             <p>Use the default HTML5 <code>progress</code> element with the <code>.s-box</code> class.</p>
             <progress value="30" max="100" class="s-box s-3"></progress>
             <pre>&lt;progress class="s-box s-3" value="30" max="100"&gt;&lt;/progress&gt;</pre>
@@ -375,7 +392,9 @@ sit amet</pre>
             <progress value="30" max="100" class="s-box s-violet"></progress>
             <progress value="30" max="100" class="s-box s-white"></progress>
             <progress value="30" max="100" class="s-box s-blue s-clear s-bordered"></progress>
-            <h2 id="tiles" class="s-anchorAdjust">Tiles</h2>
+            <header id="tiles" class="s-sectionHeader">
+              <h2>Tiles</h2>
+            </header>
             <p>Tiles are attractive boxes for featuring content.</p>
             <div class="s-row">
               <div class="s-col s-4">
@@ -450,7 +469,9 @@ sit amet</pre>
               <li>Violet</li>
               <li>Clear</li>
             </ul>
-            <h2 id="typography" class="s-anchorAdjust">Typography</h2>
+            <header id="typography" class="s-sectionHeader">
+              <h2>Typography</h2>
+            </header>
             <p>Typography relies mostly on standard HTML5 elements.</p>
             <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>
             <h1>Heading1</h1>
@@ -468,24 +489,29 @@ sit amet</pre>
           </div>
           <div class="s-fixedPane">
             <div style="margin-top: 60px" class="s-wrapper">
-              <div class="s-sm-4 s-lg-3 s-col">
-                <div class="s-box">
-                  <ul class="s-nav s-vertical">
-                    <li>
-                      <h5>Directory</h5>
-                    </li>
-                    <li><a href="#boxes">Boxes and Bars</a></li>
-                    <li><a href="#browsers">Browser Support</a></li>
-                    <li><a href="#buttons">Buttons</a></li>
-                    <li><a href="#endconcat">End Concatenation</a></li>
-                    <li><a href="#grid">Grid</a></li>
-                    <li><a href="#growls">Growls</a></li>
-                    <li><a href="#images">Images</a></li>
-                    <li><a href="#modals">Modals</a></li>
-                    <li><a href="#progress">Progress</a></li>
-                    <li><a href="#tiles">Tiles</a></li>
-                    <li><a href="#typography">Typography</a></li>
-                  </ul>
+              <div class="s-row">
+                <div class="s-sm-4 s-lg-3 s-col">
+                  <div class="s-box">
+                    <ul class="s-nav s-vertical">
+                      <li>
+                        <h4>Directory</h4>
+                      </li>
+                      <li>
+                        <h5>Components</h5>
+                      </li>
+                      <li><a href="#boxes">Boxes and Bars</a></li>
+                      <li><a href="#browsers">Browser Support</a></li>
+                      <li><a href="#buttons">Buttons</a></li>
+                      <li><a href="#endconcat">End Concatenation</a></li>
+                      <li><a href="#grid">Grid</a></li>
+                      <li><a href="#growls">Growls</a></li>
+                      <li><a href="#images">Images</a></li>
+                      <li><a href="#modals">Modals</a></li>
+                      <li><a href="#progress">Progress</a></li>
+                      <li><a href="#tiles">Tiles</a></li>
+                      <li><a href="#typography">Typography</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

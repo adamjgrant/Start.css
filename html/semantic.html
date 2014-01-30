@@ -13,6 +13,9 @@
             <li><a href="index.html">Static</a></li>
             <li><a href="semantic.html">Semantic</a></li>
           </ul>
+          <ul class="right">
+            <li><a href="#" class="button btn-blue">Download</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -21,8 +24,9 @@
         <div class="main">
           <h1>Start.css</h1>
           <p>These are the temporary docs for Start.css. Eventually there will be something much better-looking here.</p>
-          <hr>
-          <h2 id="boxes">Boxes and Bars</h2>
+          <header id="boxes" class="sectionHeader">
+            <h2>Boxes and Bars</h2>
+          </header>
           <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
           <h3>Navigation Bars</h3>
           <p>Combine <code>box()</code> with <code>nav()</code> to create a navigation structure.</p>
@@ -106,11 +110,15 @@ nav > ul.right { @include nav(right); }
 &lt;/nav&gt;</pre>
           <pre>nav               { @include box(#EEEEEE); }
 nav > ul.vertical { @include nav(vertical); }</pre>
-          <h2 id="browsers">Browser Support </h2>
+          <header id="browsers" class="sectionHeader">
+            <h2>Browser Support </h2>
+          </header>
           <p>Which browsers does start.css support? Latest.</p>
           <p>IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. </p>
           <p>For older browser support, download an earlier version of Start.css.</p>
-          <h2 id="buttons">Buttons</h2>
+          <header id="buttons" class="sectionHeader">
+            <h2>Buttons</h2>
+          </header>
           <p>Buttons should be either links, submit inputs, or html buttons.</p>
           <p><a class="button">Button</a>
             <button class="button">Button</button>
@@ -134,7 +142,9 @@ nav > ul.vertical { @include nav(vertical); }</pre>
 &hellip;
 .btn-clear { @include btn($clear); }
 .btn-dark  { @include btn($dark); }</pre>
-          <h2 id="endconcat">End Concatenation</h2>
+          <header id="endconcat" class="sectionHeader">
+            <h2>End Concatenation</h2>
+          </header>
           <p>This is a small trick to prevent the last line of a paragraph from containing only one word.</p>
           <p>So instead of:</p>
           <pre>lorem ipsum dolor sit
@@ -145,7 +155,9 @@ sit amet</pre>
           <p>Using the jQuery plugin is simple:</p>
           <pre>$(element).s_endconcat()</pre>
           <p>Where <code>element</code> is the element to have enconcatenation applied.</p>
-          <h2 id="grid">Grid</h2>
+          <header id="grid" class="sectionHeader">
+            <h2>Grid</h2>
+          </header>
           <p>Start uses a 12 column grid. To create a gridded row, start with a container inheriting the <code>row()</code> styling.</p>
           <pre>&lt;main&gt;&lt;/main&gt;
  
@@ -324,7 +336,9 @@ section {
   @include cols(8);
 }</pre>
           <p>Try out this page as an example.</p>
-          <h2 id="growls">Growls</h2>
+          <header id="growls" class="sectionHeader">
+            <h2>Growls</h2>
+          </header>
           <p>Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:</p>
           <pre>$.sGrowl({
    icon: 'save',
@@ -399,7 +413,9 @@ section {
           <p>
             <button onclick="$.sGrowl({color: 'red', icon: 'book',title: 'Test',text: 'Testing...1, 2, 3', delay: 3000, container: '#example-container'})" class="s-btn s-blue">Try it</button>
           </p>
-          <h2 id="images">Images</h2>
+          <header id="images" class="sectionHeader">
+            <h2>Images</h2>
+          </header>
           <h3>Using images as thumbnails</h3>
           <p>Using a new class element of the <code>.s-box</code> block, we can easily create nicely-spaced left- or right-aligned thumbnail images.</p>
           <div class="s-box"><img src="img/flower.jpg" style="width: 64px" class="s-box-caption_left">
@@ -428,7 +444,9 @@ section {
     &lt;p&gt;Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-          <h2 id="modals">Modals</h2>
+          <header id="modals" class="sectionHeader">
+            <h2>Modals</h2>
+          </header>
           <p>Modals require just one element.</p>
           <pre>&lt;div class=&quot;modal&quot;&gt;&lt;/div&gt;
  
@@ -464,7 +482,9 @@ section {
     &lt;a class=&quot;button&quot;&gt;Save&lt;/a&gt;
   &lt;/footer&gt;
 &lt;/div&gt;</pre><a id="modal2" class="button">Try it</a>
-          <h2 id="progress">Progress</h2>
+          <header id="progress" class="sectionHeader">
+            <h2>Progress</h2>
+          </header>
           <p>Use the default HTML5 <code>progress</code> element with the <code>.s-box</code> class.</p>
           <progress value="30" max="100" class="s-box s-3"></progress>
           <pre>&lt;progress class="s-box s-3" value="30" max="100"&gt;&lt;/progress&gt;</pre>
@@ -478,7 +498,9 @@ section {
           <progress value="30" max="100" class="s-box s-violet"></progress>
           <progress value="30" max="100" class="s-box s-white"></progress>
           <progress value="30" max="100" class="s-box s-blue s-clear s-bordered"></progress>
-          <h2 id="tiles">Tiles</h2>
+          <header id="tiles" class="sectionHeader">
+            <h2>Tiles</h2>
+          </header>
           <p>Tiles are attractive boxes for featuring content.</p>
           <div class="example-main">
             <div class="example-sidebar">
@@ -561,7 +583,9 @@ section {
             <li>Clear</li>
           </ul>
           <p>Or pass in a custom hex, rgb, hsl, etc.</p>
-          <h2 id="typography">Typography</h2>
+          <header id="typography" class="sectionHeader">
+            <h2>Typography</h2>
+          </header>
           <p>Typography relies mostly on standard HTML5 elements.</p>
           <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>
           <h1>Heading1</h1>
@@ -585,7 +609,9 @@ section {
           <h5>Heading</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <h1>Effects</h1>
-          <h2 id="fixed-pane">Fixed Pane</h2>
+          <header id="fixed-pane" class="sectionHeader">
+            <h2>Fixed Pane</h2>
+          </header>
           <p>The fixed pane is a full window wrapper to affix elements to the screen while still obeying the grid.</p>
           <p>Effectively, this creates a full fixed pane over the entire screen in which elements can be arranged as they are anywhere else on your page.</p>
           <p><strong>For example,</strong> see the sidebar on this page.</p>

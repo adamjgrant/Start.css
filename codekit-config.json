@@ -93,18 +93,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/app\/assets\/stylesheets\/lib\/base\/_anchor-adjust.sass" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/base\/_anchor-adjust.sass",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_anchor-adjust.css",
-      "fileType" : 2,
-      "debugStyle" : 0
-    },
     "\/jade\/layout-static.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -265,17 +253,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/jade\/layout-semantic.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/layout-semantic.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/layout-semantic.html",
-      "fileType" : 512
-    },
     "\/app\/assets\/stylesheets\/start.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -299,6 +276,17 @@
       "outputAbbreviatedPath" : "\/css\/_index.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/jade\/layout-semantic.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/jade\/layout-semantic.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/layout-semantic.html",
+      "fileType" : 512
     },
     "\/test\/dummy\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
