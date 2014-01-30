@@ -1112,26 +1112,28 @@ code {
 .s-box {
   margin-bottom: 25px;
   border-radius: 3px;
-  background-color: transparent;
-  color: #333333;
   padding: 5px;
   overflow: hidden;
+  background-color: #555555;
+  color: #eeeeee;
+  background-color: #eeeeee;
+  color: #333333;
 }
 .s-box.s-grey {
   margin-bottom: 25px;
   border-radius: 3px;
-  background-color: #eeeeee;
-  color: #333333;
   padding: 5px;
   overflow: hidden;
+  background-color: #555555;
+  color: #eeeeee;
 }
 .s-box.s-black {
   margin-bottom: 25px;
   border-radius: 3px;
-  background-color: #555555;
-  color: #333333;
   padding: 5px;
   overflow: hidden;
+  background-color: #555555;
+  color: #eeeeee;
 }
 
 .s-lead {

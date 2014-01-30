@@ -44,18 +44,15 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav      { @include box(#EEEEEE); }
+          <pre>nav      { @include box(); }
 nav > ul { @include nav(); }
 .button  { @include btn(); }</pre>
           <h4>Right-aligned</h4>
           <p>Pass in <code>right</code> as a parameter of  <code>nav()</code> to push the nav to the right.</p>
-          <nav class="s-box s-grey">
+          <nav>
             <ul class="right">
               <li><a href="#">Item</a></li>
-              <li><a href="#" class="s-btn">Item</a></li>
-            </ul>
-            <ul class="s-right">
-              <li><a href="#" class="s-btn">Item</a></li>
+              <li><a href="#" class="button">Item</a></li>
             </ul>
           </nav>
           <pre>&lt;nav&gt;
@@ -72,15 +69,15 @@ nav > ul { @include nav(); }
 nav > ul.right { @include nav(right); }
 .button        { @include btn(); }</pre>
           <h4>Vertical</h4>
-          <p>Add <code>.s-box_vertical</code> to align contents vertically.</p>
-          <nav class="s-box s-box_vertical s-grey">
-            <ul>
+          <p>Use <code>nav(vertical)</code> to align contents vertically.</p>
+          <nav>
+            <ul class="vertical">
               <li><a href="#">Item</a></li>
               <li><a href="#">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav class=&quot;s-box s-box_vertical s-grey&quot;&gt;
-  &lt;ul&gt;
+          <pre>&lt;nav&gt;
+  &lt;ul class=&quot;vertical&quot;&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
@@ -89,6 +86,8 @@ nav > ul.right { @include nav(right); }
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
+          <pre>nav               { @include box(#EEEEEE); }
+nav > ul.vertical { @include nav(vertical); }</pre>
           <h2 id="browsers">Browser Support </h2>
           <p>Which browsers does start.css support? Latest.</p>
           <p>IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. </p>

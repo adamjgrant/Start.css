@@ -1,8 +1,13 @@
-@mixin box($color: transparent) {
+@mixin box($type:'light') {
 	margin-bottom: $space;
 	border-radius: $buttonBorderRadius;
-	background-color: $color;
-	color: $black;
 	padding: ($space/5);
 	overflow: hidden;
+	background-color: $darkGrey;
+	color: $lightGrey;
+
+	@if $type == 'light' {
+	  background-color: $lightGrey;
+  	  color: $black;
+	}
 }

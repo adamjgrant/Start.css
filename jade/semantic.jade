@@ -50,7 +50,7 @@ block content
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav      { @include box(#EEEEEE); }
+        | nav      { @include box(); }
         | nav > ul { @include nav(); }
         | .button  { @include btn(); }
 
@@ -61,15 +61,12 @@ block content
         code nav()
         |  to push the nav to the right.
 
-      nav.s-box.s-grey
+      nav
         ul.right
           li
             a(href="#") Item
           li
-            a.s-btn(href="#") Item
-        ul.s-right
-          li
-            a.s-btn(href="#") Item
+            a.button(href="#") Item
 
       pre &lt;nav&gt;
         |   &lt;ul class=&quotright&quot;&gt;
@@ -88,19 +85,19 @@ block content
 
       h4 Vertical
 
-      p Add 
-        code .s-box_vertical
+      p Use 
+        code nav(vertical)
         |  to align contents vertically.
 
-      nav.s-box.s-box_vertical.s-grey
-        ul
+      nav
+        ul.vertical
           li
             a(href="#") Item
           li
             a(href="#") Item
 
-      pre &lt;nav class=&quot;s-box s-box_vertical s-grey&quot;&gt;
-        |   &lt;ul&gt;
+      pre &lt;nav&gt;
+        |   &lt;ul class=&quot;vertical&quot;&gt;
         |     &lt;li&gt;
         |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
@@ -109,6 +106,9 @@ block content
         |     &lt;/li&gt;
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
+      pre
+        | nav               { @include box(#EEEEEE); }
+        | nav > ul.vertical { @include nav(vertical); }
 
       h2#browsers Browser Support 
 

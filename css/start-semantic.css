@@ -804,10 +804,12 @@ table tbody tr:nth-child(2n) {
 nav {
   margin-bottom: 25px;
   border-radius: 3px;
-  background-color: #eeeeee;
-  color: #333333;
   padding: 5px;
   overflow: hidden;
+  background-color: #555555;
+  color: #eeeeee;
+  background-color: #eeeeee;
+  color: #333333;
 }
 
 nav ul {
@@ -829,11 +831,22 @@ nav ul li > * {
   padding: 8.33333px 16.66667px;
   display: block;
 }
+nav ul li a {
+  color: #555555;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #333333;
+}
+nav ul li a:active {
+  color: #555555;
+}
 
 nav ul.right {
   margin: 0;
   padding: 0;
   display: inline-block;
+  float: left;
   float: right;
 }
 nav ul.right > *:empty {
@@ -848,6 +861,47 @@ nav ul.right li {
 nav ul.right li > * {
   padding: 8.33333px 16.66667px;
   display: block;
+}
+nav ul.right li a {
+  color: #555555;
+  text-decoration: none;
+}
+nav ul.right li a:hover {
+  color: #333333;
+}
+nav ul.right li a:active {
+  color: #555555;
+}
+
+nav ul.vertical {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+nav ul.vertical > *:empty {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+nav ul.vertical li {
+  list-style: none;
+  display: inline-block;
+  display: block;
+  margin: 0;
+}
+nav ul.vertical li > * {
+  padding: 8.33333px 16.66667px;
+  display: block;
+}
+nav ul.vertical li a {
+  color: #555555;
+  text-decoration: none;
+}
+nav ul.vertical li a:hover {
+  color: #333333;
+}
+nav ul.vertical li a:active {
+  color: #555555;
 }
 
 .lead {

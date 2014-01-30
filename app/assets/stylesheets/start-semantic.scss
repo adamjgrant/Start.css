@@ -87,9 +87,10 @@ table { @include table(); }
 
 // BOX/NAV
 
-nav      { @include box($lightGrey); }
+nav      { @include box(); }
 nav ul   { @include nav(); }
 nav ul.right { @include nav(right); }
+nav ul.vertical { @include nav(vertical); }
 
 // TYPOGRAPHY
 

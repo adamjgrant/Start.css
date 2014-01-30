@@ -2,12 +2,8 @@
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	@if $position == 'right' {
-	  float: right;
-	}
-	@else {
-	  float: left;
-	}
+	float: left;
+	@if $position == 'right' { float: right; }
 	> *:empty {
 	  padding: $buttonSpacingV $buttonSpacingH;
 	  display: block;
@@ -15,10 +11,19 @@
 	li { 
 	  list-style: none; 
 	  display: inline-block;
+	  @if $position == 'vertical' {
+	    display: block;
+	  }
 	  margin: 0;
 	  > * {
 	    padding: $buttonSpacingV $buttonSpacingH;
 	    display: block;
+	  }
+	  a {
+	    color: $darkGrey;
+	    text-decoration: none;
+	    &:hover { color: $black; }
+	    &:active { color: $darkGrey; }
 	  }
 	}
 }
