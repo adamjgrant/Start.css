@@ -828,6 +828,11 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-row:after {
   clear: both;
 }
+.not-scrollable .s-row {
+  height: 0px;
+  overflow: visible;
+  pointer-events: none;
+}
 
 .s-col {
   padding: 0 12.5px;
@@ -1614,33 +1619,28 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   padding: 5px;
   overflow: hidden;
   background-color: #eeeeee;
-  color: #555555;
 }
 .s-box.s-fixed {
   margin-bottom: 25px;
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
-  background-color: #eeeeee;
-  color: #555555;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 11;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
 }
 .s-box.s-dark {
   margin-bottom: 25px;
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
-  background-color: #eeeeee;
-  color: #555555;
   background-color: #555555;
   color: #eeeeee;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
 }
 .s-box.s-dark ul li * {
   color: #eeeeee;

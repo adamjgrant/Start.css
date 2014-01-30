@@ -3,13 +3,13 @@
 	border-radius: $buttonBorderRadius;
 	padding: ($space/5);
 	overflow: hidden;
-	background-color: $lightGrey;
-	color: $darkGrey;
 
+    @if $type == 'light' {
+      background-color: $lightGrey;
+    }
 	@if $type == 'dark' {
 	  background-color: $darkGrey;
   	  color: $lightGrey;
-  	  @include border-radius(0px);
   	  ul li * {
   	    color: $lightGrey;
   	    &:hover { color: white; }
@@ -23,5 +23,6 @@
 	  left: 0;
 	  right: 0;
 	  z-index: 11;
+  	  @include border-radius(0px);
 	}
 }

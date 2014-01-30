@@ -61,15 +61,6 @@
       "outputAbbreviatedPath" : "\/js\/start-ck.js",
       "fileType" : 64
     },
-    "\/html\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/jade\/semantic.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -80,6 +71,15 @@
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/html\/semantic.html",
       "fileType" : 512
+    },
+    "\/html\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/html\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/assets\/stylesheets\/lib\/components\/_tables.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -256,17 +256,14 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
+    "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/_index.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_index.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/test\/dummy\/app\/views\/layouts\/application.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/jade\/layout-semantic.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -291,14 +288,17 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
+    "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/app\/views\/layouts\/application.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/_index.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_index.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/test\/dummy\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
@@ -342,14 +342,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/css\/docs.css" : {
+    "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/docs.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_navs.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/test\/dummy\/app\/assets\/javascripts\/application.js" : {
       "ignoreWasSetByUser" : 0,
@@ -362,17 +365,14 @@
       "outputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application-ck.js",
       "fileType" : 64
     },
-    "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss" : {
+    "\/css\/docs.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_navs.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/css\/docs.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     }
   },
   "manualImportLinks" : [

@@ -22,9 +22,9 @@
           <h1>Start.css</h1>
           <p>These are the temporary docs for Start.css. Eventually there will be something much better-looking here.</p>
           <hr>
-          <h2 id="boxes">Boxes</h2>
+          <h2 id="boxes">Boxes and Bars</h2>
           <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
-          <h3>Navigation Boxes</h3>
+          <h3>Navigation Bars</h3>
           <p>Combine <code>box()</code> with <code>nav()</code> to create a navigation structure.</p>
           <nav>
             <ul>
@@ -42,7 +42,7 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav      { @include box(); }
+          <pre>nav      { @include box(light); }
 nav > ul { @include nav(); }
 .button  { @include btn(); }</pre>
           <h4>Right-aligned</h4>
@@ -63,7 +63,27 @@ nav > ul { @include nav(); }
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav            { @include box(#EEEEEE); }
+          <pre>nav            { @include box(light); }
+nav > ul.right { @include nav(right); }
+.button        { @include btn(); }</pre>
+          <h4>Dark</h4>
+          <nav class="dark">
+            <ul class="right">
+              <li><a>Item</a></li>
+              <li><a class="button">Item</a></li>
+            </ul>
+          </nav>
+          <pre>&lt;nav class=&quot;dark&quot;&gt;
+  &lt;ul class=&quotright&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+          <pre>nav.dark       { @include box(dark); }
 nav > ul.right { @include nav(right); }
 .button        { @include btn(); }</pre>
           <h4>Vertical</h4>
@@ -435,7 +455,7 @@ section {
           </div>
           <pre>&lt;div class=&quot;modal&quot;&gt;
   &lt;header&gt;
-    &lt;h1&gt;Modal Title&lt;/h1&gt;
+    &lt;h4&gt;Modal Title&lt;/h1&gt;
   &lt;/header&gt;
   &lt;main&gt;
     &lt;p&gt;Hello World&lt;/p&gt;
@@ -622,32 +642,34 @@ section {
       </div>
       <div class="fixed-pane">
         <div class="wrapper">
-          <div class="sidebar">
-            <nav>
-              <ul class="vertical">
-                <li>
-                  <h4>Directory</h4>
-                </li>
-                <li>
-                  <h5>Components</h5>
-                </li>
-                <li><a href="#boxes">Boxes</a></li>
-                <li><a href="#browsers">Browser Support</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#endconcat">End Concatenation</a></li>
-                <li><a href="#grid">Grid</a></li>
-                <li><a href="#growls">Growls</a></li>
-                <li><a href="#images">Images</a></li>
-                <li><a href="#modals">Modals</a></li>
-                <li><a href="#progress">Progress</a></li>
-                <li><a href="#tiles">Tiles</a></li>
-                <li><a href="#typography">Typography</a></li>
-                <li>
-                  <h5>Effects</h5>
-                </li>
-                <li><a href="#fixed-pane">Fixed Pane</a></li>
-              </ul>
-            </nav>
+          <div class="page">
+            <div class="sidebar">
+              <nav>
+                <ul class="vertical">
+                  <li>
+                    <h4>Directory</h4>
+                  </li>
+                  <li>
+                    <h5>Components</h5>
+                  </li>
+                  <li><a href="#boxes">Boxes and Bars</a></li>
+                  <li><a href="#browsers">Browser Support</a></li>
+                  <li><a href="#buttons">Buttons</a></li>
+                  <li><a href="#endconcat">End Concatenation</a></li>
+                  <li><a href="#grid">Grid</a></li>
+                  <li><a href="#growls">Growls</a></li>
+                  <li><a href="#images">Images</a></li>
+                  <li><a href="#modals">Modals</a></li>
+                  <li><a href="#progress">Progress</a></li>
+                  <li><a href="#tiles">Tiles</a></li>
+                  <li><a href="#typography">Typography</a></li>
+                  <li>
+                    <h5>Effects</h5>
+                  </li>
+                  <li><a href="#fixed-pane">Fixed Pane</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>

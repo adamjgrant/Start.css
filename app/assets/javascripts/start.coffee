@@ -137,9 +137,12 @@ window.clickMenu = (id, $) ->
 
 (($) ->
   $.fn.sFixedPane = ->
-    $(@).mouseover ->
-      $(@).addClass('scrollable')
-    $(@).mouseout ->
-      $(@).removeClass('scrollable')
+    _ = @
+    $(_).find('*').mouseenter ->
+      $(_).removeClass('not-scrollable')
+      $(_).addClass('scrollable')
+    $(_).find('*').mouseleave ->
+      $(_).addClass('not-scrollable')
+      $(_).removeClass('scrollable')
 ) jQuery
 $('.s-fixedPane').sFixedPane()

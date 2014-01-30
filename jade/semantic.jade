@@ -20,10 +20,10 @@ block content
 
       hr
 
-      h2#boxes Boxes
+      h2#boxes Boxes and Bars
       p Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.
 
-      h3 Navigation Boxes
+      h3 Navigation Bars
       p Combine 
         code box()
         |  with 
@@ -48,7 +48,7 @@ block content
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav      { @include box(); }
+        | nav      { @include box(light); }
         | nav > ul { @include nav(); }
         | .button  { @include btn(); }
 
@@ -77,7 +77,31 @@ block content
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav            { @include box(#EEEEEE); }
+        | nav            { @include box(light); }
+        | nav > ul.right { @include nav(right); }
+        | .button        { @include btn(); }
+
+      h4 Dark
+
+      nav.dark
+        ul.right
+          li
+            a Item
+          li
+            a.button Item
+
+      pre &lt;nav class=&quot;dark&quot;&gt;
+        |   &lt;ul class=&quotright&quot;&gt;
+        |     &lt;li&gt;
+        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |     &lt;/li&gt;
+        |     &lt;li&gt;
+        |       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |     &lt;/li&gt;
+        |   &lt;/ul&gt;
+        | &lt;/nav&gt;
+      pre
+        | nav.dark       { @include box(dark); }
         | nav > ul.right { @include nav(right); }
         | .button        { @include btn(); }
 
@@ -543,7 +567,7 @@ block content
 
       pre &lt;div class=&quot;modal&quot;&gt;
         |   &lt;header&gt;
-        |     &lt;h1&gt;Modal Title&lt;/h1&gt;
+        |     &lt;h4&gt;Modal Title&lt;/h1&gt;
         |   &lt;/header&gt;
         |   &lt;main&gt;
         |     &lt;p&gt;Hello World&lt;/p&gt;
@@ -757,39 +781,40 @@ block content
 
   .fixed-pane
     .wrapper
-      .sidebar
-        nav
-          ul.vertical
-            li
-              h4 Directory
-            li
-              h5 Components
-            li
-              a(href="#boxes") Boxes
-            li
-              a(href="#browsers") Browser Support
-            li
-              a(href="#buttons") Buttons
-            li
-              a(href="#endconcat") End Concatenation
-            li
-              a(href="#grid") Grid
-            li
-              a(href="#growls") Growls
-            li
-              a(href="#images") Images
-            li
-              a(href="#modals") Modals
-            li
-              a(href="#progress") Progress
-            li
-              a(href="#tiles") Tiles
-            li
-              a(href="#typography") Typography
-            li
-              h5 Effects
-            li
-              a(href="#fixed-pane") Fixed Pane
+      .page
+        .sidebar
+          nav
+            ul.vertical
+              li
+                h4 Directory
+              li
+                h5 Components
+              li
+                a(href="#boxes") Boxes and Bars
+              li
+                a(href="#browsers") Browser Support
+              li
+                a(href="#buttons") Buttons
+              li
+                a(href="#endconcat") End Concatenation
+              li
+                a(href="#grid") Grid
+              li
+                a(href="#growls") Growls
+              li
+                a(href="#images") Images
+              li
+                a(href="#modals") Modals
+              li
+                a(href="#progress") Progress
+              li
+                a(href="#tiles") Tiles
+              li
+                a(href="#typography") Typography
+              li
+                h5 Effects
+              li
+                a(href="#fixed-pane") Fixed Pane
 
 block docready
   script
