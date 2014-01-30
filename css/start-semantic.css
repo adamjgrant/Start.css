@@ -1048,6 +1048,7 @@ body, .wrapper {
 button, .button {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #d4d4d4;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1060,13 +1061,13 @@ button, .button {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body button, html body .button {
+html body button, html body li button, html body .button, html body li .button {
   color: white;
 }
-html body button:hover, html body .button:hover {
+html body button:hover, html body li button:hover, html body .button:hover, html body li .button:hover {
   color: white;
 }
-html body button:active, html body .button:active {
+html body button:active, html body li button:active, html body .button:active, html body li .button:active {
   color: white;
 }
 button:hover, .button:hover {
@@ -1079,13 +1080,20 @@ button:active, .button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-html body button, html body .button {
+html body button, html body li button, html body .button, html body li .button {
+  color: #333333;
+}
+html body button:hover, html body li button:hover, html body .button:hover, html body li .button:hover {
+  color: #333333;
+}
+html body button:active, html body li button:active, html body .button:active, html body li .button:active {
   color: #333333;
 }
 
 .btn-red {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #ca3518;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1098,13 +1106,13 @@ html body button, html body .button {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-red {
+html body .btn-red, html body li .btn-red {
   color: white;
 }
-html body .btn-red:hover {
+html body .btn-red:hover, html body li .btn-red:hover {
   color: white;
 }
-html body .btn-red:active {
+html body .btn-red:active, html body li .btn-red:active {
   color: white;
 }
 .btn-red:hover {
@@ -1121,6 +1129,7 @@ html body .btn-red:active {
 .btn-orange {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkorange;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1133,13 +1142,13 @@ html body .btn-red:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-orange {
+html body .btn-orange, html body li .btn-orange {
   color: white;
 }
-html body .btn-orange:hover {
+html body .btn-orange:hover, html body li .btn-orange:hover {
   color: white;
 }
-html body .btn-orange:active {
+html body .btn-orange:active, html body li .btn-orange:active {
   color: white;
 }
 .btn-orange:hover {
@@ -1156,6 +1165,7 @@ html body .btn-orange:active {
 .btn-yellow {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: gold;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1168,13 +1178,13 @@ html body .btn-orange:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-yellow {
+html body .btn-yellow, html body li .btn-yellow {
   color: white;
 }
-html body .btn-yellow:hover {
+html body .btn-yellow:hover, html body li .btn-yellow:hover {
   color: white;
 }
-html body .btn-yellow:active {
+html body .btn-yellow:active, html body li .btn-yellow:active {
   color: white;
 }
 .btn-yellow:hover {
@@ -1187,13 +1197,20 @@ html body .btn-yellow:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-html body .btn-yellow {
+html body .btn-yellow, html body li .btn-yellow {
+  color: #333333;
+}
+html body .btn-yellow:hover, html body li .btn-yellow:hover {
+  color: #333333;
+}
+html body .btn-yellow:active, html body li .btn-yellow:active {
   color: #333333;
 }
 
 .btn-green {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #58aa00;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1206,13 +1223,13 @@ html body .btn-yellow {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-green {
+html body .btn-green, html body li .btn-green {
   color: white;
 }
-html body .btn-green:hover {
+html body .btn-green:hover, html body li .btn-green:hover {
   color: white;
 }
-html body .btn-green:active {
+html body .btn-green:active, html body li .btn-green:active {
   color: white;
 }
 .btn-green:hover {
@@ -1229,6 +1246,7 @@ html body .btn-green:active {
 .btn-blue {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: cornflowerblue;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1241,13 +1259,13 @@ html body .btn-green:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-blue {
+html body .btn-blue, html body li .btn-blue {
   color: white;
 }
-html body .btn-blue:hover {
+html body .btn-blue:hover, html body li .btn-blue:hover {
   color: white;
 }
-html body .btn-blue:active {
+html body .btn-blue:active, html body li .btn-blue:active {
   color: white;
 }
 .btn-blue:hover {
@@ -1264,6 +1282,7 @@ html body .btn-blue:active {
 .btn-violet {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkmagenta;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1276,13 +1295,13 @@ html body .btn-blue:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-violet {
+html body .btn-violet, html body li .btn-violet {
   color: white;
 }
-html body .btn-violet:hover {
+html body .btn-violet:hover, html body li .btn-violet:hover {
   color: white;
 }
-html body .btn-violet:active {
+html body .btn-violet:active, html body li .btn-violet:active {
   color: white;
 }
 .btn-violet:hover {
@@ -1299,6 +1318,7 @@ html body .btn-violet:active {
 .btn-clear {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: transparent;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1312,13 +1332,13 @@ html body .btn-violet:active {
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   text-decoration: underline;
 }
-html body .btn-clear {
+html body .btn-clear, html body li .btn-clear {
   color: white;
 }
-html body .btn-clear:hover {
+html body .btn-clear:hover, html body li .btn-clear:hover {
   color: white;
 }
-html body .btn-clear:active {
+html body .btn-clear:active, html body li .btn-clear:active {
   color: white;
 }
 .btn-clear:hover {
@@ -1331,7 +1351,7 @@ html body .btn-clear:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-html body .btn-clear {
+html body .btn-clear, html body li .btn-clear {
   color: cornflowerblue;
 }
 .btn-clear, .btn-clear:hover, .btn-clear:active {
@@ -1339,16 +1359,17 @@ html body .btn-clear {
   -webkit-box-shadow: 0px 0px 0px transparent;
   -moz-box-shadow: 0px 0px 0px transparent;
 }
-html body .btn-clear:hover {
+html body .btn-clear:hover, html body li .btn-clear:hover {
   color: #3676e8;
 }
-html body .btn-clear:active {
+html body .btn-clear:active, html body li .btn-clear:active {
   color: #185bd3;
 }
 
 .btn-dark {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #555555;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1361,13 +1382,13 @@ html body .btn-clear:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .btn-dark {
+html body .btn-dark, html body li .btn-dark {
   color: white;
 }
-html body .btn-dark:hover {
+html body .btn-dark:hover, html body li .btn-dark:hover {
   color: white;
 }
-html body .btn-dark:active {
+html body .btn-dark:active, html body li .btn-dark:active {
   color: white;
 }
 .btn-dark:hover {
@@ -1461,10 +1482,10 @@ nav ul li a {
   text-decoration: none;
   margin-bottom: 0 !important;
 }
-nav ul li a:hover {
+nav ul li:hover a {
   color: #333333;
 }
-nav ul li a:active {
+nav ul li:active a {
   color: #555555;
 }
 nav ul.right {
@@ -1494,10 +1515,10 @@ nav ul.right li a {
   text-decoration: none;
   margin-bottom: 0 !important;
 }
-nav ul.right li a:hover {
+nav ul.right li:hover a {
   color: #333333;
 }
-nav ul.right li a:active {
+nav ul.right li:active a {
   color: #555555;
 }
 nav ul.vertical {
@@ -1531,10 +1552,10 @@ nav ul.vertical li a {
   text-decoration: none;
   margin-bottom: 0 !important;
 }
-nav ul.vertical li a:hover {
+nav ul.vertical li:hover a {
   color: #333333;
 }
-nav ul.vertical li a:active {
+nav ul.vertical li:active a {
   color: #555555;
 }
 

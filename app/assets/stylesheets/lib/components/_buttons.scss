@@ -1,7 +1,8 @@
 @mixin btn($color: darken($lightGrey, 10%)) {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: $color;
-  html body & { 
+  color: white;
+  html body &, html body li & { 
     color: white; 
     &:hover  { color: white; }
     &:active { color: white; }
@@ -22,19 +23,23 @@
     @include box-shadow(0px 3px 0px 0px rgba(0,0,0,0.2) inset);
   }
   @if ($color == darken($lightGrey, 10%) or $color == $yellow) {
-    html body & { color: $black; }
+    html body &, html body li & { 
+      color: $black; 
+      &:hover  { color: $black; }
+      &:active { color: $black; }
+    }
   }
   @if $color == $clear {
-    html body & { color: $blue; }
+    html body &, html body li & { color: $blue; }
     text-decoration: underline;
     &, &:hover, &:active {
       @include box-shadow(0px 0px 0px transparent);
     }
     &:hover {
-      html body & { color: darken($blue, 10%); }
+      html body &, html body li & { color: darken($blue, 10%); }
     }
     &:active {
-      html body & { color: darken($blue, 20%); }
+      html body &, html body li & { color: darken($blue, 20%); }
     }
   }
 }

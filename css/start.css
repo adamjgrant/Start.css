@@ -1334,6 +1334,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #d4d4d4;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1346,13 +1347,13 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn {
+html body .s-btn, html body li .s-btn {
   color: white;
 }
-html body .s-btn:hover {
+html body .s-btn:hover, html body li .s-btn:hover {
   color: white;
 }
-html body .s-btn:active {
+html body .s-btn:active, html body li .s-btn:active {
   color: white;
 }
 .s-btn:hover {
@@ -1365,12 +1366,19 @@ html body .s-btn:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-html body .s-btn {
+html body .s-btn, html body li .s-btn {
+  color: #333333;
+}
+html body .s-btn:hover, html body li .s-btn:hover {
+  color: #333333;
+}
+html body .s-btn:active, html body li .s-btn:active {
   color: #333333;
 }
 .s-btn.s-red {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #ca3518;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1383,13 +1391,13 @@ html body .s-btn {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-red {
+html body .s-btn.s-red, html body li .s-btn.s-red {
   color: white;
 }
-html body .s-btn.s-red:hover {
+html body .s-btn.s-red:hover, html body li .s-btn.s-red:hover {
   color: white;
 }
-html body .s-btn.s-red:active {
+html body .s-btn.s-red:active, html body li .s-btn.s-red:active {
   color: white;
 }
 .s-btn.s-red:hover {
@@ -1405,6 +1413,7 @@ html body .s-btn.s-red:active {
 .s-btn.s-orange {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkorange;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1417,13 +1426,13 @@ html body .s-btn.s-red:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-orange {
+html body .s-btn.s-orange, html body li .s-btn.s-orange {
   color: white;
 }
-html body .s-btn.s-orange:hover {
+html body .s-btn.s-orange:hover, html body li .s-btn.s-orange:hover {
   color: white;
 }
-html body .s-btn.s-orange:active {
+html body .s-btn.s-orange:active, html body li .s-btn.s-orange:active {
   color: white;
 }
 .s-btn.s-orange:hover {
@@ -1439,6 +1448,7 @@ html body .s-btn.s-orange:active {
 .s-btn.s-yellow {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: gold;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1451,13 +1461,13 @@ html body .s-btn.s-orange:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-yellow {
+html body .s-btn.s-yellow, html body li .s-btn.s-yellow {
   color: white;
 }
-html body .s-btn.s-yellow:hover {
+html body .s-btn.s-yellow:hover, html body li .s-btn.s-yellow:hover {
   color: white;
 }
-html body .s-btn.s-yellow:active {
+html body .s-btn.s-yellow:active, html body li .s-btn.s-yellow:active {
   color: white;
 }
 .s-btn.s-yellow:hover {
@@ -1470,12 +1480,19 @@ html body .s-btn.s-yellow:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-html body .s-btn.s-yellow {
+html body .s-btn.s-yellow, html body li .s-btn.s-yellow {
+  color: #333333;
+}
+html body .s-btn.s-yellow:hover, html body li .s-btn.s-yellow:hover {
+  color: #333333;
+}
+html body .s-btn.s-yellow:active, html body li .s-btn.s-yellow:active {
   color: #333333;
 }
 .s-btn.s-green {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #58aa00;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1488,13 +1505,13 @@ html body .s-btn.s-yellow {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-green {
+html body .s-btn.s-green, html body li .s-btn.s-green {
   color: white;
 }
-html body .s-btn.s-green:hover {
+html body .s-btn.s-green:hover, html body li .s-btn.s-green:hover {
   color: white;
 }
-html body .s-btn.s-green:active {
+html body .s-btn.s-green:active, html body li .s-btn.s-green:active {
   color: white;
 }
 .s-btn.s-green:hover {
@@ -1510,6 +1527,7 @@ html body .s-btn.s-green:active {
 .s-btn.s-blue {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: cornflowerblue;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1522,13 +1540,13 @@ html body .s-btn.s-green:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-blue {
+html body .s-btn.s-blue, html body li .s-btn.s-blue {
   color: white;
 }
-html body .s-btn.s-blue:hover {
+html body .s-btn.s-blue:hover, html body li .s-btn.s-blue:hover {
   color: white;
 }
-html body .s-btn.s-blue:active {
+html body .s-btn.s-blue:active, html body li .s-btn.s-blue:active {
   color: white;
 }
 .s-btn.s-blue:hover {
@@ -1544,6 +1562,7 @@ html body .s-btn.s-blue:active {
 .s-btn.s-violet {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkmagenta;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1556,13 +1575,13 @@ html body .s-btn.s-blue:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-violet {
+html body .s-btn.s-violet, html body li .s-btn.s-violet {
   color: white;
 }
-html body .s-btn.s-violet:hover {
+html body .s-btn.s-violet:hover, html body li .s-btn.s-violet:hover {
   color: white;
 }
-html body .s-btn.s-violet:active {
+html body .s-btn.s-violet:active, html body li .s-btn.s-violet:active {
   color: white;
 }
 .s-btn.s-violet:hover {
@@ -1578,6 +1597,7 @@ html body .s-btn.s-violet:active {
 .s-btn.s-clear {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: transparent;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1591,13 +1611,13 @@ html body .s-btn.s-violet:active {
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   text-decoration: underline;
 }
-html body .s-btn.s-clear {
+html body .s-btn.s-clear, html body li .s-btn.s-clear {
   color: white;
 }
-html body .s-btn.s-clear:hover {
+html body .s-btn.s-clear:hover, html body li .s-btn.s-clear:hover {
   color: white;
 }
-html body .s-btn.s-clear:active {
+html body .s-btn.s-clear:active, html body li .s-btn.s-clear:active {
   color: white;
 }
 .s-btn.s-clear:hover {
@@ -1610,7 +1630,7 @@ html body .s-btn.s-clear:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
-html body .s-btn.s-clear {
+html body .s-btn.s-clear, html body li .s-btn.s-clear {
   color: cornflowerblue;
 }
 .s-btn.s-clear, .s-btn.s-clear:hover, .s-btn.s-clear:active {
@@ -1618,15 +1638,16 @@ html body .s-btn.s-clear {
   -webkit-box-shadow: 0px 0px 0px transparent;
   -moz-box-shadow: 0px 0px 0px transparent;
 }
-html body .s-btn.s-clear:hover {
+html body .s-btn.s-clear:hover, html body li .s-btn.s-clear:hover {
   color: #3676e8;
 }
-html body .s-btn.s-clear:active {
+html body .s-btn.s-clear:active, html body li .s-btn.s-clear:active {
   color: #185bd3;
 }
 .s-btn.s-dark {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #555555;
+  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1639,13 +1660,13 @@ html body .s-btn.s-clear:active {
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
 }
-html body .s-btn.s-dark {
+html body .s-btn.s-dark, html body li .s-btn.s-dark {
   color: white;
 }
-html body .s-btn.s-dark:hover {
+html body .s-btn.s-dark:hover, html body li .s-btn.s-dark:hover {
   color: white;
 }
-html body .s-btn.s-dark:active {
+html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   color: white;
 }
 .s-btn.s-dark:hover {
@@ -1797,10 +1818,10 @@ html body .s-btn.s-dark:active {
   text-decoration: none;
   margin-bottom: 0 !important;
 }
-.s-nav li a:hover {
+.s-nav li:hover a {
   color: #333333;
 }
-.s-nav li a:active {
+.s-nav li:active a {
   color: #555555;
 }
 .s-nav.s-right {
@@ -1830,10 +1851,10 @@ html body .s-btn.s-dark:active {
   text-decoration: none;
   margin-bottom: 0 !important;
 }
-.s-nav.s-right li a:hover {
+.s-nav.s-right li:hover a {
   color: #333333;
 }
-.s-nav.s-right li a:active {
+.s-nav.s-right li:active a {
   color: #555555;
 }
 .s-nav.s-vertical {
@@ -1867,10 +1888,10 @@ html body .s-btn.s-dark:active {
   text-decoration: none;
   margin-bottom: 0 !important;
 }
-.s-nav.s-vertical li a:hover {
+.s-nav.s-vertical li:hover a {
   color: #333333;
 }
-.s-nav.s-vertical li a:active {
+.s-nav.s-vertical li:active a {
   color: #555555;
 }
 
