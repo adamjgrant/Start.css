@@ -314,7 +314,8 @@ section {
    text: 'Your document has been saved'  
  })</pre>
           <p>
-            <button onclick="$.sGrowl({icon: 'save',title: 'Saved',text: 'Your document has been saved', delay: 1000})" class="s-btn s-blue">Try it</button>
+            <button onclick="$.sGrowl({icon: 'save',title: 'Saved',text: 'Your document has been saved', delay: 1000})" class="s-btn s-blue">Try it        </button>
+            <button onclick="$.sGrowl({icon: 'save',title: 'Error',text: 'Not really an error message, just demonstrating a growl.', color: 'red'})" class="s-btn s-clear">No delay</button>
           </p>
           <p>Because it's never necessary to manually create the growl markup, growls are automatically created with the class <code>.s-growl</code>.</p>
           <h3>Parameters</h3>
@@ -409,6 +410,42 @@ section {
     &lt;p&gt;Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+          <h2 id="modals">Modals</h2>
+          <p>Modals require just one element.</p>
+          <pre>&lt;div class=&quot;modal&quot;&gt;&lt;/div&gt;
+ 
+.modal { @include modal(); }</pre>
+          <p>Fill with regular HTML</p>
+          <pre>&lt;div class=&quot;modal&quot;&gt;
+  &lt;h4&gt;Modal Title&lt;/h1&gt;
+  &lt;p&gt;Hello world&lt;/p&gt;
+&lt;/div&gt;</pre>
+          <div id="modal-modal1" class="modal">
+            <h4>Modal Title</h4>
+            <p>Hello world</p>
+          </div><a id="modal1" class="button">Try it</a>
+          <h3>Easy styling</h3>
+          <p>Modals will recognize HTML5's <code>header</code>, <code>main</code>, and <code>footer</code>.</p>
+          <div id="modal-modal2" class="modal">
+            <header>
+              <h4>Modal Title</h4>
+            </header>
+            <main>
+              <p>Hello world</p>
+            </main>
+            <footer><a class="button">Save</a></footer>
+          </div>
+          <pre>&lt;div class=&quot;modal&quot;&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Modal Title&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;p&gt;Hello World&lt;/p&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;a class=&quot;button&quot;&gt;Save&lt;/a&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</pre><a id="modal2" class="button">Try it</a>
           <h2 id="progress">Progress</h2>
           <p>Use the default HTML5 <code>progress</code> element with the <code>.s-box</code> class.</p>
           <progress value="30" max="100" class="s-box s-3"></progress>
@@ -562,4 +599,9 @@ section {
     }) 
   </script>
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script>
+    $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })
+    $('#modal2').click(function() { $('#modal-modal2').fadeIn('fast'); })
+    $.sModal({element: '.modal'})
+  </script>
 </html>

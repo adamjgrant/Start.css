@@ -4,11 +4,22 @@ $('pre').addClass('prettyprint')
 
 # Modal
 
-$(':not(.s-modal)').not('.s-modal *').click( ->
-  $('.s-modal[style="display: block;"]').fadeOut 'fast'
-).children().click (e) ->
-  false if $('.s-modal[style="display: block;"]').length > 0
-$('.s-modal .s-close').click -> $(this).closest('.s-modal').fadeOut()
+(($) ->
+  $.extend sModal: (options) ->
+    defaults =
+      element: '.s-modal'
+
+    _ = $.extend(defaults, options)
+
+    $(':not(' + _.element + ')').not(_.element).click( ->
+      $(_.element + '[style="display: block;"]').fadeOut 'fast'
+    ).children().click (e) ->
+      false if $(_.element + '[style="display: block;"]').length > 0
+    $(_.element + ' .s-close').click -> $(this).closest(_.element).fadeOut()
+
+) jQuery
+
+$.sModal()
 
 # End Concatenation
 

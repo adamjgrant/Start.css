@@ -1606,8 +1606,10 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 
 .s-modal {
   display: none;
-  width: 100%;
-  top: 50px;
+  left: 20px;
+  right: 20px;
+  width: auto;
+  top: 20px;
   min-height: 100px;
   background-color: white;
   box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.4);
@@ -1640,9 +1642,23 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 @media screen and (min-width: 768px) {
   .s-modal {
     left: 50%;
+    right: auto;
+    top: 50px;
     width: 700px;
     margin-left: -350px;
   }
+}
+.s-modal > header, .s-modal > footer {
+  margin: -25px;
+  margin-bottom: 0;
+  padding: 25px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.s-modal > footer {
+  padding-top: 12.5px;
+  margin-top: 0;
+  background-color: #eeeeee;
 }
 
 .s-nav {
