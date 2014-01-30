@@ -4,18 +4,14 @@
     <link rel="stylesheet" href="../css/start.css">
     <link rel="stylesheet" href="../css/docs.css">
   </head>
-  <body style="padding-top: 40px">
+  <body style="padding-top: 60px">
     <header>
       <nav class="s-box s-fixed">
         <div class="s-wrapper">
           <ul class="s-nav">
             <li><a class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
-            <li class="s-dropdown"><a>Menu</a>
-              <ul>
-                <li><a href="index.html">Static</a></li>
-                <li><a href="semantic.html">Semantic</a></li>
-              </ul>
-            </li>
+            <li><a href="index.html">Static</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
           </ul>
         </div>
       </nav>
@@ -27,7 +23,7 @@
             <h1>Start.css</h1>
             <p>These are the temporary docs for Start.css. Eventually there will be something much better-looking here.</p>
             <hr>
-            <h2 id="boxes">Boxes</h2>
+            <h2 id="boxes" class="s-anchorAdjust">Boxes</h2>
             <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
             <h3>Navigation Boxes</h3>
             <p>Boxes for horizontal navigation should be filled with unordered lists (``ul``)</p>
@@ -91,11 +87,11 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-            <h2 id="browsers">Browser Support </h2>
+            <h2 id="browsers" class="s-anchorAdjust">Browser Support </h2>
             <p>Which browsers does start.css support? Latest.</p>
             <p>IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. </p>
             <p>For older browser support, download an earlier version of Start.css.</p>
-            <h2 id="buttons">Buttons</h2>
+            <h2 id="buttons" class="s-anchorAdjust">Buttons</h2>
             <p>Buttons should be either links, submit inputs, or html buttons.</p>
             <p><a class="s-btn">Button</a>
               <button class="s-btn">Button</button>
@@ -109,7 +105,7 @@
             <pre>&lt;a href=&quot;#&quot; class=&quot;s-btn&quot;&gt;Default&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;s-btn s-red&quot;&gt;Red&lt;/a&gt;
 ...</pre>
-            <h2 id="endconcat">End Concatenation</h2>
+            <h2 id="endconcat" class="s-anchorAdjust">End Concatenation</h2>
             <p>This is a small trick to prevent the last line of a paragraph from containing only one word.</p>
             <p>So instead of:</p>
             <pre>lorem ipsum dolor sit
@@ -120,7 +116,7 @@ sit amet</pre>
             <p>To use, simply add the class <code>.s-endconcat</code> or use the jQuery plugin</p>
             <pre>$(element).s_endconcat()</pre>
             <p>Where <code>element</code> is the element to have enconcatenation applied.</p>
-            <h2 id="grid">Grid</h2>
+            <h2 id="grid" class="s-anchorAdjust">Grid</h2>
             <p>Start uses a 12 column grid. To create a gridded row, start with an <code>.s-row</code> container.</p>
             <pre>&lt;section class=&quot;s-row&quot;&gt;&lt;/section&gt;</pre>
             <p>Columns are defined with the <code>.s-col</code> class and with <code>.s-x</code> measuring classes where "x" is a number between 1-12.</p>
@@ -225,7 +221,7 @@ sit amet</pre>
             <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
             <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
             <pre>&lt;div class=&quot;s-wrapper s-lg&quot;&gt;&lt;/div&gt;</pre>
-            <h2 id="growls">Growls</h2>
+            <h2 id="growls" class="s-anchorAdjust">Growls</h2>
             <p>Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:</p>
             <pre>$.sGrowl({
    icon: 'save',
@@ -299,7 +295,7 @@ sit amet</pre>
             <p>
               <button onclick="$.sGrowl({color: 'red', icon: 'book',title: 'Test',text: 'Testing...1, 2, 3', delay: 3000, container: '#example-container'})" class="s-btn s-blue">Try it</button>
             </p>
-            <h2 id="images">Images</h2>
+            <h2 id="images" class="s-anchorAdjust">Images</h2>
             <h3>Using images as thumbnails</h3>
             <p>Using a new class element of the <code>.s-box</code> block, we can easily create nicely-spaced left- or right-aligned thumbnail images.</p>
             <div class="s-box"><img src="img/flower.jpg" style="width: 64px" class="s-box-caption_left">
@@ -328,7 +324,7 @@ sit amet</pre>
     &lt;p&gt;Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-            <h2 id="modals">Modals</h2>
+            <h2 id="modals" class="s-anchorAdjust">Modals</h2>
             <p>Modals require just one element.</p>
             <pre>&lt;div class=&quot;s-modal&quot;&gt;&lt;/div&gt;</pre>
             <p>Fill with regular HTML</p>
@@ -362,7 +358,7 @@ sit amet</pre>
     &lt;a class=&quot;s-btn&quot;&gt;Save&lt;/a&gt;
   &lt;/footer&gt;
 &lt;/div&gt;</pre><a id="modal2" class="s-btn">Try it</a>
-            <h2 id="progress">Progress</h2>
+            <h2 id="progress" class="s-anchorAdjust">Progress</h2>
             <p>Use the default HTML5 <code>progress</code> element with the <code>.s-box</code> class.</p>
             <progress value="30" max="100" class="s-box s-3"></progress>
             <pre>&lt;progress class="s-box s-3" value="30" max="100"&gt;&lt;/progress&gt;</pre>
@@ -376,54 +372,54 @@ sit amet</pre>
             <progress value="30" max="100" class="s-box s-violet"></progress>
             <progress value="30" max="100" class="s-box s-white"></progress>
             <progress value="30" max="100" class="s-box s-blue s-clear s-bordered"></progress>
-            <h2 id="tiles">Tiles</h2>
+            <h2 id="tiles" class="s-anchorAdjust">Tiles</h2>
             <p>Tiles are attractive boxes for featuring content.</p>
             <div class="s-row">
               <div class="s-col s-4">
                 <div class="s-tile">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p><a class="s-btn">Read more</a>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-red">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p><a class="s-red s-btn">Read more</a>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-orange">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p><a class="s-orange s-btn">Read more</a>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-yellow">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-green">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-blue">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-violet">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p>
                 </div>
               </div>
               <div class="s-col s-4">
                 <div class="s-tile s-clear">
-                  <h5>Learn More</h5>
+                  <h4>Learn More</h4>
                   <p>Learn about the great features we have to offer.</p>
                 </div>
               </div>
@@ -431,11 +427,11 @@ sit amet</pre>
             <pre>&lt;main class=&quot;s-row&quot;&gt;
   &lt;section class=&quot;s-col s-4&quot;&gt;
     &lt;article class=&quot;s-tile&quot;&gt;
-      &lt;h1&gt;Learn more&lt;/h1&gt;
+      &lt;h4&gt;Learn more&lt;/h1&gt;
       &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
     &lt;/article&gt;
     &lt;article class=&quot;s-tile s-red&quot;&gt;
-      &lt;h1&gt;Learn more&lt;/h1&gt;
+      &lt;h4&gt;Learn more&lt;/h1&gt;
       &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
     &lt;/article&gt;
   &lt;/section&gt;
@@ -451,7 +447,7 @@ sit amet</pre>
               <li>Violet</li>
               <li>Clear</li>
             </ul>
-            <h2 id="typography">Typography</h2>
+            <h2 id="typography" class="s-anchorAdjust">Typography</h2>
             <p>Typography relies mostly on standard HTML5 elements.</p>
             <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>
             <h1>Heading1</h1>

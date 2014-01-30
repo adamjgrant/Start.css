@@ -88,9 +88,11 @@
 // BOX
 
 .s-box
-  @include box()
+  @include box(light)
   &.s-dark
-    @include box($darkGrey)
+    @include box(dark)
+  &.s-fixed
+    @include box(null, fixed)
 
 // MODALS
 
@@ -114,3 +116,5 @@
 
 .s-lead
   @include lead()
+.s-anchorAdjust
+  @include anchor-adjust(75px)

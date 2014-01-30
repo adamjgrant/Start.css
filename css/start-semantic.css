@@ -1330,10 +1330,8 @@ nav {
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
-  background-color: #555555;
-  color: #eeeeee;
   background-color: #eeeeee;
-  color: #333333;
+  color: #555555;
 }
 
 nav ul {

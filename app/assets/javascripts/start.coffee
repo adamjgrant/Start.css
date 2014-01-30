@@ -48,7 +48,7 @@ growls = "[class^=\"s-growls-growl\"]"
     
     # FORMATTING
     _.fIcon = ((if _.icon then "<span class='fa fa-" + _.icon + "'></span> " else ""))
-    _.fTitle = ((if _.title then "<h5>" + _.fIcon + _.title + "</h5>" else ""))
+    _.fTitle = ((if _.title then "<h4>" + _.fIcon + _.title + "</h4>" else ""))
     _.fText = ((if _.text then "<p>" + _.text + "</p>" else ""))
     
     # UNIQUE IDENTIFICATION

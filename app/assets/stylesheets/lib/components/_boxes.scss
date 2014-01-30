@@ -1,13 +1,20 @@
-@mixin box($type:'light') {
+@mixin box($type:'light', $position: '') {
 	margin-bottom: $space;
 	border-radius: $buttonBorderRadius;
 	padding: ($space/5);
 	overflow: hidden;
-	background-color: $darkGrey;
-	color: $lightGrey;
+	background-color: $lightGrey;
+	color: $darkGrey;
 
-	@if $type == 'light' {
-	  background-color: $lightGrey;
-  	  color: $black;
+	@if $type == 'dark' {
+	  background-color: $darkGrey;
+  	  color: $lightGrey;
+	}
+
+	@if $position == 'fixed' {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  right: 0;
 	}
 }

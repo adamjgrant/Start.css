@@ -1613,18 +1613,30 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
-  background-color: #555555;
-  color: #eeeeee;
   background-color: #eeeeee;
-  color: #333333;
+  color: #555555;
 }
 .s-box.s-dark {
   margin-bottom: 25px;
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
+  background-color: #eeeeee;
+  color: #555555;
   background-color: #555555;
   color: #eeeeee;
+}
+.s-box.s-fixed {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #eeeeee;
+  color: #555555;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .s-modal {
@@ -1784,4 +1796,9 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-lead {
   font-size: 26px;
   line-height: 32px;
+}
+
+.s-anchorAdjust {
+  margin-top: -75px;
+  padding-top: 75px;
 }
