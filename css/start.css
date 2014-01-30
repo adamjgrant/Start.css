@@ -1130,9 +1130,11 @@ code {
   border: 0px;
   outline: none;
   cursor: pointer;
+  display: inline-block;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   text-decoration: none;
+  margin-bottom: 5px;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
@@ -1259,6 +1261,7 @@ code {
 .s-nav li a {
   color: #555555;
   text-decoration: none;
+  margin-bottom: 0;
 }
 .s-nav li a:hover {
   color: #333333;
@@ -1289,6 +1292,7 @@ code {
 .s-nav.s-right li a {
   color: #555555;
   text-decoration: none;
+  margin-bottom: 0;
 }
 .s-nav.s-right li a:hover {
   color: #333333;
@@ -1323,6 +1327,7 @@ code {
 .s-nav.s-vertical li a {
   color: #555555;
   text-decoration: none;
+  margin-bottom: 0;
 }
 .s-nav.s-vertical li a:hover {
   color: #333333;

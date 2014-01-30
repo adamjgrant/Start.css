@@ -822,9 +822,11 @@ button, .button {
   border: 0px;
   outline: none;
   cursor: pointer;
+  display: inline-block;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   text-decoration: none;
+  margin-bottom: 5px;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
@@ -902,6 +904,7 @@ nav ul li > * {
 nav ul li a {
   color: #555555;
   text-decoration: none;
+  margin-bottom: 0;
 }
 nav ul li a:hover {
   color: #333333;
@@ -933,6 +936,7 @@ nav ul.right li > * {
 nav ul.right li a {
   color: #555555;
   text-decoration: none;
+  margin-bottom: 0;
 }
 nav ul.right li a:hover {
   color: #333333;
@@ -968,6 +972,7 @@ nav ul.vertical li > * {
 nav ul.vertical li a {
   color: #555555;
   text-decoration: none;
+  margin-bottom: 0;
 }
 nav ul.vertical li a:hover {
   color: #333333;
