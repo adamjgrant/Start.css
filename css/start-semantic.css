@@ -1048,7 +1048,6 @@ body, .wrapper {
 button, .button {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #d4d4d4;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1060,7 +1059,15 @@ button, .button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  color: #333333;
+}
+html body button, html body .button {
+  color: white;
+}
+html body button:hover, html body .button:hover {
+  color: white;
+}
+html body button:active, html body .button:active {
+  color: white;
 }
 button:hover, .button:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #d4d4d4;
@@ -1072,11 +1079,13 @@ button:active, .button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
+html body button, html body .button {
+  color: #333333;
+}
 
 .btn-red {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #ca3518;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1088,6 +1097,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .btn-red {
+  color: white;
+}
+html body .btn-red:hover {
+  color: white;
+}
+html body .btn-red:active {
+  color: white;
 }
 .btn-red:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #ca3518;
@@ -1103,7 +1121,6 @@ button:active, .button:active {
 .btn-orange {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkorange;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1115,6 +1132,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .btn-orange {
+  color: white;
+}
+html body .btn-orange:hover {
+  color: white;
+}
+html body .btn-orange:active {
+  color: white;
 }
 .btn-orange:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkorange;
@@ -1130,7 +1156,6 @@ button:active, .button:active {
 .btn-yellow {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: gold;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1142,7 +1167,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  color: #333333;
+}
+html body .btn-yellow {
+  color: white;
+}
+html body .btn-yellow:hover {
+  color: white;
+}
+html body .btn-yellow:active {
+  color: white;
 }
 .btn-yellow:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px gold;
@@ -1154,11 +1187,13 @@ button:active, .button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
+html body .btn-yellow {
+  color: #333333;
+}
 
 .btn-green {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #58aa00;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1170,6 +1205,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .btn-green {
+  color: white;
+}
+html body .btn-green:hover {
+  color: white;
+}
+html body .btn-green:active {
+  color: white;
 }
 .btn-green:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #58aa00;
@@ -1185,7 +1229,6 @@ button:active, .button:active {
 .btn-blue {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: cornflowerblue;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1197,6 +1240,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .btn-blue {
+  color: white;
+}
+html body .btn-blue:hover {
+  color: white;
+}
+html body .btn-blue:active {
+  color: white;
 }
 .btn-blue:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
@@ -1212,7 +1264,6 @@ button:active, .button:active {
 .btn-violet {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkmagenta;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1224,6 +1275,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .btn-violet {
+  color: white;
+}
+html body .btn-violet:hover {
+  color: white;
+}
+html body .btn-violet:active {
+  color: white;
 }
 .btn-violet:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkmagenta;
@@ -1239,7 +1299,6 @@ button:active, .button:active {
 .btn-clear {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: transparent;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1251,8 +1310,16 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  color: cornflowerblue;
   text-decoration: underline;
+}
+html body .btn-clear {
+  color: white;
+}
+html body .btn-clear:hover {
+  color: white;
+}
+html body .btn-clear:active {
+  color: white;
 }
 .btn-clear:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px transparent;
@@ -1264,22 +1331,24 @@ button:active, .button:active {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
+html body .btn-clear {
+  color: cornflowerblue;
+}
 .btn-clear, .btn-clear:hover, .btn-clear:active {
   box-shadow: 0px 0px 0px transparent;
   -webkit-box-shadow: 0px 0px 0px transparent;
   -moz-box-shadow: 0px 0px 0px transparent;
 }
-.btn-clear:hover {
+html body .btn-clear:hover {
   color: #3676e8;
 }
-.btn-clear:active {
+html body .btn-clear:active {
   color: #185bd3;
 }
 
 .btn-dark {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #555555;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1291,6 +1360,15 @@ button:active, .button:active {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .btn-dark {
+  color: white;
+}
+html body .btn-dark:hover {
+  color: white;
+}
+html body .btn-dark:active {
+  color: white;
 }
 .btn-dark:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #555555;
@@ -1342,28 +1420,12 @@ nav {
   overflow: hidden;
   background-color: #eeeeee;
 }
-nav.dark {
-  margin-bottom: 25px;
-  border-radius: 3px;
-  padding: 5px;
-  overflow: hidden;
-  background-color: #555555;
-  color: #eeeeee;
-}
-nav.dark ul li * {
-  color: #eeeeee;
-}
-nav.dark ul li *:hover {
-  color: white;
-}
-nav.dark ul li *:active {
-  color: gold;
-}
 nav.fixed {
   margin-bottom: 25px;
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
+  background-color: #eeeeee;
   position: fixed;
   top: 0;
   left: 0;
@@ -1379,6 +1441,9 @@ nav ul {
   display: inline-block;
   float: left;
 }
+nav ul a {
+  color: #555555;
+}
 nav ul > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
@@ -1393,7 +1458,6 @@ nav ul li > * {
   display: block;
 }
 nav ul li a {
-  color: #555555;
   text-decoration: none;
   margin-bottom: 0 !important;
 }
@@ -1410,6 +1474,9 @@ nav ul.right {
   float: left;
   float: right;
 }
+nav ul.right a {
+  color: #555555;
+}
 nav ul.right > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
@@ -1424,7 +1491,6 @@ nav ul.right li > * {
   display: block;
 }
 nav ul.right li a {
-  color: #555555;
   text-decoration: none;
   margin-bottom: 0 !important;
 }
@@ -1439,6 +1505,9 @@ nav ul.vertical {
   padding: 0;
   display: inline-block;
   float: left;
+}
+nav ul.vertical a {
+  color: #555555;
 }
 nav ul.vertical > *:empty {
   padding: 8.33333px 16.66667px;
@@ -1459,7 +1528,6 @@ nav ul.vertical li > * {
   display: block;
 }
 nav ul.vertical li a {
-  color: #555555;
   text-decoration: none;
   margin-bottom: 0 !important;
 }

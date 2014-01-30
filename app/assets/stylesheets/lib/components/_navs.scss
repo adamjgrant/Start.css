@@ -1,4 +1,5 @@
 @mixin nav($position: '') {
+    a { color: $darkGrey }
 	margin: 0;
 	padding: 0;
 	display: inline-block;
@@ -22,7 +23,6 @@
 	    display: block;
 	  }
 	  a {
-	    color: $darkGrey;
 	    text-decoration: none;
 	    margin-bottom: 0 !important;
 	    &:hover { color: $black; }

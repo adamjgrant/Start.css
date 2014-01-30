@@ -1,21 +1,9 @@
-@mixin box($type:'light', $position: '') {
+@mixin box($position: '') {
 	margin-bottom: $space;
 	border-radius: $buttonBorderRadius;
 	padding: ($space/5);
 	overflow: hidden;
-
-    @if $type == 'light' {
-      background-color: $lightGrey;
-    }
-	@if $type == 'dark' {
-	  background-color: $darkGrey;
-  	  color: $lightGrey;
-  	  ul li * {
-  	    color: $lightGrey;
-  	    &:hover { color: white; }
-  	    &:active { color: $yellow; }
-  	  }
-	}
+    background-color: $lightGrey;
 
 	@if $position == 'fixed' {
 	  position: fixed;

@@ -2,6 +2,18 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
+    "\/app\/assets\/stylesheets\/start-semantic.sass" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.sass",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
+      "fileType" : 2,
+      "debugStyle" : 0
+    },
     "\/app\/assets\/stylesheets\/lib\/components\/_fixed-pane.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -24,18 +36,6 @@
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_variables.css",
       "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/app\/assets\/stylesheets\/start-semantic.sass" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/start-semantic.sass",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/start-semantic.css",
-      "fileType" : 2,
       "debugStyle" : 0
     },
     "\/app\/assets\/stylesheets\/lib\/_animations.sass" : {
@@ -342,17 +342,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss" : {
+    "\/css\/docs.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_navs.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/css\/docs.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/test\/dummy\/app\/assets\/javascripts\/application.js" : {
       "ignoreWasSetByUser" : 0,
@@ -365,14 +362,17 @@
       "outputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application-ck.js",
       "fileType" : 64
     },
-    "\/css\/docs.css" : {
+    "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/docs.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_navs.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     }
   },
   "manualImportLinks" : [

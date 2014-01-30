@@ -1334,7 +1334,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #d4d4d4;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1346,7 +1345,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  color: #333333;
+}
+html body .s-btn {
+  color: white;
+}
+html body .s-btn:hover {
+  color: white;
+}
+html body .s-btn:active {
+  color: white;
 }
 .s-btn:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #d4d4d4;
@@ -1358,10 +1365,12 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
+html body .s-btn {
+  color: #333333;
+}
 .s-btn.s-red {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #ca3518;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1373,6 +1382,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .s-btn.s-red {
+  color: white;
+}
+html body .s-btn.s-red:hover {
+  color: white;
+}
+html body .s-btn.s-red:active {
+  color: white;
 }
 .s-btn.s-red:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #ca3518;
@@ -1387,7 +1405,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn.s-orange {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkorange;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1399,6 +1416,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .s-btn.s-orange {
+  color: white;
+}
+html body .s-btn.s-orange:hover {
+  color: white;
+}
+html body .s-btn.s-orange:active {
+  color: white;
 }
 .s-btn.s-orange:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkorange;
@@ -1413,7 +1439,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn.s-yellow {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: gold;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1425,7 +1450,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  color: #333333;
+}
+html body .s-btn.s-yellow {
+  color: white;
+}
+html body .s-btn.s-yellow:hover {
+  color: white;
+}
+html body .s-btn.s-yellow:active {
+  color: white;
 }
 .s-btn.s-yellow:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px gold;
@@ -1437,10 +1470,12 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
+html body .s-btn.s-yellow {
+  color: #333333;
+}
 .s-btn.s-green {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #58aa00;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1452,6 +1487,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .s-btn.s-green {
+  color: white;
+}
+html body .s-btn.s-green:hover {
+  color: white;
+}
+html body .s-btn.s-green:active {
+  color: white;
 }
 .s-btn.s-green:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #58aa00;
@@ -1466,7 +1510,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn.s-blue {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: cornflowerblue;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1478,6 +1521,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .s-btn.s-blue {
+  color: white;
+}
+html body .s-btn.s-blue:hover {
+  color: white;
+}
+html body .s-btn.s-blue:active {
+  color: white;
 }
 .s-btn.s-blue:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
@@ -1492,7 +1544,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn.s-violet {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: darkmagenta;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1504,6 +1555,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .s-btn.s-violet {
+  color: white;
+}
+html body .s-btn.s-violet:hover {
+  color: white;
+}
+html body .s-btn.s-violet:active {
+  color: white;
 }
 .s-btn.s-violet:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px darkmagenta;
@@ -1518,7 +1578,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 .s-btn.s-clear {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: transparent;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1530,8 +1589,16 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
-  color: cornflowerblue;
   text-decoration: underline;
+}
+html body .s-btn.s-clear {
+  color: white;
+}
+html body .s-btn.s-clear:hover {
+  color: white;
+}
+html body .s-btn.s-clear:active {
+  color: white;
 }
 .s-btn.s-clear:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px transparent;
@@ -1543,21 +1610,23 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
+html body .s-btn.s-clear {
+  color: cornflowerblue;
+}
 .s-btn.s-clear, .s-btn.s-clear:hover, .s-btn.s-clear:active {
   box-shadow: 0px 0px 0px transparent;
   -webkit-box-shadow: 0px 0px 0px transparent;
   -moz-box-shadow: 0px 0px 0px transparent;
 }
-.s-btn.s-clear:hover {
+html body .s-btn.s-clear:hover {
   color: #3676e8;
 }
-.s-btn.s-clear:active {
+html body .s-btn.s-clear:active {
   color: #185bd3;
 }
 .s-btn.s-dark {
   padding: 8.333333333333334px 16.666666666666668px;
   background-color: #555555;
-  color: white;
   text-decoration: none;
   border: 0px;
   outline: none;
@@ -1569,6 +1638,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
+}
+html body .s-btn.s-dark {
+  color: white;
+}
+html body .s-btn.s-dark:hover {
+  color: white;
+}
+html body .s-btn.s-dark:active {
+  color: white;
 }
 .s-btn.s-dark:hover {
   box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #555555;
@@ -1625,6 +1703,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
+  background-color: #eeeeee;
   position: fixed;
   top: 0;
   left: 0;
@@ -1633,23 +1712,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-}
-.s-box.s-dark {
-  margin-bottom: 25px;
-  border-radius: 3px;
-  padding: 5px;
-  overflow: hidden;
-  background-color: #555555;
-  color: #eeeeee;
-}
-.s-box.s-dark ul li * {
-  color: #eeeeee;
-}
-.s-box.s-dark ul li *:hover {
-  color: white;
-}
-.s-box.s-dark ul li *:active {
-  color: gold;
 }
 
 .s-modal {
@@ -1715,6 +1777,9 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: inline-block;
   float: left;
 }
+.s-nav a {
+  color: #555555;
+}
 .s-nav > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
@@ -1729,7 +1794,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
 }
 .s-nav li a {
-  color: #555555;
   text-decoration: none;
   margin-bottom: 0 !important;
 }
@@ -1746,6 +1810,9 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   float: left;
   float: right;
 }
+.s-nav.s-right a {
+  color: #555555;
+}
 .s-nav.s-right > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
@@ -1760,7 +1827,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
 }
 .s-nav.s-right li a {
-  color: #555555;
   text-decoration: none;
   margin-bottom: 0 !important;
 }
@@ -1775,6 +1841,9 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   padding: 0;
   display: inline-block;
   float: left;
+}
+.s-nav.s-vertical a {
+  color: #555555;
 }
 .s-nav.s-vertical > *:empty {
   padding: 8.33333px 16.66667px;
@@ -1795,7 +1864,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
 }
 .s-nav.s-vertical li a {
-  color: #555555;
   text-decoration: none;
   margin-bottom: 0 !important;
 }
