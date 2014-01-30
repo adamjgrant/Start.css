@@ -47,6 +47,8 @@
 @media screen and (min-width: $screen-sm) {
   #s-growls {
     width: 50%;
+    right: $space;
+    top: $space;
   }
 }
 @media screen and (min-width: $screen-md) {

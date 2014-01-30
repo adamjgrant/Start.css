@@ -749,6 +749,8 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 @media screen and (min-width: 768px) {
   #s-growls {
     width: 50%;
+    right: 25px;
+    top: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -763,32 +765,28 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   padding: 0px 12.5px;
   max-width: 1200px;
 }
-
-.s-wrapper-sm {
+.s-wrapper.s-sm {
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
   max-width: 768pxpx;
 }
-
-.s-wrapper-md {
+.s-wrapper.s-md {
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
   max-width: 1024pxpx;
 }
-
-.s-wrapper-lg {
+.s-wrapper.s-lg {
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
   max-width: 1200pxpx;
 }
-
-.s-wrapper-xl {
+.s-wrapper.s-xl {
   margin-left: auto;
   margin-right: auto;
   display: block;

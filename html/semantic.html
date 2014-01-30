@@ -186,13 +186,13 @@ main { @include row(); }
           </section><br>
           <p> <code>cols(x)</code> does not inherit anything from <code>col()</code>. This allows you to use <code>cols(x)</code> purely as a sizing tool.</p>
           <h3>Responsive Grid</h3>
-          <p>Columns will target all screen sizes by default. To target one screen size, add the min-width of that screen as a second parameter of <code>cols(x, y)</code>, where y is the width in pixels (without the "px").</p>
+          <p>Columns will target all screen sizes by default. To target one screen size, add the min-width of that screen as a second parameter of <code>cols(x, y)</code>, where y is the width in pixels.</p>
           <section class="example-main">
             <div class="example-md-4">
-              <div class="grid-example"><code>col() + cols(4, 768)</code>Full width on mobile, 1/3 on screens >768px.</div>
+              <div class="grid-example"><code>col() + cols(4, 768px)</code>Full width on mobile, 1/3 on screens >768px.</div>
             </div>
             <div class="example-md-8">
-              <div class="grid-example"><code>col() + cols(8, 768)</code>Full width on mobile, 2/3 on screens >768px.</div>
+              <div class="grid-example"><code>col() + cols(8, 768px)</code>Full width on mobile, 2/3 on screens >768px.</div>
             </div>
           </section>
           <pre>&lt;main&gt;
@@ -203,26 +203,26 @@ main { @include row(); }
 main { @include row(); }
 .sidebar { 
   @include col();
-  @include cols(4, 768);
+  @include cols(4, 768px);
 }
 .content { 
   @include col();
-  @include cols(8, 768);
+  @include cols(8, 768px);
 }</pre><br>
           <h4>Use as many responsive style imports as you want.</h4>
           <section class="example-main">
             <div class="example-md-4_2">
               <div class="grid-example">
                 <pre>col() 
-+ cols(4, 768) 
-+ cols(6, 1024)</pre>Sidebar.
++ cols(4, 768px) 
++ cols(6, 1024px)</pre>Sidebar.
               </div>
             </div>
             <div class="example-md-8_2">
               <div class="grid-example">
                 <pre>col() 
-+ cols(8, 768)
-+ cols(6, 1024)</pre>Content. 
++ cols(8, 768px)
++ cols(6, 1024px)</pre>Content. 
               </div>
             </div>
           </section>
@@ -234,22 +234,21 @@ main { @include row(); }
 main { @include row(); }
 .sidebar { 
   @include col();
-  @include cols(4, 768);
-  @include cols(6, 1024);
+  @include cols(4, 768px);
+  @include cols(6, 1024px);
 }
 .content { 
   @include col();
-  @include cols(8, 768);
-  @include cols(6, 1024);
+  @include cols(8, 768px);
+  @include cols(6, 1024px);
 }</pre><br>
-          <h4>Use variables to consistently use screen sizes</h4>
-          <pre>$md: 768;  // Medium screens
-$lg: 1024; // Large screens
- 
-.content { 
+          <h4>Use variables to consistently target screen sizes</h4>
+          <pre>.content { 
   @include col();
-  @include cols(8, $md);
-  @include cols(6, $lg);
+  @include cols(6, $screen-sm);
+  @include cols(8, $screen-md);
+  @include cols(9, $screen-lg);
+  @include cols(10, $screen-xl);
 }</pre>
           <h3>Bumping columns</h3>
           <p>Bump columns over without creating empty columns using <code>bump()</code></p>
@@ -276,10 +275,10 @@ $lg: 1024; // Large screens
           <section class="example-main">
             <div class="example-bumptodeath">
               <pre>col() 
-+ cols(6, 768)
-+ bump(6, 768)
-+ cols(8, 1024)
-+ bump(4, 1024)</pre>
++ cols(6, 768px)
++ bump(6, 768px)
++ cols(8, 1024px)
++ bump(4, 1024px)</pre>
             </div>
           </section>
           <h3>Container</h3>
@@ -538,7 +537,6 @@ section {
               <li><a href="#boxes">Boxes</a></li>
               <li><a href="#browsers">Browser Support</a></li>
               <li><a href="#buttons">Buttons</a></li>
-              <li><a href="#colors">Colors</a></li>
               <li><a href="#endconcat">End Concatenation</a></li>
               <li><a href="#grid">Grid</a></li>
               <li><a href="#growls">Growls</a></li>

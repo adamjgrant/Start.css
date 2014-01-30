@@ -264,16 +264,16 @@ block content
       h3 Responsive Grid
       p Columns will target all screen sizes by default. To target one screen size, add the min-width of that screen as a second parameter of 
         code cols(x, y)
-        |, where y is the width in pixels (without the "px").
+        |, where y is the width in pixels.
 
       section.example-main
         .example-md-4
           .grid-example
-            code col() + cols(4, 768)
+            code col() + cols(4, 768px)
             | Full width on mobile, 1/3 on screens >768px.
         .example-md-8
           .grid-example
-            code col() + cols(8, 768)
+            code col() + cols(8, 768px)
             | Full width on mobile, 2/3 on screens >768px.
       pre &lt;main&gt;
         |   &lt;div class=&quot;sidebar&quot;&gt;Full width on mobile, 1/3 on screens &gt;768px.&lt;/div&gt;
@@ -283,11 +283,11 @@ block content
         | main { @include row(); }
         | .sidebar { 
         |   @include col();
-        |   @include cols(4, 768);
+        |   @include cols(4, 768px);
         | }
         | .content { 
         |   @include col();
-        |   @include cols(8, 768);
+        |   @include cols(8, 768px);
         | }
       br
 
@@ -297,14 +297,14 @@ block content
         .example-md-4_2
           .grid-example
             pre col() 
-              | + cols(4, 768) 
-              | + cols(6, 1024)
+              | + cols(4, 768px) 
+              | + cols(6, 1024px)
             | Sidebar.
         .example-md-8_2
           .grid-example
             pre col() 
-              | + cols(8, 768)
-              | + cols(6, 1024)
+              | + cols(8, 768px)
+              | + cols(6, 1024px)
             | Content. 
       pre &lt;main&gt;
         |   &lt;div class=&quot;sidebar&quot;&gt;Sidebar.&lt;/div&gt;
@@ -314,24 +314,23 @@ block content
         | main { @include row(); }
         | .sidebar { 
         |   @include col();
-        |   @include cols(4, 768);
-        |   @include cols(6, 1024);
+        |   @include cols(4, 768px);
+        |   @include cols(6, 1024px);
         | }
         | .content { 
         |   @include col();
-        |   @include cols(8, 768);
-        |   @include cols(6, 1024);
+        |   @include cols(8, 768px);
+        |   @include cols(6, 1024px);
         | }
       br
 
-      h4 Use variables to consistently use screen sizes
-      pre $md: 768;  // Medium screens
-        | $lg: 1024; // Large screens
-        | 
-        | .content { 
+      h4 Use variables to consistently target screen sizes
+      pre .content { 
         |   @include col();
-        |   @include cols(8, $md);
-        |   @include cols(6, $lg);
+        |   @include cols(6, $screen-sm);
+        |   @include cols(8, $screen-md);
+        |   @include cols(9, $screen-lg);
+        |   @include cols(10, $screen-xl);
         | }
 
       h3 Bumping columns
@@ -359,10 +358,10 @@ block content
       section.example-main
         .example-bumptodeath
           pre col() 
-            | + cols(6, 768)
-            | + bump(6, 768)
-            | + cols(8, 1024)
-            | + bump(4, 1024)
+            | + cols(6, 768px)
+            | + bump(6, 768px)
+            | + cols(8, 1024px)
+            | + bump(4, 1024px)
 
       h3 Container
 
@@ -649,8 +648,6 @@ block content
             a(href="#browsers") Browser Support
           li
             a(href="#buttons") Buttons
-          li
-            a(href="#colors") Colors
           li
             a(href="#endconcat") End Concatenation
           li

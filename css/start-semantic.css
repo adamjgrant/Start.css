@@ -744,6 +744,8 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 @media screen and (min-width: 768px) {
   #s-growls {
     width: 50%;
+    right: 25px;
+    top: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
