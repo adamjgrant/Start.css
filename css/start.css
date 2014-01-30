@@ -1332,7 +1332,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   }
 }
 .s-btn {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #d4d4d4;
   color: white;
   text-decoration: none;
@@ -1376,7 +1376,7 @@ html body .s-btn:active, html body li .s-btn:active {
   color: #333333;
 }
 .s-btn.s-red {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #ca3518;
   color: white;
   text-decoration: none;
@@ -1411,7 +1411,7 @@ html body .s-btn.s-red:active, html body li .s-btn.s-red:active {
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 .s-btn.s-orange {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: darkorange;
   color: white;
   text-decoration: none;
@@ -1446,7 +1446,7 @@ html body .s-btn.s-orange:active, html body li .s-btn.s-orange:active {
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 .s-btn.s-yellow {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: gold;
   color: white;
   text-decoration: none;
@@ -1490,7 +1490,7 @@ html body .s-btn.s-yellow:active, html body li .s-btn.s-yellow:active {
   color: #333333;
 }
 .s-btn.s-green {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #58aa00;
   color: white;
   text-decoration: none;
@@ -1525,7 +1525,7 @@ html body .s-btn.s-green:active, html body li .s-btn.s-green:active {
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 .s-btn.s-blue {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: cornflowerblue;
   color: white;
   text-decoration: none;
@@ -1560,7 +1560,7 @@ html body .s-btn.s-blue:active, html body li .s-btn.s-blue:active {
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 .s-btn.s-violet {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: darkmagenta;
   color: white;
   text-decoration: none;
@@ -1595,7 +1595,7 @@ html body .s-btn.s-violet:active, html body li .s-btn.s-violet:active {
   -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
 }
 .s-btn.s-clear {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: transparent;
   color: white;
   text-decoration: none;
@@ -1645,7 +1645,7 @@ html body .s-btn.s-clear:active, html body li .s-btn.s-clear:active {
   color: #185bd3;
 }
 .s-btn.s-dark {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #555555;
   color: white;
   text-decoration: none;

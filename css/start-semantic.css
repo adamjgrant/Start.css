@@ -1046,7 +1046,7 @@ body, .wrapper {
 }
 
 button, .button {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #d4d4d4;
   color: white;
   text-decoration: none;
@@ -1091,7 +1091,7 @@ html body button:active, html body li button:active, html body .button:active, h
 }
 
 .btn-red {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #ca3518;
   color: white;
   text-decoration: none;
@@ -1127,7 +1127,7 @@ html body .btn-red:active, html body li .btn-red:active {
 }
 
 .btn-orange {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: darkorange;
   color: white;
   text-decoration: none;
@@ -1163,7 +1163,7 @@ html body .btn-orange:active, html body li .btn-orange:active {
 }
 
 .btn-yellow {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: gold;
   color: white;
   text-decoration: none;
@@ -1208,7 +1208,7 @@ html body .btn-yellow:active, html body li .btn-yellow:active {
 }
 
 .btn-green {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #58aa00;
   color: white;
   text-decoration: none;
@@ -1244,7 +1244,7 @@ html body .btn-green:active, html body li .btn-green:active {
 }
 
 .btn-blue {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: cornflowerblue;
   color: white;
   text-decoration: none;
@@ -1280,7 +1280,7 @@ html body .btn-blue:active, html body li .btn-blue:active {
 }
 
 .btn-violet {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: darkmagenta;
   color: white;
   text-decoration: none;
@@ -1316,7 +1316,7 @@ html body .btn-violet:active, html body li .btn-violet:active {
 }
 
 .btn-clear {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: transparent;
   color: white;
   text-decoration: none;
@@ -1367,7 +1367,7 @@ html body .btn-clear:active, html body li .btn-clear:active {
 }
 
 .btn-dark {
-  padding: 8.333333333333334px 16.666666666666668px;
+  padding: 8.33333px 16.66667px;
   background-color: #555555;
   color: white;
   text-decoration: none;
