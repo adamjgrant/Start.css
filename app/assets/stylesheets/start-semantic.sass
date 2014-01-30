@@ -101,12 +101,16 @@ table
 
 nav
   @include box()
-nav ul
-  @include nav()
-nav ul.right
-  @include nav(right)
-nav ul.vertical
-  @include nav(vertical)
+  &.fixed
+    @include box(null, fixed)
+  ul
+    @include nav()
+  &.dark
+    @include box(dark)
+  ul.right
+    @include nav(right)
+  ul.vertical
+    @include nav(vertical)
 
 // TILES
 
@@ -129,8 +133,8 @@ nav ul.vertical
 
 // TYPOGRAPHY
 
-.lead
-  @include lead()
+h2
+  @include anchor-adjust(70px)
 
 // MODALS
 

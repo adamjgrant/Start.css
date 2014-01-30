@@ -9,6 +9,12 @@
 	@if $type == 'dark' {
 	  background-color: $darkGrey;
   	  color: $lightGrey;
+  	  @include border-radius(0px);
+  	  ul li * {
+  	    color: $lightGrey;
+  	    &:hover { color: white; }
+  	    &:active { color: $yellow; }
+  	  }
 	}
 
 	@if $position == 'fixed' {
@@ -16,5 +22,6 @@
 	  top: 0;
 	  left: 0;
 	  right: 0;
+	  z-index: 11;
 	}
 }

@@ -6,16 +6,14 @@
   </head>
   <body style="padding-top: 60px">
     <header>
-      <nav>
-        <ul>
-          <li><a class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
-          <li class="s-dropdown"><a>Menu</a>
-            <ul>
-              <li><a href="index.html">Static</a></li>
-              <li><a href="semantic.html">Semantic</a></li>
-            </ul>
-          </li>
-        </ul>
+      <nav class="fixed dark">
+        <div class="wrapper">
+          <ul>
+            <li><a class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
+            <li><a href="index.html">Static</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -556,14 +554,6 @@ section {
           <pre>&lt;div class=&quot;announcement&quot;&gt;Hello world&lt;/div&gt;
  
 .announcement { @include base-typography(); }</pre>
-          <h3>Supplementary styling</h3>
-          <p>Use <code>lead()</code> for leading paragraph text.</p>
-          <p class="lead">Once upon a time,</p>
-          <p>there lived a fairy.</p>
-          <pre>&lt;p class=&quot;lead&quot;&gt;Once upon a time,&lt;/p&gt;
-&lt;p&gt;there lived a fairy.&lt;/p&gt;
- 
-.lead { @include lead(); }</pre>
           <h1>Heading</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <h2>Heading</h2>

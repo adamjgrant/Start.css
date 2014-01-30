@@ -89,10 +89,10 @@
 
 .s-box
   @include box(light)
-  &.s-dark
-    @include box(dark)
   &.s-fixed
     @include box(null, fixed)
+  &.s-dark
+    @include box(dark)
 
 // MODALS
 
@@ -114,7 +114,5 @@
 
 // TYPOGRAPHY
 
-.s-lead
-  @include lead()
 .s-anchorAdjust
-  @include anchor-adjust(75px)
+  @include anchor-adjust(70px)

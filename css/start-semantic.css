@@ -1333,7 +1333,19 @@ nav {
   background-color: #eeeeee;
   color: #555555;
 }
-
+nav.fixed {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #eeeeee;
+  color: #555555;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -1364,7 +1376,28 @@ nav ul li a:hover {
 nav ul li a:active {
   color: #555555;
 }
-
+nav.dark {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #eeeeee;
+  color: #555555;
+  background-color: #555555;
+  color: #eeeeee;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+nav.dark ul li * {
+  color: #eeeeee;
+}
+nav.dark ul li *:hover {
+  color: white;
+}
+nav.dark ul li *:active {
+  color: gold;
+}
 nav ul.right {
   margin: 0;
   padding: 0;
@@ -1396,7 +1429,6 @@ nav ul.right li a:hover {
 nav ul.right li a:active {
   color: #555555;
 }
-
 nav ul.vertical {
   margin: 0;
   padding: 0;
@@ -1587,9 +1619,9 @@ nav ul.vertical li a:active {
   float: right;
 }
 
-.lead {
-  font-size: 26px;
-  line-height: 32px;
+h2 {
+  margin-top: -70px;
+  padding-top: 70px;
 }
 
 .modal {

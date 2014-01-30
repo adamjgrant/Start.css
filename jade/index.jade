@@ -1,7 +1,7 @@
 extends layout-static
 
 block header
-  nav.s-box.s-fixed
+  nav.s-box.s-fixed.s-dark
     .s-wrapper
       ul.s-nav
         li
@@ -547,16 +547,12 @@ block content
           a Link
           | .
 
-        h3 Supplementary styling
-        p Use 
-          code .s-lead
-          |  for leading paragraph text.
-
-        p.s-lead Once upon a time,
-        p there lived a fairy.
-
-        pre &lt;p class=&quot;s-lead&quot;&gt;Once upon a time,&lt;/p&gt;
-          | &lt;p&gt;there lived a fairy.&lt;/p&gt;
+        h3 Anchor Adjust
+        p This will create a little margin trick allowing for headings to adjust vertically when retrieved by an anchor link.
+        p Try out the page-level links on this page as an example.
+        p With the basic library, this approximates some space below a fixed navbar. If you need more customization, try the semantic version of Start.css
+        pre &lt;h2 class=&quot;s-anchorAdjust&quot; id=&quot;link&quot;&gt;Title&lt;/h2&gt;
+          | &lt;a href=&quot;#link&quot;&gt;Go to title&lt;/a&gt;
 
 
       .s-fixedPane

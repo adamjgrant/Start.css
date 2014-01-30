@@ -1616,16 +1616,6 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   background-color: #eeeeee;
   color: #555555;
 }
-.s-box.s-dark {
-  margin-bottom: 25px;
-  border-radius: 3px;
-  padding: 5px;
-  overflow: hidden;
-  background-color: #eeeeee;
-  color: #555555;
-  background-color: #555555;
-  color: #eeeeee;
-}
 .s-box.s-fixed {
   margin-bottom: 25px;
   border-radius: 3px;
@@ -1637,6 +1627,29 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 11;
+}
+.s-box.s-dark {
+  margin-bottom: 25px;
+  border-radius: 3px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #eeeeee;
+  color: #555555;
+  background-color: #555555;
+  color: #eeeeee;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.s-box.s-dark ul li * {
+  color: #eeeeee;
+}
+.s-box.s-dark ul li *:hover {
+  color: white;
+}
+.s-box.s-dark ul li *:active {
+  color: gold;
 }
 
 .s-modal {
@@ -1793,12 +1806,7 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   color: #555555;
 }
 
-.s-lead {
-  font-size: 26px;
-  line-height: 32px;
-}
-
 .s-anchorAdjust {
-  margin-top: -75px;
-  padding-top: 75px;
+  margin-top: -70px;
+  padding-top: 70px;
 }

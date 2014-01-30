@@ -256,15 +256,6 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/app\/views\/layouts\/application.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -299,6 +290,15 @@
       "outputAbbreviatedPath" : "\/css\/start.css",
       "fileType" : 2,
       "debugStyle" : 0
+    },
+    "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test\/dummy\/app\/views\/layouts\/application.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/test\/dummy\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
