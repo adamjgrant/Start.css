@@ -1,19 +1,23 @@
 @import "lib/index"
 
-body
+body, .wrapper
   @include wrapper()
 .page
   @include row()
 
+.fixed-pane
+  @include fixed-pane()
 .sidebar
   @include col()
-  @include cols(4, $screen-md)
-  @include cols(3, $screen-lg)
+  @include cols(3, $screen-md)
+  @include cols(2, $screen-lg)
 
 .main
   @include col()
-  @include cols(8, $screen-md)
-  @include cols(9, $screen-lg)
+  @include bump(3, $screen-md)
+  @include cols(9, $screen-md)
+  @include bump(2, $screen-lg)
+  @include cols(10, $screen-lg)
 
 // GRID
 
