@@ -10,6 +10,7 @@ test/dummy/.sass-cache
 *.sassc
 .sass-cache
 capybara-*.html
+codekit-config.json
 .rspec
 .rvmrc
 /.bundle
