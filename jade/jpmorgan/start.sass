@@ -1,0 +1,116 @@
+@import "../../app/assets/stylesheets/lib/index"
+
+.wrapper
+  @include wrapper()
+
+.page, .mainFooter, .row
+  @include row()
+
+.main
+  @include col()
+
+.mainFooter
+  background-color: #DDD
+  margin-top: 100px
+  padding: 15px
+  li a
+    padding: 0
+    font-size: 12px
+
+.sidebar
+  @include col()
+  @include cols(4, $screen-sm)
+  @include cols(3, $screen-lg)
+
+.mainbar
+  @include col()
+  @include cols(8, $screen-sm)
+  @include cols(9, $screen-lg)
+
+.mainFooter-column
+  @include col()
+  @include cols(6, $screen-sm)
+  @include cols(4, $screen-md)
+  @include cols(3, $screen-md)
+  @include nav('vertical')
+.header-logo, .header-login
+  @include col()
+  @include cols(6)
+
+// BUTTONS
+
+button, .button
+  @include btn()
+.btn-red
+  @include btn($red)
+.btn-orange
+  @include btn($orange)
+.btn-yellow
+  @include btn($yellow)
+.btn-green
+  @include btn($green)
+.btn-blue
+  @include btn($blue)
+.btn-violet
+  @include btn($violet)
+.btn-clear
+  @include btn($clear)
+.btn-dark
+  @include btn($dark)
+
+// TABLES
+
+table
+  @include table()
+
+// BOX/NAV
+
+nav.mainNav
+  @include box()
+  &.fixed
+    @include box(fixed)
+  ul
+    @include nav()
+  ul.right
+    @include nav(right)
+  ul.vertical
+    @include nav(vertical)
+
+nav.list
+  @include nav(vertical)
+
+// CAROUSEL
+
+.carousel
+  width: 100%
+  height: 500px
+  background-color: #DDD
+
+// TILES
+
+.tile
+  @include tile()
+.tile-red
+  @include tile($red)
+.tile-orange
+  @include tile($orange)
+.tile-yellow
+  @include tile($yellow)
+.tile-green
+  @include tile($green)
+.tile-blue
+  @include tile($blue)
+.tile-violet
+  @include tile($violet)
+.tile-clear
+  @include tile(transparent)
+
+// TYPOGRAPHY
+
+.sectionHeader
+  @include section-header()
+
+// MODALS
+
+.modal
+  @include modal()
