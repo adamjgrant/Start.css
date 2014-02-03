@@ -83,6 +83,34 @@ block content
         | nav > ul.right { @include nav(right); }
         | .button        { @include btn(); }
 
+      h4 Modifiers
+      p Use the 
+        code .active
+        |  class to indicate a currently active menu item.
+
+      nav
+        ul
+          li
+            a Item 1
+          li
+            a.active Item 2
+          li
+            a Item 3
+
+      pre &lt;nav&gt;
+        |   &lt;ul&gt;
+        |     &lt;li&gt;
+        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |     &lt;/li&gt;
+        |     &lt;li&gt;
+        |       &lt;a class= &quot;active&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |     &lt;/li&gt;
+        |     &lt;li&gt;
+        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |     &lt;/li&gt;
+        |   &lt;/ul&gt;
+        | &lt;/nav&gt;
+
       h4 Dark
 
       nav.dark

@@ -762,7 +762,7 @@ body, .wrapper {
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
-  max-width: 1200px;
+  max-width: 1200;
 }
 
 .page {
@@ -850,6 +850,13 @@ body, .wrapper {
   .main {
     width: 75%;
   }
+}
+
+.section {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
 }
 
 .example-main {
@@ -1480,7 +1487,15 @@ nav ul li > * {
 }
 nav ul li a {
   text-decoration: none;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+nav ul li a.active {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-top: 13.33333px;
+  padding-bottom: 13.33333px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 nav ul li:hover a {
   color: #333333;
@@ -1513,7 +1528,15 @@ nav ul.right li > * {
 }
 nav ul.right li a {
   text-decoration: none;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+nav ul.right li a.active {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-top: 13.33333px;
+  padding-bottom: 13.33333px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 nav ul.right li:hover a {
   color: #333333;
@@ -1550,7 +1573,15 @@ nav ul.vertical li > * {
 }
 nav ul.vertical li a {
   text-decoration: none;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+nav ul.vertical li a.active {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-top: 13.33333px;
+  padding-bottom: 13.33333px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 nav ul.vertical li:hover a {
   color: #333333;
