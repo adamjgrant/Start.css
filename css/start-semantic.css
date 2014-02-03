@@ -859,6 +859,23 @@ body, .wrapper {
   padding-bottom: 12.5px;
 }
 
+.imgBox {
+  float: left;
+  margin-right: 12.5px;
+}
+
+.imgBox_right {
+  float: left;
+  margin-right: 12.5px;
+  float: right;
+  margin-left: 12.5px;
+}
+
+.imgBox-content {
+  display: block;
+  overflow: hidden;
+}
+
 .example-main {
   margin-left: -12.5px;
   margin-right: -12.5px;

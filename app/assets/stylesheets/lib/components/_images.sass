@@ -1,0 +1,10 @@
+@mixin imgBox($position: '') 
+  float: left
+  margin-right: ($space/2)
+  @if $position == right
+    float: right
+    margin-left: ($space/2)
+
+@mixin imgBox-content()
+  display: block
+  overflow: hidden

@@ -59,17 +59,6 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/js\/start.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/start.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/start-ck.js",
-      "fileType" : 64
-    },
     "\/jade\/jpmorgan\/events.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -81,6 +70,17 @@
       "outputAbbreviatedPath" : "\/html\/events.html",
       "fileType" : 512
     },
+    "\/js\/start.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/start.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/start-ck.js",
+      "fileType" : 64
+    },
     "\/html\/events.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -90,14 +90,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/html\/index.html" : {
+    "\/jade\/semantic.jade" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/jade\/semantic.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/html\/semantic.html",
+      "fileType" : 512
     },
     "\/html\/blog.html" : {
       "ignoreWasSetByUser" : 0,
@@ -120,16 +122,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/jade\/semantic.jade" : {
+    "\/html\/index.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/jade\/semantic.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/html\/semantic.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/html\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/jade\/layout-static.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -165,15 +165,15 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/app\/assets\/stylesheets\/lib\/components\/_buttons.scss" : {
+    "\/app\/assets\/stylesheets\/lib\/components\/_boxes.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_buttons.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_boxes.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_buttons.css",
+      "outputAbbreviatedPath" : "\/css\/_boxes.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -188,15 +188,15 @@
       "outputAbbreviatedPath" : "\/html\/index.html",
       "fileType" : 512
     },
-    "\/app\/assets\/stylesheets\/lib\/components\/_boxes.scss" : {
+    "\/app\/assets\/stylesheets\/lib\/components\/_buttons.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_boxes.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_buttons.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_boxes.css",
+      "outputAbbreviatedPath" : "\/css\/_buttons.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -275,6 +275,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/css\/start.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/start.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/app\/assets\/stylesheets\/lib\/components\/_modals.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -286,15 +295,6 @@
       "outputAbbreviatedPath" : "\/css\/_modals.css",
       "fileType" : 2,
       "debugStyle" : 0
-    },
-    "\/test\/dummy\/app\/assets\/stylesheets\/application.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/stylesheets\/application.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/jade\/jpmorgan\/start.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -319,12 +319,12 @@
       "outputAbbreviatedPath" : "\/html\/blog.html",
       "fileType" : 512
     },
-    "\/css\/start.css" : {
+    "\/test\/dummy\/app\/assets\/stylesheets\/application.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/start.css",
+      "inputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/stylesheets\/application.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -340,17 +340,26 @@
       "outputStyle" : 0,
       "fileType" : 32
     },
-    "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
+    "\/app\/assets\/stylesheets\/lib\/components\/_images.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/_index.scss",
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/components\/_images.sass",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_index.css",
-      "fileType" : 4,
+      "outputAbbreviatedPath" : "\/css\/_images.css",
+      "fileType" : 2,
       "debugStyle" : 0
+    },
+    "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test\/dummy\/app\/views\/layouts\/application.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/assets\/stylesheets\/start.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -364,6 +373,18 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
+    "\/app\/assets\/stylesheets\/lib\/_index.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/lib\/_index.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_index.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/jade\/layout-semantic.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -374,15 +395,6 @@
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/html\/layout-semantic.html",
       "fileType" : 512
-    },
-    "\/test\/dummy\/app\/views\/layouts\/application.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/app\/views\/layouts\/application.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/test\/dummy\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
@@ -405,15 +417,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/test\/dummy\/public\/422.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/public\/422.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/css\/docs.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -422,17 +425,6 @@
       "inputAbbreviatedPath" : "\/css\/docs.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
-    },
-    "\/test\/dummy\/app\/assets\/javascripts\/application.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application-ck.js",
-      "fileType" : 64
     },
     "\/app\/assets\/stylesheets\/lib\/components\/_navs.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -446,6 +438,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/test\/dummy\/app\/assets\/javascripts\/application.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/test\/dummy\/app\/assets\/javascripts\/application-ck.js",
+      "fileType" : 64
+    },
     "\/jade\/jpmorgan\/resources.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -456,6 +459,15 @@
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/html\/resources.html",
       "fileType" : 512
+    },
+    "\/test\/dummy\/public\/422.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/test\/dummy\/public\/422.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [

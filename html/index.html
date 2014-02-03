@@ -1,73 +1,560 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="../css/start.css">
+    <link rel="stylesheet" href="../css/docs.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="mainHeader">
-        <div class="row section">
-          <div class="header-logo">
-            <h1><a href="index.html">AMS</a></h1>
-          </div>
-          <div class="header-login">
-            <p style="text-align: right"> <a href="#">Login</a></p>
-          </div>
+  <body style="padding-top: 60px">
+    <header>
+      <nav class="s-box s-fixed s-dark">
+        <div class="s-wrapper">
+          <ul class="s-nav">
+            <li><a class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
+            <li><a href="index.html">Static</a></li>
+            <li><a href="semantic.html">Semantic</a></li>
+          </ul>
+          <ul class="s-nav s-right">
+            <li><a href="#" class="s-btn s-blue">Download</a></li>
+          </ul>
         </div>
-      </header>
-      <nav class="mainNav">
-        <ul>
-          <li> <a href="index.html" class="active">Home </a></li>
-          <li> <a href="blog.html">Blog</a></li>
-          <li> <a href="events.html">Events</a></li>
-          <li> <a href="resources.html">Resources</a></li>
-        </ul>
       </nav>
-      <main>
-        <div class="carousel">Carousel</div>
-        <div class="page">
-          <section class="main section">
-            <div class="sectionHeader">
-              <h1>Approach</h1>
+    </header>
+    <main>
+      <div class="s-wrapper">
+        <div class="s-row">
+          <div class="s-sm-8 s-bump-sm-4 s-lg-9 s-bump-lg-3 s-col">
+            <h1>Start.css</h1>
+            <p>These are the temporary docs for Start.css. Eventually there will be something much better-looking here.</p>
+            <header id="boxes" class="s-sectionHeader">
+              <h2>Boxes and Bars</h2>
+            </header>
+            <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
+            <h3>Navigation Boxes</h3>
+            <p>Boxes for horizontal navigation should be filled with unordered lists (``ul``)</p>
+            <nav class="s-box">
+              <ul class="s-nav">
+                <li><a>Item</a></li>
+                <li><a class="s-btn">Item</a></li>
+              </ul>
+            </nav>
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+            <h4>Right-aligned</h4>
+            <p>Use <code>.s-right</code> on the child ul to align right. <code>li.s-box-heading</code> will give you a formatted title.</p>
+            <nav class="s-box">
+              <ul class="s-nav">
+                <li><a>Item</a></li>
+                <li><a class="s-btn">Item</a></li>
+              </ul>
+              <ul class="s-nav s-right">
+                <li><a class="s-btn">Item</a></li>
+              </ul>
+            </nav>
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;s-nav s-right&quot;&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+            <h4>Modifiers</h4>
+            <p>Use the <code>.active</code> class to indicate a currently active menu item.</p>
+            <nav class="s-box">
+              <ul class="s-nav">
+                <li><a>Item</a></li>
+                <li><a class="active">Item</a></li>
+                <li><a>Item</a></li>
+              </ul>
+            </nav>
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;active&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+            <h4>Vertical</h4>
+            <p>Add <code>.s-vertical</code> to <code>.s-nav</code> to align contents vertically.</p>
+            <nav class="s-box">
+              <ul class="s-nav s-vertical">
+                <li><a>Item</a></li>
+                <li><a>Item</a></li>
+              </ul>
+            </nav>
+            <pre>&lt;nav class=&quot;s-box&quot;&gt;
+  &lt;ul class=&quot;s-nav s-vertical&quot;&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+            <header id="browsers" class="s-sectionHeader">
+              <h2>Browser Support </h2>
+            </header>
+            <p>Which browsers does start.css support? Latest.</p>
+            <p>IE11+, Chrome, Firefox 16+, and Safari (sort of) are all auto updating browsers. Because of this shift in the browser support ecosystem, we state the current latest browsers on the day of a Start.css stable release are the browsers that version supports. </p>
+            <p>For older browser support, download an earlier version of Start.css.</p>
+            <header id="buttons" class="s-sectionHeader">
+              <h2>Buttons</h2>
+            </header>
+            <p>Buttons should be either links, submit inputs, or html buttons.</p>
+            <p><a class="s-btn">Button</a>
+              <button class="s-btn">Button</button>
+              <input type="submit" value="Button" class="s-btn">
+            </p>
+            <pre>&lt;a class=&quot;s-btn&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+&lt;button class=&quot;s-btn&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;s-btn&quot; type=&quot;submit&quot; value="button"/&gt;</pre>
+            <h3>Colors</h3>
+            <p>Add <code>s-[color]</code> to any <code>s-btn</code> where color is red, orange, yellow, green, blue, violet, clear, or dark.</p><a class="s-btn">Default</a><a class="s-btn s-red">Red </a><a class="s-btn s-orange">Orange</a><a class="s-btn s-yellow">Yellow</a><a class="s-btn s-green">Green</a><a class="s-btn s-blue">Blue</a><a class="s-btn s-violet">Violet</a><a class="s-btn s-clear">Clear</a><a class="s-btn s-dark">Dark</a>
+            <pre>&lt;a href=&quot;#&quot; class=&quot;s-btn&quot;&gt;Default&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;s-btn s-red&quot;&gt;Red&lt;/a&gt;
+...</pre>
+            <header id="endconcat" class="s-sectionHeader">
+              <h2>End Concatenation</h2>
+            </header>
+            <p>This is a small trick to prevent the last line of a paragraph from containing only one word.</p>
+            <p>So instead of:</p>
+            <pre>lorem ipsum dolor sit
+amet</pre>
+            <p>End concatenation produces:</p>
+            <pre>lorem ipsum dolor
+sit amet</pre>
+            <p>To use, simply add the class <code>.s-endconcat</code> or use the jQuery plugin</p>
+            <pre>$(element).s_endconcat()</pre>
+            <p>Where <code>element</code> is the element to have enconcatenation applied.</p>
+            <header id="grid" class="s-sectionHeader">
+              <h2>Grid</h2>
+            </header>
+            <p>Start uses a 12 column grid. To create a gridded row, start with an <code>.s-row</code> container.</p>
+            <pre>&lt;section class=&quot;s-row&quot;&gt;&lt;/section&gt;</pre>
+            <p>Columns are defined with the <code>.s-col</code> class and with <code>.s-x</code> measuring classes where "x" is a number between 1-12.</p>
+            <p>Using <code>.s-col</code> without a measuring class will default to <code>.s-12</code></p>
+            <section class="s-row">
+              <div class="s-col s-4">
+                <div class="grid-example s-box">s-col s-4</div>
+              </div>
+              <div class="s-col s-8">
+                <div class="grid-example s-box">s-col s-8</div>
+              </div>
+            </section><br>
+            <pre>&lt;section class=&quot;s-row&quot;&gt;
+  &lt;div class=&quot;s-col s-4&quot;&gt;s-col s-4&lt;/div&gt;
+  &lt;div class=&quot;s-col s-8&quot;&gt;s-col s-8&lt;/div&gt;
+&lt;/section&gt;</pre>
+            <h3>Other examples</h3>
+            <section class="s-row">
+              <div class="s-col">
+                <div class="grid-example s-box">s-col</div>
+              </div>
+            </section><br>
+            <section class="s-row">
+              <div class="s-col s-4">
+                <div class="grid-example s-box">s-col s-4</div>
+              </div>
+              <div class="s-col s-4">
+                <div class="grid-example s-box">s-col s-4</div>
+              </div>
+              <div class="s-col s-4">
+                <div class="grid-example s-box">s-col s-4</div>
+              </div>
+            </section><br>
+            <section class="s-row">
+              <div class="s-col s-3">
+                <div class="grid-example s-box">s-col s-3</div>
+              </div>
+              <div class="s-col s-6">
+                <div class="grid-example s-box">s-col s-6</div>
+              </div>
+              <div class="s-col s-3">
+                <div class="grid-example s-box">s-col s-3</div>
+              </div>
+            </section><br>
+            <h3>Responsive Grid</h3>
+            <p>The grid is designed to operate <em>mobile-first</em>, so there is no class to target devices with widths less than 320px.</p>
+            <p>To specify a column size for a larger screen, use the additional size prefixes <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>.</p>
+            <section class="s-row">
+              <div class="s-col s-md-4">
+                <div class="grid-example s-box">(s-col s-md-4) 4 columns in medium width</div>
+              </div>
+              <div class="s-col s-md-8">
+                <div class="grid-example s-box">(s-col s-md-8) 8 columns in medium width</div>
+              </div>
+            </section><br>
+            <section class="s-row">
+              <div class="s-col">
+                <div class="grid-example s-box">(s-col) Mobile devices tend to use one-column layouts more often.</div>
+              </div>
+              <div class="s-col">
+                <div class="grid-example s-box">(s-col) So why bother specifying every time?</div>
+              </div>
+              <div class="s-col s-lg-6">
+                <div class="grid-example s-box">(s-col s-lg-6) Write only the classes needed for larger screens.</div>
+              </div>
+              <div class="s-col s-lg-6">
+                <div class="grid-example s-box">(s-col s-lg-6) Keep your HTML tidy.</div>
+              </div>
+            </section>
+            <section class="s-row">
+              <div class="s-col s-lg-4">
+                <div class="grid-example s-box">(s-col s-lg-4) Responsive design</div>
+              </div>
+              <div class="s-col s-lg-4">
+                <div class="grid-example s-box">(s-col s-lg-4) is</div>
+              </div>
+              <div class="s-col s-lg-4">
+                <div class="grid-example s-box">(s-col s-lg-4) easy.</div>
+              </div>
+            </section><br>
+            <h3>Bumping columns</h3>
+            <section class="s-row">
+              <div class="s-col s-md-4 s-bump-md-8">
+                <div class="s-box grid-example">.s-col.s-md-4.s-bump-md-8</div>
+              </div>
+            </section>
+            <section class="s-row">
+              <div class="s-col s-md-4">
+                <div class="s-box grid-example">.s-col.s-md-4</div>
+              </div>
+              <div class="s-col s-md-3 s-bump-md-5">
+                <div class="s-box grid-example">.s-col.s-md-3.s-bump-md-5</div>
+              </div>
+            </section>
+            <section class="s-row">
+              <div class="s-col s-md-11 s-bump-md-1">
+                <div class="s-box grid-example">.s-col.s-md-11.s-bump-md-1</div>
+              </div>
+            </section>
+            <h3>Container</h3>
+            <p>To contain the page in a nice, centered wrapper, use <code>.s-wrapper</code></p>
+            <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
+            <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
+            <pre>&lt;div class=&quot;s-wrapper s-lg&quot;&gt;&lt;/div&gt;</pre>
+            <header id="growls" class="s-sectionHeader">
+              <h2>Growls</h2>
+            </header>
+            <p>Growls are unobtrusive pop up messages called via JavaScript. A basic call might look like this:</p>
+            <pre>$.sGrowl({
+   icon: 'save',
+   title: 'Saved',
+   text: 'Your document has been saved'  
+ })</pre>
+            <p>
+              <button onclick="$.sGrowl({icon: 'save',title: 'Saved',text: 'Your document has been saved', delay: 1000})" class="s-btn s-blue">Try it</button>
+              <button onclick="$.sGrowl({icon: 'save',title: 'Error',text: 'Not really an error message, just demonstrating a growl.', color: 'red'})" class="s-btn s-clear">No delay</button>
+            </p>
+            <h3>Parameters</h3>
+            <table class="s-table">
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Default</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>icon</code></td>
+                  <td>&mdash;</td>
+                  <td>Icon to appear before the heading. Choose from the <a href="http://fontawesome.io/">Font Awesome 4 library</a> without the preceding "fa-"</td>
+                </tr>
+                <tr>
+                  <td><code>title</code></td>
+                  <td>&mdash;</td>
+                  <td>Bold-faced title to appear on the first line.</td>
+                </tr>
+                <tr>
+                  <td><code>text</code></td>
+                  <td>&mdash;</td>
+                  <td>Main text under the title. HTML allowed.</td>
+                </tr>
+                <tr>
+                  <td><code>delay</code></td>
+                  <td>(Infinite)</td>
+                  <td>Delay in miliseconds before dismissing growl. Ignore this parameter to keep growl permanent.</td>
+                </tr>
+                <tr>
+                  <td><code>container</code></td>
+                  <td> <code>#s-growls</code></td>
+                  <td>HTML element where growl should be sent. Write in CSS notation.</td>
+                </tr>
+                <tr>
+                  <td><code>color</code></td>
+                  <td><code>green</code></td>
+                  <td>Color of growl (red/orange/yellow/green/blue/violet).</td>
+                </tr>
+                <tr>
+                  <td><code>class</code></td>
+                  <td>&mdash;</td>
+                  <td>Additional classes to apply to growl. Separate multiple classes with a space.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Advanced</h3>
+            <p>Here is a growl that will appear in red in the container below and disappear after 3 seconds.</p>
+            <div id="example-container" class="s-box s-yellow"> 
+              <p>Growl will appear above.</p>
             </div>
-            <h4>Lorem ipsum dolor sit amet</h4>
-            <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="sectionHeader">
-              <h1>Products</h1>
+            <pre>$.sGrowl({
+  color: 'red', 
+  icon: 'book',
+  title: 'Test',
+  text: 'Testing...1, 2, 3', 
+  delay: 3000, 
+  container: '#example-container'
+})</pre>
+            <p>
+              <button onclick="$.sGrowl({color: 'red', icon: 'book',title: 'Test',text: 'Testing...1, 2, 3', delay: 3000, container: '#example-container'})" class="s-btn s-blue">Try it</button>
+            </p>
+            <header id="images" class="s-sectionHeader">
+              <h2>Images</h2>
+            </header>
+            <h3>Using images as thumbnails</h3>
+            <p>Using a new class element of the <code>.s-box</code> block, we can easily create nicely-spaced left- or right-aligned thumbnail images.</p>
+            <section class="img-box"><img src="img/flower.jpg" style="width: 64px">
+              <div>
+                <h5>Flowers</h5>
+                <p>Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </section>
+            <pre>&lt;div class=&quot;s-box&quot;&gt;
+  &lt;img class=&quot;s-box-caption_left&quot; src=&quot;img/flowers.jpg&quot; /&gt;
+  &lt;div class=&quot;s-box-caption_right&quot;&gt;
+    &lt;h5&gt;Flowers&lt;/h5&gt;
+    &lt;p&gt;Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <div class="s-box"><img src="img/flower.jpg" style="width: 64px" class="s-box-caption_right">
+              <div class="s-box-caption_left">
+                <h5>Flowers</h5>
+                <p>Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
-            <h4>Lorem ipsum dolor sit amet</h4>
-            <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </section>
+            <pre>&lt;div class=&quot;s-box&quot;&gt;
+  &lt;img class=&quot;s-box-caption_right&quot; src=&quot;img/flowers.jpg&quot; /&gt;
+  &lt;div class=&quot;s-box-caption_left&quot;&gt;
+    &lt;h5&gt;Flowers&lt;/h5&gt;
+    &lt;p&gt;Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <header id="modals" class="s-sectionHeader">
+              <h2>Modals</h2>
+            </header>
+            <p>Modals require just one element.</p>
+            <pre>&lt;div class=&quot;s-modal&quot;&gt;&lt;/div&gt;</pre>
+            <p>Fill with regular HTML</p>
+            <pre>&lt;div class=&quot;s-modal&quot;&gt;
+  &lt;h4&gt;Modal Title&lt;/h1&gt;
+  &lt;p&gt;Hello world&lt;/p&gt;
+&lt;/div&gt;</pre>
+            <div id="modal-modal1" class="s-modal">
+              <h4>Modal Title</h4>
+              <p>Hello world</p>
+            </div><a id="modal1" class="s-btn">Try it</a>
+            <h3>Easy styling</h3>
+            <p>Modals will recognize HTML5's <code>header</code>, <code>main</code>, and <code>footer</code>.</p>
+            <div id="modal-modal2" class="s-modal">
+              <header>
+                <h4>Modal Title</h4>
+              </header>
+              <main>
+                <p>Hello world</p>
+              </main>
+              <footer><a class="s-btn">Save</a></footer>
+            </div>
+            <pre>&lt;div class=&quot;s-modal&quot;&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Modal Title&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;p&gt;Hello World&lt;/p&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;a class=&quot;s-btn&quot;&gt;Save&lt;/a&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</pre><a id="modal2" class="s-btn">Try it</a>
+            <header id="progress" class="s-sectionHeader">
+              <h2>Progress</h2>
+            </header>
+            <p>Use the default HTML5 <code>progress</code> element with the <code>.s-box</code> class.</p>
+            <progress value="30" max="100" class="s-box s-3"></progress>
+            <pre>&lt;progress class="s-box s-3" value="30" max="100"&gt;&lt;/progress&gt;</pre>
+            <p>Add <code>.s-[color]</code> for alternate colors.</p>
+            <pre>&lt;progress class="s-box s-red" value="30" max="100"&gt;&lt;/progress&gt;</pre>
+            <progress value="30" max="100" class="s-box s-red"></progress>
+            <progress value="30" max="100" class="s-box s-orange"></progress>
+            <progress value="30" max="100" class="s-box s-yellow"></progress>
+            <progress value="30" max="100" class="s-box s-green"></progress>
+            <progress value="30" max="100" class="s-box s-blue"></progress>
+            <progress value="30" max="100" class="s-box s-violet"></progress>
+            <progress value="30" max="100" class="s-box s-white"></progress>
+            <progress value="30" max="100" class="s-box s-blue s-clear s-bordered"></progress>
+            <header id="tiles" class="s-sectionHeader">
+              <h2>Tiles</h2>
+            </header>
+            <p>Tiles are attractive boxes for featuring content.</p>
+            <div class="s-row">
+              <div class="s-col s-4">
+                <div class="s-tile">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p><a class="s-btn">Read more</a>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-red">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p><a class="s-red s-btn">Read more</a>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-orange">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p><a class="s-orange s-btn">Read more</a>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-yellow">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-green">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-blue">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-violet">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+              <div class="s-col s-4">
+                <div class="s-tile s-clear">
+                  <h4>Learn More</h4>
+                  <p>Learn about the great features we have to offer.</p>
+                </div>
+              </div>
+            </div>
+            <pre>&lt;main class=&quot;s-row&quot;&gt;
+  &lt;section class=&quot;s-col s-4&quot;&gt;
+    &lt;article class=&quot;s-tile&quot;&gt;
+      &lt;h4&gt;Learn more&lt;/h1&gt;
+      &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;s-tile s-red&quot;&gt;
+      &lt;h4&gt;Learn more&lt;/h1&gt;
+      &lt;p&gt;Learn more about the great features we have to offer.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</pre>
+            <p>The full list of color options is:</p>
+            <ul>
+              <li>(none) Defaults to dark grey.</li>
+              <li>Red</li>
+              <li>Orange</li>
+              <li>Yellow</li>
+              <li>Green</li>
+              <li>Blue</li>
+              <li>Violet</li>
+              <li>Clear</li>
+            </ul>
+            <header id="typography" class="s-sectionHeader">
+              <h2>Typography</h2>
+            </header>
+            <p>Typography relies mostly on standard HTML5 elements.</p>
+            <p>Use hx (where x = 1-5) for headings and p, etc for basic text formatting.</p>
+            <h1>Heading1</h1>
+            <h2>Heading2</h2>
+            <h3>Heading3</h3>
+            <h4>Heading4</h4>
+            <h5>Heading5</h5>
+            <p> <strong>Strong </strong>and <em>emphatic </em>paragraph with <a>Link</a>.</p>
+            <h3>Anchor Adjust</h3>
+            <p>This will create a little margin trick allowing for headings to adjust vertically when retrieved by an anchor link.</p>
+            <p>Try out the page-level links on this page as an example.</p>
+            <p>With the basic library, this approximates some space below a fixed navbar. If you need more customization, try the semantic version of Start.css</p>
+            <pre>&lt;h2 class=&quot;s-anchorAdjust&quot; id=&quot;link&quot;&gt;Title&lt;/h2&gt;
+&lt;a href=&quot;#link&quot;&gt;Go to title&lt;/a&gt;</pre>
+          </div>
+          <div class="s-fixedPane">
+            <div style="margin-top: 60px" class="s-wrapper">
+              <div class="s-row">
+                <div class="s-sm-4 s-lg-3 s-col">
+                  <div class="s-box">
+                    <ul class="s-nav s-vertical">
+                      <li>
+                        <h4>Directory</h4>
+                      </li>
+                      <li>
+                        <h5>Components</h5>
+                      </li>
+                      <li><a href="#boxes">Boxes and Bars</a></li>
+                      <li><a href="#browsers">Browser Support</a></li>
+                      <li><a href="#buttons">Buttons</a></li>
+                      <li><a href="#endconcat">End Concatenation</a></li>
+                      <li><a href="#grid">Grid</a></li>
+                      <li><a href="#growls">Growls</a></li>
+                      <li><a href="#images">Images</a></li>
+                      <li><a href="#modals">Modals</a></li>
+                      <li><a href="#progress">Progress</a></li>
+                      <li><a href="#tiles">Tiles</a></li>
+                      <li><a href="#typography">Typography</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
-    <footer class="mainFooter">
-      <div class="wrapper">
-        <ul class="mainFooter-column">
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-        </ul>
-        <ul class="mainFooter-column">
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-        </ul>
-        <ul class="mainFooter-column">
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-        </ul>
-        <ul class="mainFooter-column">
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-          <li><a href="#">A</a></li>
-        </ul>
       </div>
-    </footer>
+    </main>
+    <footer></footer>
   </body>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="../js/start.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <script>
+    $('p, span').s_endconcat()
+    $('#launch-modal').click(function() {
+      $('#modal').fadeIn('fast')
+    }) 
+  </script>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script>
+    $('#modal1').click(function() { $('#modal-modal1').fadeIn('fast'); })
+    $('#modal2').click(function() { $('#modal-modal2').fadeIn('fast'); })
+  </script>
 </html>
