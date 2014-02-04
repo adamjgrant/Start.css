@@ -11,14 +11,6 @@
 .main
   @include col()
 
-.mainFooter
-  background-color: #DDD
-  @include section()
-  margin-bottom: 0
-  li a
-    padding: 0
-    font-size: 12px
-
 .sidebar
   @include col()
   @include cols(4, $screen-sm)
@@ -31,10 +23,22 @@
 
 .mainFooter-column
   @include col()
-  @include cols(6, $screen-sm)
-  @include cols(4, $screen-md)
+  @include cols(4, $screen-sm)
   @include cols(3, $screen-md)
+  @include cols(2, $screen-md)
   @include nav('vertical')
+
+.mainFooter
+  background-color: darken($blue, 35%)
+  @include section()
+  margin-bottom: 0
+  li a
+    padding: 0
+    font-size: 12px
+    color: rgba(255, 255, 255, 0.4)
+    &:hover 
+      color: white
+  
 .header-logo, .header-login
   @include col()
   @include cols(6)

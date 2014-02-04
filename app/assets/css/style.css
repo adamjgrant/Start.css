@@ -750,7 +750,7 @@ code {
   padding: 0 5.55556px;
 }
 
-body, .wrapper {
+body > main, .wrapper {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -1456,14 +1456,12 @@ table tbody tr:nth-child(2n) {
 nav {
   margin-bottom: 25px;
   border-radius: 3px;
-  padding: 5px;
   overflow: hidden;
   background-color: #eeeeee;
 }
 nav.fixed {
   margin-bottom: 25px;
   border-radius: 3px;
-  padding: 5px;
   overflow: hidden;
   background-color: #eeeeee;
   position: fixed;
@@ -1503,16 +1501,12 @@ nav ul li a {
   cursor: pointer;
 }
 nav ul li a.active {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  padding-top: 13.33333px;
-  padding-bottom: 13.33333px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-nav ul li:hover a {
+nav ul li a:hover {
   color: #333333;
 }
-nav ul li:active a {
+nav ul li a:hover {
   color: #555555;
 }
 nav ul.right {
@@ -1544,16 +1538,12 @@ nav ul.right li a {
   cursor: pointer;
 }
 nav ul.right li a.active {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  padding-top: 13.33333px;
-  padding-bottom: 13.33333px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-nav ul.right li:hover a {
+nav ul.right li a:hover {
   color: #333333;
 }
-nav ul.right li:active a {
+nav ul.right li a:hover {
   color: #555555;
 }
 nav ul.vertical {
@@ -1589,16 +1579,12 @@ nav ul.vertical li a {
   cursor: pointer;
 }
 nav ul.vertical li a.active {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  padding-top: 13.33333px;
-  padding-bottom: 13.33333px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-nav ul.vertical li:hover a {
+nav ul.vertical li a:hover {
   color: #333333;
 }
-nav ul.vertical li:active a {
+nav ul.vertical li a:hover {
   color: #555555;
 }
 

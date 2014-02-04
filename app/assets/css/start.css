@@ -1718,14 +1718,12 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
 .s-box {
   margin-bottom: 25px;
   border-radius: 3px;
-  padding: 5px;
   overflow: hidden;
   background-color: #eeeeee;
 }
 .s-box.s-fixed {
   margin-bottom: 25px;
   border-radius: 3px;
-  padding: 5px;
   overflow: hidden;
   background-color: #eeeeee;
   position: fixed;
@@ -1823,16 +1821,12 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   cursor: pointer;
 }
 .s-nav li a.active {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  padding-top: 13.33333px;
-  padding-bottom: 13.33333px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.s-nav li:hover a {
+.s-nav li a:hover {
   color: #333333;
 }
-.s-nav li:active a {
+.s-nav li a:hover {
   color: #555555;
 }
 .s-nav.s-right {
@@ -1864,16 +1858,12 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   cursor: pointer;
 }
 .s-nav.s-right li a.active {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  padding-top: 13.33333px;
-  padding-bottom: 13.33333px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.s-nav.s-right li:hover a {
+.s-nav.s-right li a:hover {
   color: #333333;
 }
-.s-nav.s-right li:active a {
+.s-nav.s-right li a:hover {
   color: #555555;
 }
 .s-nav.s-vertical {
@@ -1909,16 +1899,12 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   cursor: pointer;
 }
 .s-nav.s-vertical li a.active {
-  margin-top: -5px;
-  margin-bottom: -5px;
-  padding-top: 13.33333px;
-  padding-bottom: 13.33333px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.s-nav.s-vertical li:hover a {
+.s-nav.s-vertical li a:hover {
   color: #333333;
 }
-.s-nav.s-vertical li:active a {
+.s-nav.s-vertical li a:hover {
   color: #555555;
 }
 

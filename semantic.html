@@ -363,18 +363,20 @@ main { @include row(); }
           <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
           <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
           <pre>&lt;body&gt;
-  &lt;main&gt;
-    &lt;aside&gt;
-      &lt;h5&gt;Sidebar&lt;/h5&gt;
-    &lt;/aside&gt;
-    &lt;section&gt;
-      &lt;h1&gt;Main section&lt;/h1&gt;
-    &lt;/section&gt;
-  &lt;/main&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;        
+    &lt;main&gt;
+      &lt;aside&gt;
+        &lt;h5&gt;Sidebar&lt;/h5&gt;
+      &lt;/aside&gt;
+      &lt;section&gt;
+        &lt;h1&gt;Main section&lt;/h1&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
 &lt;/body&gt;</pre>
-          <pre>body    { @include wrapper(); }
-main    { @include row(); }
-aside   { 
+          <pre>.wrapper { @include wrapper(); }
+main     { @include row(); }
+aside    { 
   @include col();
   @include cols(4);
 }

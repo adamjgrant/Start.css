@@ -3,17 +3,14 @@ html
   head
     link(rel="stylesheet", href="../css/style.css")
     block variables
+    title 
+      =title
   body
     .wrapper
-      header.mainHeader
-        .row.section
-          .header-logo
-            h1
-              a(href="index.html") AMS
-          .header-login
-            p(style="text-align: right") 
-              a(href="#") Login
-        nav.mainNav
+      block hero
+    header.mainHeader
+      nav.mainNav
+        .wrapper.wrapper_clear
           ul
             li 
               a(href="index.html" class=(title === 'home' ? 'active' : '')) Home 
@@ -23,43 +20,47 @@ html
               a(href="events.html" class=(title === 'events' ? 'active' : '')) Events
             li 
               a(href="resources.html" class=(title === 'resources' ? 'active' : '')) Resources
+    .wrapper
       block content
     
     footer.mainFooter
       .wrapper.wrapper_clear
         ul.mainFooter-column
           li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
+            a(href="#") JP Morgan
         ul.mainFooter-column
           li
-            a(href="#") A
+            a(href="#") (c) 2014 JP Morgan
           li
-            a(href="#") A
+            a(href="#") About J.P. Morgan
           li
-            a(href="#") A
-          li
-            a(href="#") A
+            a(href="#") J.P. Morgan
         ul.mainFooter-column
           li
-            a(href="#") A
+            a(href="#") Privacy Statement
           li
-            a(href="#") A
+            a(href="#") Privacy Notice
           li
-            a(href="#") A
+            a(href="#") Security
           li
-            a(href="#") A
+            a(href="#") Terms of Use
         ul.mainFooter-column
           li
-            a(href="#") A
+            a(href="#") Terms of Use
           li
-            a(href="#") A
+            a(href="#") Accessibility
           li
-            a(href="#") A
+            a(href="#") Site Map
+        ul.mainFooter-column
           li
-            a(href="#") A
+            a(href="#") Copyright 
+          li
+            a(href="#") Facebook 
+          li
+            a(href="#") Twitter
+          li
+            a(href="#") Facebook 
+          li
+            a(href="#") Google+ 
+          li
+            a(href="#") Blog 
