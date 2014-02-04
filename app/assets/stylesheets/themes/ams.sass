@@ -8,8 +8,7 @@
 
 $blue:                     #278EBF
 
-$body-background:          darken($blue, 30%)
-$wrapper-background:       white
+$body-background:          $lightGrey
 $navbar-background:        darken($blue, 10%)
 
 // TYPOGRAPHY
@@ -45,6 +44,8 @@ $font-baseColor:           $black
 
 @mixin section() 
   @include section-default() 
+  padding-top: $space
+  padding-bottom: $space
 
 // TYPOGRAPHY
 // ----------

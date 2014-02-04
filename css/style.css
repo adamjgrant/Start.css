@@ -410,7 +410,7 @@ th {
     -webkit-transform: translateY(0); } }
 
 body {
-  background-color: #0d3040; }
+  background-color: #eeeeee; }
 
 a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-left: 5px; }
@@ -653,7 +653,7 @@ code {
   display: block;
   padding: 0px 12.5px;
   max-width: 1024px;
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
   padding: 0 25px; }
 
