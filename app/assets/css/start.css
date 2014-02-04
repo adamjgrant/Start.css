@@ -471,106 +471,6 @@ body {
   background-color: white;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  line-height: normal;
-  margin: 10px 0;
-  font-weight: 200;
-}
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
-  margin-top: 0;
-}
-
-p,
-em,
-strong,
-i,
-b,
-ul,
-ol,
-li,
-table,
-blockquote,
-pre,
-table,
-code {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  margin-bottom: 25px;
-  line-height: 21px;
-}
-
-li {
-  margin-bottom: 0;
-}
-
-a {
-  cursor: pointer;
-}
-
-body {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  line-height: 21px;
-}
-
-h1 {
-  font-size: 36px;
-  margin: 25px 0;
-}
-
-h2 {
-  font-size: 32px;
-  margin: 17.5px 0;
-}
-
-h3 {
-  font-size: 26px;
-  margin: 16.25px 0;
-}
-
-h4 {
-  font-size: 19px;
-  margin: 12.5px 0;
-}
-
-h5 {
-  font-weight: 500;
-}
-
-blockquote {
-  font-family: "Baskerville", "Palatino", "Times New Roman", serif;
-  margin: 25px;
-  font-style: italic;
-  font-size: 30px;
-  line-height: 40px;
-}
-blockquote:before {
-  content: open-quote;
-  font-size: 70px;
-  margin-left: -30px;
-}
-
-code, pre {
-  color: #1651bc;
-  background-color: #edf3fd;
-  border-radius: 3px;
-  padding: 8.33333px 16.66667px;
-  font-family: monospace;
-  word-break: break-all;
-  word-wrap: break-word;
-  border: 0px !important;
-}
-
-code {
-  margin-bottom: 0px;
-  padding: 0 5.55556px;
-}
-
 a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-left: 5px;
 }
@@ -766,12 +666,103 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
     width: 350px;
   }
 }
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: normal;
+  margin: 10px 0;
+  font-weight: 200;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+  margin-top: 0;
+}
+
+p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 21px;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+a {
+  cursor: pointer;
+  color: cornflowerblue;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 21px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 25px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 17.5px 0;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 16.25px 0;
+}
+
+h4 {
+  font-size: 19px;
+  margin: 12.5px 0;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+blockquote {
+  font-family: "Baskerville", "Palatino", "Times New Roman", serif;
+  margin: 25px;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 40px;
+}
+blockquote:before {
+  content: open-quote;
+  font-size: 70px;
+  margin-left: -30px;
+}
+
+code, pre {
+  color: #1651bc;
+  background-color: #edf3fd;
+  border-radius: 3px;
+  padding: 8.33333px 16.66667px;
+  font-family: monospace;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 0px !important;
+}
+
+code {
+  margin-bottom: 0px;
+  padding: 0 5.55556px;
+}
+
 .s-wrapper {
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
   max-width: 1200;
+  background-color: transparent;
+  overflow: hidden;
 }
 .s-wrapper.s-sm {
   margin-left: auto;
@@ -779,6 +770,8 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
   padding: 0px 12.5px;
   max-width: 768px;
+  background-color: transparent;
+  overflow: hidden;
 }
 .s-wrapper.s-md {
   margin-left: auto;
@@ -786,6 +779,8 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
   padding: 0px 12.5px;
   max-width: 1024px;
+  background-color: transparent;
+  overflow: hidden;
 }
 .s-wrapper.s-lg {
   margin-left: auto;
@@ -793,6 +788,8 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
   padding: 0px 12.5px;
   max-width: 1200px;
+  background-color: transparent;
+  overflow: hidden;
 }
 .s-wrapper.s-xl {
   margin-left: auto;
@@ -800,6 +797,8 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
   display: block;
   padding: 0px 12.5px;
   max-width: 1700px;
+  background-color: transparent;
+  overflow: hidden;
 }
 
 .s-fixedPane {

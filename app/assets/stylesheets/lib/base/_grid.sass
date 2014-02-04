@@ -1,11 +1,13 @@
-@mixin wrapper($maxWidth:1200)
+@mixin wrapper-default($maxWidth:1200)
   margin-left: auto
   margin-right: auto
   display: block
   padding: 0px ($space/2)
   max-width: #{$maxWidth}
+  background-color: $wrapper-background
+  overflow: hidden
 
-@mixin row()
+@mixin row-default()
   margin-left: (-1 * $space/2)
   margin-right: (-1 * $space/2)
   &:before, &:after
@@ -18,27 +20,27 @@
     overflow: visible
     pointer-events: none
 
-@mixin col()
+@mixin col-default()
   padding: 0 ($space/2)
   float: left
   @include box-sizing(border-box)
   width: 100%
 
-@mixin cols($x, $minWidth: 0)
+@mixin cols-default($x, $minWidth: 0)
   @if $minWidth > 0
     @media screen and (min-width: $minWidth)
       width: ( 100% * $x/12 )
   @else
     width: ( 100% * $x/12 )
 
-@mixin bump($x, $minWidth: 0)
+@mixin bump-default($x, $minWidth: 0)
   @if $minWidth > 0
     @media screen and (min-width: $minWidth)
       margin-left: ( 100% * $x/12 )
   @else
     margin-left: ( 100% * $x/12 )
 
-@mixin section() 
+@mixin section-default() 
   margin-top: ($space/2)
   margin-bottom: ($space/2)
   padding-top: ($space/2)

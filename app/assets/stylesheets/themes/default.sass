@@ -1,2 +1,133 @@
 @import "../lib/variables"
 @import "../lib/core"
+
+// MIXIN OVERRIDE
+// =================
+// Uncomment and override where needed by theme.
+
+// GRID
+// ----
+
+@mixin wrapper($maxWidth:1200)
+  @include wrapper-default($maxWidth)
+
+@mixin row()
+  @include row-default()
+
+@mixin col()
+  @include col-default()
+
+@mixin cols($x, $minWidth: 0)
+  @include cols-default($x, $minWidth)
+
+@mixin bump($x, $minWidth: 0)
+  @include bump-default($x, $minWidth)
+
+@mixin section() 
+  @include section-default() 
+
+// TYPOGRAPHY
+// ----------
+
+h1, h2, h3, h4, h5
+  @include h1-to-h5-default
+
+@mixin base-typography()
+  @include base-typography-default()
+
+p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code
+  @include base-typography()
+
+li
+  margin-bottom: 0
+a
+  cursor: pointer 
+  color: $linkColor
+
+body
+  @include body-default()
+
+h1
+  font-size: $font-headings-baseSize + 20
+  margin: $space 0
+
+h2
+  font-size: $font-headings-baseSize + 16
+  margin: ($space * 0.7) 0
+
+h3
+  font-size: $font-headings-baseSize + 10
+  margin: ($space * 0.65) 0
+
+h4
+  font-size: $font-headings-baseSize + 3
+  margin: ($space * 0.5) 0
+
+h5
+  font-weight: 500
+
+blockquote
+  @include blockquote-default()
+
+code, pre
+  @include pre-default()
+
+code
+  @include code-default()
+
+@mixin section-header()
+  @include section-header-default()
+
+// BOXES
+// -----
+
+@mixin box($position: '')
+  @include box-default($position)
+
+// BUTTONS
+// -------
+
+@mixin btn($color: darken($lightGrey, 10%))
+  @include btn-default($color)
+
+// IMAGES
+// ------
+
+@mixin imgBox($position: '') 
+  @include imgBox-default($position)
+
+@mixin imgBox-content()
+  @include imgBox-content-default()
+
+// MODAL
+// -----
+
+@mixin modal()
+  @include modal-default()
+
+// NAVS
+// ----
+
+@mixin nav($position: '')
+  @include nav-default($position)
+
+@mixin list_plain()
+  @include list_plain-default()
+
+// SECTION
+// -------
+
+@mixin section()
+  @include section-default()
+
+// TABLE
+// -----
+
+@mixin table()
+  @include table-default()
+
+// TILES
+// -----
+
+@mixin tile($color: $darkGrey)
+  @include tile-default($color)

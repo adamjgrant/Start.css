@@ -1,0 +1,52 @@
+@mixin body-default()
+  font-family: $font-default
+  font-size: $font-baseSize
+  color: $black
+  line-height: $font-baseLineHeight
+
+@mixin h1-to-h5-default
+  font-family: $font-headings
+  font-size: $font-headings-baseSize
+  color: $font-baseColor
+  line-height: normal
+  margin: ($space * 0.4) 0
+  font-weight: 200
+  &:first-child
+    margin-top: 0
+
+@mixin base-typography-default()
+  font-family: $font-default
+  font-size: $font-baseSize
+  color: $font-baseColor
+  margin-bottom: $space
+  line-height: $font-baseLineHeight
+
+@mixin section-header-default()
+  padding-top: ($space * 3)
+  margin-top: ($space * -1.5)
+  border-bottom: 1px solid $lightGrey
+
+@mixin blockquote-default()
+  font-family: $font-serif
+  margin: $space
+  font-style: italic
+  font-size: $font-baseSize + 14
+  line-height: $font-baseSize + 24
+  &:before
+    content: open-quote
+    font-size: 70px
+    margin-left: -30px
+
+@mixin pre-default()
+  color: darken($blue, 25%)
+  background-color: lighten($blue, 30%)
+  border-radius: $buttonBorderRadius
+  padding: $buttonSpacing
+  font-family: monospace
+  word-break: break-all
+  word-wrap: break-word
+  border: 0px !important
+
+@mixin code-default()
+  margin-bottom: 0px
+  padding: 0 ($buttonSpacingH/3)

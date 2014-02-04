@@ -410,92 +410,7 @@ th {
     -webkit-transform: translateY(0); } }
 
 body {
-  background-color: #191e1f; }
-
-h1, h2, h3, h4, h5 {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  line-height: normal;
-  margin: 10px 0;
-  font-weight: 200; }
-  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
-    margin-top: 0; }
-
-p,
-em,
-strong,
-i,
-b,
-ul,
-ol,
-li,
-table,
-blockquote,
-pre,
-table,
-code {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  margin-bottom: 25px;
-  line-height: 21px; }
-
-li {
-  margin-bottom: 0; }
-
-a {
-  cursor: pointer; }
-
-body {
-  font-family: "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  line-height: 21px; }
-
-h1 {
-  font-size: 36px;
-  margin: 25px 0; }
-
-h2 {
-  font-size: 32px;
-  margin: 17.5px 0; }
-
-h3 {
-  font-size: 26px;
-  margin: 16.25px 0; }
-
-h4 {
-  font-size: 19px;
-  margin: 12.5px 0; }
-
-h5 {
-  font-weight: 500; }
-
-blockquote {
-  font-family: "Baskerville", "Palatino", "Times New Roman", serif;
-  margin: 25px;
-  font-style: italic;
-  font-size: 30px;
-  line-height: 40px; }
-  blockquote:before {
-    content: open-quote;
-    font-size: 70px;
-    margin-left: -30px; }
-
-code, pre {
-  color: #1651bc;
-  background-color: #edf3fd;
-  border-radius: 3px;
-  padding: 8.33333px 16.66667px;
-  font-family: monospace;
-  word-break: break-all;
-  word-wrap: break-word;
-  border: 0px !important; }
-
-code {
-  margin-bottom: 0px;
-  padding: 0 5.55556px; }
+  background-color: #0d3040; }
 
 a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-left: 5px; }
@@ -582,9 +497,9 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
     padding-bottom: 0;
     overflow: hidden;
     margin-bottom: 25px;
-    border-top: 3px solid cornflowerblue; }
+    border-top: 3px solid #278ebf; }
     .s-tile.s-blue > h1, .s-tile.s-blue > h2, .s-tile.s-blue > h3, .s-tile.s-blue > h4, .s-tile.s-blue > h5 {
-      color: cornflowerblue; }
+      color: #278ebf; }
     .s-tile.s-blue .s-close {
       text-decoration: none;
       color: #aaaaaa;
@@ -658,12 +573,88 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 @media screen and (min-width: 1024px) {
   #s-growls {
     width: 350px; } }
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: normal;
+  margin: 10px 0;
+  font-weight: 200; }
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+    margin-top: 0; }
+
+p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 25px;
+  line-height: 21px; }
+
+li {
+  margin-bottom: 0; }
+
+a {
+  cursor: pointer;
+  color: #278ebf; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 21px; }
+
+h1 {
+  font-size: 36px;
+  margin: 25px 0; }
+
+h2 {
+  font-size: 32px;
+  margin: 17.5px 0; }
+
+h3 {
+  font-size: 26px;
+  margin: 16.25px 0; }
+
+h4 {
+  font-size: 19px;
+  margin: 12.5px 0; }
+
+h5 {
+  font-weight: 500; }
+
+blockquote {
+  font-family: "Baskerville", "Palatino", "Times New Roman", serif;
+  margin: 25px;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 40px; }
+  blockquote:before {
+    content: open-quote;
+    font-size: 70px;
+    margin-left: -30px; }
+
+code, pre {
+  color: #113f55;
+  background-color: #96cee9;
+  border-radius: 3px;
+  padding: 8.33333px 16.66667px;
+  font-family: monospace;
+  word-break: break-all;
+  word-wrap: break-word;
+  border: 0px !important; }
+
+code {
+  margin-bottom: 0px;
+  padding: 0 5.55556px; }
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px 12.5px;
-  max-width: 1024px; }
+  max-width: 1024px;
+  background-color: white;
+  overflow: hidden; }
 
 .page, .mainFooter, .row {
   margin-left: -12.5px;
@@ -955,7 +946,7 @@ button, .button {
 
 .btn-blue {
   padding: 8.33333px 16.66667px;
-  background-color: cornflowerblue;
+  background-color: #278ebf;
   color: white;
   text-decoration: none;
   border: 0px;
@@ -975,9 +966,9 @@ button, .button {
     html body .btn-blue:active, html body li .btn-blue:active {
       color: white; }
   .btn-blue:hover {
-    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
-    -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue;
-    -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px cornflowerblue; }
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #278ebf;
+    -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #278ebf;
+    -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #278ebf; }
   .btn-blue:active {
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
@@ -1044,15 +1035,15 @@ button, .button {
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset; }
   html body .btn-clear, html body li .btn-clear {
-    color: cornflowerblue; }
+    color: #278ebf; }
   .btn-clear, .btn-clear:hover, .btn-clear:active {
     box-shadow: 0px 0px 0px transparent;
     -webkit-box-shadow: 0px 0px 0px transparent;
     -moz-box-shadow: 0px 0px 0px transparent; }
   html body .btn-clear:hover, html body li .btn-clear:hover {
-    color: #3676e8; }
+    color: #1e6f95; }
   html body .btn-clear:active, html body li .btn-clear:active {
-    color: #185bd3; }
+    color: #164f6a; }
 
 .btn-dark {
   padding: 8.33333px 16.66667px;
@@ -1115,13 +1106,13 @@ nav.mainNav {
   border-radius: 3px;
   padding: 5px;
   overflow: hidden;
-  background-color: #eeeeee; }
+  background-color: #1e6f95; }
   nav.mainNav.fixed {
     margin-bottom: 25px;
     border-radius: 3px;
     padding: 5px;
     overflow: hidden;
-    background-color: #eeeeee;
+    background-color: #1e6f95;
     position: fixed;
     top: 0;
     left: 0;
@@ -1329,9 +1320,9 @@ ul.plain {
   padding-bottom: 0;
   overflow: hidden;
   margin-bottom: 25px;
-  border-top: 3px solid cornflowerblue; }
+  border-top: 3px solid #278ebf; }
   .tile-blue > h1, .tile-blue > h2, .tile-blue > h3, .tile-blue > h4, .tile-blue > h5 {
-    color: cornflowerblue; }
+    color: #278ebf; }
   .tile-blue .s-close {
     text-decoration: none;
     color: #aaaaaa;

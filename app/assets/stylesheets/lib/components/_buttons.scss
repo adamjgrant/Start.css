@@ -1,4 +1,4 @@
-@mixin btn($color: darken($lightGrey, 10%)) {
+@mixin btn-default($color: darken($lightGrey, 10%)) {
   padding: $buttonSpacingV $buttonSpacingH;
   background-color: $color;
   color: white;

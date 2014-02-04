@@ -1,4 +1,4 @@
-@mixin tile ($color: $darkGrey) {
+@mixin tile-default ($color: $darkGrey) {
 	box-shadow: 0px 0px 3px $grey;
 	background-color: white;
 	@if $color == transparent { box-shadow: 0px 0px 0px transparent; }
@@ -20,15 +20,15 @@
 }
 
 .s-tile { 
-  @include tile();
-  &.s-red    { @include tile($red); }
-  &.s-orange { @include tile($orange); }
-  &.s-yellow { @include tile($yellow); }
-  &.s-green  { @include tile($green); }
-  &.s-blue   { @include tile($blue); }
-  &.s-violet { @include tile($violet); }
-  &.s-clear  { @include tile($clear); }
-  &.s-dark   { @include tile($dark); }
+  @include tile-default();
+  &.s-red    { @include tile-default($red); }
+  &.s-orange { @include tile-default($orange); }
+  &.s-yellow { @include tile-default($yellow); }
+  &.s-green  { @include tile-default($green); }
+  &.s-blue   { @include tile-default($blue); }
+  &.s-violet { @include tile-default($violet); }
+  &.s-clear  { @include tile-default($clear); }
+  &.s-dark   { @include tile-default($dark); }
   #s-growls & {
     margin: 0 ($space/5);
     margin-bottom: $space;
