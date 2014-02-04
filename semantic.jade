@@ -15,11 +15,39 @@ block header
       ul.right
         li
           a.button.btn-blue(href="#") Download
+
 block content
   .page
     .main
       h1 Start.css
       p These are the temporary docs for Start.css. Eventually there will be something much better-looking here.
+
+      header#compileStructure.sectionHeader
+        h2 Compile Structure
+
+      p Unlike many CSS frameworks, Start is designed to work with theme files. As such, it uses its own theme file out-of-the-box. 
+
+      h3 File structure in a nutshell
+
+      pre lib/
+        | theme.sass
+        | style.sass
+
+      p Here's the gist:
+      ol
+        li Everything in 
+          strong lib
+          |  shouldn't be edited.
+        li
+          strong theme.sass 
+          |  defines your overall look and feel. Colors, typography, etc, but does not assign styles to the DOM.
+        li
+          strong style.sass
+          |  will assign styles to dom elements.
+
+      h3 Simple example
+
+      h5 TODO
 
       header#boxes.sectionHeader
         h2 Boxes and Bars

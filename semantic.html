@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../css/start-semantic.css">
+    <link rel="stylesheet" href="app/assets/css/style.css">
     <link rel="stylesheet" href="../css/docs.css">
   </head>
   <body style="padding-top: 60px">
@@ -24,6 +24,22 @@
         <div class="main">
           <h1>Start.css</h1>
           <p>These are the temporary docs for Start.css. Eventually there will be something much better-looking here.</p>
+          <header id="compileStructure" class="sectionHeader">
+            <h2>Compile Structure</h2>
+          </header>
+          <p>Unlike many CSS frameworks, Start is designed to work with theme files. As such, it uses its own theme file out-of-the-box. </p>
+          <h3>File structure in a nutshell</h3>
+          <pre>lib/
+theme.sass
+style.sass</pre>
+          <p>Here's the gist:</p>
+          <ol>
+            <li>Everything in <strong>lib</strong> shouldn't be edited.</li>
+            <li><strong>theme.sass </strong> defines your overall look and feel. Colors, typography, etc, but does not assign styles to the DOM.</li>
+            <li><strong>style.sass</strong> will assign styles to dom elements.</li>
+          </ol>
+          <h3>Simple example</h3>
+          <h5>TODO</h5>
           <header id="boxes" class="sectionHeader">
             <h2>Boxes and Bars</h2>
           </header>

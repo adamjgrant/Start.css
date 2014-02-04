@@ -38,3 +38,13 @@
 	  &:active a { color: $darkGrey; }
 	}
 }
+
+@mixin list_plain() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	> li {
+	  list-style: none;
+	  margin: ($space/5) 0;
+	}
+}

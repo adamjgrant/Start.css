@@ -1,4 +1,4 @@
-@import "../../app/assets/stylesheets/lib/index"
+@import "../app/assets/stylesheets/themes/default"
 
 .wrapper
   @include wrapper($screen-md)
@@ -79,8 +79,8 @@ nav.mainNav
   ul.vertical
     @include nav(vertical)
 
-nav.list
-  @include nav(vertical)
+ul.plain
+  @include list_plain()
 
 // CAROUSEL
 

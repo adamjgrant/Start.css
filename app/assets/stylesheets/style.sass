@@ -1,4 +1,4 @@
-@import "lib/index"
+@import "themes/default"
 
 body, .wrapper
   @include wrapper()
@@ -120,6 +120,9 @@ nav
     @include nav(right)
   ul.vertical
     @include nav(vertical)
+
+ul.plain
+  @include list_plain()
 
 // TILES
 

@@ -534,7 +534,7 @@ h5 {
 }
 
 blockquote {
-  font-family: "Baskerville", "Palatino", "Times New Roma", serif;
+  font-family: "Baskerville", "Palatino", "Times New Roman", serif;
   margin: 25px;
   font-style: italic;
   font-size: 30px;
@@ -1605,6 +1605,16 @@ nav ul.vertical li:hover a {
 }
 nav ul.vertical li:active a {
   color: #555555;
+}
+
+ul.plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.plain > li {
+  list-style: none;
+  margin: 5px 0;
 }
 
 .tile {
