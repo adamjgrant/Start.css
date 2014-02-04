@@ -29,13 +29,13 @@
           </header>
           <p>Unlike many CSS frameworks, Start is designed to work with theme files. As such, it uses its own theme file out-of-the-box. </p>
           <h3>File structure in a nutshell</h3>
-          <pre>lib/
-theme.sass
+          <pre>theme/
+  default.sass
 style.sass</pre>
           <p>Here's the gist:</p>
           <ol>
             <li>Everything in <strong>lib</strong> shouldn't be edited.</li>
-            <li><strong>theme.sass </strong> defines your overall look and feel. Colors, typography, etc, but does not assign styles to the DOM.</li>
+            <li><strong>theme/[chosen theme].sass </strong> defines your overall look and feel. Colors, typography, etc, but does not assign styles to the DOM.</li>
             <li><strong>style.sass</strong> will assign styles to dom elements.</li>
           </ol>
           <h3>Simple example</h3>
@@ -493,6 +493,35 @@ section {
               <p>Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
+          <header id="lists" class="sectionHeader">
+            <h2>Lists</h2>
+          </header>
+          <h3>Unstyled</h3>
+          <p>For plain lists with proper spacing and no bullets, use <code>list_plain()</code></p>
+          <h4>Normal list</h4>
+          <ul>
+            <li>Some item</li>
+            <li><a href="#">Some link</a></li>
+            <li><a href="#">Another link     </a></li>
+          </ul>
+          <h4>Unstyled list</h4>
+          <ul class="plain">
+            <li>Some item</li>
+            <li><a href="#">Some link</a></li>
+            <li><a href="#">Another link</a></li>
+          </ul>
+          <pre>&lt;ul class=&quot;plain&quot;&gt;
+  &lt;li&gt;Some item&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;Some link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#&quot;&gt;Another link&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+          <pre>ul.plain {
+  @include list_plain;
+}</pre>
           <header id="modals" class="sectionHeader">
             <h2>Modals</h2>
           </header>
@@ -734,6 +763,7 @@ section {
                   <li><a href="#grid">Grid</a></li>
                   <li><a href="#growls">Growls</a></li>
                   <li><a href="#images">Images</a></li>
+                  <li><a href="#lists">Lists</a></li>
                   <li><a href="#modals">Modals</a></li>
                   <li><a href="#progress">Progress</a></li>
                   <li><a href="#tiles">Tiles</a></li>
@@ -752,7 +782,7 @@ section {
     <footer></footer>
   </body>
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="../js/start.js"></script>
+  <script src="js/start.js"></script>
   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
   <script>
     $('p, span').s_endconcat()

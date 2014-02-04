@@ -29,8 +29,8 @@ block content
 
       h3 File structure in a nutshell
 
-      pre lib/
-        | theme.sass
+      pre theme/
+        |   default.sass
         | style.sass
 
       p Here's the gist:
@@ -39,7 +39,7 @@ block content
           strong lib
           |  shouldn't be edited.
         li
-          strong theme.sass 
+          strong theme/[chosen theme].sass 
           |  defines your overall look and feel. Colors, typography, etc, but does not assign styles to the DOM.
         li
           strong style.sass
@@ -608,6 +608,44 @@ block content
           h5 Flowers
           p Flowers are now on sale. Get your beautiful gift of flowers today. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+      header#lists.sectionHeader
+        h2 Lists
+
+      h3 Unstyled
+      p For plain lists with proper spacing and no bullets, use 
+        code list_plain()
+
+      h4 Normal list
+
+      ul
+        li Some item
+        li
+          a(href="#") Some link
+        li
+          a(href="#") Another link     
+
+      h4 Unstyled list
+
+      ul.plain
+        li Some item
+        li
+          a(href="#") Some link
+        li
+          a(href="#") Another link
+
+      pre &lt;ul class=&quot;plain&quot;&gt;
+        |   &lt;li&gt;Some item&lt;/li&gt;
+        |   &lt;li&gt;
+        |     &lt;a href=&quot;#&quot;&gt;Some link&lt;/a&gt;
+        |   &lt;/li&gt;
+        |   &lt;li&gt;
+        |     &lt;a href=&quot;#&quot;&gt;Another link&lt;/a&gt;
+        |   &lt;/li&gt;
+        | &lt;/ul&gt;
+      pre ul.plain {
+        |   @include list_plain;
+        | }
+
       header#modals.sectionHeader
         h2 Modals
       p Modals require just one element.
@@ -889,6 +927,8 @@ block content
                 a(href="#growls") Growls
               li
                 a(href="#images") Images
+              li
+                a(href="#lists") Lists
               li
                 a(href="#modals") Modals
               li
