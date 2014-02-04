@@ -1,107 +1,52 @@
-!!!
-html
-  head
-    link(rel="stylesheet", href="../css/style.css")
-  body
-    .wrapper
-      header.mainHeader
-        .row.section
-          .header-logo
-            h1
-              a(href="index.html") AMS
-          .header-login
-            p(style="text-align: right") 
-              a(href="#") Login
-        nav.mainNav
-          ul
-            li 
-              a(href="index.html") Home 
-            li 
-              a(href="blog.html") Blog
-            li 
-              a(href="events.html") Events
-            li 
-              a.active(href="resources.html") Resources
-      main
-        .page
+extends layout
 
-          section.sidebar
-            h5 Styleguide
-            ul.plain
-              li
-                a(href="#") Lorem ipsum
-              li
-                a(href="#") Dolor sit amet
-              li
-                a(href="#") Lorem ipsum 
-            h5 Other things
-            ul.plain
-              li
-                a(href="#") Lorem ipsum
-              li
-                a(href="#") Dolor sit amet
-              li
-                a(href="#") Lorem ipsum 
+block variables
 
-          section.mainbar
+  -var title= "resources"
 
-              .sectionHeader
-                h1 Lorem 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+block content
 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  main
+    .page
 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      section.sidebar
+        h5 Styleguide
+        ul.plain
+          li
+            a(href="#") Lorem ipsum
+          li
+            a(href="#") Dolor sit amet
+          li
+            a(href="#") Lorem ipsum 
+        h5 Other things
+        ul.plain
+          li
+            a(href="#") Lorem ipsum
+          li
+            a(href="#") Dolor sit amet
+          li
+            a(href="#") Lorem ipsum 
 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      section.mainbar
 
-    footer.mainFooter
-      .wrapper
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
+          .sectionHeader
+            h1 Lorem 
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

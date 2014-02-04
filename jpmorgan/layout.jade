@@ -1,0 +1,65 @@
+!!!
+html
+  head
+    link(rel="stylesheet", href="../css/style.css")
+    block variables
+  body
+    .wrapper
+      header.mainHeader
+        .row.section
+          .header-logo
+            h1
+              a(href="index.html") AMS
+          .header-login
+            p(style="text-align: right") 
+              a(href="#") Login
+        nav.mainNav
+          ul
+            li 
+              a(href="index.html" class=(title === 'home' ? 'active' : '')) Home 
+            li 
+              a(href="blog.html" class=(title === 'blog' ? 'active' : '')) Blog
+            li 
+              a(href="events.html" class=(title === 'events' ? 'active' : '')) Events
+            li 
+              a(href="resources.html" class=(title === 'resources' ? 'active' : '')) Resources
+      block content
+    
+    footer.mainFooter
+      .wrapper.wrapper_clear
+        ul.mainFooter-column
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+        ul.mainFooter-column
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+        ul.mainFooter-column
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+        ul.mainFooter-column
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A
+          li
+            a(href="#") A

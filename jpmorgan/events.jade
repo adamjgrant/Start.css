@@ -1,98 +1,43 @@
-!!!
-html
-  head
-    link(rel="stylesheet", href="../css/style.css")
-  body
-    .wrapper
-      header.mainHeader
-        .row.section
-          .header-logo
-            h1
-              a(href="index.html") AMS
-          .header-login
-            p(style="text-align: right") 
-              a(href="#") Login
-        nav.mainNav
-          ul
-            li 
-              a(href="index.html") Home 
-            li 
-              a(href="blog.html") Blog
-            li 
-              a.active(href="events.html") Events
-            li 
-              a(href="resources.html") Resources
-      main
-        .page
-          section.mainbar
+extends layout
 
-              .sectionHeader
-                h1 Events 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+block variables
 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  -var title = "events"
 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+block content
 
-              article
-                .sectionHeader
-                  h4 Lorem ipsum dolor sit amet
-                p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  main
+    .page
+      section.mainbar
 
-          section.sidebar
-            h5 Calendar
-            nav.list
-              li
-                a(href="#") Lorem ipsum
-              li
-                a(href="#") Dolor sit amet
-              li
-                a(href="#") Lorem ipsum 
+          .sectionHeader
+            h1 Events 
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    footer.mainFooter
-      .wrapper
-        ul.mainFooter-column
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          article
+            .sectionHeader
+              h4 Lorem ipsum dolor sit amet
+            p consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      section.sidebar
+        h5 Calendar
+        nav.list
           li
-            a(href="#") A
+            a(href="#") Lorem ipsum
           li
-            a(href="#") A
+            a(href="#") Dolor sit amet
           li
-            a(href="#") A
-          li
-            a(href="#") A
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-        ul.mainFooter-column
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
-          li
-            a(href="#") A
+            a(href="#") Lorem ipsum 
