@@ -1556,10 +1556,17 @@ ul.plain > li {
   color: white;
 }
 .nav-link:hover {
-  color: gold;
+  color: #f5671f;
 }
 .nav-link:active {
   color: #2d495f;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .carousel {
