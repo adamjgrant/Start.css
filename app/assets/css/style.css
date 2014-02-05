@@ -761,7 +761,7 @@ body > main, .wrapper {
   margin-right: auto;
   display: block;
   padding: 0 25px;
-  max-width: 1200;
+  max-width: 1200px;
   background-color: transparent;
   overflow: hidden;
 }
