@@ -10,11 +10,15 @@
 // ------
 
 $blue:                     #278EBF
+$orange:                   #F5671F
 
 $body-background:          $lightGrey
 
 $navbar-background:        darken($blue, 10%)
 $navbar-linkColor:         white
+
+$navbar-linkColor_hover:   $yellow
+
 $navbar-background_active: rgba(255, 255, 255, 0.5)
 $navbar-linkColor_active:  white
 
@@ -37,7 +41,8 @@ $font-baseColor:           $black
 
 @mixin wrapper($maxWidth:1200)
   @include wrapper-default($maxWidth)
-  padding: 0 ($space * 2)
+  @media screen and (min-width: $screen-md)
+    padding: 0 ($space * 2)
 
 @mixin row()
   @include row-default()
@@ -53,8 +58,6 @@ $font-baseColor:           $black
 
 @mixin section() 
   @include section-default() 
-  padding-top: $space
-  padding-bottom: $space
 
 // TYPOGRAPHY
 // ----------
@@ -70,9 +73,12 @@ p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code
 
 li
   margin-bottom: 0
+  
+@mixin link-styles()
+  @include link-styles-default()
+  
 a
-  cursor: pointer 
-  color: $linkColor
+  @include link-styles()
 
 body
   @include body-default()
@@ -119,6 +125,7 @@ code
 
 @mixin btn($color: darken($lightGrey, 10%))
   @include btn-default($color)
+  @include box-shadow(0px)
 
 // IMAGES
 // ------
@@ -152,7 +159,6 @@ code
 
 @mixin section()
   @include section-default()
-  padding: 2 * $space 0
 
 // TABLE
 // -----

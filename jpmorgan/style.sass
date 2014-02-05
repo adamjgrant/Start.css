@@ -32,6 +32,7 @@
   background-color: darken($blue, 35%)
   @include section()
   margin-bottom: 0
+  margin-top: 0
   li a
     padding: 0
     font-size: 12px
@@ -84,6 +85,8 @@ nav.mainNav
     @include nav(right)
   ul.vertical
     @include nav(vertical)
+  margin-bottom: 0
+  @include border-radius(0px)
 
 ul.plain
   @include list_plain()
@@ -123,7 +126,22 @@ ul.plain
 .sectionHeader
   @include section-header()
 
+.hero-message
+  h1, h4, p, a
+    text-align: center
+  @include col()
+  @include cols(6, $screen-md)
+  @include bump(3, $screen-md)
+  padding-top: $space * 6
+
 // MODALS
 
 .modal
   @include modal()
+
+// IMAGES
+
+.imgBox
+  @include imgBox(right)
+.imgBox-caption
+  @include imgBox-content()

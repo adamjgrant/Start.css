@@ -694,6 +694,12 @@ a {
   cursor: pointer;
   color: cornflowerblue;
 }
+a:hover {
+  color: #1651bc;
+}
+a:active {
+  color: #103d8e;
+}
 
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
@@ -799,25 +805,6 @@ code {
   max-width: 1700px;
   background-color: transparent;
   overflow: hidden;
-}
-
-.s-fixedPane {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  overflow: visible;
-  height: 0px;
-  pointer-events: none;
-}
-.s-fixedPane * {
-  pointer-events: auto;
-}
-.s-fixedPane.scrollable {
-  height: auto;
-  bottom: 0;
-  overflow: auto;
 }
 
 .s-row {
@@ -1819,7 +1806,7 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   margin: 5px 0;
 }
 .s-nav li a.active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding-top: 13.33333px;
   padding-bottom: 13.33333px;
   margin-top: -5px;
@@ -1853,7 +1840,7 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   margin: 5px 0;
 }
 .s-nav.s-right li a.active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding-top: 13.33333px;
   padding-bottom: 13.33333px;
   margin-top: -5px;
@@ -1891,7 +1878,7 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   margin: 5px 0;
 }
 .s-nav.s-vertical li a.active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding-top: 13.33333px;
   padding-bottom: 13.33333px;
   margin-top: -5px;
@@ -1903,4 +1890,5 @@ html body .s-btn.s-dark:active, html body li .s-btn.s-dark:active {
   padding-top: 75px;
   margin-top: -37.5px;
   border-bottom: 1px solid #eeeeee;
+  margin-bottom: 25px;
 }

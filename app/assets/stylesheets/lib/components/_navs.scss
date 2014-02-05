@@ -41,7 +41,7 @@
 @mixin nav-link-default() {
   color: $navbar-linkColor;
   &:hover {
-    color: $black;
+    color: $navbar-linkColor_hover;
   }
   &:active {
     color: $blue;

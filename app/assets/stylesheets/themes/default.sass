@@ -40,9 +40,12 @@ p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code
 
 li
   margin-bottom: 0
+
+@mixin link-styles()
+  @include link-styles-default()
+  
 a
-  cursor: pointer 
-  color: $linkColor
+  @include link-styles()
 
 body
   @include body-default()
