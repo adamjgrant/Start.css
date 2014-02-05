@@ -754,7 +754,7 @@ body > main, .wrapper {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding: 0px 12.5px;
+  padding: 0 25px;
   max-width: 1200;
   background-color: transparent;
   overflow: hidden;
@@ -828,17 +828,7 @@ body > main, .wrapper {
 }
 @media screen and (min-width: 768px) {
   .main {
-    margin-left: 33.33333%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main {
     width: 66.66667%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main {
-    margin-left: 25%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1453,13 +1443,13 @@ table tbody tr:nth-child(2n) {
   background-color: white;
 }
 
-nav {
+.nav {
   margin-bottom: 25px;
   border-radius: 3px;
   overflow: hidden;
   background-color: #eeeeee;
 }
-nav.fixed {
+.nav.fixed {
   margin-bottom: 25px;
   border-radius: 3px;
   overflow: hidden;
@@ -1473,118 +1463,109 @@ nav.fixed {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
-nav ul {
+.nav ul {
   margin: 0;
   padding: 0;
   display: inline-block;
   float: left;
 }
-nav ul a {
-  color: #555555;
-}
-nav ul > *:empty {
+.nav ul > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
 }
-nav ul li {
+.nav ul li {
   list-style: none;
   display: inline-block;
   margin: 0;
 }
-nav ul li > * {
+.nav ul li > * {
   padding: 8.33333px 16.66667px;
   display: block;
 }
-nav ul li a {
+.nav ul li a {
   text-decoration: none;
   margin-bottom: 0;
   cursor: pointer;
+  margin: 5px 0;
 }
-nav ul li a.active {
+.nav ul li a.active {
   background-color: rgba(255, 255, 255, 0.5);
-}
-nav ul li a:hover {
-  color: #333333;
-}
-nav ul li a:hover {
+  padding-top: 13.33333px;
+  padding-bottom: 13.33333px;
+  margin-top: -5px;
+  margin-bottom: -5px;
   color: #555555;
 }
-nav ul.right {
+.nav ul.right {
   margin: 0;
   padding: 0;
   display: inline-block;
   float: left;
   float: right;
 }
-nav ul.right a {
-  color: #555555;
-}
-nav ul.right > *:empty {
+.nav ul.right > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
 }
-nav ul.right li {
+.nav ul.right li {
   list-style: none;
   display: inline-block;
   margin: 0;
 }
-nav ul.right li > * {
+.nav ul.right li > * {
   padding: 8.33333px 16.66667px;
   display: block;
 }
-nav ul.right li a {
+.nav ul.right li a {
   text-decoration: none;
   margin-bottom: 0;
   cursor: pointer;
+  margin: 5px 0;
 }
-nav ul.right li a.active {
+.nav ul.right li a.active {
   background-color: rgba(255, 255, 255, 0.5);
-}
-nav ul.right li a:hover {
-  color: #333333;
-}
-nav ul.right li a:hover {
+  padding-top: 13.33333px;
+  padding-bottom: 13.33333px;
+  margin-top: -5px;
+  margin-bottom: -5px;
   color: #555555;
 }
-nav ul.vertical {
+.nav ul.vertical {
   margin: 0;
   padding: 0;
   display: inline-block;
   float: left;
 }
-nav ul.vertical a {
-  color: #555555;
-}
-nav ul.vertical > *:empty {
+.nav ul.vertical > *:empty {
   padding: 8.33333px 16.66667px;
   display: block;
 }
-nav ul.vertical li {
+.nav ul.vertical li {
   list-style: none;
   display: inline-block;
   margin: 0;
   display: block;
   margin-bottom: 5px;
 }
-nav ul.vertical li:last-child {
+.nav ul.vertical li:last-child {
   margin-bottom: 0;
 }
-nav ul.vertical li > * {
+.nav ul.vertical li > * {
   padding: 8.33333px 16.66667px;
   display: block;
 }
-nav ul.vertical li a {
+.nav ul.vertical li a {
   text-decoration: none;
   margin-bottom: 0;
   cursor: pointer;
+  margin: 5px 0;
 }
-nav ul.vertical li a.active {
+.nav ul.vertical li a.active {
   background-color: rgba(255, 255, 255, 0.5);
-}
-nav ul.vertical li a:hover {
-  color: #333333;
-}
-nav ul.vertical li a:hover {
+  padding-top: 13.33333px;
+  padding-bottom: 13.33333px;
+  margin-top: -5px;
+  margin-bottom: -5px;
   color: #555555;
 }
 
@@ -1596,6 +1577,16 @@ ul.plain {
 ul.plain > li {
   list-style: none;
   margin: 5px 0;
+}
+
+.nav-link {
+  color: #555555;
+}
+.nav-link:hover {
+  color: #333333;
+}
+.nav-link:active {
+  color: cornflowerblue;
 }
 
 .tile {

@@ -6,12 +6,12 @@
   </head>
   <body style="padding-top: 60px">
     <header>
-      <nav class="fixed dark">
+      <nav class="nav fixed dark">
         <div class="wrapper">
           <ul>
-            <li><a class="s-box-heading"> <span class="fa fa-book"></span> Start.css</a></li>
-            <li><a href="index.html">Static</a></li>
-            <li><a href="semantic.html">Semantic</a></li>
+            <li><a class="nav-link"><span class="fa fa-book"></span> Start.css</a></li>
+            <li><a href="index.html" class="nav-link">Static</a></li>
+            <li><a href="semantic.html" class="nav-link">Semantic</a></li>
           </ul>
           <ul class="right">
             <li><a href="#" class="button btn-blue">Download</a></li>
@@ -21,6 +21,34 @@
     </header>
     <main>
       <div class="page">
+        <div class="sidebar">
+          <nav class="nav">
+            <ul class="vertical">
+              <li>
+                <h4>Directory</h4>
+              </li>
+              <li>
+                <h5>Components</h5>
+              </li>
+              <li><a href="#boxes" class="nav-link">Boxes and Bars</a></li>
+              <li><a href="#browsers" class="nav-link">Browser Support</a></li>
+              <li><a href="#buttons" class="nav-link">Buttons</a></li>
+              <li><a href="#endconcat" class="nav-link">End Concatenation</a></li>
+              <li><a href="#grid" class="nav-link">Grid</a></li>
+              <li><a href="#growls" class="nav-link">Growls</a></li>
+              <li><a href="#images" class="nav-link">Images</a></li>
+              <li><a href="#lists" class="nav-link">Lists</a></li>
+              <li><a href="#modals" class="nav-link">Modals</a></li>
+              <li><a href="#progress" class="nav-link">Progress</a></li>
+              <li><a href="#tiles" class="nav-link">Tiles</a></li>
+              <li><a href="#typography" class="nav-link">Typography</a></li>
+              <li>
+                <h5>Effects</h5>
+              </li>
+              <li><a href="#fixed-pane" class="nav-link">Fixed Pane</a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="main">
           <h1>Start.css</h1>
           <p>Start is very flexible CSS framework.</p>
@@ -55,76 +83,78 @@ style.sass</pre>
           <p>Boxes are the most versatile component of the Start library. These can function as navigation menus, toolboxes, or any generic container.</p>
           <h3>Navigation Bars</h3>
           <p>Combine <code>box()</code> with <code>nav()</code> to create a navigation structure.</p>
-          <nav>
+          <nav class="nav">
             <ul>
-              <li><a>Item</a></li>
+              <li><a class="nav-link">Item</a></li>
               <li><a class="button">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav&gt;
+          <pre>&lt;nav class=&quot;nav&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;
-      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav      { @include box(light); }
-nav > ul { @include nav(); }
-.button  { @include btn(); }</pre>
+          <pre>.nav       { @include box(light); }
+.nav > ul  { @include nav(); }
+.button   { @include btn(); }
+.nav-link { @include nav-link(); }</pre>
           <h4>Right-aligned</h4>
           <p>Pass in <code>right</code> as a parameter of  <code>nav()</code> to push the nav to the right.</p>
-          <nav>
+          <nav class="nav">
             <ul class="right">
-              <li><a>Item</a></li>
+              <li><a class="nav-link">Item</a></li>
               <li><a class="button">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav&gt;
+          <pre>&lt;nav class=&quot;nav&quot;&gt;
   &lt;ul class=&quotright&quot;&gt;
     &lt;li&gt;
-      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav            { @include box(light); }
-nav > ul.right { @include nav(right); }
-.button        { @include btn(); }</pre>
+          <pre>.nav            { @include box(light); }
+.nav > ul.right { @include nav(right); }
+.nav-link       { @include nav-link(); }
+.button         { @include btn(); }</pre>
           <h4>Modifiers</h4>
           <p>Use the <code>.active</code> class to indicate a currently active menu item.</p>
-          <nav>
+          <nav class="nav">
             <ul>
-              <li><a>Item 1</a></li>
-              <li><a class="active">Item 2</a></li>
-              <li><a>Item 3</a></li>
+              <li><a class="nav-link">Item 1</a></li>
+              <li><a class="nav-link active">Item 2</a></li>
+              <li><a class="nav-link">Item 3</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav&gt;
+          <pre>&lt;nav class=&quot;nav&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;
-      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a class= &quot;active&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class= &quot;active nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
           <h4>Dark</h4>
-          <nav class="dark">
+          <nav class="nav dark">
             <ul class="right">
-              <li><a>Item</a></li>
+              <li><a class="nav-link">Item</a></li>
               <li><a class="button">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav class=&quot;dark&quot;&gt;
+          <pre>&lt;nav class=&quot;nav dark&quot;&gt;
   &lt;ul class=&quotright&quot;&gt;
     &lt;li&gt;
       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -134,29 +164,30 @@ nav > ul.right { @include nav(right); }
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav.dark       { @include box(dark); }
-nav > ul.right { @include nav(right); }
-.button        { @include btn(); }</pre>
+          <pre>.nav.dark       { @include box(dark); }
+.nav > ul.right { @include nav(right); }
+.nav-link       { @include nav-link(); }
+.button         { @include btn(); }</pre>
           <h4>Vertical</h4>
           <p>Use <code>nav(vertical)</code> to align contents vertically.</p>
-          <nav>
+          <nav class="nav">
             <ul class="vertical">
-              <li><a>Item</a></li>
-              <li><a>Item</a></li>
+              <li><a class="nav-link">Item</a></li>
+              <li><a class="nav-link">Item</a></li>
             </ul>
           </nav>
-          <pre>&lt;nav&gt;
+          <pre>&lt;nav class=&quot;nav&quot;&gt;
   &lt;ul class=&quot;vertical&quot;&gt;
     &lt;li&gt;
-      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+      &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</pre>
-          <pre>nav               { @include box(#EEEEEE); }
-nav > ul.vertical { @include nav(vertical); }</pre>
+          <pre>.nav               { @include box(#EEEEEE); }
+.nav > ul.vertical { @include nav(vertical); }</pre>
           <header id="browsers" class="sectionHeader">
             <h2>Browser Support </h2>
           </header>
@@ -753,40 +784,6 @@ section {
           <p>To fix this, use the jQuery plugin <code>$.sFixedPane()</code>.</p>
           <pre>$('.fixed').sFixedPane()</pre>
           <p>This will allow elements in the pane to scroll when overflowing the viewport but also to "hide" click interactions when interacting outside the fixed pane's elements.</p>
-        </div>
-      </div>
-      <div class="fixed-pane">
-        <div class="wrapper">
-          <div class="page">
-            <div class="sidebar">
-              <nav>
-                <ul class="vertical">
-                  <li>
-                    <h4>Directory</h4>
-                  </li>
-                  <li>
-                    <h5>Components</h5>
-                  </li>
-                  <li><a href="#boxes">Boxes and Bars</a></li>
-                  <li><a href="#browsers">Browser Support</a></li>
-                  <li><a href="#buttons">Buttons</a></li>
-                  <li><a href="#endconcat">End Concatenation</a></li>
-                  <li><a href="#grid">Grid</a></li>
-                  <li><a href="#growls">Growls</a></li>
-                  <li><a href="#images">Images</a></li>
-                  <li><a href="#lists">Lists</a></li>
-                  <li><a href="#modals">Modals</a></li>
-                  <li><a href="#progress">Progress</a></li>
-                  <li><a href="#tiles">Tiles</a></li>
-                  <li><a href="#typography">Typography</a></li>
-                  <li>
-                    <h5>Effects</h5>
-                  </li>
-                  <li><a href="#fixed-pane">Fixed Pane</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
         </div>
       </div>
     </main>

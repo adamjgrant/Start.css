@@ -16,9 +16,7 @@ body > main, .wrapper
 
 .main
   @include col()
-  @include bump(4, $screen-sm)
   @include cols(8, $screen-sm)
-  @include bump(3, $screen-lg)
   @include cols(9, $screen-lg)
 
 .section
@@ -110,7 +108,7 @@ table
 
 // BOX/NAV
 
-nav
+.nav
   @include box()
   &.fixed
     @include box(fixed)
@@ -123,6 +121,9 @@ nav
 
 ul.plain
   @include list_plain()
+
+.nav-link
+  @include nav-link()
 
 // TILES
 

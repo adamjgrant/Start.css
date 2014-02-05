@@ -1,23 +1,60 @@
 extends layout-semantic
 
 block header
-  nav.fixed.dark
+  nav.nav.fixed.dark
     .wrapper
       ul
         li
-          a.s-box-heading 
+          a.nav-link
             span.fa.fa-book
             |  Start.css
         li
-          a(href="index.html") Static
+          a.nav-link(href="index.html") Static
         li
-          a(href="semantic.html") Semantic
+          a.nav-link(href="semantic.html") Semantic
       ul.right
         li
           a.button.btn-blue(href="#") Download
 
 block content
   .page
+
+    .sidebar
+      nav.nav
+        ul.vertical
+          li
+            h4 Directory
+          li
+            h5 Components
+          li
+            a.nav-link(href="#boxes") Boxes and Bars
+          li
+            a.nav-link(href="#browsers") Browser Support
+          li
+            a.nav-link(href="#buttons") Buttons
+          li
+            a.nav-link(href="#endconcat") End Concatenation
+          li
+            a.nav-link(href="#grid") Grid
+          li
+            a.nav-link(href="#growls") Growls
+          li
+            a.nav-link(href="#images") Images
+          li
+            a.nav-link(href="#lists") Lists
+          li
+            a.nav-link(href="#modals") Modals
+          li
+            a.nav-link(href="#progress") Progress
+          li
+            a.nav-link(href="#tiles") Tiles
+          li
+            a.nav-link(href="#typography") Typography
+          li
+            h5 Effects
+          li
+            a.nav-link(href="#fixed-pane") Fixed Pane
+
     .main
       h1 Start.css
       p Start is very flexible CSS framework.
@@ -69,17 +106,17 @@ block content
         code nav()
         |  to create a navigation structure.
 
-      nav
+      nav.nav
         ul
           li
-            a Item
+            a.nav-link Item
           li
             a.button Item
 
-      pre &lt;nav&gt;
+      pre &lt;nav class=&quot;nav&quot;&gt;
         |   &lt;ul&gt;
         |     &lt;li&gt;
-        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
         |       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -87,9 +124,10 @@ block content
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav      { @include box(light); }
-        | nav > ul { @include nav(); }
-        | .button  { @include btn(); }
+        | .nav       { @include box(light); }
+        | .nav > ul  { @include nav(); }
+        | .button   { @include btn(); }
+        | .nav-link { @include nav-link(); }
 
       h4 Right-aligned
       p Pass in 
@@ -98,17 +136,17 @@ block content
         code nav()
         |  to push the nav to the right.
 
-      nav
+      nav.nav
         ul.right
           li
-            a Item
+            a.nav-link Item
           li
             a.button Item
 
-      pre &lt;nav&gt;
+      pre &lt;nav class=&quot;nav&quot;&gt;
         |   &lt;ul class=&quotright&quot;&gt;
         |     &lt;li&gt;
-        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
         |       &lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -116,48 +154,49 @@ block content
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav            { @include box(light); }
-        | nav > ul.right { @include nav(right); }
-        | .button        { @include btn(); }
+        | .nav            { @include box(light); }
+        | .nav > ul.right { @include nav(right); }
+        | .nav-link       { @include nav-link(); }
+        | .button         { @include btn(); }
 
       h4 Modifiers
       p Use the 
         code .active
         |  class to indicate a currently active menu item.
 
-      nav
+      nav.nav
         ul
           li
-            a Item 1
+            a.nav-link Item 1
           li
-            a.active Item 2
+            a.nav-link.active Item 2
           li
-            a Item 3
+            a.nav-link Item 3
 
-      pre &lt;nav&gt;
+      pre &lt;nav class=&quot;nav&quot;&gt;
         |   &lt;ul&gt;
         |     &lt;li&gt;
-        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
-        |       &lt;a class= &quot;active&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class= &quot;active nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
-        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
 
       h4 Dark
 
-      nav.dark
+      nav.nav.dark
         ul.right
           li
-            a Item
+            a.nav-link Item
           li
             a.button Item
 
-      pre &lt;nav class=&quot;dark&quot;&gt;
+      pre &lt;nav class=&quot;nav dark&quot;&gt;
         |   &lt;ul class=&quotright&quot;&gt;
         |     &lt;li&gt;
         |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
@@ -168,9 +207,10 @@ block content
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav.dark       { @include box(dark); }
-        | nav > ul.right { @include nav(right); }
-        | .button        { @include btn(); }
+        | .nav.dark       { @include box(dark); }
+        | .nav > ul.right { @include nav(right); }
+        | .nav-link       { @include nav-link(); }
+        | .button         { @include btn(); }
 
       h4 Vertical
 
@@ -178,26 +218,26 @@ block content
         code nav(vertical)
         |  to align contents vertically.
 
-      nav
+      nav.nav
         ul.vertical
           li
-            a Item
+            a.nav-link Item
           li
-            a Item
+            a.nav-link Item
 
-      pre &lt;nav&gt;
+      pre &lt;nav class=&quot;nav&quot;&gt;
         |   &lt;ul class=&quot;vertical&quot;&gt;
         |     &lt;li&gt;
-        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |     &lt;li&gt;
-        |       &lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+        |       &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Item&lt;/a&gt;
         |     &lt;/li&gt;
         |   &lt;/ul&gt;
         | &lt;/nav&gt;
       pre
-        | nav               { @include box(#EEEEEE); }
-        | nav > ul.vertical { @include nav(vertical); }
+        | .nav               { @include box(#EEEEEE); }
+        | .nav > ul.vertical { @include nav(vertical); }
 
       header#browsers.sectionHeader
         h2 Browser Support 
@@ -914,44 +954,6 @@ block content
       pre $('.fixed').sFixedPane()
       p This will allow elements in the pane to scroll when overflowing the viewport but also to "hide" click interactions when interacting outside the fixed pane's elements.
 
-  .fixed-pane
-    .wrapper
-      .page
-        .sidebar
-          nav
-            ul.vertical
-              li
-                h4 Directory
-              li
-                h5 Components
-              li
-                a(href="#boxes") Boxes and Bars
-              li
-                a(href="#browsers") Browser Support
-              li
-                a(href="#buttons") Buttons
-              li
-                a(href="#endconcat") End Concatenation
-              li
-                a(href="#grid") Grid
-              li
-                a(href="#growls") Growls
-              li
-                a(href="#images") Images
-              li
-                a(href="#lists") Lists
-              li
-                a(href="#modals") Modals
-              li
-                a(href="#progress") Progress
-              li
-                a(href="#tiles") Tiles
-              li
-                a(href="#typography") Typography
-              li
-                h5 Effects
-              li
-                a(href="#fixed-pane") Fixed Pane
 
 block docready
   script

@@ -13,15 +13,15 @@ html
         .wrapper.wrapper_clear
           ul
             li
-              a(href="index.html") JP Morgan
+              a.nav-link(href="index.html") JP Morgan
             li 
-              a(href="index.html" class=(title === 'home' ? 'active' : '')) Home 
+              a.nav-link(href="index.html" class=(title === 'home' ? 'active' : '')) Home 
             li 
-              a(href="blog.html" class=(title === 'blog' ? 'active' : '')) Blog
+              a.nav-link(href="blog.html" class=(title === 'blog' ? 'active' : '')) Blog
             li 
-              a(href="events.html" class=(title === 'events' ? 'active' : '')) Events
+              a.nav-link(href="events.html" class=(title === 'events' ? 'active' : '')) Events
             li 
-              a(href="resources.html" class=(title === 'resources' ? 'active' : '')) Resources
+              a.nav-link(href="resources.html" class=(title === 'resources' ? 'active' : '')) Resources
     .wrapper
       block content
     

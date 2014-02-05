@@ -3,13 +3,22 @@
 // VARIABLE OVERRIDES
 // ==================
 
+// MEASUREMENTS
+// ------------
+
 // COLORS
 // ------
 
 $blue:                     #278EBF
 
 $body-background:          $lightGrey
+
 $navbar-background:        darken($blue, 10%)
+$navbar-linkColor:         white
+$navbar-background_active: rgba(255, 255, 255, 0.5)
+$navbar-linkColor_active:  white
+
+$wrapper-background:       white
 
 // TYPOGRAPHY
 // ----------
@@ -28,7 +37,7 @@ $font-baseColor:           $black
 
 @mixin wrapper($maxWidth:1200)
   @include wrapper-default($maxWidth)
-  padding: 0 $space
+  padding: 0 ($space * 2)
 
 @mixin row()
   @include row-default()
@@ -132,6 +141,9 @@ code
 @mixin nav($position: '')
   @include nav-default($position)
 
+@mixin nav-link()
+  @include nav-link-default()
+
 @mixin list_plain()
   @include list_plain-default()
 
@@ -140,6 +152,7 @@ code
 
 @mixin section()
   @include section-default()
+  padding: 2 * $space 0
 
 // TABLE
 // -----
