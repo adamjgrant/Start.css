@@ -1,178 +1,85 @@
 @import "../app/assets/stylesheets/themes/ams"
 
-.wrapper
-  @include wrapper($screen-md)
-.wrapper_clear
-  background-color: transparent
-.wrapper-jewel_dark, .wrapper-jewel_light
-  background-image: url('../img/jewel-dark.png')
-  background-size: 100% 100%
-  h1, h2, h3, h4, h5, p
-    color: white
-.wrapper-jewel_light
-  background-image: url('../img/jewel-light.png')
+// Spacing and margins
 
-.page, .row
+.wrapper, .footer
+  @include wrapper()
+.frame
+  @include frame()
+.clear
+  clear: both
+
+// Grid
+
+.row
   @include row()
 
-.main
+.row-full,
+.carousel,
+.process,
+.community, 
+.blog, 
+.right-half, 
+.left-half,
+.footer-column,
+.events,
+.blog-post,
+.process-text,
+.process-graphic,
+.footer-column,
+.getInvolved
   @include col()
 
-.sidebar
-  @include col()
-  @include cols(4, $screen-sm)
-  @include cols(3, $screen-lg)
+.row-full, 
+.carousel, 
+.process, 
+.community
+  @include cols(12)
 
-.mainbar
-  @include col()
-  @include cols(8, $screen-sm)
-  @include cols(9, $screen-lg)
+.blog, 
+.right-half
+  @include cols(9)
 
-.narrow
-  @include col()
-  @include cols(10, $screen-md)
-  @include bump(1, $screen-md)
+.blog-post
+  @include cols(4)
 
-.mainFooter-column
-  @include col()
-  @include cols(4, $screen-sm)
-  @include cols(3, $screen-md)
-  @include cols(2, $screen-md)
-  @include nav('vertical')
-
-.mainFooter
-  background-color: darken($blue, 35%)
-  @include section()
-  margin-bottom: 0
-  margin-top: 0
-  padding-top: $space
-  li a
-    padding: 0
-    font-size: 12px
-    color: rgba(255, 255, 255, 0.4)
-    &:hover 
-      color: white
-  
-.header-logo, .header-login
-  @include col()
+.getInvolved, 
+.process-text, 
+.process-graphic
   @include cols(6)
 
-.section
-  @include section()
+.footer-column, 
+.events,
+.left-half
+  @include cols(3)
 
-hr.orange
-  border-style: initial
-  height: 5px
-  background-color: $orange
-  margin: 0
-  margin-left: -2 * $space
-  margin-right: -2 * $space
+// Navigation
 
-// BUTTONS
-
-button, .button
-  @include btn()
-.btn-red
-  @include btn($red)
-.btn-orange
-  @include btn($orange)
-.btn-yellow
-  @include btn($yellow)
-.btn-green
-  @include btn($green)
-.btn-blue
-  @include btn($blue)
-.btn-violet
-  @include btn($violet)
-.btn-clear
-  @include btn($clear)
-.btn-dark
-  @include btn($dark)
-
-// TABLES
-
-table
-  @include table()
-
-// BOX/NAV
-
-nav.mainNav
+.bar
   @include box()
-  &.fixed
-    @include box(fixed)
-  ul
-    @include nav()
-  ul.right
-    @include nav(right)
-  ul.vertical
-    @include nav(vertical)
-  margin-bottom: 0
-  @include border-radius(0px)
-
-ul.plain
-  @include list_plain()
-
-.nav-link
+.menu
+  @include nav()
+.menu-right
+  @include nav(right)
+.menu-link
   @include nav-link()
+.footer
+  background-color: $darkGrey
+  padding: $space 0
+.plain
+  @include list-plain()
+  > li > a
+    @include nav-link()
 
-.fixed
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
+// Typography
 
-// CAROUSEL
 
-.carousel
-  height: 500px
-  background-color: #DDD
-  margin-left: $space * -2
-  margin-right: $space * -2
-  background-image: url('../img/buildings.png')
-  background-size: 100% 100%
-  background-repeat: no-repeat
-
-// TILES
-
-.tile
-  @include tile()
-.tile-red
-  @include tile($red)
-.tile-orange
-  @include tile($orange)
-.tile-yellow
-  @include tile($yellow)
-.tile-green
-  @include tile($green)
-.tile-blue
-  @include tile($blue)
-.tile-violet
-  @include tile($violet)
-.tile-clear
-  @include tile(transparent)
-
-// TYPOGRAPHY
-
-.sectionHeader
-  @include section-header()
-
-.hero-message
-  h1, h4, p, a
-    text-align: center
-    color: white
-  @include col()
-  @include cols(6, $screen-md)
-  @include bump(3, $screen-md)
-  padding-top: $space * 6
-
-// MODALS
-
-.modal
-  @include modal()
-
-// IMAGES
-
-.imgBox
-  @include imgBox(right)
-.imgBox-caption
-  @include imgBox-content()
+// Content
+.blog-post
+  img
+    width: 100%
+    margin-bottom: -5px
+.blog-post-frame
+  padding: 15px
+  border: 2px solid #CCC
+  margin-bottom: $space
