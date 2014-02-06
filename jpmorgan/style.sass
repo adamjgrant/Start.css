@@ -11,7 +11,8 @@
 
 // Grid
 
-.row
+.row, 
+.events-event
   @include row()
 
 .row-full,
@@ -27,7 +28,9 @@
 .process-text,
 .process-graphic,
 .footer-column,
-.getInvolved
+.getInvolved,
+.events-event-date,
+.events-event-description
   @include col()
 
 .row-full, 
@@ -40,7 +43,11 @@
 .right-half
   @include cols(9)
 
-.blog-post
+.events-event-description
+  @include cols(8)
+
+.blog-post,
+.events-event-date
   @include cols(4)
 
 .getInvolved, 

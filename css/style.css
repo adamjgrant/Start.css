@@ -668,15 +668,20 @@ code {
 .clear {
   clear: both; }
 
-.row {
+.row,
+.events-event {
   margin-left: -12.5px;
   margin-right: -12.5px; }
-  .row:before, .row:after {
+  .row:before, .row:after,
+  .events-event:before,
+  .events-event:after {
     display: table;
     content: " "; }
-  .row:after {
+  .row:after,
+  .events-event:after {
     clear: both; }
-  .not-scrollable .row {
+  .not-scrollable .row, .not-scrollable
+  .events-event {
     height: 0px;
     overflow: visible;
     pointer-events: none; }
@@ -694,7 +699,9 @@ code {
 .process-text,
 .process-graphic,
 .footer-column,
-.getInvolved {
+.getInvolved,
+.events-event-date,
+.events-event-description {
   padding: 0 12.5px;
   float: left;
   box-sizing: border-box;
@@ -712,7 +719,11 @@ code {
 .right-half {
   width: 75%; }
 
-.blog-post {
+.events-event-description {
+  width: 66.66667%; }
+
+.blog-post,
+.events-event-date {
   width: 33.33333%; }
 
 .getInvolved,
@@ -793,7 +804,8 @@ code {
 
 .menu-link {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 12px; }
   .menu-link:hover {
     color: #f5671f; }
   .menu-link:active {
@@ -812,7 +824,8 @@ code {
     margin: 5px 0; }
   .plain > li > a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 12px; }
     .plain > li > a:hover {
       color: #f5671f; }
     .plain > li > a:active {
