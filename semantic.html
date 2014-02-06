@@ -389,7 +389,11 @@ main { @include row(); }
 + bump(4, 1024px)</pre>
             </div>
           </section>
-          <h3>Container</h3>
+          <h3>Wrappers and Frames</h3>
+          <p>There are two important high-level containers to consider, wrappers and frames.</p>
+          <p> <strong>Wrappers</strong> simply set a max width for your content, centering it if the screen exceeds that width. If you want a background color on your content, apply this to your wrapper, not the frame. The frame can be reused to apply identical margins to nested elements and shouldn't have much styling involved.</p>
+          <p><strong>Frames</strong> are optional and create padding on the left and right of the content. Remember sections defined in columns will automatically have left and right padding. If you need to align elements elsewhere with that padding, simply put them in a column that is 12 wide.</p>
+          <h4>Wrapper</h4>
           <p>To contain the page in a nice, centered wrapper, use <code>wrapper()</code></p>
           <p>By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.</p>
           <p>For different sizes, add an additional class with the form s-[size] where [size] is xs, sm, md, or lg.</p>
@@ -416,6 +420,65 @@ section {
   @include cols(8);
 }</pre>
           <p>Try out this page as an example.</p>
+          <h4>Frames</h4>
+          <p>Frames are an optional element to give your page a little more margin.</p>
+          <h5>Without frame</h5>
+          <div style="background-color: #EEEEEE" class="wrapper">
+            <div class="page">
+              <div class="example-3">3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="example-3">3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="example-6">6 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div>
+          </div>
+          <pre>&lt;div class=&quot;page&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col3&quot;&gt;
+      3 columns
+    &lt;/div&gt;
+    &lt;div class=&quot;col3&quot;&gt;
+      3 columns
+    &lt;/div&gt;
+    &lt;div class=&quot;col9&quot;&gt;
+      9 columns
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            <pre>.page        { @include wrapper(); }
+.row         { @include row(); }
+.col3, .col9 { @include col(); }
+.col3        { @include cols(3); }
+.col9        { @include cols(9); }</pre></pre>
+          <h5>With frame</h5>
+          <div style="background-color: #EEEEEE" class="wrapper">
+            <div class="frame">
+              <div class="page">
+                <div class="example-3">3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="example-3">3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="example-6">6 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              </div>
+            </div>
+          </div>
+          <pre>&lt;div class=&quot;page&quot;&gt;
+  &lt;div class=&quot;frame&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col3&quot;&gt;
+        3 columns
+      &lt;/div&gt;
+      &lt;div class=&quot;col3&quot;&gt;
+        3 columns
+      &lt;/div&gt;
+      &lt;div class=&quot;col9&quot;&gt;
+        9 columns
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            <pre>.page        { @include wrapper(); }
+.frame       { @include frame(50px); }
+.row         { @include row(); }
+.col3, .col9 { @include col(); }
+.col3        { @include cols(3); }
+.col9        { @include cols(9); }</pre></pre>
           <header id="growls" class="sectionHeader">
             <h2>Growls</h2>
           </header>

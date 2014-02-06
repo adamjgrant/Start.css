@@ -496,8 +496,16 @@ block content
             | + cols(8, 1024px)
             | + bump(4, 1024px)
 
-      h3 Container
+      h3 Wrappers and Frames
+      p There are two important high-level containers to consider, wrappers and frames.
+      p 
+        strong Wrappers
+        |  simply set a max width for your content, centering it if the screen exceeds that width. If you want a background color on your content, apply this to your wrapper, not the frame. The frame can be reused to apply identical margins to nested elements and shouldn't have much styling involved.
+      p
+        strong Frames
+        |  are optional and create padding on the left and right of the content. Remember sections defined in columns will automatically have left and right padding. If you need to align elements elsewhere with that padding, simply put them in a column that is 12 wide.
 
+      h4 Wrapper
       p To contain the page in a nice, centered wrapper, use 
         code wrapper()
       p By default, this will have no effect for pages under 1200px. Screens larger than this will keep your site in a 1200px wrapper with equal spacing on the left and right.
@@ -525,6 +533,70 @@ block content
         |   @include cols(8);
         | }
       p Try out this page as an example.
+
+      h4 Frames
+
+      p Frames are an optional element to give your page a little more margin.
+
+      h5 Without frame
+
+      .wrapper(style="background-color: #EEEEEE")
+        .page
+          .example-3 3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          .example-3 3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          .example-6 6 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      pre &lt;div class=&quot;page&quot;&gt;
+        |   &lt;div class=&quot;row&quot;&gt;
+        |     &lt;div class=&quot;col3&quot;&gt;
+        |       3 columns
+        |     &lt;/div&gt;
+        |     &lt;div class=&quot;col3&quot;&gt;
+        |       3 columns
+        |     &lt;/div&gt;
+        |     &lt;div class=&quot;col9&quot;&gt;
+        |       9 columns
+        |     &lt;/div&gt;
+        |   &lt;/div&gt;
+        | &lt;/div&gt;
+
+        pre .page        { @include wrapper(); }
+          | .row         { @include row(); }
+          | .col3, .col9 { @include col(); }
+          | .col3        { @include cols(3); }
+          | .col9        { @include cols(9); }
+
+      h5 With frame
+
+      .wrapper(style="background-color: #EEEEEE")
+        .frame
+          .page
+            .example-3 3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .example-3 3 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .example-6 6 columns: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      pre &lt;div class=&quot;page&quot;&gt;
+        |   &lt;div class=&quot;frame&quot;&gt;
+        |     &lt;div class=&quot;row&quot;&gt;
+        |       &lt;div class=&quot;col3&quot;&gt;
+        |         3 columns
+        |       &lt;/div&gt;
+        |       &lt;div class=&quot;col3&quot;&gt;
+        |         3 columns
+        |       &lt;/div&gt;
+        |       &lt;div class=&quot;col9&quot;&gt;
+        |         9 columns
+        |       &lt;/div&gt;
+        |     &lt;/div&gt;
+        |   &lt;/div&gt;
+        | &lt;/div&gt;
+
+        pre .page        { @include wrapper(); }
+          | .frame       { @include frame(50px); }
+          | .row         { @include row(); }
+          | .col3, .col9 { @include col(); }
+          | .col3        { @include cols(3); }
+          | .col9        { @include cols(9); }
 
 
       header#growls.sectionHeader

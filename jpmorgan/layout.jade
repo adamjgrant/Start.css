@@ -7,19 +7,18 @@ html
       =title
   body
     .wrapper
-      block hero
-    header.mainHeader#header
-      nav.mainNav
-        .wrapper.wrapper_clear
-          ul
-            li
-              a.nav-link(href="index.html") JP Morgan
-            li 
-              a.nav-link(href="index.html" class=(title === 'home' ? 'active' : '')) Home 
-            li 
-              a.nav-link(href="blog.html" class=(title === 'blog' ? 'active' : '')) Blog
-            li 
-              a.nav-link(href="events.html" class=(title === 'events' ? 'active' : '')) Events
+      header.mainHeader#header
+        nav.mainNav
+          .wrapper.wrapper_clear
+            ul
+              li
+                a.nav-link(href="index.html") JP Morgan
+              li 
+                a.nav-link(href="index.html" class=(title === 'home' ? 'active' : '')) Home 
+              li 
+                a.nav-link(href="blog.html" class=(title === 'blog' ? 'active' : '')) Blog
+              li 
+                a.nav-link(href="events.html" class=(title === 'events' ? 'active' : '')) Events
     
     block content
     

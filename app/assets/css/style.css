@@ -1035,6 +1035,13 @@ body > main, .wrapper {
   }
 }
 
+.frame {
+  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: block;
+}
+
 button, .button {
   padding: 8.33333px 16.66667px;
   background-color: #d4d4d4;

@@ -44,6 +44,9 @@ $font-baseColor:           $black
   @media screen and (min-width: $screen-md)
     padding: 0 ($space * 2)
 
+@mixin frame($spacing: ($space * 2))
+  @include frame-default($spacing)
+
 @mixin row()
   @include row-default()
 

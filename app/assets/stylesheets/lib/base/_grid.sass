@@ -7,6 +7,12 @@
   background-color: $wrapper-background
   overflow: hidden
 
+@mixin frame-default($spacing: $space)
+  padding: 0
+  padding-left: $spacing
+  padding-right: $spacing
+  display: block
+
 @mixin row-default()
   margin-left: (-1 * $space/2)
   margin-right: (-1 * $space/2)
