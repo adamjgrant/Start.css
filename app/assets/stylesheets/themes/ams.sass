@@ -10,7 +10,7 @@
 // ------
 
 $blue:                     rgb(74, 151, 189)
-$orange:                   #F5671F
+$orange:                   rgb(242, 131, 36)
 
 $body-background:          white
 
@@ -31,6 +31,7 @@ $linkColor:                $blue
 $font-baseColor:           $black
 $font-sans:                Proxima Nova, 'proxima-nova', 'Helvetica Neue', 'Helvetica', sans-serif
 $font-default:             $font-sans
+$font-baseSize:            15px
 
 @import "../lib/core"
 
@@ -137,7 +138,6 @@ code
 @mixin btn($color: darken($lightGrey, 10%))
   @include btn-default($color)
   @include box-shadow(0px 0px 0px 0px rgba(0, 0, 0, 0) inset)
-  font-size: 14px
 
 // IMAGES
 // ------
@@ -172,6 +172,10 @@ code
 
 @mixin section()
   @include section-default()
+
+hr.orange
+  border-width: 6px
+  border-color: $orange
 
 // TABLE
 // -----

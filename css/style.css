@@ -412,6 +412,10 @@ th {
 body {
   background-color: white; }
 
+hr {
+  border: 0px;
+  border-top: 1px solid #cccccc; }
+
 a + a, input[type="submit"] + input[type="submit"], button + button {
   margin-left: 5px; }
 
@@ -452,9 +456,9 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
     padding-bottom: 0;
     overflow: hidden;
     margin-bottom: 25px;
-    border-top: 3px solid #f5671f; }
+    border-top: 3px solid #f28324; }
     .s-tile.s-orange > h1, .s-tile.s-orange > h2, .s-tile.s-orange > h3, .s-tile.s-orange > h4, .s-tile.s-orange > h5 {
-      color: #f5671f; }
+      color: #f28324; }
     .s-tile.s-orange .s-close {
       text-decoration: none;
       color: #aaaaaa;
@@ -585,7 +589,7 @@ h1, h2, h3, h4, h5 {
 
 p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code {
   font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #333333;
   margin-bottom: 25px;
   line-height: 21px; }
@@ -604,7 +608,7 @@ a {
 
 body {
   font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #333333;
   line-height: 21px; }
 
@@ -636,8 +640,8 @@ blockquote {
   font-family: "Baskerville", "Palatino", "Times New Roman", serif;
   margin: 25px;
   font-style: italic;
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 29px;
+  line-height: 39px; }
   blockquote:before {
     content: open-quote;
     font-size: 70px;
@@ -656,6 +660,10 @@ code, pre {
 code {
   margin-bottom: 0px;
   padding: 0 5.55556px; }
+
+hr.orange {
+  border-width: 6px;
+  border-color: #f28324; }
 
 .wrapper, .footer {
   margin-left: auto;
@@ -815,7 +823,7 @@ code {
   text-decoration: none;
   font-size: 12px; }
   .menu-link:hover {
-    color: #f5671f; }
+    color: #f28324; }
   .menu-link:active {
     color: #4a97bd; }
 
@@ -835,7 +843,7 @@ code {
     text-decoration: none;
     font-size: 12px; }
     .plain > li > a:hover {
-      color: #f5671f; }
+      color: #f28324; }
     .plain > li > a:active {
       color: #4a97bd; }
 
@@ -861,6 +869,18 @@ code {
   margin-bottom: 25px;
   background-color: white; }
 
+.process {
+  background-size: 100% 100%;
+  padding-top: 25px; }
+  .process p, .process h4 {
+    color: white; }
+  .process p.lead {
+    font-weight: 200;
+    font-size: 36px; }
+
+.process {
+  background-image: url("../img/jewel-dark.png"); }
+
 .button {
   padding: 8.33333px 16.66667px;
   background-color: #4a97bd;
@@ -878,8 +898,7 @@ code {
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
-  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
-  font-size: 14px; }
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset; }
   html body .button, html body li .button {
     color: white; }
     html body .button:hover, html body li .button:hover {
