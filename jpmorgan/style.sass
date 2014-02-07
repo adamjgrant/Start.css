@@ -18,7 +18,6 @@
 .row-full,
 .carousel,
 .community, 
-.blog, 
 .right-half, 
 .left-half,
 .footer-column,
@@ -32,7 +31,9 @@
 .events-event-description,
 .carousel-text,
 .getInvolved-left,
-.getInvolved-right
+.getInvolved-right,
+.date,
+.description
   @include col()
 
 .row-full, 
@@ -42,8 +43,10 @@
 .getInvolved
   @include cols(12)
 
-.blog, 
 .right-half
+  @include cols(10)
+
+.description
   @include cols(9)
 
 .events-event-description
@@ -59,9 +62,12 @@
 
 .footer-column, 
 .events,
-.left-half,
-.blog-post
+.blog-post,
+.date
   @include cols(3)
+
+.left-half
+  @include cols(2)
 
 // Navigation
 
@@ -81,35 +87,92 @@
   @include list-plain()
   > li > a
     @include nav-link()
+.header
+  background-image: url('../img/header.png')
+  background-size: 100% 100%
+  .bar
+    background: transparent
+hr
+  margin: 0
+hr.orange
+  border-width: 6px
+  border-color: $orange
 
 // Typography
 
+.muted
+  color: #BBB
+  + h4
+    margin-top: 2px
 
 // Content
 
+.left-half
+  height: 90px
+  background-image: url('../img/logo.png')
+  background-repeat: no-repeat
+  background-position: 39px 12px
+  background-size: 65%
 .carousel
   .carousel-text
     text-align: right
+    padding-top: 55px
   .carousel-text-box
     text-align: left
   background-image: url('../img/woman.jpg')
+  background-position: 0px -30px
   background-size: 100%
-  height: 590px
+  height: 560px
 .carousel-text-box
   background-color: rgba(255, 255, 255, 0.5)
-  padding: ($space/2)
+  padding: ($space/2) $space
   margin-bottom: ($space/2)
+  @include border-radius(5px)
   h2
     color: $blue
-
+    font-size: 36px
+    line-height: 38px
+  p
+    font-size: 21px
+    line-height: 26px
+.blog
+  padding-top: $space
+  padding-bottom: $space
 .blog-post
   img
     width: 100%
     margin-bottom: -5px
+  > img
+    @include border-radius(3px 3px 0px 0px)
 .blog-post-frame
-  padding: ($space/4)
-  margin-bottom: $space
+  padding: ($space/4) ($space/2)
   background-color: white
+  height: 130px
+  img
+    display: inline-block
+    width: auto
+    vertical-align: middle
+    margin-right: 5px
+    + span
+      display: inline-block
+      vertical-align: middle
+  small
+    line-height: normal
+  p
+    margin: 0
+.blog-post-comments
+  border-top: 1px solid #DDD
+  @include border-radius(0 0 3px 3px)
+  @include box-shadow(0px 3px 0px #CCC)
+.blog-post-comments,
+.blog-post-heading
+  height: auto
+  @include border-radius(3px 3px 0px 0px)
+  h4
+    margin-bottom: 0
+.blog-post-event
+  height: auto
+  border-bottom: 1px solid #DDD
 .process,
 .getInvolved
   background-size: 100% 100%
@@ -130,6 +193,16 @@
   padding-bottom: $space
 .getInvolved-left
   border-right: 1px solid rgba(255, 255, 255, 0.15)
+.date
+  text-align: center
+  color: $blue
+  font-size: 12px
+  font-weight: 600
+.date-number
+  font-size: 30px
+  color: $blue
+.description
+  display: block
 
 
 // Buttons

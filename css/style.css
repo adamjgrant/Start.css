@@ -632,12 +632,22 @@ h4 {
   h4 + p {
     margin-top: 0; }
 
-h5 {
+h4 {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 5px; }
-  h5 + p {
+  h4 + p {
     margin-top: 0; }
+
+h5 {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 800;
+  font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
+  margin-bottom: 2px; }
+
+hr {
+  border-color: #dddddd; }
 
 blockquote {
   font-family: "Baskerville", "Palatino", "Times New Roman", serif;
@@ -664,10 +674,6 @@ code {
   margin-bottom: 0px;
   padding: 0 5.55556px; }
 
-hr.orange {
-  border-width: 6px;
-  border-color: #f28324; }
-
 .wrapper, .footer {
   margin-left: auto;
   margin-right: auto;
@@ -678,8 +684,8 @@ hr.orange {
 
 .frame {
   padding: 0;
-  padding-left: 16.66667px;
-  padding-right: 16.66667px;
+  padding-left: 25px;
+  padding-right: 25px;
   display: block; }
 
 .clear {
@@ -706,7 +712,6 @@ hr.orange {
 .row-full,
 .carousel,
 .community,
-.blog,
 .right-half,
 .left-half,
 .footer-column,
@@ -720,7 +725,9 @@ hr.orange {
 .events-event-description,
 .carousel-text,
 .getInvolved-left,
-.getInvolved-right {
+.getInvolved-right,
+.date,
+.description {
   padding: 0 12.5px;
   float: left;
   box-sizing: border-box;
@@ -735,8 +742,10 @@ hr.orange {
 .getInvolved {
   width: 100%; }
 
-.blog,
 .right-half {
+  width: 83.33333%; }
+
+.description {
   width: 75%; }
 
 .events-event-description {
@@ -752,9 +761,12 @@ hr.orange {
 
 .footer-column,
 .events,
-.left-half,
-.blog-post {
+.blog-post,
+.date {
   width: 25%; }
+
+.left-half {
+  width: 16.66667%; }
 
 .bar {
   margin-bottom: 25px;
@@ -852,30 +864,108 @@ hr.orange {
     .plain > li > a:active {
       color: #4a97bd; }
 
+.header {
+  background-image: url("../img/header.png");
+  background-size: 100% 100%; }
+  .header .bar {
+    background: transparent; }
+
+hr {
+  margin: 0; }
+
+hr.orange {
+  border-width: 6px;
+  border-color: #f28324; }
+
+.muted {
+  color: #bbbbbb; }
+  .muted + h4 {
+    margin-top: 2px; }
+
+.left-half {
+  height: 90px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-position: 39px 12px;
+  background-size: 65%; }
+
 .carousel {
   background-image: url("../img/woman.jpg");
+  background-position: 0px -30px;
   background-size: 100%;
-  height: 590px; }
+  height: 560px; }
   .carousel .carousel-text {
-    text-align: right; }
+    text-align: right;
+    padding-top: 55px; }
   .carousel .carousel-text-box {
     text-align: left; }
 
 .carousel-text-box {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 12.5px;
-  margin-bottom: 12.5px; }
+  padding: 12.5px 25px;
+  margin-bottom: 12.5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
   .carousel-text-box h2 {
-    color: #4a97bd; }
+    color: #4a97bd;
+    font-size: 36px;
+    line-height: 38px; }
+  .carousel-text-box p {
+    font-size: 21px;
+    line-height: 26px; }
+
+.blog {
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
 .blog-post img {
   width: 100%;
   margin-bottom: -5px; }
+.blog-post > img {
+  border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px; }
 
 .blog-post-frame {
-  padding: 6.25px;
-  margin-bottom: 25px;
-  background-color: white; }
+  padding: 6.25px 12.5px;
+  background-color: white;
+  height: 130px; }
+  .blog-post-frame img {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px; }
+    .blog-post-frame img + span {
+      display: inline-block;
+      vertical-align: middle; }
+  .blog-post-frame small {
+    line-height: normal; }
+  .blog-post-frame p {
+    margin: 0; }
+
+.blog-post-comments {
+  border-top: 1px solid #dddddd;
+  border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  box-shadow: 0px 3px 0px #cccccc;
+  -webkit-box-shadow: 0px 3px 0px #cccccc;
+  -moz-box-shadow: 0px 3px 0px #cccccc; }
+
+.blog-post-comments,
+.blog-post-heading {
+  height: auto;
+  border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  -moz-border-radius: 3px 3px 0px 0px; }
+  .blog-post-comments h4,
+  .blog-post-heading h4 {
+    margin-bottom: 0; }
+
+.blog-post-event {
+  height: auto;
+  border-bottom: 1px solid #dddddd; }
 
 .process,
 .getInvolved {
@@ -905,6 +995,19 @@ hr.orange {
 .getInvolved-left {
   border-right: 1px solid rgba(255, 255, 255, 0.15); }
 
+.date {
+  text-align: center;
+  color: #4a97bd;
+  font-size: 12px;
+  font-weight: 600; }
+
+.date-number {
+  font-size: 30px;
+  color: #4a97bd; }
+
+.description {
+  display: block; }
+
 .button {
   padding: 8.33333px 16.66667px;
   background-color: #4a97bd;
@@ -922,7 +1025,12 @@ hr.orange {
   -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
-  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset; }
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 12.5px 16.66667px;
+  font-weight: 100; }
   html body .button, html body li .button {
     color: white; }
     html body .button:hover, html body li .button:hover {

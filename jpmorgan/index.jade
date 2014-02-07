@@ -12,64 +12,81 @@ block content
             a.button Read the full story
               span.bigArrow &raquo;
   hr.orange
-  .frame
-    section.row
-      .blog-post
-        img(src="http://placehold.it/250x150")
-        .blog-post-frame
-          h5
-            a(href="#") Lorem ipsum dolor amet
-          p Donec lacinia arcu eu elit laore et iaculis. Donec non tortor sit amet eros...
-          hr
-          p
-            img(src="img/comments.png")
-            span Be the first to comment
-      .blog-post
-        img(src="http://placehold.it/250x150")
-        .blog-post-frame
-          h5
-            a(href="#") Lorem ipsum dolor amet
-          p Donec lacinia arcu eu elit laore et iaculis. Donec non tortor sit amet eros...
-          hr
-          p
-            img(src="img/comments.png")
-            span 1 comment
-      .blog-post
-        img(src="http://placehold.it/250x150")
-        .blog-post-frame
-          h5
-            a(href="#") Lorem ipsum dolor amet
-          p Donec lacinia arcu eu elit laore et iaculis. Donec non tortor sit amet eros...
-          hr
-          p
-            img(src="img/comments.png")
-            span 12 comments
-      .blog-post
-        h5 Upcoming Events
-        .blog-post-frame
-          aside.date Feb
-            span.date-number 17
-          main.description
-            h5 Monday, Febrruary 17
-              br
-              | 1:00 PM
-            p Alt Beta brown bag discussion 
+  section.blog
+    .frame
+      section.row
+        .blog-post
+          img(src="../img/blog1.png")
+          .blog-post-frame
+            p.muted 
+              small 14 minutes ago 
+            h4
+              a(href="#") Lorem ipsum dolor amet
+            p Donec lacinia arcu eu elit laore et iaculis. Donec non tortor sit amet eros...
+          .blog-post-frame.blog-post-comments
             p
-              img(src="")
-              a(href="#")
-                small Add to Calendar
-        .blog-post-frame
-          aside.date Feb
-            span.date-number 24 
-          main.description
-            h5 Monday, Febrruary 24
-              br
-              | 3:00 PM
-            p Dynamic Withdrawl brown bag discussion 
+              img(src="../img/comments.png")
+              span
+                a(href="#")
+                  small Be the first to comment 
+        .blog-post
+          img(src="../img/blog2.png")
+          .blog-post-frame
+            p.muted 
+              small 2 days ago
+            h4
+              a(href="#") Lorem ipsum dolor amet
+            p Donec lacinia arcu eu elit laore et iaculis. Donec non tortor sit amet eros...
+          .blog-post-frame.blog-post-comments
             p
-              img(src="")
-              a(href="#")
-                small Add to Calendar
+              img(src="../img/comments.png")
+              span
+                a(href="#")
+                  small 1 comment 
+        .blog-post
+          img(src="../img/blog3.png")
+          .blog-post-frame
+            p.muted 
+              small February 5, 2014
+            h4
+              a(href="#") Lorem ipsum dolor amet
+            p Donec lacinia arcu eu elit laore et iaculis. Donec non tortor sit amet eros...
+          .blog-post-frame.blog-post-comments
+            p
+              img(src="../img/comments.png")
+              span 
+                a(href="#")
+                  small 12 comments
+        .blog-post
+          .blog-post-frame.blog-post-heading
+            h4 Upcoming Events
+          hr
+          .blog-post-frame.blog-post-event
+            .row
+              aside.date Feb
+                p.date-number 17
+              main.description
+                h5 Monday, February 17
+                  br
+                  | 1:00 PM
+                p Alt Beta brown bag discussion 
+                p
+                  img(src="")
+                  a(href="#")
+                    small Add to Calendar
+          .blog-post-frame.blog-post-event
+            .row
+              aside.date Feb
+                p.date-number 24 
+              main.description
+                h5 Monday, February 24
+                  br
+                  | 3:00 PM
+                p Dynamic Withdrawl brown bag discussion 
+                p
+                  img(src="")
+                  a(href="#")
+                    small Add to Calendar
   section.process
     .frame
       section.row
