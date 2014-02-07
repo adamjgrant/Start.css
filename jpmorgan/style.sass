@@ -30,7 +30,8 @@
 .footer-column,
 .getInvolved,
 .events-event-date,
-.events-event-description
+.events-event-description,
+.carousel-text
   @include col()
 
 .row-full, 
@@ -46,18 +47,19 @@
 .events-event-description
   @include cols(8)
 
-.blog-post,
 .events-event-date
   @include cols(4)
 
 .getInvolved, 
 .process-text, 
-.process-graphic
+.process-graphic,
+.carousel-text
   @include cols(6)
 
 .footer-column, 
 .events,
-.left-half
+.left-half,
+.blog-post
   @include cols(3)
 
 // Navigation
@@ -82,11 +84,31 @@
 
 
 // Content
+
+.carousel
+  .carousel-text
+    text-align: right
+  .carousel-text-box
+    text-align: left
+.carousel-text-box
+  background-color: rgba(255, 255, 255, 0.5)
+  padding: ($space/2)
+  margin-bottom: ($space/2)
+  h2
+    color: $blue
+
 .blog-post
   img
     width: 100%
     margin-bottom: -5px
 .blog-post-frame
-  padding: 15px
+  padding: ($space/4)
   border: 2px solid #CCC
   margin-bottom: $space
+  background-color: white
+
+
+// Buttons
+
+.button
+  @include btn($blue)
