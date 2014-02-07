@@ -45,7 +45,7 @@ $font-baseSize:            15px
 @mixin wrapper($maxWidth:$screen-md)
   @include wrapper-default($maxWidth)
 
-@mixin frame($spacing: ($space * 2))
+@mixin frame($spacing: ($space * 2/3))
   @include frame-default($spacing)
 
 @mixin row()
@@ -104,6 +104,9 @@ h3
 h4
   font-size: $font-headings-baseSize + 3
   margin: ($space * 0.5) 0
+  margin-bottom: $space/2
+  + p
+    margin-top: 0
 
 h5
   font-weight: 500

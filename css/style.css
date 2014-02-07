@@ -627,7 +627,10 @@ h3 {
 
 h4 {
   font-size: 19px;
-  margin: 12.5px 0; }
+  margin: 12.5px 0;
+  margin-bottom: 12.5px; }
+  h4 + p {
+    margin-top: 0; }
 
 h5 {
   font-weight: 500;
@@ -675,8 +678,8 @@ hr.orange {
 
 .frame {
   padding: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 16.66667px;
+  padding-right: 16.66667px;
   display: block; }
 
 .clear {
@@ -702,7 +705,6 @@ hr.orange {
 
 .row-full,
 .carousel,
-.process,
 .community,
 .blog,
 .right-half,
@@ -716,7 +718,9 @@ hr.orange {
 .getInvolved,
 .events-event-date,
 .events-event-description,
-.carousel-text {
+.carousel-text,
+.getInvolved-left,
+.getInvolved-right {
   padding: 0 12.5px;
   float: left;
   box-sizing: border-box;
@@ -726,8 +730,9 @@ hr.orange {
 
 .row-full,
 .carousel,
-.process,
-.community {
+.community,
+.process-text,
+.getInvolved {
   width: 100%; }
 
 .blog,
@@ -740,10 +745,9 @@ hr.orange {
 .events-event-date {
   width: 33.33333%; }
 
-.getInvolved,
-.process-text,
-.process-graphic,
-.carousel-text {
+.carousel-text,
+.getInvolved-left,
+.getInvolved-right {
   width: 50%; }
 
 .footer-column,
@@ -865,21 +869,36 @@ hr.orange {
 
 .blog-post-frame {
   padding: 6.25px;
-  border: 2px solid #cccccc;
   margin-bottom: 25px;
   background-color: white; }
 
-.process {
+.process,
+.getInvolved {
   background-size: 100% 100%;
   padding-top: 25px; }
-  .process p, .process h4 {
+  .process p, .process h4, .process h2, .process h5,
+  .getInvolved p,
+  .getInvolved h4,
+  .getInvolved h2,
+  .getInvolved h5 {
     color: white; }
-  .process p.lead {
-    font-weight: 200;
-    font-size: 36px; }
 
 .process {
   background-image: url("../img/jewel-dark.png"); }
+  .process p.lead {
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 39px;
+    text-align: left; }
+  .process p {
+    text-align: right; }
+
+.getInvolved {
+  background-image: url("../img/jewel-light.png");
+  padding-bottom: 25px; }
+
+.getInvolved-left {
+  border-right: 1px solid rgba(255, 255, 255, 0.15); }
 
 .button {
   padding: 8.33333px 16.66667px;

@@ -17,7 +17,6 @@
 
 .row-full,
 .carousel,
-.process,
 .community, 
 .blog, 
 .right-half, 
@@ -31,13 +30,16 @@
 .getInvolved,
 .events-event-date,
 .events-event-description,
-.carousel-text
+.carousel-text,
+.getInvolved-left,
+.getInvolved-right
   @include col()
 
 .row-full, 
 .carousel, 
-.process, 
-.community
+.community,
+.process-text,
+.getInvolved
   @include cols(12)
 
 .blog, 
@@ -50,10 +52,9 @@
 .events-event-date
   @include cols(4)
 
-.getInvolved, 
-.process-text, 
-.process-graphic,
-.carousel-text
+.carousel-text,
+.getInvolved-left,
+.getInvolved-right
   @include cols(6)
 
 .footer-column, 
@@ -103,19 +104,28 @@
     margin-bottom: -5px
 .blog-post-frame
   padding: ($space/4)
-  border: 2px solid #CCC
   margin-bottom: $space
   background-color: white
-.process
+.process,
+.getInvolved
   background-size: 100% 100%
   padding-top: $space
-  p, h4
+  p, h4, h2, h5
     color: white
+.process
+  background-image: url('../img/jewel-dark.png')
   p.lead
     font-weight: 200
     font-size: 36px
-.process
-  background-image: url('../img/jewel-dark.png')
+    line-height: 39px
+    text-align: left
+  p
+    text-align: right
+.getInvolved
+  background-image: url('../img/jewel-light.png')
+  padding-bottom: $space
+.getInvolved-left
+  border-right: 1px solid rgba(255, 255, 255, 0.15)
 
 
 // Buttons
