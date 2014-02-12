@@ -164,7 +164,9 @@ hr.orange
   border-top: 1px solid #DDD
   @include border-radius(0 0 3px 3px)
   @include box-shadow(0px 3px 0px #CCC)
-.blog-post-comments,
+.blog-post-comments
+  height: auto
+  @include border-radius(0px 0px 3px 3px)
 .blog-post-heading
   height: auto
   @include border-radius(3px 3px 0px 0px)
@@ -203,6 +205,9 @@ hr.orange
   color: $blue
 .description
   display: block
+.community-content
+  padding-top: $space
+  padding-bottom: $space
 
 
 // Buttons
