@@ -15,14 +15,37 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+time, mark, audio, video, .ms-wpContentDivSpace,
+td.ms-addnew,
+.ms-vh div, .ms-vh2 div,
+tr.ms-viewheadertr > th.ms-vh, tr.ms-viewheadertr > th.ms-vh2,
+.s4-search input, .s4-search .ms-searchimage,
+.s4-toplinks .s4-tn a.selected,
+body #s4-topheader2,
+.s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited,
+.s4-ql ul.root ul > li > a,
+.s4-ql ul.root ul,
+.ms-rte-layoutszone-inner,
+.s4-ba,
+.s4-ca,
+.s4-titletext,
+.s4-titletext,
+.s4-title,
+.s4-titlelogo,
+.s4-titletable,
+.s4-title-inner,
+.s4-ql li, .s4-specialNavLinkList li,
+.ms-WPHeader td, .ms-fakewptitle
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	background: none
+	height: auto
+	min-height: 0
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -48,9 +71,12 @@ table {
 }
 
 // SharePoint Reset
+// ================
 
 $font-color = #333
 $font-size = 100%
+
+// Reset fonts
 
 .ms-rteElement-H1B, 
 .s4-ql ul.root > li > .menu-item, 
@@ -72,11 +98,73 @@ strong,
 .ms-rteElement-H5,
 .ms-vb, .ms-vb2, .ms-vb-user, .ms-vb-tall, .ms-pb, .ms-pb-selected,
 .ms-vh, .ms-vh2, .ms-vh-icon, .ms-vh-icon-empty, .ms-vhImage, .ms-gb, .ms-gb2, .ms-gbload, .ms-vb, .ms-vb2, .ms-vb-tall, .ms-vb-user, .ms-vh2-nograd, .ms-vh3-nograd, .ms-vh2-nograd-icon, .ms-vh2-nofilter-icon, .ms-pb, .ms-pb-selected, .ms-ph,
-a.ms-addnew
+a.ms-addnew,
+.ms-WPTitle, .ms-WPTitle a,
+.ms-cui-ribbon, .ms-cui-menu, .ms-siteactionsmenu, .s4-breadcrumb-menu, .ms-cui-TabRowLeft, .ms-cui-toolbar-toolbar, .ms-MenuUILabel, .ms-MenuUILabelRtL, .ms-menuuilabelcompact, .ms-menuuilabelcompactRtl, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILarge ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILargeRtL ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink, .s4-search input.ms-sbplain, .ms-sbplain, .s4-search input, .link-item, .link-item a, .link-item a:link, .ms-WPBody, .s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited, .ms-menutoolbar td a, .ms-toolbar, .ms-listheaderlabel, .ms-viewselector, .ms-viewselectortext, .ms-viewselectorhover, .ms-vh2-nofilter, .ms-vh2-nofilter-notextalign, .ms-vh, .ms-vh2, .ms-vh-icon, .ms-vh-icon-empty, .ms-vhImage, .ms-gb, .ms-gb2, .ms-gbload, .ms-vb, .ms-vb2, .ms-vb-tall, .ms-vb-user, .ms-vh2-nograd, .ms-vh3-nograd, .ms-vh2-nograd-icon, .ms-vh2-nofilter-icon, .ms-pb, .ms-pb-selected, .ms-ph, td.ms-vb, a.ms-addnew, .ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a, th.ms-vh, td.ms-vb, .s4-titletable, .ms-dlgTitleText, .ms-descriptiontext, .ms-formtoolbar, select, .ms-input, .ms-long, .ms-dtinput, .ms-dttimeinput, .ms-inputuserfield, .ms-toolbarContainer, div.ms-formfieldlabelcontainer span.ms-formfieldlabel, .ms-formfieldlabelcontainer, .description, .ms-linksection-level1 h3, .ms-linksection-level1 ul li a, .ms-pageinformation h3.ms-standardheader, table.ms-pageinformation, table.ms-createpageinformation, .ms-pageinformation table td, .ms-createpageinformation table td, th .ms-vb, .ms-vh2-nofilter-icon, th.ms-vh2-nograd, th.ms-vh2-nograd-icon, .ms-formdescription, .ms-authoringcontrols, .ms-paging, .ms-listedit .ms-standardheader, .ms-listedit .ms-linksectionheader, .ms-listedit .ms-linksectionheader .ms-standardheader, .ms-linksectionheader, .ms-SPZoneLabel, .ms-SPButton, .ms-wpadder-categoryColumn, .ms-wpadder-categoryColumn td, .ms-wpadder-items, .ms-wpadder-upload input, .ms-wpadder-upload button, .ms-wpadder-tabTable th, .ms-wpadder-description, .ms-wpadder-zoneArea button, .ms-WPTitle, .level-item, .level-item a, .level-item a:link, .level-description, .headertitle, .ms-WPBody td, .medium, groupheader, .ms-rtelong, .ms-longer, .ms-rtelonger, .ms-radiotext, .ms-rtedropdown, .ms-lookuptypeintextbox, .ms-rtefield, table.ms-disc td, table tr td.ms-disc-bordered-noleft, .ms-gridCol,
+.s4-toplinks .s4-tn a.selected
+font,
+body
 	color: $font-color
 	font-size: 14px
 	line-height: normal
 	font-family: 'Helvetica Neue', helvetica, sans-serif
+	font-weight: normal
 
 body, body.v4master
 	overflow: auto
+
+// "Remove" elements
+
+img[alt="Search"],
+.ms-wpTdSpace
+	display: none
+
+// No Floats or widths
+body #s4-leftpanel,
+.ms-rte-layoutszone-outer,
+.s4-rp
+	float: none
+	width: auto
+
+// TABLES
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+	empty-cells: show
+	border: 0px
+table caption
+	color: $font-color
+	padding: 0
+	text-align: center
+table td,
+table th
+	border-left: 1px solid transparent
+	border-width: 0 0 0 1px
+	font-size: inherit
+	margin: 0
+	overflow: visible
+table td:first-child,
+table th:first-child
+	border-left-width: 0
+table thead
+	color: $font-color
+	text-align: left
+	vertical-align: bottom
+table td
+	background-color: transparent
+table td
+	background-color: transparent
+table.pure-table-striped tr:nth-child(2n-1) td
+	background-color: transparent
+table.pure-table-bordered td
+	border-bottom: 1px solid transparent
+table.pure-table-bordered tbody > tr:last-child td
+table.pure-table-horizontal tbody > tr:last-child td
+	border-bottom-width: 0
+table.pure-table-horizontal td,
+table.pure-table-horizontal th
+	border-width: 0 0 1px 0
+	border-bottom: 1px solid transparent
+table.pure-table-horizontal tbody > tr:last-child td
+	border-bottom-width: 0
