@@ -110,7 +110,26 @@ body #s4-topheader2,
 .s4-ql li,
 .s4-specialNavLinkList li,
 .ms-WPHeader td,
-.ms-fakewptitle {
+.ms-fakewptitle,
+.ms-cui-topBar2,
+body #s4-ribbonrow,
+.ms-siteactionsmenu > span > a > span,
+.ms-welcomeMenu,
+.s4-trc-container-menu,
+.ms-cui-TabRowLeft,
+.ms-cui-tt-a,
+.ms-cui-tt-span,
+.ms-cui-tt,
+.ms-cui-cg,
+.ms-siteactionsmenuinner,
+.ms-siteactionsmenuhover,
+.s4-devdashboard,
+.ms-cui-tts,
+.ms-cui-tts-scale-1,
+.ms-cui-tts-scale-2,
+.s4-pr,
+body #s4-workspace,
+body #s4-ribboncont {
   margin: 0;
   padding: 0;
   border: 0;
@@ -120,6 +139,10 @@ body #s4-topheader2,
   background: none;
   height: auto;
   min-height: 0;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: auto;
+  overflow: auto;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -321,7 +344,10 @@ table tr td.ms-disc-bordered-noleft,
 .ms-gridCol,
 .s4-toplinks .s4-tn a.selected,
 font,
-body {
+body,
+.ms-siteactionsmenu > span > a,
+.ms-welcomeMenu a:link,
+.ms-cui-tt-span {
   color: #333;
   font-size: 14px;
   line-height: normal;
@@ -338,7 +364,13 @@ img[alt="Search"],
 }
 body #s4-leftpanel,
 .ms-rte-layoutszone-outer,
-.s4-rp {
+.s4-rp,
+.s4-trc-container-menu,
+.ms-cui-TabRowLeft,
+.ms-cui-jewel-container,
+.ms-cui-tt,
+.ms-cui-cg,
+.ms-cui-TabRowRight {
   float: none;
   width: auto;
 }

@@ -1,0 +1,44 @@
+!!!
+html
+  head
+    link(rel="stylesheet", href="../css/style2.css")
+    block variables
+    title 
+      =title
+  body
+    .wrapper
+      header.header
+        nav.bar
+          section.row
+            .left-half &nbsp;
+            .right-half
+              ul.menu-right
+                li
+                  a.menu-link(href="#") Welcome, Brian
+              .clear
+              ul.menu-right
+                li
+                  a.menu-link(href="#") Our Team & Process
+                li
+                  a.menu-link(href="#") Product Roadmap
+                li
+                  a.menu-link(href="#") Blog
+                li
+                  a.menu-link(href="#") Resources 
+                li
+                  a.menu-link(href="#") System Status 
+      block content
+    footer.footer
+      .frame
+        section.row
+          article.footer-column
+            ul.plain
+              li
+                a(href="#") Something
+          article.footer-column
+            ul.plain
+              li
+                a(href="#") Something
+  script(type="text/javascript" src="http://use.typekit.net/luf6mvd.js")
+  script(type="text/javascript")
+    try{Typekit.load();}catch(e){}

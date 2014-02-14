@@ -35,7 +35,22 @@ body #s4-topheader2,
 .s4-titletable,
 .s4-title-inner,
 .s4-ql li, .s4-specialNavLinkList li,
-.ms-WPHeader td, .ms-fakewptitle
+.ms-WPHeader td, .ms-fakewptitle,
+.ms-cui-topBar2,
+body #s4-ribbonrow,
+.ms-siteactionsmenu > span > a > span,
+.ms-welcomeMenu,
+.s4-trc-container-menu,
+.ms-cui-TabRowLeft,
+.ms-cui-tt-a,
+.ms-cui-tt-span,
+.ms-cui-tt, .ms-cui-cg,
+.ms-siteactionsmenuinner, .ms-siteactionsmenuhover,
+.s4-devdashboard,
+.ms-cui-tts, .ms-cui-tts-scale-1, .ms-cui-tts-scale-2,
+.s4-pr,
+body #s4-workspace,
+body #s4-ribboncont
 	margin: 0
 	padding: 0
 	border: 0
@@ -45,6 +60,10 @@ body #s4-topheader2,
 	background: none
 	height: auto
 	min-height: 0
+	text-align: left
+	overflow-y: auto
+	overflow-x: auto
+	overflow: auto
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -103,7 +122,10 @@ a.ms-addnew,
 .ms-cui-ribbon, .ms-cui-menu, .ms-siteactionsmenu, .s4-breadcrumb-menu, .ms-cui-TabRowLeft, .ms-cui-toolbar-toolbar, .ms-MenuUILabel, .ms-MenuUILabelRtL, .ms-menuuilabelcompact, .ms-menuuilabelcompactRtl, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILarge ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink, div.ms-MenuUIPopupScreen div.ms-MenuUIPopupInner div.ms-MenuUILargeRtL ul.ms-MenuUIUL div.ms-MenuUIULItem a.ms-MenuUIULLink, .s4-search input.ms-sbplain, .ms-sbplain, .s4-search input, .link-item, .link-item a, .link-item a:link, .ms-WPBody, .s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited, .ms-menutoolbar td a, .ms-toolbar, .ms-listheaderlabel, .ms-viewselector, .ms-viewselectortext, .ms-viewselectorhover, .ms-vh2-nofilter, .ms-vh2-nofilter-notextalign, .ms-vh, .ms-vh2, .ms-vh-icon, .ms-vh-icon-empty, .ms-vhImage, .ms-gb, .ms-gb2, .ms-gbload, .ms-vb, .ms-vb2, .ms-vb-tall, .ms-vb-user, .ms-vh2-nograd, .ms-vh3-nograd, .ms-vh2-nograd-icon, .ms-vh2-nofilter-icon, .ms-pb, .ms-pb-selected, .ms-ph, td.ms-vb, a.ms-addnew, .ms-ltviewselectormenuheader .ms-viewselector a, .ms-ltviewselectormenuheader .ms-viewselectorhover a, th.ms-vh, td.ms-vb, .s4-titletable, .ms-dlgTitleText, .ms-descriptiontext, .ms-formtoolbar, select, .ms-input, .ms-long, .ms-dtinput, .ms-dttimeinput, .ms-inputuserfield, .ms-toolbarContainer, div.ms-formfieldlabelcontainer span.ms-formfieldlabel, .ms-formfieldlabelcontainer, .description, .ms-linksection-level1 h3, .ms-linksection-level1 ul li a, .ms-pageinformation h3.ms-standardheader, table.ms-pageinformation, table.ms-createpageinformation, .ms-pageinformation table td, .ms-createpageinformation table td, th .ms-vb, .ms-vh2-nofilter-icon, th.ms-vh2-nograd, th.ms-vh2-nograd-icon, .ms-formdescription, .ms-authoringcontrols, .ms-paging, .ms-listedit .ms-standardheader, .ms-listedit .ms-linksectionheader, .ms-listedit .ms-linksectionheader .ms-standardheader, .ms-linksectionheader, .ms-SPZoneLabel, .ms-SPButton, .ms-wpadder-categoryColumn, .ms-wpadder-categoryColumn td, .ms-wpadder-items, .ms-wpadder-upload input, .ms-wpadder-upload button, .ms-wpadder-tabTable th, .ms-wpadder-description, .ms-wpadder-zoneArea button, .ms-WPTitle, .level-item, .level-item a, .level-item a:link, .level-description, .headertitle, .ms-WPBody td, .medium, groupheader, .ms-rtelong, .ms-longer, .ms-rtelonger, .ms-radiotext, .ms-rtedropdown, .ms-lookuptypeintextbox, .ms-rtefield, table.ms-disc td, table tr td.ms-disc-bordered-noleft, .ms-gridCol,
 .s4-toplinks .s4-tn a.selected
 font,
-body
+body,
+.ms-siteactionsmenu > span > a,
+.ms-welcomeMenu a:link,
+.ms-cui-tt-span
 	color: $font-color
 	font-size: 14px
 	line-height: normal
@@ -122,7 +144,11 @@ img[alt="Search"],
 // No Floats or widths
 body #s4-leftpanel,
 .ms-rte-layoutszone-outer,
-.s4-rp
+.s4-rp,
+.s4-trc-container-menu,
+.ms-cui-TabRowLeft, .ms-cui-jewel-container,
+.ms-cui-tt, .ms-cui-cg,
+.ms-cui-TabRowRight
 	float: none
 	width: auto
 
