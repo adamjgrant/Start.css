@@ -33,7 +33,7 @@
 // ----------
 
 h1, h2, h3, h4, h5
-  @include h1-to-h5-default
+  @include h1-to-h5-default()
 
 @mixin base-typography()
   @include base-typography-default()
@@ -140,3 +140,11 @@ code
 
 @mixin tile($color: $darkGrey)
   @include tile-default($color)
+
+// FORMS
+// -----
+
+@mixin form-horizontal()
+  @include form-horizontal-default()
+@mixin form-group()
+  @include form-group-default()
