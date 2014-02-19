@@ -748,7 +748,6 @@ code {
 
 .row-full,
 .carousel,
-.community,
 .right-half,
 .left-half,
 .footer-column,
@@ -774,7 +773,6 @@ code {
 
 .row-full,
 .carousel,
-.community,
 .process-text,
 .getInvolved {
   width: 100%; }
@@ -919,6 +917,15 @@ hr.orange {
   .muted + h4 {
     margin-top: 2px; }
 
+blockquote {
+  color: white;
+  font-style: normal;
+  font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
+  margin: 0; }
+  blockquote:before {
+    content: "";
+    margin-left: 0; }
+
 .left-half {
   height: 90px;
   background-image: url("../img/logo.png");
@@ -967,37 +974,66 @@ hr.orange {
 .tile {
   float: left;
   background-color: white;
-  padding: 8.33333px;
+  padding: 16.66667px;
   background-color: #eeeeee;
   overflow: hidden;
   height: 190px;
   color: white; }
+  .tile h1, .tile p {
+    margin: 0; }
+  .tile p {
+    margin-bottom: 8.33333px;
+    font-weight: 600; }
+  .tile h1 {
+    line-height: 45px; }
   .tile.tile_lightest {
     background-color: #7cb8e1; }
+    .tile.tile_lightest h1 {
+      color: #3779ae; }
+    .tile.tile_lightest p {
+      color: white; }
+      .tile.tile_lightest p.dark {
+        color: #3779ae; }
   .tile.tile_light {
     background-color: #3779ae; }
+    .tile.tile_light h1 {
+      color: #7cb8e1; }
+    .tile.tile_light p {
+      color: #1a324d; }
+  .tile.tile_double-tall {
+    height: 380px; }
   .tile.tile_dark {
     background-color: #214f6e; }
   .tile.tile_darkest {
     background-color: #1a324d; }
   .tile img {
-    margin: -8px;
+    margin: -16.66667px;
     height: 190px;
     margin-bottom: 0; }
   .tile h1 {
     font-weight: 500;
+<<<<<<< HEAD
     font-size: 50px;
     color: white; }
+=======
+    font-size: 45px; }
+>>>>>>> f43bd80b27e69c1b2923a27785574c369374d847
 
 @media screen and (min-width: 320px) {
   .tile {
-    width: 50%; } }
+    width: 50%; }
+    .tile.tile_double-long {
+      width: 100%; } }
 @media screen and (min-width: 640px) {
   .tile {
-    width: 33%; } }
+    width: 33%; }
+    .tile.tile_double-long {
+      width: 66%; } }
 @media screen and (min-width: 768px) {
   .tile {
-    width: 25%; } }
+    width: 25%; }
+    .tile.tile_double-long {
+      width: 50%; } }
 .process,
 .getInvolved {
   background-size: 100% 100%;
