@@ -110,6 +110,12 @@ blockquote
   &:before
     content: ''
     margin-left: 0
+p
+  font-size: 18px
+  small, small a
+    font-size: 12px
+    font-weight: 600
+    color: $blue2
 
 
 // Content
@@ -133,8 +139,9 @@ blockquote
 .carousel-text-box
   background-color: rgba(255, 255, 255, 0.5)
   padding: ($space/2) $space
-  margin-bottom: ($space/2)
-  @include border-radius(5px)
+  @include border-radius(0px)
+  + .button
+    margin-top: 0
   h2
     color: $blue
     font-size: 36px
@@ -168,8 +175,10 @@ blockquote
   p
     margin-bottom: ($space/3)
     font-weight: 600
+    color: $blue1
   h1
     line-height: 45px
+    font-size: 60px
   &.tile_lightest
     background-color: $blueLight
     h1
@@ -212,6 +221,8 @@ blockquote
     width: 25%
     &.tile_double-long
       width: 50%
+.tiles
+  overflow: hidden
 .process,
 .getInvolved
   background-size: 100% 100%
@@ -251,3 +262,4 @@ blockquote
 
 .button
   @include btn($blue)
+  @include border-radius(0px)

@@ -920,6 +920,13 @@ blockquote {
     content: "";
     margin-left: 0; }
 
+p {
+  font-size: 18px; }
+  p small, p small a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #214f6e; }
+
 .left-half {
   height: 90px;
   background-image: url("../img/logo.png");
@@ -941,10 +948,11 @@ blockquote {
 .carousel-text-box {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 12.5px 25px;
-  margin-bottom: 12.5px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px; }
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px; }
+  .carousel-text-box + .button {
+    margin-top: 0; }
   .carousel-text-box h2 {
     color: #4a97bd;
     font-size: 36px;
@@ -977,9 +985,11 @@ blockquote {
     margin: 0; }
   .tile p {
     margin-bottom: 8.33333px;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #3779ae; }
   .tile h1 {
-    line-height: 45px; }
+    line-height: 45px;
+    font-size: 60px; }
   .tile.tile_lightest {
     background-color: #7cb8e1; }
     .tile.tile_lightest h1 {
@@ -1023,6 +1033,9 @@ blockquote {
     width: 25%; }
     .tile.tile_double-long {
       width: 50%; } }
+.tiles {
+  overflow: hidden; }
+
 .process,
 .getInvolved {
   background-size: 100% 100%;
@@ -1090,7 +1103,10 @@ blockquote {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   padding: 12.5px 16.66667px;
-  font-weight: 100; }
+  font-weight: 100;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px; }
   html body .button, html body li .button {
     color: white; }
     html body .button:hover, html body li .button:hover {
