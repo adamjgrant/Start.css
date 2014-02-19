@@ -421,13 +421,15 @@ a + a, input[type="submit"] + input[type="submit"], button + button {
 
 label {
   display: block;
-  font-weight: bold; }
+  font-weight: 500; }
 
 label, p, button, a {
   margin-top: 12.5px;
   margin-bottom: 5px; }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="number"] {
   margin-bottom: 12.5px;
   padding: 8.33333px;
   border: 1px solid #cccccc;
@@ -435,13 +437,17 @@ input[type="text"] {
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px; }
-  label + input[type="text"] {
+  label + input[type="text"], label +
+  input[type="email"], label +
+  input[type="number"] {
     margin-top: 5px; }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: inline-block;
   width: 14px; }
-  input[type="checkbox"] + label, input[type="radio"] + label {
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
     display: inline-block;
     width: 100%;
     margin: 0;
@@ -978,6 +984,10 @@ hr.orange {
     margin: -8px;
     height: 190px;
     margin-bottom: 0; }
+  .tile h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: white; }
 
 @media screen and (min-width: 320px) {
   .tile {
