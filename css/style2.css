@@ -783,13 +783,13 @@ code {
 .description {
   width: 75%; }
 
+.carousel-text,
 .events-event-description {
   width: 66.66667%; }
 
 .events-event-date {
   width: 33.33333%; }
 
-.carousel-text,
 .getInvolved-left,
 .getInvolved-right {
   width: 50%; }
@@ -942,30 +942,31 @@ p {
 
 .carousel {
   background-image: url("../img/graph.jpg");
-  background-position: 0px -30px;
+  background-position: 0px -80px;
   background-size: 100%;
-  height: 560px; }
+  height: 585px; }
   .carousel .carousel-text {
-    text-align: right;
-    padding-top: 55px; }
+    text-align: left;
+    padding-top: 345px; }
   .carousel .carousel-text-box {
     text-align: left; }
 
 .carousel-text-box {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 12.5px 25px;
+  background-color: rgba(255, 255, 255, 0.78);
+  padding: 12.5px 16.66667px;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px; }
   .carousel-text-box + .button {
     margin-top: 0; }
   .carousel-text-box h2 {
-    color: #4a97bd;
+    color: #3779ae;
     font-size: 36px;
     line-height: 38px; }
   .carousel-text-box p {
-    font-size: 21px;
-    line-height: 26px; }
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 3px; }
 
 .status {
   width: 100%;
@@ -1022,12 +1023,8 @@ p {
     margin-bottom: 0; }
   .tile h1 {
     font-weight: 500;
-<<<<<<< HEAD
     font-size: 50px;
     color: white; }
-=======
-    font-size: 45px; }
->>>>>>> f43bd80b27e69c1b2923a27785574c369374d847
 
 @media screen and (min-width: 320px) {
   .tile {
@@ -1071,10 +1068,36 @@ p {
 .getInvolved {
   background-image: url("../img/jewel-light.png");
   padding-bottom: 25px; }
+  .getInvolved p {
+    line-height: 25px; }
+    .getInvolved p.small {
+      color: white;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 5px; }
+    .getInvolved p.submit {
+      text-align: right; }
+  .getInvolved h5 {
+    font-size: 17px;
+    margin-bottom: 0;
+    font-weight: 600; }
+  .getInvolved input[type="text"],
+  .getInvolved input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px; }
+  .getInvolved .button {
+    margin-top: 0; }
 
 .getInvolved-left {
   border-right: 1px solid rgba(255, 255, 255, 0.15); }
 
+@media screen and (min-width: 768px) {
+  .getInvolved-right {
+    padding-left: 75px;
+    padding-right: 75px; }
+    .getInvolved-right p {
+      margin-bottom: 0; } }
 .date {
   text-align: center;
   color: #4a97bd;
@@ -1094,7 +1117,7 @@ p {
 
 .button {
   padding: 8.33333px 16.66667px;
-  background-color: #4a97bd;
+  background-color: #3779ae;
   color: white;
   text-decoration: none;
   border: 0px;
@@ -1125,9 +1148,9 @@ p {
     html body .button:active, html body li .button:active {
       color: white; }
   .button:hover {
-    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #4a97bd;
-    -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #4a97bd;
-    -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #4a97bd; }
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #3779ae;
+    -webkit-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #3779ae;
+    -moz-box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset,0px 0px 3px #3779ae; }
   .button:active {
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2) inset;

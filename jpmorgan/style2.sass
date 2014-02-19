@@ -47,13 +47,13 @@
 .description
   @include cols(9)
 
+.carousel-text,
 .events-event-description
   @include cols(8)
 
 .events-event-date
   @include cols(4)
 
-.carousel-text,
 .getInvolved-left,
 .getInvolved-right
   @include cols(6)
@@ -128,27 +128,28 @@ p
   background-size: 65%
 .carousel
   .carousel-text
-    text-align: right
-    padding-top: 55px
+    text-align: left
+    padding-top: 345px
   .carousel-text-box
     text-align: left
   background-image: url('../img/graph.jpg')
-  background-position: 0px -30px
+  background-position: 0px -80px
   background-size: 100%
-  height: 560px
+  height: 585px
 .carousel-text-box
-  background-color: rgba(255, 255, 255, 0.5)
-  padding: ($space/2) $space
+  background-color: rgba(255, 255, 255, 0.78)
+  padding: ($space/2) ($space*(2/3))
   @include border-radius(0px)
   + .button
     margin-top: 0
   h2
-    color: $blue
+    color: $blue1
     font-size: 36px
     line-height: 38px
   p
-    font-size: 21px
+    font-size: 17px
     line-height: 26px
+    margin-bottom: 3px
 .status
   width: 100%
   height: 25px
@@ -205,12 +206,8 @@ p
     margin-bottom: 0
   h1
     font-weight: 500
-<<<<<<< HEAD
     font-size: 50px
     color: white
-=======
-    font-size: 45px
->>>>>>> f43bd80b27e69c1b2923a27785574c369374d847
 @media screen and (min-width: 320px)
   .tile
     width: 50%
@@ -246,8 +243,35 @@ p
 .getInvolved
   background-image: url('../img/jewel-light.png')
   padding-bottom: $space
+  p
+    line-height: 25px
+    &.small
+      color: white
+      font-size: 14px
+      line-height: 18px
+      margin-top: 5px
+    &.submit
+      text-align: right
+  h5
+    font-size: 17px
+    margin-bottom: 0
+    font-weight: 600
+  input[type="text"],
+  input[type="email"]
+    width: 100%
+    padding: 15px
+    margin-bottom: $space
+  .button
+    margin-top: 0
 .getInvolved-left
   border-right: 1px solid rgba(255, 255, 255, 0.15)
+@media screen and (min-width: 768px)
+  .getInvolved-right
+    $padding: 75px
+    padding-left: $padding
+    padding-right: $padding
+    p
+      margin-bottom: 0
 .date
   text-align: center
   color: $blue
@@ -266,5 +290,5 @@ p
 // Buttons
 
 .button
-  @include btn($blue)
+  @include btn($blue1)
   @include border-radius(0px)
