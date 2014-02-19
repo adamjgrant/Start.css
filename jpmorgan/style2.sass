@@ -37,7 +37,6 @@
 
 .row-full, 
 .carousel, 
-.process-text,
 .getInvolved
   @include cols(12)
 
@@ -48,6 +47,7 @@
   @include cols(9)
 
 .carousel-text,
+.process-text,
 .events-event-description
   @include cols(8)
 
@@ -233,13 +233,19 @@ p
     color: white
 .process
   background-image: url('../img/jewel-dark.png')
+  padding-bottom: $space
+  padding-top: $space
   p.lead
     font-weight: 200
-    font-size: 36px
-    line-height: 39px
+    font-size: 32px
+    line-height: 36px
     text-align: left
+    margin-bottom: 5px
   p
-    text-align: right
+    margin: 0
+  h4
+    margin: ($space/2) 0
+    font-size: 18px
 .getInvolved
   background-image: url('../img/jewel-light.png')
   padding-bottom: $space
@@ -267,8 +273,8 @@ p
   border-right: 1px solid rgba(255, 255, 255, 0.15)
 @media screen and (min-width: 768px)
   .getInvolved-right
-    $padding: 75px
-    padding-left: $padding
+    $padding: 60px
+    padding-left: ($padding+($space/2))
     padding-right: $padding
     p
       margin-bottom: 0
@@ -285,6 +291,18 @@ p
 .community-content
   padding-top: $space
   padding-bottom: $space
+.community
+  .tile
+    blockquote
+      line-height: 35px
+      font-size: 32px
+      font-weight: 100
+      p, p small
+        color: white
+        font-size: 14px
+        font-weight: 100
+        margin-top: 5px
+        text-align: right
 
 
 // Buttons

@@ -773,7 +773,6 @@ code {
 
 .row-full,
 .carousel,
-.process-text,
 .getInvolved {
   width: 100%; }
 
@@ -784,6 +783,7 @@ code {
   width: 75%; }
 
 .carousel-text,
+.process-text,
 .events-event-description {
   width: 66.66667%; }
 
@@ -1056,14 +1056,20 @@ p {
     color: white; }
 
 .process {
-  background-image: url("../img/jewel-dark.png"); }
+  background-image: url("../img/jewel-dark.png");
+  padding-bottom: 25px;
+  padding-top: 25px; }
   .process p.lead {
     font-weight: 200;
-    font-size: 36px;
-    line-height: 39px;
-    text-align: left; }
+    font-size: 32px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 5px; }
   .process p {
-    text-align: right; }
+    margin: 0; }
+  .process h4 {
+    margin: 12.5px 0;
+    font-size: 18px; }
 
 .getInvolved {
   background-image: url("../img/jewel-light.png");
@@ -1094,8 +1100,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .getInvolved-right {
-    padding-left: 75px;
-    padding-right: 75px; }
+    padding-left: 72.5px;
+    padding-right: 60px; }
     .getInvolved-right p {
       margin-bottom: 0; } }
 .date {
@@ -1114,6 +1120,17 @@ p {
 .community-content {
   padding-top: 25px;
   padding-bottom: 25px; }
+
+.community .tile blockquote {
+  line-height: 35px;
+  font-size: 32px;
+  font-weight: 100; }
+  .community .tile blockquote p, .community .tile blockquote p small {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 5px;
+    text-align: right; }
 
 .button {
   padding: 8.33333px 16.66667px;
