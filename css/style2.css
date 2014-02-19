@@ -1025,6 +1025,14 @@ p {
     font-weight: 500;
     font-size: 50px;
     color: white; }
+  .tile#testimonial1 {
+    background-image: url("../img/testimonial1-c.png");
+    background-size: 150%;
+    background-position: 50%; }
+  .tile#testimonial2 {
+    background-image: url("../img/testimonial2-c.png");
+    background-size: 150%;
+    background-position: 50%; }
 
 @media screen and (min-width: 320px) {
   .tile {
