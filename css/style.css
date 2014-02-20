@@ -716,7 +716,7 @@ code {
   margin-right: auto;
   display: block;
   max-width: 1024px;
-  background-color: #e6e6e6;
+  background-color: white;
   overflow: hidden; }
 
 .frame {
@@ -958,7 +958,8 @@ hr.orange {
 
 .blog {
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  background-color: #e6e6e6; }
 
 .blog-post img {
   width: 100%;
