@@ -33,7 +33,9 @@
 .getInvolved-left,
 .getInvolved-right,
 .date,
-.description
+.description,
+.content,
+.sidebar
   @include col()
 
 .row-full, 
@@ -49,10 +51,12 @@
 .description
   @include cols(9)
 
-.events-event-description
+.events-event-description,
+.content
   @include cols(8)
 
-.events-event-date
+.events-event-date,
+.sidebar
   @include cols(4)
 
 .carousel-text,
@@ -208,9 +212,20 @@ hr.orange
 .community-content
   padding-top: $space
   padding-bottom: $space
+.article
+  margin-bottom: (3*$space)
+  @include frame()
+  padding-top: $space
+  padding-bottom: $space
+  border: 1px solid #AAA
 
 
 // Buttons
 
 .button
   @include btn($blue)
+
+// Images
+
+img.responsive
+  width: 100%

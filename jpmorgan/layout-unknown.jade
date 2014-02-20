@@ -1,0 +1,17 @@
+!!!
+html
+  head
+    link(rel="stylesheet", href="../css/style.css")
+    block variables
+    title 
+      =title
+  body
+    .wrapper
+      header.header
+        nav.bar(style="background-color: #222;height: 150px")
+      block content
+      br
+      nav(style="background-color: #222;height: 150px;clear: both")
+  script(type="text/javascript" src="http://use.typekit.net/luf6mvd.js")
+  script(type="text/javascript")
+    try{Typekit.load();}catch(e){}

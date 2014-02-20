@@ -1,0 +1,43 @@
+extends layout-unknown
+
+block content
+  section.row
+    header.row-full
+      .frame
+        h1 About
+    main
+      .frame
+        section.content
+          article.article
+            h1 Client feedback factor analysis tool
+            p
+              small
+                a(href="#") By John Smith
+                |  | 
+                | January 1, 2020
+            img.responsive(src="http://placehold.it/1000x650")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            hr
+            p
+              a(href="#") Be the first to comment
+        aside.sidebar
+          - for(var i=0;i<2;++i) {
+            h5 Recent Blog posts
+            ul
+              - for(var j=0;j<4;++j) {
+                li
+                  a(href="#") lorem ipsum
+              - }
+          - }
+          h5 Calendar
+          aside.date Feb
+            p.date-number 17
+          main.description
+            h5 Monday, February 17
+              br
+              | 1:00 PM
+            p Alt Beta brown bag discussion 
+            p
+              img(src="")
+              a(href="#")
+                small Add to Calendar
