@@ -17,28 +17,18 @@ block content
           a.button(href="#") Articles 
   main
     .frame
-      .row
-        section.sidebar
-          header.sectionHeading
-            p.lead Articles
-          h1 Client Feedback on Factor Analysis Tool
-          p 
-            small By 
-              a(href="#") Jane Doe
-        section.content
-          header.sectionHeading
-            p.lead March 12, 2004
-          - for(var i=0; i<5; ++i) {
+      - for(var i=0; i<5; ++i) {
+        .row
+          section.sidebar
+            header.sectionHeading
+              p.lead Articles
+            h1 Client Feedback on Factor Analysis Tool
+            p 
+              small By 
+                a(href="#") Jane Doe
+          section.content
+            header.sectionHeading
+              p.lead March 12, 2004
             article
-              h2 Client feedback factor analysis tool
-              p
-                small
-                  a(href="#") By John Smith
-                  |  | 
-                  | January 1, 2020
-              img.responsive(src="http://placehold.it/1000x650")
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              hr
-              p
-                a(href="#") Be the first to comment
-          - }
+              p lorem ipsum dolor sit amet
+      - }
