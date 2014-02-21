@@ -76,9 +76,19 @@ h1, h2, h3, h4, h5
 
 @mixin base-typography()
   @include base-typography-default()
+  font-size: 16pt
+  line-height: 18pt
 
 p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code
   @include base-typography()
+
+p.lead
+  font-size: 20pt
+  line-height: 22pt
+
+p small, small, small p
+  font-size: 12pt
+  line-height: 14pt
 
 li
   margin-bottom: 0
@@ -93,14 +103,13 @@ a
 body
   @include body-default()
 
-h1
-  font-size: $font-headings-baseSize + 20
-  margin: $space 0
+h1.hero
+  font-size: 60pt
+  line-height: 60pt
 
-h2
-  font-size: $font-headings-baseSize + 16
-  margin: ($space * 0.7) 0
-  font-weight: 300
+h1
+  font-size: 38pt
+  line-height: 34pt
 
 h3
   font-size: $font-headings-baseSize + 10
