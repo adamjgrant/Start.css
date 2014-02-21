@@ -83,8 +83,6 @@
   padding: $space 0
 .plain
   @include list-plain()
-  > li > a
-    @include nav-link()
 .header
   background-image: url('../img/header.png')
   background-size: 100% 100%
@@ -142,13 +140,9 @@ p
   @include border-radius(0px)
   + .button
     margin-top: 0
-  h2
+  h1
     color: $blue1
-    font-size: 36px
-    line-height: 38px
   p
-    font-size: 17px
-    line-height: 26px
     margin-bottom: 3px
 .status
   width: 100%

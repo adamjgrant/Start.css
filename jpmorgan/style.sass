@@ -89,8 +89,10 @@
   padding: $space 0
 .plain
   @include list-plain()
-  > li > a
-    @include nav-link()
+  &.plain_vertical
+    > li
+      display: inline-block
+  margin-bottom: $space
 .header
   background-image: url('../img/header.png')
   background-size: 100% 100%
@@ -134,11 +136,9 @@ hr.orange
   @include border-radius(5px)
   h2
     color: $blue
-    font-size: 36px
-    line-height: 38px
+    @include heading()
   p
-    font-size: 21px
-    line-height: 26px
+    @include lead()
 .blog
   padding-top: $space
   padding-bottom: $space
@@ -213,12 +213,10 @@ hr.orange
 .community-content
   padding-top: $space
   padding-bottom: $space
-.article
-  margin-bottom: (3*$space)
-  @include frame()
-  padding-top: $space
-  padding-bottom: $space
-  border: 1px solid #AAA
+.sectionHeading p
+  color: #AAA
+  padding-bottom: 5px
+  border-bottom: 1px solid #AAA
 
 
 // Buttons

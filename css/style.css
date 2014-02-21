@@ -620,13 +620,12 @@ h1, h2, h3, h4, h5 {
   color: #333333;
   line-height: normal;
   margin: 10px 0;
-  font-weight: 200; }
-  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
-    margin-top: 0; }
+  font-weight: 200;
+  font-family: "Proxima Nova"; }
 
 p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code {
   font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 15px;
+  font-size: 16pt;
   color: #333333;
   margin-bottom: 25px;
   line-height: 21px;
@@ -655,42 +654,18 @@ a {
 
 body {
   font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 15px;
+  font-size: 16pt;
   color: #333333;
   line-height: 21px; }
 
 h1.hero {
   font-size: 60pt;
-  line-height: 60pt; }
+  line-height: 60pt;
+  font-weight: bold; }
 
 h1 {
   font-size: 38pt;
   line-height: 34pt; }
-
-h3 {
-  font-size: 26px;
-  margin: 16.25px 0; }
-
-h4 {
-  font-size: 19px;
-  margin: 12.5px 0;
-  margin-bottom: 12.5px; }
-  h4 + p {
-    margin-top: 0; }
-
-h4 {
-  font-weight: 500;
-  font-size: 16px;
-  margin-bottom: 5px; }
-  h4 + p {
-    margin-top: 0; }
-
-h5 {
-  font-size: 13px;
-  line-height: 15px;
-  font-weight: 800;
-  font-family: Proxima Nova, "proxima-nova", "Helvetica Neue", "Helvetica", sans-serif;
-  margin-bottom: 2px; }
 
 hr {
   border-color: #dddddd; }
@@ -699,8 +674,8 @@ blockquote {
   font-family: "Baskerville", "Palatino", "Times New Roman", serif;
   margin: 25px;
   font-style: italic;
-  font-size: 29px;
-  line-height: 39px; }
+  font-size: 30pt;
+  line-height: 40pt; }
   blockquote:before {
     content: open-quote;
     font-size: 70px;
@@ -724,7 +699,7 @@ code {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  max-width: 1024px;
+  max-width: 960px;
   background-color: white;
   overflow: hidden; }
 
@@ -887,8 +862,7 @@ code {
 
 .menu-link {
   color: white;
-  text-decoration: none;
-  font-size: 12px; }
+  text-decoration: none; }
   .menu-link:hover {
     color: #f28324; }
   .menu-link:active {
@@ -901,18 +875,13 @@ code {
 .plain {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 25px; }
   .plain > li {
     list-style: none;
     margin: 5px 0; }
-  .plain > li > a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px; }
-    .plain > li > a:hover {
-      color: #f28324; }
-    .plain > li > a:active {
-      color: #4a97bd; }
+  .plain.plain_vertical > li {
+    display: inline-block; }
 
 .header {
   background-image: url("../img/header.png");
@@ -959,11 +928,11 @@ hr.orange {
   -moz-border-radius: 5px; }
   .carousel-text-box h2 {
     color: #4a97bd;
-    font-size: 36px;
-    line-height: 38px; }
+    font-size: 38pt;
+    line-height: 34pt; }
   .carousel-text-box p {
-    font-size: 21px;
-    line-height: 26px; }
+    font-size: 20pt;
+    line-height: 22pt; }
 
 .blog {
   padding-top: 25px;
@@ -1067,15 +1036,10 @@ hr.orange {
   padding-top: 25px;
   padding-bottom: 25px; }
 
-.article {
-  margin-bottom: 75px;
-  padding: 0;
-  padding-left: 25px;
-  padding-right: 25px;
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border: 1px solid #aaaaaa; }
+.sectionHeading p {
+  color: #aaaaaa;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa; }
 
 .button {
   padding: 8.33333px 16.66667px;
@@ -1095,9 +1059,9 @@ hr.orange {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
   -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   padding: 12.5px 16.66667px;
   font-weight: 100; }
   html body .button, html body li .button {

@@ -6,6 +6,27 @@
 // MEASUREMENTS
 // ------------
 
+// From InDesign Doc
+
+@mixin headingHero()
+  font-size: 60pt
+  line-height: 60pt
+
+@mixin heading()
+  font-size: 38pt
+  line-height: 34pt
+
+@mixin lead()
+  font-size: 20pt
+  line-height: 22pt
+
+@mixin paragraph()
+  font-size: 16pt
+  line-height: 18pt
+
+@mixin small()
+  font-size: 12pt
+  line-height: 14pt
 
 // COLORS
 // ------
@@ -36,7 +57,7 @@ $linkColor:                $blue
 $font-baseColor:           $black
 $font-sans:                Proxima Nova, 'proxima-nova', 'Helvetica Neue', 'Helvetica', sans-serif
 $font-default:             $font-sans
-$font-baseSize:            15px
+$font-baseSize:            16pt
 
 @import "../lib/core"
 
@@ -47,7 +68,7 @@ $font-baseSize:            15px
 // GRID
 // ----
 
-@mixin wrapper($maxWidth:$screen-md)
+@mixin wrapper($maxWidth:960px)
   @include wrapper-default($maxWidth)
 
 @mixin frame($spacing: ($space))
@@ -73,11 +94,11 @@ $font-baseSize:            15px
 
 h1, h2, h3, h4, h5
   @include h1-to-h5-default
+  font-family: 'Proxima Nova'
 
 @mixin base-typography()
   @include base-typography-default()
-  font-size: 16pt
-  line-height: 18pt
+  @include paragraph()
 
 p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code
   @include base-typography()
@@ -104,36 +125,11 @@ body
   @include body-default()
 
 h1.hero
-  font-size: 60pt
-  line-height: 60pt
+  @include headingHero()
+  font-weight: bold
 
 h1
-  font-size: 38pt
-  line-height: 34pt
-
-h3
-  font-size: $font-headings-baseSize + 10
-  margin: ($space * 0.65) 0
-
-h4
-  font-size: $font-headings-baseSize + 3
-  margin: ($space * 0.5) 0
-  margin-bottom: $space/2
-  + p
-    margin-top: 0
-
-h4
-  font-weight: 500
-  font-size: 16px
-  margin-bottom: 5px
-  + p
-    margin-top: 0
-h5
-  font-size: 13px
-  line-height: 15px
-  font-weight: 800
-  font-family: $font-sans
-  margin-bottom: 2px
+  @include heading()
 
 hr
   border-color: #DDD
@@ -163,7 +159,7 @@ code
 @mixin btn($color: darken($lightGrey, 10%))
   @include btn-default($color)
   @include box-shadow(0px 0px 0px 0px rgba(0, 0, 0, 0) inset)
-  @include border-radius(5px)
+  @include border-radius(0px)
   padding: ($space/2) ($space * 2/3)
   font-weight: 100
 
@@ -190,7 +186,6 @@ code
 
 @mixin nav-link()
   @include nav-link-default()
-  font-size: 12px
 
 @mixin list_plain()
   @include list_plain-default()

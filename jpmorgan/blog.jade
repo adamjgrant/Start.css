@@ -1,15 +1,35 @@
 extends layout-unknown
 
 block content
-  section.row
-    header.row-full
-      .frame
-        h1 Blog
-    main
-      .frame
+  header
+    .frame
+      h1 Blog
+      ul.plain.plain_vertical
+        li
+          a.button(href="#") All Posts
+        li
+          a.button(href="#") Announcements 
+        li
+          a.button(href="#") Events 
+        li
+          a.button(href="#") White Papers
+        li
+          a.button(href="#") Articles 
+  main
+    .frame
+      .row
+        section.sidebar
+          header.sectionHeading
+            p.lead Articles
+          h1 Client Feedback on Factor Analysis Tool
+          p 
+            small By 
+              a(href="#") Jane Doe
         section.content
+          header.sectionHeading
+            p.lead March 12, 2004
           - for(var i=0; i<5; ++i) {
-            article.article
+            article
               h2 Client feedback factor analysis tool
               p
                 small
@@ -22,24 +42,3 @@ block content
               p
                 a(href="#") Be the first to comment
           - }
-        aside.sidebar
-          - for(var i=0;i<2;++i) {
-            h5 Recent Blog posts
-            ul
-              - for(var j=0;j<4;++j) {
-                li
-                  a(href="#") lorem ipsum
-              - }
-          - }
-          h5 Calendar
-          aside.date Feb
-            p.date-number 17
-          main.description
-            h5 Monday, February 17
-              br
-              | 1:00 PM
-            p Alt Beta brown bag discussion 
-            p
-              img(src="")
-              a(href="#")
-                small Add to Calendar
