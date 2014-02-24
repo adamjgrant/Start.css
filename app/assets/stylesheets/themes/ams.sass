@@ -104,8 +104,8 @@ p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code
   @include base-typography()
 
 p.lead
-  font-size: 20pt
-  line-height: 22pt
+  font-size: 20px
+  line-height: 22px
 
 p small, small, small p
   font-size: 12pt
@@ -130,6 +130,7 @@ h1.hero
 
 h1
   @include heading()
+  font-weight: 600
 
 hr
   border-color: #DDD
@@ -145,6 +146,12 @@ code
 
 @mixin section-header()
   @include section-header-default()
+
+@mixin label()
+  @include label-default()
+  background-color: #D5D5D5
+  font-size: 12px
+  line-height: 14px
 
 // BOXES
 // -----

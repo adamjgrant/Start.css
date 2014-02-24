@@ -633,8 +633,8 @@ p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code {
   line-height: 18px; }
 
 p.lead {
-  font-size: 20pt;
-  line-height: 22pt; }
+  font-size: 20px;
+  line-height: 22px; }
 
 p small, small, small p {
   font-size: 12pt;
@@ -665,7 +665,8 @@ h1.hero {
 
 h1 {
   font-size: 38px;
-  line-height: 34px; }
+  line-height: 34px;
+  font-weight: 600; }
 
 hr {
   border-color: #dddddd; }
@@ -880,8 +881,11 @@ code {
   .plain > li {
     list-style: none;
     margin: 5px 0; }
-  .plain.plain_vertical > li {
-    display: inline-block; }
+  .plain.plain_vertical {
+    margin-bottom: 0; }
+    .plain.plain_vertical > li {
+      display: inline-block;
+      margin-right: 3px; }
 
 .header {
   background-image: url("../img/header.png");
@@ -900,6 +904,20 @@ hr.orange {
   color: #bbbbbb; }
   .muted + h4 {
     margin-top: 2px; }
+
+.label {
+  background-color: #aaaaaa;
+  padding: 3px 5px;
+  font-size: 80%;
+  color: white;
+  background-color: #d5d5d5;
+  font-size: 12px;
+  line-height: 14px; }
+  span + .label {
+    margin-left: 3px; }
+
+.top {
+  padding-top: 25px; }
 
 .left-half {
   height: 90px;
@@ -1037,7 +1055,7 @@ hr.orange {
   padding-bottom: 25px; }
 
 .sectionHeading p {
-  color: #aaaaaa;
+  color: #666666;
   padding-bottom: 5px;
   border-bottom: 1px solid #aaaaaa; }
 

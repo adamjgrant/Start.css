@@ -90,8 +90,10 @@
 .plain
   @include list-plain()
   &.plain_vertical
+    margin-bottom: 0
     > li
       display: inline-block
+      margin-right: 3px
   margin-bottom: $space
 .header
   background-image: url('../img/header.png')
@@ -111,8 +113,13 @@ hr.orange
   + h4
     margin-top: 2px
 
+.label
+  @include label()
+
 // Content
 
+.top
+  padding-top: $space
 .left-half
   height: 90px
   background-image: url('../img/logo.png')
@@ -214,7 +221,7 @@ hr.orange
   padding-top: $space
   padding-bottom: $space
 .sectionHeading p
-  color: #AAA
+  color: #666
   padding-bottom: 5px
   border-bottom: 1px solid #AAA
 p small, small p, small

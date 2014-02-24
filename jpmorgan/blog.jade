@@ -1,12 +1,12 @@
 extends layout-unknown
 
 block content
-  header
+  header.top
     .frame
       h1 Blog
       ul.plain.plain_vertical
         li
-          a.button(href="#") All Posts
+          a.button.active(href="#") All Posts
         li
           a.button(href="#") Announcements 
         li
@@ -23,6 +23,12 @@ block content
             header.sectionHeading
               p.lead Articles
             h1 Client Feedback on Factor Analysis Tool
+            p
+              span.label lorem
+              span.label ipsum
+              span.label dolor
+              span.label sit
+              span.label amet
             p 
               small By 
                 a(href="#") Jane Doe

@@ -633,8 +633,8 @@ p, em, strong, i, b, ul, ol, li, table, blockquote, pre, table, code {
   line-height: 18px; }
 
 p.lead {
-  font-size: 20pt;
-  line-height: 22pt; }
+  font-size: 20px;
+  line-height: 22px; }
 
 p small, small, small p {
   font-size: 12pt;
@@ -665,7 +665,8 @@ h1.hero {
 
 h1 {
   font-size: 38px;
-  line-height: 34px; }
+  line-height: 34px;
+  font-weight: 600; }
 
 hr {
   border-color: #dddddd; }

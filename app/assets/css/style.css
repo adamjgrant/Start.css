@@ -1783,6 +1783,16 @@ ul.plain > li {
   margin-bottom: 25px;
 }
 
+.label {
+  background-color: #aaaaaa;
+  padding: 3px 5px;
+  font-size: 80%;
+  color: white;
+}
+span + .label {
+  margin-left: 3px;
+}
+
 .modal {
   display: none;
   left: 20px;
