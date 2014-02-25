@@ -1,0 +1,18 @@
+$space: 25px
+
+@mixin cols($x)
+  width: (960 * ($x/12)) - $space
+
+html.ie
+  .ie-row
+    width: 960px
+    margin-left: -($space/2)
+    margin-right: -($space/2)
+    display: block
+    @for $i from 1 through 12
+      .ie-col-#{$i}
+        @include cols($i)
+        margin-left: ($space/2)
+        margin-right: ($space/2)
+        float: left
+        display: block

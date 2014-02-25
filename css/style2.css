@@ -538,9 +538,9 @@ input[type="radio"] {
     padding-bottom: 0;
     overflow: hidden;
     margin-bottom: 25px;
-    border-top: 3px solid #4a97bd; }
+    border-top: 3px solid #3779ae; }
     .s-tile.s-blue > h1, .s-tile.s-blue > h2, .s-tile.s-blue > h3, .s-tile.s-blue > h4, .s-tile.s-blue > h5 {
-      color: #4a97bd; }
+      color: #3779ae; }
     .s-tile.s-blue .s-close {
       text-decoration: none;
       color: #aaaaaa;
@@ -645,7 +645,7 @@ li {
 
 a {
   cursor: pointer;
-  color: #4a97bd;
+  color: #3779ae;
   text-decoration: none; }
   a:hover {
     color: #1651bc; }
@@ -683,8 +683,8 @@ blockquote {
     margin-left: -30px; }
 
 code, pre {
-  color: #244e63;
-  background-color: #bad7e6;
+  color: #18364d;
+  background-color: #9ec3e0;
   border-radius: 3px;
   padding: 8.33333px 16.66667px;
   font-family: monospace;
@@ -792,7 +792,7 @@ code {
   margin-bottom: 25px;
   border-radius: 3px;
   overflow: hidden;
-  background-color: #4a97bd;
+  background-color: #3779ae;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -861,7 +861,7 @@ code {
   .menu-link:hover {
     color: #f28324; }
   .menu-link:active {
-    color: #4a97bd; }
+    color: #3779ae; }
 
 .footer {
   background-color: #555555;
@@ -1086,13 +1086,13 @@ p {
       margin-bottom: 0; } }
 .date {
   text-align: center;
-  color: #4a97bd;
+  color: #3779ae;
   font-size: 12px;
   font-weight: 600; }
 
 .date-number {
   font-size: 30px;
-  color: #4a97bd; }
+  color: #3779ae; }
 
 .description {
   display: block; }
@@ -1135,6 +1135,8 @@ p {
   -moz-border-radius: 0px;
   padding: 12.5px 16.66667px;
   font-weight: 100;
+  *display: inline;
+  *zoom: 1;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px; }
